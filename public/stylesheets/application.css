@@ -14,7 +14,7 @@ a {
   color: #0000ff;
 }
 .hide_text {
-  text-indent: -1000em;
+  text-indent: -3000em;
 }
 .round {
   -webkit-border-radius: 3px; 
