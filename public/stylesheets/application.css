@@ -451,7 +451,17 @@ ul#main_nav_ul li a.black {
   color: #ffb800;
   text-decoration: underline;
 }
-
+/********************************************/
+/**************CROSSFADE STYLES**************/
+.cube_crossfade_wrap {
+	position: relative;
+	overflow: hidden;
+}
+.cube_crossfade_wrap ul li {
+	position: absolute;
+	top: 0;
+	z-index: 0;
+}
 /********************************************/
 /**************OVERLAY STYLES****************/
 
