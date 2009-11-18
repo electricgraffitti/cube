@@ -1,0 +1,2004 @@
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 15:44:48) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+ERROR: compiling _run_erb_app47views47layouts47_headmeta46html46erb_locals_headmeta_object RAISED compile error
+/Users/Cube1/Sites/RAILS/cube/app/views/layouts/_headmeta.html.erb:18: syntax error, unexpected ':', expecting ')'
+....validate', 'cube_crossfade' :cache => true ).to_s); @output...
+                              ^
+Function body:           def _run_erb_app47views47layouts47_headmeta46html46erb_locals_headmeta_object(local_assigns)
+            old_output_buffer = output_buffer;headmeta = local_assigns[:headmeta];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<title>"; @output_buffer.concat(( h(yield(:title) || "Welcome To ") ).to_s); @output_buffer.concat " | Cube2Media and Software Development</title>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=UTF-8\" />\n<meta name=\"description\" content=\""
+
+; @output_buffer.concat(( h(yield(:description) || "Cube2Media is an all encompassing multimedia company based in Las Vegas Nevada. We specialize in Web development, Software development, Photography, Video, and Audio Recording.") ).to_s); @output_buffer.concat "\">\n<meta name=\"keywords\" content=\""
+; @output_buffer.concat(( h(yield(:keywords) || "Web Design, Web Development, application development, software development, photography, video, multimedia") ).to_s); @output_buffer.concat "\">\n<meta name=\"copyright\" content=\"Copyright 2009 Cube2Media\">\n<meta name=\"title\" CONTENT=\"Cube2Media\">\n<link ref=\"shortcut icon\" href=\"favicon.ico\"   type=\"image/ico\" />\n\n"
+
+
+
+
+; @output_buffer.concat "\n"
+; @output_buffer.concat(( stylesheet_link_tag 'reset-fonts-grids', 'jquiwidgets', '960', 'alerts/jquery.alerts', :cache => true ).to_s); @output_buffer.concat "\n"
+; @output_buffer.concat(( stylesheet_link_tag 'application' ).to_s); @output_buffer.concat "\n<!--[if IE ]>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"../stylesheets/IE6.css\" />\n<![endif]-->\n\n"
+
+
+
+
+; @output_buffer.concat "\n<script src=\"http://cdn.jquerytools.org/1.1.2/jquery.tools.min.js\"></script>\n"
+
+; @output_buffer.concat(( javascript_include_tag 'jquery.livequery', 'jqueryui', 'jquery.easing', 'jQueryTimer', 'jquery.alerts', 'jquery.validate', 'cube_crossfade' :cache => true ).to_s); @output_buffer.concat "\n"
+; @output_buffer.concat(( javascript_include_tag 'swfobject','cube_validations', 'application' ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/Cube1/Sites/RAILS/cube/app/views/layouts/_headmeta.html.erb:22:in `compile!'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:20:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/partials.rb:184:in `render_partial'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:262:in `render'
+/Users/Cube1/Sites/RAILS/cube/app/views/layouts/application.html.erb:5:in `_run_erb_app47views47layouts47application46html46erb'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:301:in `with_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:30:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:347:in `_render_with_layout'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1326:in `default_render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/session/abstract_store.rb:122:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/Cube1/Sites/RAILS/cube/app/views/layouts/_headmeta.html.erb:18: syntax error, unexpected ':', expecting ')'
+....validate', 'cube_crossfade' :cache => true ).to_s); @output...
+                              ^) on line #18 of app/views/layouts/_headmeta.html.erb:
+15: 
+16: <%#= ******** JAVASCRIPTS ********** %>
+17: <script src="http://cdn.jquerytools.org/1.1.2/jquery.tools.min.js"></script>
+18: <%= javascript_include_tag 'jquery.livequery', 'jqueryui', 'jquery.easing', 'jQueryTimer', 'jquery.alerts', 'jquery.validate', 'cube_crossfade' :cache => true %>
+19: <%= javascript_include_tag 'swfobject','cube_validations', 'application' %>
+
+    app/views/layouts/_headmeta.html.erb:22:in `compile!'
+    app/views/layouts/application.html.erb:5
+
+Rendered rescues/_trace (79.9ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (37.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (17.4ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateAdmins (20091015162745)
+Migrating to CreateAdminSessions (20091015164245)
+Migrating to CreateSessions (20091017210604)
+  [4;36;1mSQL (51.0ms)[0m   [0;1mCREATE TABLE `sessions` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `session_id` varchar(255) NOT NULL, `data` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (166.3ms)[0m   [0mCREATE INDEX `index_sessions_on_session_id` ON `sessions` (`session_id`)[0m
+  [4;36;1mSQL (100.4ms)[0m   [0;1mCREATE INDEX `index_sessions_on_updated_at` ON `sessions` (`updated_at`)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091017210604')[0m
+Migrating to CreatePosts (20091116234400)
+  [4;36;1mSQL (102.6ms)[0m   [0;1mCREATE TABLE `posts` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `title` varchar(255), `body` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091116234400')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSHOW FIELDS FROM `admin_sessions`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `admin_sessions`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `admin_sessions`[0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mSHOW FIELDS FROM `admins`[0m
+  [4;35;1mSQL (0.9ms)[0m   [0mdescribe `admins`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `admins`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `posts`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `posts`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `sessions`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW KEYS FROM `sessions`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 15:45:16) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+ERROR: compiling _run_erb_app47views47layouts47_headmeta46html46erb_locals_headmeta_object RAISED compile error
+/Users/Cube1/Sites/RAILS/cube/app/views/layouts/_headmeta.html.erb:18: syntax error, unexpected ':', expecting ')'
+....validate', 'cube_crossfade' :cache => true ).to_s); @output...
+                              ^
+Function body:           def _run_erb_app47views47layouts47_headmeta46html46erb_locals_headmeta_object(local_assigns)
+            old_output_buffer = output_buffer;headmeta = local_assigns[:headmeta];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<title>"; @output_buffer.concat(( h(yield(:title) || "Welcome To ") ).to_s); @output_buffer.concat " | Cube2Media and Software Development</title>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=UTF-8\" />\n<meta name=\"description\" content=\""
+
+; @output_buffer.concat(( h(yield(:description) || "Cube2Media is an all encompassing multimedia company based in Las Vegas Nevada. We specialize in Web development, Software development, Photography, Video, and Audio Recording.") ).to_s); @output_buffer.concat "\">\n<meta name=\"keywords\" content=\""
+; @output_buffer.concat(( h(yield(:keywords) || "Web Design, Web Development, application development, software development, photography, video, multimedia") ).to_s); @output_buffer.concat "\">\n<meta name=\"copyright\" content=\"Copyright 2009 Cube2Media\">\n<meta name=\"title\" CONTENT=\"Cube2Media\">\n<link ref=\"shortcut icon\" href=\"favicon.ico\"   type=\"image/ico\" />\n\n"
+
+
+
+
+; @output_buffer.concat "\n"
+; @output_buffer.concat(( stylesheet_link_tag 'reset-fonts-grids', 'jquiwidgets', '960', 'alerts/jquery.alerts', :cache => true ).to_s); @output_buffer.concat "\n"
+; @output_buffer.concat(( stylesheet_link_tag 'application' ).to_s); @output_buffer.concat "\n<!--[if IE ]>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"../stylesheets/IE6.css\" />\n<![endif]-->\n\n"
+
+
+
+
+; @output_buffer.concat "\n<script src=\"http://cdn.jquerytools.org/1.1.2/jquery.tools.min.js\"></script>\n"
+
+; @output_buffer.concat(( javascript_include_tag 'jquery.livequery', 'jqueryui', 'jquery.easing', 'jQueryTimer', 'jquery.alerts', 'jquery.validate', 'cube_crossfade' :cache => true ).to_s); @output_buffer.concat "\n"
+; @output_buffer.concat(( javascript_include_tag 'swfobject','cube_validations', 'application' ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/Cube1/Sites/RAILS/cube/app/views/layouts/_headmeta.html.erb:22:in `compile!'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:20:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/partials.rb:184:in `render_partial'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:262:in `render'
+/Users/Cube1/Sites/RAILS/cube/app/views/layouts/application.html.erb:5:in `_run_erb_app47views47layouts47application46html46erb'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:301:in `with_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:30:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:347:in `_render_with_layout'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1326:in `default_render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/session/abstract_store.rb:122:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/Cube1/Sites/RAILS/cube/app/views/layouts/_headmeta.html.erb:18: syntax error, unexpected ':', expecting ')'
+....validate', 'cube_crossfade' :cache => true ).to_s); @output...
+                              ^) on line #18 of app/views/layouts/_headmeta.html.erb:
+15: 
+16: <%#= ******** JAVASCRIPTS ********** %>
+17: <script src="http://cdn.jquerytools.org/1.1.2/jquery.tools.min.js"></script>
+18: <%= javascript_include_tag 'jquery.livequery', 'jqueryui', 'jquery.easing', 'jQueryTimer', 'jquery.alerts', 'jquery.validate', 'cube_crossfade' :cache => true %>
+19: <%= javascript_include_tag 'swfobject','cube_validations', 'application' %>
+
+    app/views/layouts/_headmeta.html.erb:22:in `compile!'
+    app/views/layouts/application.html.erb:5
+
+Rendered rescues/_trace (75.7ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 15:45:17) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+ERROR: compiling _run_erb_app47views47layouts47_headmeta46html46erb_locals_headmeta_object RAISED compile error
+/Users/Cube1/Sites/RAILS/cube/app/views/layouts/_headmeta.html.erb:18: syntax error, unexpected ':', expecting ')'
+....validate', 'cube_crossfade' :cache => true ).to_s); @output...
+                              ^
+Function body:           def _run_erb_app47views47layouts47_headmeta46html46erb_locals_headmeta_object(local_assigns)
+            old_output_buffer = output_buffer;headmeta = local_assigns[:headmeta];object = local_assigns[:object];;@output_buffer = '';  __in_erb_template=true ; @output_buffer.concat "<title>"; @output_buffer.concat(( h(yield(:title) || "Welcome To ") ).to_s); @output_buffer.concat " | Cube2Media and Software Development</title>\n<meta http-equiv=\"content-type\" content=\"text/html;charset=UTF-8\" />\n<meta name=\"description\" content=\""
+
+; @output_buffer.concat(( h(yield(:description) || "Cube2Media is an all encompassing multimedia company based in Las Vegas Nevada. We specialize in Web development, Software development, Photography, Video, and Audio Recording.") ).to_s); @output_buffer.concat "\">\n<meta name=\"keywords\" content=\""
+; @output_buffer.concat(( h(yield(:keywords) || "Web Design, Web Development, application development, software development, photography, video, multimedia") ).to_s); @output_buffer.concat "\">\n<meta name=\"copyright\" content=\"Copyright 2009 Cube2Media\">\n<meta name=\"title\" CONTENT=\"Cube2Media\">\n<link ref=\"shortcut icon\" href=\"favicon.ico\"   type=\"image/ico\" />\n\n"
+
+
+
+
+; @output_buffer.concat "\n"
+; @output_buffer.concat(( stylesheet_link_tag 'reset-fonts-grids', 'jquiwidgets', '960', 'alerts/jquery.alerts', :cache => true ).to_s); @output_buffer.concat "\n"
+; @output_buffer.concat(( stylesheet_link_tag 'application' ).to_s); @output_buffer.concat "\n<!--[if IE ]>\n  <link rel=\"stylesheet\" type=\"text/css\" href=\"../stylesheets/IE6.css\" />\n<![endif]-->\n\n"
+
+
+
+
+; @output_buffer.concat "\n<script src=\"http://cdn.jquerytools.org/1.1.2/jquery.tools.min.js\"></script>\n"
+
+; @output_buffer.concat(( javascript_include_tag 'jquery.livequery', 'jqueryui', 'jquery.easing', 'jQueryTimer', 'jquery.alerts', 'jquery.validate', 'cube_crossfade' :cache => true ).to_s); @output_buffer.concat "\n"
+; @output_buffer.concat(( javascript_include_tag 'swfobject','cube_validations', 'application' ).to_s); @output_buffer
+          ensure
+            self.output_buffer = old_output_buffer
+          end
+Backtrace: /Users/Cube1/Sites/RAILS/cube/app/views/layouts/_headmeta.html.erb:22:in `compile!'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:61:in `compile'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:28:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:20:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:26:in `benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:19:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable_partial.rb:44:in `render_partial'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/partials.rb:184:in `render_partial'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:262:in `render'
+/Users/Cube1/Sites/RAILS/cube/app/views/layouts/application.html.erb:5:in `_run_erb_app47views47layouts47application46html46erb'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:34:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:301:in `with_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/renderable.rb:30:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/template.rb:199:in `render_template'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:260:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:347:in `_render_with_layout'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_view/base.rb:257:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1250:in `render_for_file'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:945:in `render_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1326:in `default_render'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:1332:in `perform_action_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:617:in `call_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:610:in `perform_action_without_benchmark'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/usr/local/lib/ruby/gems/1.8/gems/activesupport-2.3.4/lib/active_support/core_ext/benchmark.rb:17:in `ms'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/rescue.rb:160:in `perform_action_without_flash'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/flash.rb:146:in `perform_action'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `send'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:532:in `process_without_filters'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/filters.rb:606:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:391:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/base.rb:386:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/routing/route_set.rb:437:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:87:in `dispatch'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:121:in `_call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:130:in `build_middleware_stack'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/head.rb:9:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/methodoverride.rb:24:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/params_parser.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/session/abstract_store.rb:122:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:29:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/query_cache.rb:34:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:9:in `cache'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/query_cache.rb:28:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/activerecord-2.3.4/lib/active_record/connection_adapters/abstract/connection_pool.rb:361:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/failsafe.rb:26:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `synchronize'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/lock.rb:11:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:114:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/reloader.rb:34:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/actionpack-2.3.4/lib/action_controller/dispatcher.rb:108:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/static.rb:31:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:46:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/urlmap.rb:40:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/rails/rack/log_tailer.rb:17:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/content_length.rb:13:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/chunked.rb:15:in `call'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:61:in `process'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+/usr/local/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rack-1.0.0/lib/rack/handler/mongrel.rb:34:in `run'
+/usr/local/lib/ruby/gems/1.8/gems/rails-2.3.4/lib/commands/server.rb:111
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/usr/local/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:31:in `require'
+script/server:3
+
+ActionView::TemplateError (compile error
+/Users/Cube1/Sites/RAILS/cube/app/views/layouts/_headmeta.html.erb:18: syntax error, unexpected ':', expecting ')'
+....validate', 'cube_crossfade' :cache => true ).to_s); @output...
+                              ^) on line #18 of app/views/layouts/_headmeta.html.erb:
+15: 
+16: <%#= ******** JAVASCRIPTS ********** %>
+17: <script src="http://cdn.jquerytools.org/1.1.2/jquery.tools.min.js"></script>
+18: <%= javascript_include_tag 'jquery.livequery', 'jqueryui', 'jquery.easing', 'jQueryTimer', 'jquery.alerts', 'jquery.validate', 'cube_crossfade' :cache => true %>
+19: <%= javascript_include_tag 'swfobject','cube_validations', 'application' %>
+
+    app/views/layouts/_headmeta.html.erb:22:in `compile!'
+    app/views/layouts/application.html.erb:5
+
+Rendered rescues/_trace (149.0ms)
+Rendered rescues/_request_and_response (0.3ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-16 15:46:02) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_headmeta (25.5ms)
+Rendered layouts/_flash (23.1ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (17.9ms)
+Rendered layouts/_scripts (0.6ms)
+Completed in 117ms (View: 111, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-16 15:46:03) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-16 15:46:03) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-16 15:47:53) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+Completed in 93ms (View: 83, DB: 1) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-16 15:48:07) [GET]
+  Parameters: {"action"=>"new", "controller"=>"posts"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/new
+Completed in 24ms (View: 14, DB: 2) | 200 OK [http://localhost/posts/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#create (for 127.0.0.1 at 2009-11-16 15:52:46) [POST]
+  Parameters: {"commit"=>"Create", "post"=>{"body"=>"Bentar Development came to Cube2Media for some help with their marketing woes.  They have found themselves in a tough spot, by that I mean the same spot that many builders and developers in Las Vegas found themselves in when the Mortage Banking System collapsed.  Bentar Development was used to a steady diet of about $10-$12 million in annual sales handed to them through the relationships  of the owner and the reputation of the company.  Bentar has now found themselves in a market of professional tenant improvements, design build projects, and remodels.  New construction has almost come to a halt, as most of the properties built in the last 5 years have found themselves either vacant or boarded up.  It is time for a company to use smart marketing and Cube2Media was the choice they made.", "title"=>"The Bentar Project"}, "action"=>"create", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mPost Create (0.2ms)[0m   [0;1mINSERT INTO `posts` (`created_at`, `title`, `body`, `updated_at`) VALUES('2009-11-16 23:52:46', 'The Bentar Project', 'Bentar Development came to Cube2Media for some help with their marketing woes. They have found themselves in a tough spot, by that I mean the same spot that many builders and developers in Las Vegas found themselves in when the Mortage Banking System collapsed. Bentar Development was used to a steady diet of about $10-$12 million in annual sales handed to them through the relationships of the owner and the reputation of the company. Bentar has now found themselves in a market of professional tenant improvements, design build projects, and remodels. New construction has almost come to a halt, as most of the properties built in the last 5 years have found themselves either vacant or boarded up. It is time for a company to use smart marketing and Cube2Media was the choice they made.', '2009-11-16 23:52:46')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/posts/1
+Completed in 16ms (DB: 2) | 302 Found [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-16 15:52:46) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Completed in 22ms (View: 11, DB: 2) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-16 16:03:19) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (3.2ms)
+Completed in 36ms (View: 25, DB: 2) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-16 16:03:29) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendered posts/_post (5.4ms)
+Completed in 24ms (View: 13, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-16 16:04:09) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendered posts/_post (4.9ms)
+Completed in 23ms (View: 12, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-16 16:04:26) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.5ms)
+Completed in 21ms (View: 10, DB: 2) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-16 16:16:50) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.6ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 32ms (View: 21, DB: 2) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index to atom (for 127.0.0.1 at 2009-11-16 16:21:33) [GET]
+  Parameters: {"format"=>"atom", "action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering posts/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 592ms (View: 582, DB: 1) | 200 OK [http://localhost/posts.atom]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-16 16:21:49) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendered posts/_post (4.8ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 19ms (View: 8, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index to atom (for 127.0.0.1 at 2009-11-16 16:21:53) [GET]
+  Parameters: {"format"=>"atom", "action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering posts/index
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Completed in 16ms (View: 6, DB: 1) | 200 OK [http://localhost/posts.atom]
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 18:33:32) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+
+SyntaxError (/Users/Cube1/Sites/RAILS/cube/app/controllers/posts_controller.rb:95: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (49.4ms)
+Rendered rescues/_request_and_response (1.9ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-17 18:34:08) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (24.9ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;35;1mPost Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendered posts/_post (47.6ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 407ms (View: 172, DB: 199) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-17 18:34:14) [GET]
+  Parameters: {"action"=>"new", "controller"=>"posts"}
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms (View: 1, DB: 0) | 401 Unauthorized [http://localhost/posts/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-17 18:34:22) [GET]
+  Parameters: {"action"=>"new", "controller"=>"posts"}
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms (View: 1, DB: 0) | 401 Unauthorized [http://localhost/posts/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#new (for 127.0.0.1 at 2009-11-17 18:34:33) [GET]
+  Parameters: {"action"=>"new", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendering template within layouts/posts
+Rendering posts/new
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 25ms (View: 15, DB: 2) | 200 OK [http://localhost/posts/new]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (12.9ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (16.8ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateAdmins (20091015162745)
+Migrating to CreateAdminSessions (20091015164245)
+Migrating to CreateSessions (20091017210604)
+Migrating to CreatePosts (20091116234400)
+Migrating to CreateComments (20091118023605)
+  [4;36;1mSQL (51.5ms)[0m   [0;1mCREATE TABLE `comments` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `post_id` int(11), `body` text, `created_at` datetime, `updated_at` datetime) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20091118023605')[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (1.7ms)[0m   [0mSHOW FIELDS FROM `admin_sessions`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mdescribe `admin_sessions`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `admin_sessions`[0m
+  [4;36;1mSQL (2.2ms)[0m   [0;1mSHOW FIELDS FROM `admins`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mdescribe `admins`[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSHOW KEYS FROM `admins`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `comments`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSHOW KEYS FROM `comments`[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mdescribe `posts`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSHOW KEYS FROM `posts`[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mSHOW FIELDS FROM `sessions`[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mdescribe `sessions`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSHOW KEYS FROM `sessions`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-17 18:52:54) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+Rendered posts/_post (4.9ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 50ms (View: 12, DB: 2) | 200 OK [http://localhost/posts]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 18:52:57) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+  [4;36;1mPost Load (0.6ms)[0m   [0;1mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (3.0ms)
+  [4;35;1mComment Load (0.3ms)[0m   [0mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+
+ActionView::TemplateError (undefined local variable or method `new' for #<ActionView::Base:0x1041551f8>) on line #15 of app/views/posts/show.html.erb:
+12:   </div>
+13:   
+14:   
+15: <% form_for [@post, Comment, new] do |f| %>
+16:   <p>
+17:     <%= f.label :body, "New Comment" %><br />
+18:     <%= f.text_area :body %>
+
+    app/views/posts/show.html.erb:15
+    app/controllers/posts_controller.rb:21:in `show'
+
+Rendered rescues/_trace (70.7ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 18:54:32) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.7ms)
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 40ms (View: 27, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-11-17 18:54:50) [POST]
+  Parameters: {"comment"=>{"body"=>"Wow sounds like they are in a tough spot."}, "commit"=>"Add Comment", "post_id"=>"1", "action"=>"create", "controller"=>"comments"}
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `post_id`) VALUES('2009-11-18 02:54:50', 'Wow sounds like they are in a tough spot.', '2009-11-18 02:54:50', 1)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/posts/1
+Completed in 25ms (DB: 3) | 302 Found [http://localhost/posts/1/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 18:54:50) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.6ms)
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+
+ActionView::TemplateError (Missing template comments/_comment.erb in view path app/views) on line #11 of app/views/posts/show.html.erb:
+8: 
+9: <h2>Comments</h2>
+10: <div id="comments">
+11:   <%= render :partial => @post.comments %>
+12:   </div>
+13:   
+14:   
+
+    app/views/posts/show.html.erb:11
+    app/controllers/posts_controller.rb:21:in `show'
+
+Rendered rescues/_trace (81.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 18:56:06) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.5ms)
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (374.8ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 488ms (View: 474, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#create (for 127.0.0.1 at 2009-11-17 19:01:36) [POST]
+  Parameters: {"comment"=>{"body"=>"Well i think most people are as well.\r\n"}, "commit"=>"Add Comment", "post_id"=>"1", "action"=>"create", "controller"=>"comments"}
+
+SyntaxError (/Users/Cube1/Sites/RAILS/cube/app/controllers/comments_controller.rb:10: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered rescues/_trace (48.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-11-17 19:01:55) [POST]
+  Parameters: {"comment"=>{"body"=>"Well i think most people are as well.\r\n"}, "commit"=>"Add Comment", "post_id"=>"1", "action"=>"create", "controller"=>"comments"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `post_id`) VALUES('2009-11-18 03:01:55', 'Well i think most people are as well.\r\n', '2009-11-18 03:01:55', 1)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/posts/1
+Completed in 25ms (DB: 3) | 302 Found [http://localhost/posts/1/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 19:01:55) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.6ms)
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (1.0ms)
+Rendered comments/_comment (0.7ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 131ms (View: 117, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-11-17 19:02:09) [POST]
+  Parameters: {"comment"=>{"body"=>"Especially in the Southwest."}, "commit"=>"Add Comment", "post_id"=>"1", "action"=>"create", "controller"=>"comments"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `post_id`) VALUES('2009-11-18 03:02:09', 'Especially in the Southwest.', '2009-11-18 03:02:09', 1)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/posts/1
+Completed in 25ms (DB: 3) | 302 Found [http://localhost/posts/1/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 19:02:09) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.5ms)
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.9ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 49ms (View: 36, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-11-17 19:05:08) [POST]
+  Parameters: {"comment"=>{"body"=>"yessir"}, "commit"=>"Add Comment", "post_id"=>"1", "action"=>"create", "controller"=>"comments"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;36;1mComment Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `post_id`) VALUES('2009-11-18 03:05:08', 'yessir', '2009-11-18 03:05:08', 1)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/posts/1
+Completed in 92ms (DB: 3) | 302 Found [http://localhost/posts/1/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 19:05:08) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.5ms)
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 52ms (View: 39, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-11-17 19:07:33) [POST]
+  Parameters: {"comment"=>{"body"=>"How long will it last"}, "commit"=>"Add Comment", "post_id"=>"1", "action"=>"create", "controller"=>"comments"}
+  [4;36;1mPost Columns (16.6ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (96.6ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;36;1mComment Columns (16.2ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (58.0ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Create (0.3ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `post_id`) VALUES('2009-11-18 03:07:34', 'How long will it last', '2009-11-18 03:07:34', 1)[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/posts/1
+Completed in 216ms (DB: 188) | 302 Found [http://localhost/posts/1/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 19:07:34) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (11.4ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (3.3ms)
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (7.1ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.9ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 74ms (View: 43, DB: 20) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 19:13:39) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.6ms)
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (1.2ms)
+Rendered comments/_comment (0.7ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 53ms (View: 39, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 19:13:40) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.6ms)
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.6ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.8ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 52ms (View: 38, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 19:13:54) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.6ms)
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.8ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.8ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 116ms (View: 102, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 19:14:29) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.6ms)
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.8ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 53ms (View: 39, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 19:14:30) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.6ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.5ms)
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.6ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.8ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 52ms (View: 39, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 19:14:31) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.6ms)
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 53ms (View: 39, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 19:15:49) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.7ms)
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.8ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 58ms (View: 45, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:15:50) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 19:17:35) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.6ms)
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (4.2ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 53ms (View: 39, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:17:35) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-11-17 19:17:49) [POST]
+  Parameters: {"comment"=>{"body"=>"Well i think most people are as well.\r\n"}, "commit"=>"Add Comment", "post_id"=>"1", "action"=>"create", "controller"=>"comments"}
+  [4;36;1mPost Columns (1.2ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `post_id`) VALUES('2009-11-18 03:17:49', 'Well i think most people are as well.\r\n', '2009-11-18 03:17:49', 1)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/posts/1
+Completed in 25ms (DB: 3) | 302 Found [http://localhost/posts/1/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 19:17:49) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.6ms)
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.6ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.8ms)
+Rendered comments/_comment (0.7ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 54ms (View: 40, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:17:49) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 19:18:08) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.9ms)
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.6ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.8ms)
+Rendered comments/_comment (0.7ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 53ms (View: 40, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:18:08) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 19:18:49) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.6ms)
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.8ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.8ms)
+Rendered comments/_comment (0.7ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 53ms (View: 40, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:18:49) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 19:19:28) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.5ms)
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.8ms)
+Rendered comments/_comment (0.7ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 53ms (View: 40, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:19:29) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 19:19:47) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.5ms)
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.8ms)
+Rendered comments/_comment (0.7ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 54ms (View: 40, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:19:47) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-17 19:20:01) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;35;1mPost Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendered posts/_post (4.8ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 27ms (View: 16, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:20:01) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#edit (for 127.0.0.1 at 2009-11-17 19:20:11) [GET]
+  Parameters: {"action"=>"edit", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/edit
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 54ms (View: 42, DB: 2) | 200 OK [http://localhost/posts/1/edit]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:20:11) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 19:20:16) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (3.0ms)
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.8ms)
+Rendered comments/_comment (0.7ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 54ms (View: 40, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:20:17) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 19:25:01) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.7ms)
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (1.2ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 120ms (View: 107, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:25:01) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 19:25:01) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.6ms)
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.8ms)
+Rendered comments/_comment (0.7ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 54ms (View: 41, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:25:02) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 19:26:27) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.6ms)
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.8ms)
+Rendered comments/_comment (0.7ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 118ms (View: 40, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:26:27) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 19:26:28) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.6ms)
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.6ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.8ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 53ms (View: 39, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:26:29) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 19:27:35) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (3.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (30.8ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.6ms)
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (9.2ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.8ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 108ms (View: 41, DB: 57) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:27:36) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-17 19:27:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_headmeta (26.7ms)
+Rendered layouts/_flash (9.9ms)
+Rendered layouts/_header (0.6ms)
+Rendered layouts/_footer (0.5ms)
+Rendered layouts/_scripts (0.5ms)
+Completed in 159ms (View: 154, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:27:47) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:27:47) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-17 19:27:50) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_headmeta (7.3ms)
+Rendered layouts/_flash (0.1ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_scripts (0.1ms)
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:27:51) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:27:51) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-17 19:27:52) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_headmeta (7.1ms)
+Rendered layouts/_flash (0.1ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_scripts (0.1ms)
+Completed in 15ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:27:53) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:27:53) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2009-11-17 19:28:50) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_headmeta (7.7ms)
+Rendered layouts/_flash (0.1ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_scripts (0.1ms)
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:28:50) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:28:50) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-17 19:33:47) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;35;1mPost Columns (1.1ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendered posts/_post (4.9ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+
+ActionView::TemplateError (No expansion found for :cube_crossfade) on line #10 of app/views/layouts/posts.html.erb:
+7:   <title>Posts: <%= controller.action_name %></title>
+8:   <%= stylesheet_link_tag 'application' %>
+9:   <%= auto_discovery_link_tag :atom, formatted_posts_path(:atom) %>
+10:   <%= javascript_include_tag :cube_crossfade %>
+11: </head>
+12: <body>
+13: 
+
+    app/views/layouts/posts.html.erb:10
+    app/controllers/posts_controller.rb:8:in `index'
+
+Rendered rescues/_trace (74.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#index (for 127.0.0.1 at 2009-11-17 19:34:23) [GET]
+  Parameters: {"action"=>"index", "controller"=>"posts"}
+  [4;36;1mPost Load (0.3ms)[0m   [0;1mSELECT * FROM `posts` [0m
+Rendering template within layouts/posts
+Rendering posts/index
+  [4;35;1mPost Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `posts`[0m
+Rendered posts/_post (4.8ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 26ms (View: 15, DB: 2) | 200 OK [http://localhost/posts]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:34:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 19:34:29) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.6ms)
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (1.2ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 47ms (View: 34, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:34:29) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-11-17 19:34:37) [POST]
+  Parameters: {"comment"=>{"body"=>"oh really"}, "commit"=>"Add Comment", "post_id"=>"1", "action"=>"create", "controller"=>"comments"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;36;1mComment Columns (0.8ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `post_id`) VALUES('2009-11-18 03:34:37', 'oh really', '2009-11-18 03:34:37', 1)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/posts/1
+Completed in 25ms (DB: 3) | 302 Found [http://localhost/posts/1/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 19:34:37) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.5ms)
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (1.0ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.8ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 46ms (View: 33, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:34:37) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 19:35:32) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.9ms)
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.8ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 60ms (View: 47, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:35:32) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/datatables.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:35:32) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/datatables.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:35:32) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing CommentsController#create (for 127.0.0.1 at 2009-11-17 19:35:39) [POST]
+  Parameters: {"comment"=>{"body"=>"oh really\r\n"}, "commit"=>"Add Comment", "post_id"=>"1", "action"=>"create", "controller"=>"comments"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.3ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+  [4;36;1mComment Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `comments`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mComment Create (0.2ms)[0m   [0;1mINSERT INTO `comments` (`created_at`, `body`, `updated_at`, `post_id`) VALUES('2009-11-18 03:35:39', 'oh really\r\n', '2009-11-18 03:35:39', 1)[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/posts/1
+Completed in 92ms (DB: 3) | 302 Found [http://localhost/posts/1/comments]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 19:35:39) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (0.9ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.2ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.6ms)
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+Rendered comments/_comment (3.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (1.3ms)
+Rendered comments/_comment (0.7ms)
+Rendered comments/_comment (1.0ms)
+Rendered comments/_comment (0.7ms)
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 55ms (View: 42, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:35:39) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/datatables.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:35:39) [GET]
+
+ActionController::RoutingError (No route matches "/javascripts/datatables.js" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:35:39) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 19:39:51) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.1ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.4ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (20.8ms)
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 92ms (View: 68, DB: 4) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:39:52) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 19:40:57) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.7ms)
+  [4;36;1mComment Load (0.2ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.9ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 37ms (View: 24, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:40:57) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PostsController#show (for 127.0.0.1 at 2009-11-17 19:41:27) [GET]
+  Parameters: {"action"=>"show", "id"=>"1", "controller"=>"posts"}
+  [4;36;1mPost Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `posts`[0m
+  [4;35;1mPost Load (0.5ms)[0m   [0mSELECT * FROM `posts` WHERE (`posts`.`id` = 1) [0m
+Rendering template within layouts/posts
+Rendering posts/show
+Rendered posts/_post (2.6ms)
+  [4;36;1mComment Load (0.3ms)[0m   [0;1mSELECT * FROM `comments` WHERE (`comments`.post_id = 1) [0m
+  [4;35;1mComment Columns (0.8ms)[0m   [0mSHOW FIELDS FROM `comments`[0m
+DEPRECATION WARNING: formatted_posts_path() has been deprecated. Please pass format to the standard posts_path method instead.. (called from _run_erb_app47views47layouts47posts46html46erb at /Users/Cube1/Sites/RAILS/cube/app/views/layouts/posts.html.erb:9)
+Completed in 37ms (View: 24, DB: 3) | 200 OK [http://localhost/posts/1]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-11-17 19:41:27) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091017210604) do
+ActiveRecord::Schema.define(:version => 20091118023605) do
 
   create_table "admin_sessions", :force => true do |t|
     t.datetime "created_at"
@@ -23,6 +23,20 @@ ActiveRecord::Schema.define(:version => 20091017210604) do
     t.string   "persistence_token",   :null => false
     t.string   "single_access_token", :null => false
     t.string   "perishable_token",    :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "comments", :force => true do |t|
+    t.integer  "post_id"
+    t.text     "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "posts", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

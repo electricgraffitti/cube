@@ -1,4 +1,8 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :posts, :has_many => :comments
+
+  map.resources :posts
+
   
   map.admin_login "admin-login", :controller => "admin_sessions", :action => "new"
   map.admin_logout "admin-logout", :controller => "admin_sessions", :action => "destroy"

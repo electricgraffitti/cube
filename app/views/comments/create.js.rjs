@@ -1,0 +1,3 @@
+page.insert_html :bottom, :comments, :partial => @comment
+page[@comment].visual_effect :cube_crossfade
+page[:new_comment].reset
