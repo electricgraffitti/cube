@@ -1,4 +1,4 @@
-(function($) {
+;(function($) {
 // What does the cube_crossfade plugin do?
 $.fn.cube_crossfade = function(options) {
 
@@ -6,8 +6,8 @@ $.fn.cube_crossfade = function(options) {
     // key : value goes here
 		speed : 3000,
 		pause : 5000,
-		w : "450px",
-		h : "250px"
+		w : "518px", // Sets Default width
+		h : "288px" // Sets Default height
   };
 
   var config = $.extend(defaults, options);
