@@ -14,6 +14,7 @@
 <![endif]-->
 
 <%#= ******** JAVASCRIPTS ********** %>
-<script src="http://cdn.jquerytools.org/1.1.2/jquery.tools.min.js"></script>
-<%= javascript_include_tag 'jquery.livequery', 'jqueryui', 'jquery.easing', 'jQueryTimer', 'jquery.alerts', 'jquery.validate', 'cube_crossfade' :cache => true %>
-<%= javascript_include_tag 'swfobject','cube_validations', 'application' %>
+<script src="http://cdn.jquerytools.org/1.1.2/full/jquery.tools.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+<%= javascript_include_tag 'jquery.livequery', 'jqueryui', 'jquery.easing', 'jQueryTimer', 'jqueryHover', 'jquery.alerts', 'jquery.validate', 'cube_crossfade', 'datatables', :cache => true %>
+<%= javascript_include_tag 'cube_validations', 'application'%>
