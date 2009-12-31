@@ -1,6 +1,6 @@
 :ruby: ree
 :application: cube
-:user: root
+:user: rails
 #:time_zone: UTC
 :deploy_to: /var/www/apps/cube
 :domain: cube2media.com
