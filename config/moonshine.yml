@@ -27,6 +27,13 @@
 - log
 - pids
 - config
+
+:rubygems:
+  :sources:
+    - http://gemcutter.org
+    - http://gems.rubyforge.org
+    - http://gems.github.com
+
 # After specifying a gem with config.gem, run 'rake moonshine:gems'
 # to update config/gems.yml. If the gem depends on native packages, 
 # tell Moonshine here:
