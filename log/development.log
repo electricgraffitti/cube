@@ -928,3 +928,163 @@ ActionController::RoutingError (No route matches "/images/footer_bg.png" with {:
   
 
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-15 19:26:26) [GET]
+
+ActionController::RoutingError (No route matches "/bentar-development-privacy-statement" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-01-15 19:26:31) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_headmeta (9.6ms)
+Rendered layouts/_flash (1.3ms)
+Rendered layouts/_header (0.4ms)
+Rendered layouts/_footer (0.8ms)
+Rendered layouts/_scripts (0.4ms)
+Completed in 156ms (View: 141, DB: 12) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-15 19:26:32) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-15 19:26:32) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminsController#new (for 127.0.0.1 at 2010-01-15 19:36:00) [GET]
+  Parameters: {"action"=>"new", "controller"=>"admins"}
+  [4;36;1mAdmin Columns (24.0ms)[0m   [0;1mSHOW FIELDS FROM `admins`[0m
+Rendering template within layouts/application
+Rendering admins/new
+Rendered admins/_form (8.6ms)
+Rendered layouts/_headmeta (6.4ms)
+Rendered layouts/_flash (0.1ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_scripts (0.1ms)
+Completed in 138ms (View: 31, DB: 24) | 200 OK [http://localhost/admins/new]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-15 19:36:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-15 19:36:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/gloss_button_blue.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-15 19:36:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing AdminsController#index (for 127.0.0.1 at 2010-01-15 19:36:56) [GET]
+  Parameters: {"action"=>"index", "controller"=>"admins"}
+  [4;35;1mAdmin Columns (1.3ms)[0m   [0mSHOW FIELDS FROM `admins`[0m
+  [4;36;1mAdmin Load (0.2ms)[0m   [0;1mSELECT * FROM `admins` [0m
+Rendering template within layouts/application
+Rendering admins/index
+Rendered layouts/_headmeta (6.3ms)
+Rendered layouts/_flash (0.1ms)
+Rendered layouts/_header (0.1ms)
+Rendered layouts/_footer (0.1ms)
+Rendered layouts/_scripts (0.1ms)
+Completed in 36ms (View: 18, DB: 2) | 200 OK [http://localhost/admins]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-15 19:36:56) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-15 19:36:56) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing HomeController#index (for 127.0.0.1 at 2010-01-16 15:28:45) [GET]
+  Parameters: {"action"=>"index", "controller"=>"home"}
+Rendering template within layouts/application
+Rendering home/index
+Rendered layouts/_headmeta (37.0ms)
+Rendered layouts/_flash (14.1ms)
+Rendered layouts/_header (0.5ms)
+Rendered layouts/_footer (0.8ms)
+Rendered layouts/_scripts (0.4ms)
+Completed in 651ms (View: 282, DB: 367) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-16 15:28:46) [GET]
+
+ActionController::RoutingError (No route matches "/images/main_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-01-16 15:28:46) [GET]
+
+ActionController::RoutingError (No route matches "/images/footer_bg.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
