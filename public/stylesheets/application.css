@@ -69,6 +69,7 @@ h3 {
 }
 h4 {
   font-size: 118%;
+  margin-top: 10px;
 }
 h5 {
   
@@ -354,7 +355,16 @@ ul#main_nav_ul li a.black {
 .beg_home {
   text-align: center;
 }
-.home
+.office {
+  font-size: 160.5%;
+  font-weight: bold;
+  color: #000;
+  margin-top: 10px;
+  line-height: 120%;
+}
+.mail_link {
+  margin-top: 5px;
+}
 
 /*********************************************/
 /******************FLASH**********************/
