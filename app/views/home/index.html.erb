@@ -1,12 +1,5 @@
-<div class="beg_home">
-  <%= image_tag('cc2c.png') %>
-  <h1>Software &#38; SaaS Development</h1>
-    <p class="office">Offices in:<br/>
-     Salt Lake City &#126; 801.381.4974 <br/>
-    &#38; Las Vegas &#126; 702.835.2823
-    </p>
-      <h4>Contact Us Here!</h4>
-        <p class="mail_link">
-          <%= link_to "support@cube2media.com", "mailto:support@cube2media.com" %> 
-        </p> 
-</div>
+<% content_for :banner do  %>
+  <h2 class="banner_text">
+    Software &#38; SaaS Development
+  </h2>
+<% end %>

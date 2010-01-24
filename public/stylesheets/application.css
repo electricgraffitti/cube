@@ -1,6 +1,6 @@
 html, body {
   position: relative;
-  background: #fff url('../images/main_bg.png') repeat-x;
+  background: #8a8a89 url('../images/main_bg.png') repeat-x;
   font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
   color: #333;
   font-size: 85%;
@@ -249,28 +249,38 @@ label.error {
   position: relative;
   height: 135px;
 }
+#logo {
+  position: absolute;
+  width: 226px;
+  height: 220px;
+  top: 18px;
+  left: 145px;
+  background: url('../images/logo.png') no-repeat;
+  z-index: 10;
+}
+#main_header {
+  position: relative;
+  float: right;
+  width: 216px;
+  height: 41px;
+  text-indent: -3000em;
+  background: url('../images/c2header_text.png') no-repeat;
+  
+}
 /*******Navigation********/
 #main_nav {
   position: absolute;
-  bottom: 0px;
-  left: 0px;
+  bottom: 40px;
+  right: 0px;
   height: 40px;
-  background: url('../images/nav_bar_black.png') repeat-x;
-  /*border-top: 1px solid #f8f8f8;*/
-}
-ul.nav_ul {
-  margin-left: 520px;
+  width: 500px;
+  border: 1px solid #640102;
 }
 ul.nav_ul li {
   width: 100px;
   height: 40px;
   float: left;
   text-align: center;
-  border-left: 1px solid #444444;
-}
-ul.nav_ul li.last {
-  /*border-right: 1px solid #e1e1e1;*/
-  border-right: 1px solid #444444;
 }
 ul.nav_ul li span.hover {
   position: relative;
@@ -279,91 +289,83 @@ ul.nav_ul li span.hover {
   display: block;
 }
 .nav1 {
-  background: url('../images/moon_nav.png') 0px -80px;
+  background: url('../images/c2_main_nav.png') 0px -80px;
 }
 .nav1.highlight:hover, li.nav1 span.hover {
-  background: url('../images/moon_nav.png') 0px -41px;
+  background: url('../images/c2_main_nav.png') 0px 0px;
 }
 #main_nav ul li a#home.active {
-  background: url('../images/moon_nav.png') 0px 0px;
+  background: url('../images/c2_main_nav.png') 0px -40px;
 }
 .nav2 {
-  background: url('../images/moon_nav.png') -100px -80px;
+  background: url('../images/c2_main_nav.png') -100px -80px;
 }
 .nav2.highlight:hover, li.nav2 span.hover {
-  background: url('../images/moon_nav.png') -100px -41px;
+  background: url('../images/c2_main_nav.png') -100px 0px;
 }
-#main_nav ul li a#about.active {
-  background: url('../images/moon_nav.png') -100px 0px;
+#main_nav ul li a#blog.active {
+  background: url('../images/c2_main_nav.png') -100px -40px;
 }
 .nav3 {
-  background: url('../images/moon_nav.png') -200px -80px;
+  background: url('../images/c2_main_nav.png') -200px -80px;
 }
 .nav3.highlight:hover, li.nav3 span.hover {
-  background: url('../images/moon_nav.png') -200px -41px;
+  background: url('../images/c2_main_nav.png') -200px 0px;
 }
-#main_nav ul li a#marketing.active {
-  background: url('../images/moon_nav.png') -200px 0px;
+#main_nav ul li a#services.active {
+  background: url('../images/c2_main_nav.png') -200px -40px;
 }
 .nav4 {
-  background: url('../images/moon_nav.png') -300px -80px;
+  background: url('../images/c2_main_nav.png') -300px -80px;
 }
 .nav4.highlight:hover, li.nav4 span.hover {
-  background: url('../images/moon_nav.png') -300px -41px;
+  background: url('../images/c2_main_nav.png') -300px 0px;
 }
-#main_nav ul li a#testimonials.active {
-  background: url('../images/moon_nav.png') -300px 0px;
+#main_nav ul li a#clients.active {
+  background: url('../images/c2_main_nav.png') -300px -40px;
 }
 .nav5 {
-  background: url('../images/moon_nav.png') -400px -80px;
+  background: url('../images/c2_main_nav.png') -400px -80px;
 }
 .nav5.highlight:hover, li.nav5 span.hover {
-  background: url('../images/moon_nav.png') -400px -41px;
+  background: url('../images/c2_main_nav.png') -400px 0px;
 }
-#main_nav ul li a#investors.active {
-  background: url('../images/moon_nav.png') -400px 0px;
+#main_nav ul li a#contact.active {
+  background: url('../images/c2_main_nav.png') -400px -40px;
 }
-ul#main_nav_ul li a {
-  color: #ababab;
+ul.nav_ul li a {
   text-decoration: none;
   display: block;
   text-indent: -3000em;
   width: 100%;
   height: 100%;
 }
-ul#main_nav_ul li a.black {
-  color: #000;
-}
-/********************************/
-/************HEADER*************/
-.logo {
-	position: relative;
-	width: 166px;
-	height: 130px;
-	top: 0px;
-	left: 0px;
-	background: url('../images/mw_web_logo.png') no-repeat;
-	text-indent: -3000em;
-	z-index: 10;
-}
-
 /*********************************************/
 /*****************MAIN CONTENT****************/
 #bd {
-/*	text-align: center;*/
+
 }
-.beg_home {
+#banner {
+  position: relative;
+  width: 940px;
+  height: 180px;
+  background: url('../images/banner_bg.png') no-repeat;
+  z-index: 0;
+}
+.banner_text {
+  position: relative;
+  float: right;
+  margin-right: 128px;
+  width: 345px;
+  font-size: 368%;
+  color: #333;
+  font-weight: normal;
+/*  font-family: impact, Arial;*/
   text-align: center;
 }
-.office {
-  font-size: 160.5%;
-  font-weight: bold;
-  color: #000;
-  margin-top: 10px;
-  line-height: 120%;
-}
-.mail_link {
-  margin-top: 5px;
+.main_content{
+  background: #fff;
+  min-height: 550px;
 }
 
 /*********************************************/
@@ -407,15 +409,11 @@ ul#main_nav_ul li a.black {
 /******************FOOTER********************/
 #ft {
 	position: relative;
-	margin-top: 20px;
 	float: left;
 }
-.cta_bar {
-  
-}
 .footer {
-	height: 60px;
-	background: url('../images/footer_bg.png') repeat-x;
+	height: 125px;
+	background: #8a8a89 url('../images/main_bg.png') repeat-x;
 }
 .footer_nav {
 	position: absolute;

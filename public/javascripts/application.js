@@ -12,8 +12,8 @@ $(document).ready(function() {
 
 // Sets up the fade on the Main nav buttons
 $(document).ready(function() {
-  $('ul#nav_ul li').removeClass('highlight');
-  $('ul#nav_ul a').append('<span class="hover" />').each(function(){
+  $('ul.nav_ul li').removeClass('highlight');
+  $('ul.nav_ul a').append('<span class="hover" />').each(function(){
         $(this).css({fontSize : 0});
         var $span2 = $('> span.hover', this).css({opacity : 0});
         $(this).hover(function() {
@@ -27,7 +27,7 @@ $(document).ready(function() {
       });
       $(this).click( function() {
         $span2.fadeTo(200, 0);
-        $('ul#nav_ul a').removeClass('active');
+        $('ul.nav_ul a').removeClass('active');
         $(this).addClass('active');
       });
   });
@@ -40,7 +40,7 @@ $(document).ready(function() {
   var current_link = $('#main_nav ul li a[href$="' + url + '"]');
   if (url == "/") {
      current_link.removeClass('active');
-     $('.home').addClass('active');
+     $('#home').addClass('active');
    } else {
    current_link.addClass('active');
    }
