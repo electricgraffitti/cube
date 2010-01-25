@@ -473,7 +473,6 @@ ul.nav_ul li a {
   float: left;
   background: #fefefe;
   margin-right: 20px;
-  margin-bottom: 20px;
 }
 .listing_title {
   position: relative;
@@ -527,7 +526,7 @@ ul.nav_ul li a {
   position: relative;
   width: 480px;
   float: left;
-  margin: 0px 20px;
+  margin: 0px 12px;
 }
 .sub_box_right {
   position: relative;
@@ -535,11 +534,26 @@ ul.nav_ul li a {
   float: left;
   margin: 0px 20px;
 }
+#sub_boxes ul {
+  margin-left: 50px;
+} 
+#sub_boxes ul li {
+  list-style-type: circle;
+  list-style-position: inside;
+  margin-bottom: 5px;
+  font-size: 125%;
+}
 .code_confessions {
   background: url('../images/c2_headers.png') 0px 0px no-repeat;
 }
 .the_founders {
   background: url('../images/c2_headers.png') 0px -65px no-repeat;
+}
+.testimonial {
+  background: url('../images/c2_headers.png') 0px -195px no-repeat;
+}
+.client_list {
+  background: url('../images/c2_headers.png') 0px -260px no-repeat;
 }
 /********************SUB BOX LISTING*********/
 .cube_sub_listing {
@@ -568,12 +582,12 @@ ul.nav_ul li a {
 .sub_box_listing_sub_title {
   position: relative;
   float: left;
-  font-size: 105%;
+  font-size: 108%;
   font-style: italic;
   font-family: "Helvetica Neue LT", Arial, Helvetica, Geneva, sans-serif;
   width: 395px;
   color: #777;
-/*  text-shadow: 0px 1px 0px #ccc;*/
+  text-shadow: 0px 1px 0px #000;
   margin-bottom: 2px;
 }
 .right_listing p {
@@ -594,6 +608,11 @@ ul.nav_ul li a {
   color: #444;
   text-shadow: 0px 1px 0px #fff;
   margin-bottom: 5px;
+}
+.sub_box_quote {
+  font-style: italic;
+  width: 395px;
+  margin-bottom: 10px;
 }
 /*********************************************/
 /******************ADMINS*********************/
@@ -616,7 +635,7 @@ ul.nav_ul li a {
 }
 .admin_nav ul li {
   position: relative;
-  width: 100px;
+  width: 75px;
   height: 25px;
   padding: 0px 5px;
   float: left;
@@ -624,7 +643,7 @@ ul.nav_ul li a {
 .admin_nav ul li a {
   position: relative;
   display: block;
-  width: 100px;
+  width: 75px;
   height: 25px;
   color: #222;
   text-shadow: 0px 1px 0px #ccc;

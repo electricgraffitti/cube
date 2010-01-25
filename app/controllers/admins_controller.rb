@@ -107,4 +107,8 @@ class AdminsController < ApplicationController
     @employees = Employee.all
   end
   
+  def admin_quotes
+    @quotes = Quote.all
+  end
+  
 end

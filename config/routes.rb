@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :quotes
+
   
   map.resources :admin_sessions
   map.resources :admins
@@ -15,6 +17,7 @@ ActionController::Routing::Routes.draw do |map|
   map.admin_client "admin-clients", :controller => "admins", :action => "admin_clients"
   map.admin_codeblog "admin-codeblog", :controller => "admins", :action => "admin_codeblog"
   map.admin_employee "admin-employees", :controller => "admins", :action => "admin_employees"
+  map.admin_quote "admin-quote", :controller => "admins", :action => "admin_quotes"
   
   map.contact_mailer "contact-cube2media", :controller => 'contacts', :action => "contact_us"
   

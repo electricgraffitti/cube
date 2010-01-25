@@ -1,0 +1,23 @@
+# == Schema Information
+#
+# Table name: quotes
+#
+#  id         :integer(4)      not null, primary key
+#  name       :string(255)
+#  company    :string(255)
+#  comment    :text
+#  created_at :datetime
+#  updated_at :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  company: MyString
+  comment: MyText
+
+two:
+  name: MyString
+  company: MyString
+  comment: MyText
