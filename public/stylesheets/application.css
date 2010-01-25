@@ -269,7 +269,7 @@ label.error {
   position: absolute;
   width: 226px;
   height: 220px;
-  top: 18px;
+  top: 34px;
   left: 22px;
   background: url('../images/logo.png') no-repeat;
   z-index: 10;
@@ -277,7 +277,8 @@ label.error {
 #main_header {
   position: relative;
   float: left;
-  left: 247px;
+  left: 153px;
+  top: 9px;
   width: 216px;
   height: 41px;
   text-indent: -3000em;
@@ -287,8 +288,8 @@ label.error {
 /*******Navigation********/
 #main_nav {
   position: absolute;
-  bottom: 30px;
-  left: 262px;
+  bottom: 60px;
+  left: 440px;
   height: 40px;
   width: 500px;
   border: 1px solid #640102;
