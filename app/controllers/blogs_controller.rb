@@ -28,7 +28,7 @@ class BlogsController < ApplicationController
   # GET /blogs/new.xml
   def new
     @blog = Blog.new
-
+    @blog.assets.build
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @blog }
@@ -38,6 +38,9 @@ class BlogsController < ApplicationController
   # GET /blogs/1/edit
   def edit
     @blog = Blog.find(params[:id])
+    if @blog.assets.blank?
+      @blog.assets.build
+    end
   end
 
   # POST /blogs

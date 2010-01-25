@@ -1,24 +1,5 @@
-<h1>Editing blog</h1>
-
-<% form_for(@blog) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :sub_title %><br />
-    <%= f.text_field :sub_title %>
-  </p>
-  <p>
-    <%= f.label :content %><br />
-    <%= f.text_area :content %>
-  </p>
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
-<% end %>
+<h2>Editing Blog</h2>
+<%= render :partial => 'form' %>
 
 <%= link_to 'Show', @blog %> |
 <%= link_to 'Back', blogs_path %>

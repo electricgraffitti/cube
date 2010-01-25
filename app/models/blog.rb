@@ -12,7 +12,33 @@
 
 class Blog < ActiveRecord::Base
   
+  #callbacks
+  after_update :save_assets
+  
+  #associations
+  has_many :assets, :as => :attachable
+  
+  #validations
   validates_presence_of :title, :sub_title, :content
   
+  #redcloth
+  acts_as_textiled :content
+  
+  #pulls the assets from the form
+  def attachments=(atts)
+    atts.each do |attachment|
+      if attachment[:id].blank?
+        assets.build(attachment)
+      else
+        asset = assets.detect { |a| a.id == attachment[:id].to_i }
+      end
+    end    
+  end
+  
+  def save_asets
+    assets.each do |a|
+      a.save(false)
+    end
+  end
   
 end
