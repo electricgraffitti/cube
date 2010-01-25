@@ -62,15 +62,17 @@ a {
 }
 .header_grey {
   color: #a5a5a5;
-  font-family: impact, Arial;
 }
 .header_white {
   color: #fefefe;
-  font-family: impact, Arial;
-}
+  text-shadow: 0px 2px 0px #000;
+	
+  }
 h1, h2, h3, h4, h5 {
   color: #000;
   margin-top: 5px;
+  font-family: impact, Arial;
+  text-shadow: 0px 1px 0px #fff;
 }
 h1 {
   font-size: 235%;
@@ -476,6 +478,12 @@ ul.nav_ul li a {
   background: url('../images/c2_headers.png') 0px -65px no-repeat;
 }
 /*********************************************/
+/******************ADMINS*********************/
+.admin_login {
+  margin-top: 90px;
+  margin-left: 20px;
+}
+/*********************************************/
 /******************FLASH**********************/
  
 .flash_html {
@@ -496,7 +504,7 @@ ul.nav_ul li a {
 /*********************************************/
 /******************BUTTONS********************/
 .btn {
-  background: #0006ca url('../images/gloss_button_blue.png') bottom left repeat-x;
+  background: #222 url('../images/gloss_button_blue.png') bottom left repeat-x;
   padding: 8px; 
   color: #fff;
   border: 1px solid #666; 
@@ -509,8 +517,8 @@ ul.nav_ul li a {
   float: left;
 }
 .btn:hover {
-	color: #000;
-  background: #ffdc63;
+	color: #fefefe;
+  background: #a70d0e;
 }
 /*********************************************/
 /******************FOOTER********************/
@@ -527,19 +535,34 @@ ul.nav_ul li a {
 }
 .footer_logo {
   position: absolute;
-  top: 35px;
-  right: 15px;
+  top: 26px;
+  right: 65px;
   width: 220px;
   height: 95px;
   background: url('../images/c2_footer_logo.png') no-repeat;
   text-indent: -3000em;
-  
-  
+}
+.footer_contact {
+  position: absolute;
+  bottom: 16px;
+  right: 78px;
+  color: #999;
+}
+.footer_contact ul {
+  margin-bottom: 5px;
 }
 .footer_nav {
 	position: absolute;
-	top: 19px;
-	left: 10px;	
+	top: 8px;
+	left: 5px;	
+}
+.login {
+  position: absolute;
+  top: 25px;
+  right: 5px;
+}
+.login a {
+  color: #333;
 }
 .footer_nav ul {
 	float: left;
@@ -554,13 +577,14 @@ ul.nav_ul li a {
 .footer_nav li a {
 	display: block;
 	float: left;
-	padding: 3px 10px;
+	padding: 5px 10px;
 	text-decoration: none;
 	color: #dddddd;
+	text-shadow: 0px 2px 0px #000;
 }
 .footer_nav li a:hover {
 	text-decoration: underline;
-	color: #ffb800;
+	color: #ff0000;
 }
 .copyright {
 	position: absolute;

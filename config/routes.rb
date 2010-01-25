@@ -1,10 +1,22 @@
 ActionController::Routing::Routes.draw do |map|
   
-  map.admin_login "admin-login", :controller => "admin_sessions", :action => "new"
-  map.admin_logout "admin-logout", :controller => "admin_sessions", :action => "destroy"
-  
   map.resources :admin_sessions
   map.resources :admins
+  map.resources :employees
+  map.resources :code_blogs
+  map.resources :clients
+  map.resources :services
+  map.resources :blogs
+  
+  map.admin_login "admin-login", :controller => "admin_sessions", :action => "new"
+  map.admin_logout "admin-logout", :controller => "admin_sessions", :action => "destroy"
+  map.admin_blog "admin-blogs", :controller => "admins", :action => "admin_blogs"
+  map.admin_service "admin-services", :controller => "admins", :action => "admin_services"
+  map.admin_client "admin-clients", :controller => "admins", :action => "admin_clients"
+  map.admin_codeblog "admin-codeblog", :controller => "admins", :action => "admin_codeblog"
+  map.admin_employee "admin-employees", :controller => "admins", :action => "admin_employees"
+  
+  map.contact_mailer "contact-cube2media", :controller => 'contacts', :action => "contact_us"
   
   
   # The priority is based upon order of creation: first created -> highest priority.

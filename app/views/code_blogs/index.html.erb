@@ -1,0 +1,24 @@
+<h1>Listing code_blogs</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Sub title</th>
+    <th>Content</th>
+  </tr>
+
+<% @code_blogs.each do |code_blog| %>
+  <tr>
+    <td><%=h code_blog.title %></td>
+    <td><%=h code_blog.sub_title %></td>
+    <td><%=h code_blog.content %></td>
+    <td><%= link_to 'Show', code_blog %></td>
+    <td><%= link_to 'Edit', edit_code_blog_path(code_blog) %></td>
+    <td><%= link_to 'Destroy', code_blog, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New code_blog', new_code_blog_path %>

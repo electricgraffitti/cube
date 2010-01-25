@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%=h @employee.name %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%=h @employee.title %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%=h @employee.content %>
+</p>
+
+
+<%= link_to 'Edit', edit_employee_path(@employee) %> |
+<%= link_to 'Back', employees_path %>

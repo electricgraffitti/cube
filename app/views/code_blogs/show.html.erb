@@ -1,0 +1,18 @@
+<p>
+  <b>Title:</b>
+  <%=h @code_blog.title %>
+</p>
+
+<p>
+  <b>Sub title:</b>
+  <%=h @code_blog.sub_title %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%=h @code_blog.content %>
+</p>
+
+
+<%= link_to 'Edit', edit_code_blog_path(@code_blog) %> |
+<%= link_to 'Back', code_blogs_path %>
