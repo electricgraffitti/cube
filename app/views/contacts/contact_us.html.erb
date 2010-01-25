@@ -1,2 +1,31 @@
-<h1>Contacts#contact_us</h1>
-<p>Find me in app/views/contacts/contact_us.html.erb</p>
+<div class="contact_form full_20_wrap">
+  <h2>Get in the Cube</h2>
+  <p class="contact_comment">
+    Contact Cube2Media for all your development and design needs. Download our <%= link_to "project form", "#" %> here.
+  </p>
+  <% form_tag(contact_mailer_path, :id => "contact_form") do %>
+  <div class="grid_5 alpha omega">    
+    <p>
+      <%= label :contact, :first_name, "First Name" %><br />
+      <%= text_field :contact, :first_name, :name => "contact_first_name" %>
+    </p>
+    <p>
+      <%= label :contact, :last_name, "Last Name" %><br />
+      <%= text_field :contact, :last_name, :name => "contact_last_name" %>
+    </p>
+    <p>
+      <%= label :contact, :email, "Email Address" %><br />
+      <%= text_field :contact, :email, :name => "contact_email" %>
+    </p>
+  </div>
+  <div class="grid_5 alpha omega">
+  	<p>
+      <%= label :contact, :body, "Message" %><br />
+      <%= text_area :contact, :body, :name => "contact_message", :rows => 9, :cols => 49 %>
+    </p>
+    <p>
+      <%= submit_tag 'Submit', :class => "btn" %>
+  	</p>
+  </div>
+  <% end %>
+</div>

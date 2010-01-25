@@ -22,6 +22,7 @@ Rails::Initializer.run do |config|
   config.gem "authlogic"
   config.gem "tmail"
   config.gem 'paperclip', :source => 'http://gemcutter.org'
+  config.gem "openrain-action_mailer_tls", :lib => "smtp_tls.rb", :source => "http://gems.github.com"
 
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named
@@ -42,6 +43,12 @@ Rails::Initializer.run do |config|
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
 end
+
+# This is Gmail configs
+# make sure the openrain-action_mailer_tls is installed on the server
+# set the recipients in the action_mailer
+# set the gmail prefs in the smtp_gmail.yml and inits/smtp_gmail.yml
+# and you should be good to send via gmail
 
 # Custom Time View
 Time::DATE_FORMATS[:nice_date] = "%A, %B %d, %Y"
