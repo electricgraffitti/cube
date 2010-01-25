@@ -1,11 +1,11 @@
 class BlogsController < ApplicationController
   
-    before_filter :require_admin, :except => [:index, :show]
+    before_filter :require_admin, :except => [:index]
     
   # GET /blogs
   # GET /blogs.xml
   def index
-    @blogs = Blog.all
+    @blogs = Blog.last_created
 
     respond_to do |format|
       format.html # index.html.erb

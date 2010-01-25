@@ -29,7 +29,7 @@ class ServicesController < ApplicationController
   # GET /services/new.xml
   def new
     @service = Service.new
-
+    @service.assets.build
     respond_to do |format|
       format.html {render :layout => "admins"}
       format.xml  { render :xml => @service }
@@ -39,6 +39,9 @@ class ServicesController < ApplicationController
   # GET /services/1/edit
   def edit
     @service = Service.find(params[:id])
+    if @service.assets.blank?
+      @service.assets.build
+    end
     render :layout => "admins"
   end
 

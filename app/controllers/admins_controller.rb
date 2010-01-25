@@ -87,24 +87,24 @@ class AdminsController < ApplicationController
     end
   end
   
-  def admins_blogs
-    
+  def admin_blogs
+    @blogs = Blog.all
   end
   
   def admin_services
-    
+    @services = Service.all
   end
   
   def admin_clients
-    
+    @clients = Client.all
   end
   
   def admin_codeblog
-    
+    @code_blogs = CodeBlog.all
   end
   
   def admin_employees
-    
+    @employees = Employee.all
   end
   
 end

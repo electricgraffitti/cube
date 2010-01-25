@@ -1,24 +1,12 @@
+<div class="admin_nav">
+  <%= render :partial => 'admins/admin_nav' %>
+</div>
+<div class="admin_sidebar">
+  <%= link_to "New Employee", new_employee_path %>
+</div>
+<div class="admin_form_wrap">
 <h1>Editing employee</h1>
+<%= render :partial => 'form' %>
+</div>
 
-<% form_for(@employee) do |f| %>
-  <%= f.error_messages %>
 
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p>
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :content %><br />
-    <%= f.text_area :content %>
-  </p>
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
-<% end %>
-
-<%= link_to 'Show', @employee %> |
-<%= link_to 'Back', employees_path %>

@@ -1,18 +1,4 @@
-<p>
-  <b>Title:</b>
-  <%=h @client.title %>
-</p>
-
-<p>
-  <b>Sub title:</b>
-  <%=h @client.sub_title %>
-</p>
-
-<p>
-  <b>Content:</b>
-  <%=h @client.content %>
-</p>
+<%= render :partial => 'clients/client_post', :locals => {:client => @client} %>
 
 
-<%= link_to 'Edit', edit_client_path(@client) %> |
-<%= link_to 'Back', clients_path %>
+<%= link_to 'Back', admin_client_path, :class => 'btn side_20_wrap' %>

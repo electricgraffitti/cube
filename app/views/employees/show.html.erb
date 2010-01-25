@@ -1,18 +1,2 @@
-<p>
-  <b>Name:</b>
-  <%=h @employee.name %>
-</p>
-
-<p>
-  <b>Title:</b>
-  <%=h @employee.title %>
-</p>
-
-<p>
-  <b>Content:</b>
-  <%=h @employee.content %>
-</p>
-
-
-<%= link_to 'Edit', edit_employee_path(@employee) %> |
-<%= link_to 'Back', employees_path %>
+<%= render :partial => 'employees/employee', :locals => {:employee => @employee} %>
+<%= link_to 'Back', employees_path, :class => 'btn side_20_wrap' %>

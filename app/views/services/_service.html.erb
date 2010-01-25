@@ -1,0 +1,18 @@
+<div class="cube_listing">
+  <% svc.assets.each do |asset| %>
+  <%= image_tag(asset.attachment.url(:small), :alt => svc.title) %>
+  <% end %>
+  
+<div class="listing_title">
+  <%=h svc.title %>
+</div>
+
+<div class="listing_sub_title">
+  Project Type: <%=h svc.sub_title %>
+</div>
+
+<div class="listing_content">
+  <%= svc.content %>
+</div>
+
+</div>

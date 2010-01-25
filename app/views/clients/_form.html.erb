@@ -1,0 +1,31 @@
+<% form_for(@client, :html => {:multipart => true}) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title, "Client Name" %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :sub_title, "Category" %><br />
+    <%= f.text_field :sub_title %>
+  </p>
+  <p>
+    <%= f.label :content, "Project Information" %><br />
+    <%= f.text_area :content %>
+  </p>
+  
+  <p>
+    <% for asset in @client.assets %>
+    <% fields_for "client[attachments][]", asset do |asset_form| %>
+    <%= asset_form.label "Add Image"  %><br/>
+    <%= asset_form.file_field :attachment, :size => 16, :index => nil %>
+      <% unless asset.new_record? %>
+        <%= asset_form.hidden_field :id, :index => nil %>
+      <% end %>
+    <% end %>
+  <% end %>
+  </p>
+  <p>
+    <%= f.submit 'Submit' %>
+  </p>
+<% end %>

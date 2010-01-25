@@ -1,23 +1,11 @@
-<h1>New client</h1>
+<div class="admin_nav">
+  <%= render :partial => 'admins/admin_nav' %>
+</div>
+<div class="admin_sidebar">
+  <%= link_to "New Client", new_client_path %>
+</div>
+<div class="admin_form_wrap">
+<h2>New Client</h2>
 
-<% form_for(@client) do |f| %>
-  <%= f.error_messages %>
-
-  <p>
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :sub_title %><br />
-    <%= f.text_field :sub_title %>
-  </p>
-  <p>
-    <%= f.label :content %><br />
-    <%= f.text_area :content %>
-  </p>
-  <p>
-    <%= f.submit 'Create' %>
-  </p>
-<% end %>
-
-<%= link_to 'Back', clients_path %>
+<%= render :partial => 'form' %>
+</div>

@@ -27,10 +27,16 @@
     <h4 class="c2_header code_confessions">
       Code Confessions
     </h4>
+    <% @code_blogs.each do |code_blog| %>
+    <%= render :partial => 'code_blogs/sub_box_code_blog', :locals => {:code_blog => code_blog} %>
+    <% end %>
   </div>
   <div class="sub_box_right">
     <h4 class="c2_header the_founders">
       The Founders
     </h4>
+    <% @employees.each do |employee| %>
+    <%= render :partial => 'employees/employee_sub_box_listing', :locals => {:employee => employee} %>
+    <% end %>
   </div>
 <% end %>

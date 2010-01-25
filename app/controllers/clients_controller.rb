@@ -1,12 +1,12 @@
 class ClientsController < ApplicationController
   
-  before_filter :require_admin, :except => [:index, :show]
+  before_filter :require_admin, :except => [:index]
   
   
   # GET /clients
   # GET /clients.xml
   def index
-    @clients = Client.all
+    @clients = Client.small_list(4).last_created
 
     respond_to do |format|
       format.html # index.html.erb
@@ -29,7 +29,7 @@ class ClientsController < ApplicationController
   # GET /clients/new.xml
   def new
     @client = Client.new
-
+    @client.assets.build
     respond_to do |format|
       format.html {render :layout => "admins"}
       format.xml  { render :xml => @client }
@@ -39,6 +39,9 @@ class ClientsController < ApplicationController
   # GET /clients/1/edit
   def edit
     @client = Client.find(params[:id])
+     if @client.assets.blank?
+        @client.assets.build
+      end
     render :layout => "admins"
   end
 

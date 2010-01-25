@@ -1,24 +1,14 @@
-<h1>Editing code_blog</h1>
+<div class="admin_nav">
+  <%= render :partial => 'admins/admin_nav' %>
+</div>
+<div class="admin_sidebar">
+  <%= link_to "New Code Blog", new_code_blog_path %>
+</div>
+<div class="admin_form_wrap">
+<h1>Editing Code Blog</h1>
+<%= render :partial => 'form' %>
+</div>
 
-<% form_for(@code_blog) do |f| %>
-  <%= f.error_messages %>
 
-  <p>
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </p>
-  <p>
-    <%= f.label :sub_title %><br />
-    <%= f.text_field :sub_title %>
-  </p>
-  <p>
-    <%= f.label :content %><br />
-    <%= f.text_area :content %>
-  </p>
-  <p>
-    <%= f.submit 'Update' %>
-  </p>
-<% end %>
 
-<%= link_to 'Show', @code_blog %> |
-<%= link_to 'Back', code_blogs_path %>
+

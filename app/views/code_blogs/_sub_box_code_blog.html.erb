@@ -1,0 +1,19 @@
+<div class="cube_sub_listing">
+  <% code_blog.assets.each do |asset| %>
+  <%= image_tag(asset.attachment.url(:tiny), :alt => code_blog.title) %>
+  <% end %>
+  
+<div class="sub_box_listing_title">
+  <%=h code_blog.title %>
+</div>
+
+<div class="sub_box_listing_sub_title">
+  Title: <%=h code_blog.sub_title %>
+</div>
+<div class="clear"></div>
+
+<div class="sub_box_listing_content left_listing">
+  <%= truncate(code_blog.content, 300, "... #{link_to "read more", code_blog_path(code_blog)}") %>
+</div>
+
+</div>

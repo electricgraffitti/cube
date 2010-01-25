@@ -29,7 +29,7 @@ class EmployeesController < ApplicationController
   # GET /employees/new.xml
   def new
     @employee = Employee.new
-
+    @employee.assets.build
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @employee }
@@ -39,6 +39,9 @@ class EmployeesController < ApplicationController
   # GET /employees/1/edit
   def edit
     @employee = Employee.find(params[:id])
+    if @employee.assets.blank?
+      @employee.assets.build
+    end
   end
 
   # POST /employees

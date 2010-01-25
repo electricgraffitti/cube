@@ -4,3 +4,24 @@
 <div class="admin_sidebar">
   <%= link_to "New Blog", new_blog_path %>
 </div>
+<div id="admin_datatable">
+  <table id="blogs_table" class="display c2table">
+  <thead><tr>
+    <th>Title</th>
+    <th>Sub title</th>
+    <th>View</th>
+     <th>Edit</th>
+      <th>Delete</th>
+  </tr></thead>
+<tbody>
+<% @blogs.each do |blog| %>
+  <tr>
+    <td><%=h blog.title %></td>
+    <td><%=h blog.sub_title %></td>
+    <td><%= link_to 'Show', blog %></td>
+    <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
+    <td><%= link_to 'Destroy', blog, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</tbody>
+</table></div>

@@ -1,3 +1,27 @@
 <div class="admin_nav">
   <%= render :partial => 'admins/admin_nav' %>
 </div>
+<div class="admin_sidebar">
+  <%= link_to "New Code Blog", new_code_blog_path %>
+</div>
+<div id="admin_datatable">
+  <table id="code_blogs_table" class="display c2table">
+  <thead><tr>
+    <th>Title</th>
+    <th>Posted by</th>
+    <th>View</th>
+     <th>Edit</th>
+      <th>Delete</th>
+  </tr></thead>
+<tbody>
+<% @code_blogs.each do |code_blog| %>
+  <tr>
+    <td><%=h code_blog.title %></td>
+    <td><%=h code_blog.sub_title %></td>
+    <td><%= link_to 'Show', code_blog %></td>
+    <td><%= link_to 'Edit', edit_code_blog_path(code_blog) %></td>
+    <td><%= link_to 'Destroy', code_blog, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</tbody>
+</table></div>

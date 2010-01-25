@@ -29,7 +29,7 @@ class CodeBlogsController < ApplicationController
   # GET /code_blogs/new.xml
   def new
     @code_blog = CodeBlog.new
-
+    @code_blog.assets.build
     respond_to do |format|
       format.html {render :layout => "admins"}
       format.xml  { render :xml => @code_blog }
@@ -39,6 +39,9 @@ class CodeBlogsController < ApplicationController
   # GET /code_blogs/1/edit
   def edit
     @code_blog = CodeBlog.find(params[:id])
+    if @code_blog.assets.blank?
+       @code_blog.assets.build
+     end
     render :layout => "admins"
   end
 

@@ -1,0 +1,31 @@
+<% form_for(@employee, :html => {:multipart => true}) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :content %><br />
+    <%= f.text_area :content %>
+  </p>
+  
+  <p>
+    <% for asset in @employee.assets %>
+    <% fields_for "employee[attachments][]", asset do |asset_form| %>
+    <%= asset_form.label "Add Image"  %><br/>
+    <%= asset_form.file_field :attachment, :size => 16, :index => nil %>
+      <% unless asset.new_record? %>
+        <%= asset_form.hidden_field :id, :index => nil %>
+      <% end %>
+    <% end %>
+  <% end %>
+  </p>
+  <p>
+    <%= f.submit 'Submit' %>
+  </p>
+<% end %>

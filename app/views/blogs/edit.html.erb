@@ -4,8 +4,8 @@
 <div class="admin_sidebar">
   <%= link_to "New Blog", new_blog_path %>
 </div>
+<div class="admin_form_wrap">
 <h2>Editing Blog</h2>
 <%= render :partial => 'form' %>
+</div>
 
-<%= link_to 'Show', @blog %> |
-<%= link_to 'Back', blogs_path %>

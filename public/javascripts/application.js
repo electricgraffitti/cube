@@ -96,16 +96,28 @@ $(document).ready(function() {
 // });
 
 // Data Tables
-// $(document).ready(function() {
-// 	categoriesTable = $('#categories_table').dataTable({
-// 		"bJQueryUI": true,
-// 		"sPaginationType": "full_numbers"
-// 	});
-// 	productsTable = $('#products_table').dataTable({
-// 		"bJQueryUI": true,
-// 		"sPaginationType": "full_numbers"
-// 	});
-// });
+$(document).ready(function() {
+  blogsTable = $('#blogs_table').dataTable({
+    "bJQueryUI": true,
+    "sPaginationType": "full_numbers"
+  });
+  clientsTable = $('#clients_table').dataTable({
+    "bJQueryUI": true,
+    "sPaginationType": "full_numbers"
+  });
+  codeBlogsTable = $('#code_blogs_table').dataTable({
+    "bJQueryUI": true,
+    "sPaginationType": "full_numbers"
+  });
+  servicesTable = $('#services_table').dataTable({
+    "bJQueryUI": true,
+    "sPaginationType": "full_numbers"
+  });
+  employeeTable = $('#employee_table').dataTable({
+    "bJQueryUI": true,
+    "sPaginationType": "full_numbers"
+  });
+});
 
 
 function notify(flash_message) {
