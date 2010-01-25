@@ -202,12 +202,13 @@ a:active, button:active {
 #flash {
   position: absolute;
   text-align: center;
-  color: #ffd02e;
+  color: #fff;
+	text-shadow: 0px 1px 0px #a70d0e;
 	top: 0px;
   left: 36%;
   padding: 20px;
   width: 500px;
-  background: #000e51;
+  background: #222;
   font-size: 175%;
   z-index: 100;
 }
@@ -417,8 +418,15 @@ ul.nav_ul li a {
   height: 60px;
   text-indent: -3000em;
 }
-#contact_nav:hover {
-   background: url('../images/contact_sprite.png') 0px -0px no-repeat;
+#contact_nav span.hover {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 330px;
+  height: 60px;
+}
+#contact_nav.highlight:hover, #contact_nav span:hover {
+   background: url('../images/contact_sprite.png') -1px -1px no-repeat;
    border-top: 1px solid #222;
    border-right: 1px solid #999;
    border-bottom: 1px solid #ccc;

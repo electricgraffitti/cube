@@ -46,6 +46,29 @@ $(document).ready(function() {
    }
 });
 
+// Sets up the contact banner button
+$(document).ready(function() {
+  $('#contact_nav').removeClass('highlight');
+  $('#contact_nav').append('<span class="hover" />').each(function(){
+        $(this).css({fontSize : 0});
+        var $span2 = $('> span.hover', this).css({opacity : 0});
+        $(this).hover(function() {
+          if ($(this).hasClass('active')) {
+            $span2.stop().fadeTo(500, 0);
+          } else {
+           $span2.stop().fadeTo(500, 1); 
+          }
+        }, function() {
+          $span2.stop().fadeTo(500, 0);
+      });
+      $(this).click( function() {
+        $span2.fadeTo(200, 0);
+        $('#contact_nav a').removeClass('active');
+        $(this).addClass('active');
+      });
+  });
+});
+
 
 // Sets up the crossfade
 $(document).ready(function() {
