@@ -46,6 +46,7 @@ $(document).ready(function() {
    }
 });
 
+
 // Sets up the crossfade
 $(document).ready(function() {
 	

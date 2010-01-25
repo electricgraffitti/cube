@@ -1,15 +1,23 @@
 html, body {
   position: relative;
-  background: #8a8a89 url('../images/main_bg.png') repeat-x;
+  background: #fff url('../images/main_bg.png') repeat-x;
   font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
   color: #333;
   font-size: 85%;
   height: 100%;
 }
-#wrapper {
-  text-align: left;
-	overflow: hidden;
+#mast_header, #mast_banner, #mast_main_content, #mast_sub_box, #mast_footer {
+  position: relative;
+  text-align: center;
+  width: 100%;
 }
+#hd, #banner, #main_content, #sub_boxes, #ft {
+  position: relative;
+  margin: 0 auto;
+  text-align: left;
+  width: 940px;
+}
+
 a {
   color: #0000ff;
 }
@@ -52,8 +60,15 @@ a {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+.header_grey {
+  color: #a5a5a5;
+  font-family: impact, Arial;
+}
+.header_white {
+  color: #fefefe;
+  font-family: impact, Arial;
+}
 h1, h2, h3, h4, h5 {
-  font-weight: bold;
   color: #000;
   margin-top: 5px;
 }
@@ -62,7 +77,7 @@ h1 {
 }
 h2 {
   /*font-size: 153.9%;*/
-  font-size: 200.9%;
+  font-size: 40px;
 }
 h3 {
   font-size: 160.5%;
@@ -89,6 +104,11 @@ h3 a, h4 a {
 h3 a:hover, h4 a:hover{
   color: #00467f; /* DK BLUE */
   text-decoration: underline;
+}
+.c2_header {
+  text-indent: -3000em;
+  width: 440px;
+  height: 65px;
 }
 p {
   margin: 5px 0px 0px;
@@ -160,9 +180,6 @@ h2 a.small_text {
 .dotted_bottom {
   padding-bottom: 10px;
   border-bottom: 1px dotted #999999;
-}
-.yellow_grad {
-	background: url('../images/yellow_bg.png') repeat-x;
 }
 /***Firefox dotted line tweak***/
 a, button {
@@ -246,21 +263,21 @@ label.error {
 /*********************************************/
 /*****************HEADER**********************/
 #hd {
-  position: relative;
-  height: 135px;
+  height: 125px;
 }
 #logo {
   position: absolute;
   width: 226px;
   height: 220px;
   top: 18px;
-  left: 145px;
+  left: 22px;
   background: url('../images/logo.png') no-repeat;
   z-index: 10;
 }
 #main_header {
   position: relative;
-  float: right;
+  float: left;
+  left: 247px;
   width: 216px;
   height: 41px;
   text-indent: -3000em;
@@ -270,8 +287,8 @@ label.error {
 /*******Navigation********/
 #main_nav {
   position: absolute;
-  bottom: 40px;
-  right: 0px;
+  bottom: 30px;
+  left: 262px;
   height: 40px;
   width: 500px;
   border: 1px solid #640102;
@@ -341,33 +358,122 @@ ul.nav_ul li a {
   height: 100%;
 }
 /*********************************************/
-/*****************MAIN CONTENT****************/
-#bd {
-
+/*****************BANNER****************/
+#mast_banner {
+  background: url('../images/mast_banner_bg.png') center no-repeat;
+  color: #fff;
 }
 #banner {
   position: relative;
   width: 940px;
-  height: 180px;
-  background: url('../images/banner_bg.png') no-repeat;
+  height: 375px;
   z-index: 0;
+  background: url('../images/banner_bg.png') no-repeat;
 }
-.banner_text {
+#banner h2 {
+  margin: 0px 0px 20px;
+}
+.banner_content {
   position: relative;
-  float: right;
-  margin-right: 128px;
-  width: 345px;
-  font-size: 368%;
-  color: #333;
-  font-weight: normal;
-/*  font-family: impact, Arial;*/
-  text-align: center;
+  width: 380px;
+  margin: 0px 50px;
+  top: 135px;
 }
-.main_content{
-  background: #fff;
-  min-height: 550px;
+.banner_content ul {
+  padding: 0px 10px;
+}
+.banner_content ul li {
+  padding: 0px 0px 5px;
+  font-size: 120%;
+  list-style-type: disc;
+  list-style: inside; 
+}
+#banner img {
+  position: absolute;
+  top: -30px;
+  right: 0px;
+}
+#contact_nav {
+  position: absolute;
+  bottom: 12px;
+  right: 32px;
+  width: 330px;
+  height: 60px;
+  border-top: 1px solid #222;
+  border-right: 1px solid #666;
+  border-bottom: 1px solid #999;
+  border-left: 1px solid #444;
+  background: url('../images/contact_sprite.png') 0px -60px no-repeat;
+}
+#contact_nav a {
+  display: block;
+  width: 330px;
+  height: 60px;
+  text-indent: -3000em;
+}
+#contact_nav:hover {
+   background: url('../images/contact_sprite.png') 0px -0px no-repeat;
+   border-top: 1px solid #222;
+   border-right: 1px solid #999;
+   border-bottom: 1px solid #ccc;
+   border-left: 1px solid #666;
 }
 
+
+/*********************************************/
+/*****************MAIN CONTENT****************/
+#mast_main_content {
+  position: relative;
+  background: url('../images/main_content_bg.png') repeat;
+  min-height: 300px;
+  padding: 20px 0px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+#main_content {
+  position: relative;
+  width: 938px;
+  min-height: 300px;
+  background: url('../images/main_inner.png') repeat;
+  border-top: 2px solid #999;
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+  border-bottom: 1px solid #fefefe;
+  margin: 0px auto;
+}
+.cube_confessions {
+  background: url('../images/c2_headers.png') 0px -130px no-repeat;
+}
+/*********************************************/
+/******************SUB BOXES******************/
+#mast_sub_box {
+  background: url('../images/sub_box_bg.jpg') center top no-repeat;
+  color: #fff;
+}
+#sub_boxes {
+   background: url('../images/inner_sub_boxes.png') repeat-y;
+   padding-bottom: 20px;
+   min-height: 260px;
+   width: 960px;
+}
+.sub_box_left {
+  position: relative;
+  width: 340px;
+  float: left;
+  margin: 0px 20px;
+}
+.sub_box_right {
+  position: relative;
+  width: 540px;
+  float: left;
+  margin: 0px 20px;
+}
+.code_confessions {
+  background: url('../images/c2_headers.png') 0px 0px no-repeat;
+}
+.the_founders {
+  background: url('../images/c2_headers.png') 0px -65px no-repeat;
+}
 /*********************************************/
 /******************FLASH**********************/
  
@@ -407,13 +513,27 @@ ul.nav_ul li a {
 }
 /*********************************************/
 /******************FOOTER********************/
-#ft {
-	position: relative;
-	float: left;
+#mast_footer {
+  position: relative;
+  background: #222;
+  height: 190px;
 }
-.footer {
-	height: 125px;
-	background: #8a8a89 url('../images/main_bg.png') repeat-x;
+#ft {
+  width: 940px;
+  position: relative;
+  height: 190px;
+  background: url('../images/footer_bg.png') no-repeat;
+}
+.footer_logo {
+  position: absolute;
+  top: 35px;
+  right: 15px;
+  width: 220px;
+  height: 95px;
+  background: url('../images/c2_footer_logo.png') no-repeat;
+  text-indent: -3000em;
+  
+  
 }
 .footer_nav {
 	position: absolute;

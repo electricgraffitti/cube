@@ -1,5 +1,34 @@
 <% content_for :banner do  %>
-  <h2 class="banner_text">
-    Software &#38; SaaS Development
-  </h2>
+  <%= image_tag "websites.png", :alt => "Cube2Media Designs" %>
+  <div class="banner_content">
+    <h2 class="banner_text header_white">
+    We Do Web Development
+    </h2>
+    <ul>
+      <li>Web Applications</li>
+      <li>eCommerce Solutions</li>
+      <li>SaaS Software Solutions</li>
+      <li>Design &#38; Corporate Branding</li>
+    </ul>
+   
+  </div>
+  <div id="contact_nav">
+    <%= link_to "contact the experts", "#", :id => "banner_contact" %>
+  </div>
+<% end %>
+<h3 class="c2_header cube_confessions">
+  Cube Confessions
+</h3>
+
+<% content_for :sub_boxes do %>
+  <div class="sub_box_left">
+    <h4 class="c2_header code_confessions">
+      Code Confessions
+    </h4>
+  </div>
+  <div class="sub_box_right">
+    <h4 class="c2_header the_founders">
+      The Founders
+    </h4>
+  </div>
 <% end %>
