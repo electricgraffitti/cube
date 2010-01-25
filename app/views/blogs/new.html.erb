@@ -1,4 +1,10 @@
-<h2>New Blog</h2>
-<%= render :partial => 'form' %>
+<div class="admin_nav">
+  <%= render :partial => 'admins/admin_nav' %>
+</div>
+<div class="admin_sidebar">
+  <%= link_to "New Blog", new_blog_path %>
+</div>
+<div class="admin_form_wrap"><h2>New Blog</h2>
+<%= render :partial => 'form' %></div>
 
 

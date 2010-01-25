@@ -1,7 +1,7 @@
 class EmployeesController < ApplicationController
   
   before_filter :require_admin, :except => [:index, :show]
-  
+  layout "admins"
   
   # GET /employees
   # GET /employees.xml

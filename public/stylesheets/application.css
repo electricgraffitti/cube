@@ -125,6 +125,9 @@ p {
 .full_20_wrap {
 	margin: 20px;
 }
+a.side_20_wrap {
+  margin: 0px 20px;
+}
 .relative {
   position: relative;
 }
@@ -443,10 +446,63 @@ ul.nav_ul li a {
   border-right: 1px solid #aaa;
   border-bottom: 1px solid #fefefe;
   margin: 0px auto;
+  padding-bottom: 20px;
 }
 .cube_confessions {
   background: url('../images/c2_headers.png') 0px -130px no-repeat;
 }
+/**************************************************/
+/******************CUBE LISTINGS******************/
+.cube_listing {
+  position: relative;
+  float: left;
+  width: 900px;
+  padding: 20px;
+}
+.cube_listing img {
+  padding: 10px;
+  border: 2px solid #222;
+  float: left;
+  background: #fefefe;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+.listing_title {
+  position: relative;
+  float: left;
+  font-size: 40px;
+  font-family: impact, Arial;
+  color: #222;
+  width: 670px;
+  text-shadow: 0px 1px 0px #fefefe;
+  padding: 0px 0px 5px;
+}
+.listing_sub_title {
+  position: relative;
+  float: left;
+  font-size: 125%;
+  font-style: italic;
+  font-family: "Helvetica Neue LT", Arial, Helvetica, Geneva, sans-serif;
+  width: 670px;
+  color: #a70d0e;
+  text-shadow: 0px 1px 0px #222;
+  margin-bottom: 2px;
+}
+.cube_listing p {
+  margin-bottom: 10px;
+}
+.listing_time {
+  position: relative;
+  float: left;
+  font-size: 95%;
+  font-style: italic;
+  font-family: "Helvetica Neue LT", Arial, Helvetica, Geneva, sans-serif;
+  width: 670px;
+  color: #444;
+  text-shadow: 0px 1px 0px #fff;
+  margin-bottom: 10px;
+}
+
 /*********************************************/
 /******************SUB BOXES******************/
 #mast_sub_box {
@@ -482,6 +538,50 @@ ul.nav_ul li a {
 .admin_login {
   margin-top: 90px;
   margin-left: 20px;
+}
+.admin_nav {
+  position: relative;
+  width: 700px;
+  height: 25px;
+  padding: 15px;
+  float: right;
+}
+.admin_nav ul {
+  position: relative;
+  width: 600px;
+  height: 25px;
+  float: right;
+}
+.admin_nav ul li {
+  position: relative;
+  width: 100px;
+  height: 25px;
+  padding: 0px 5px;
+  float: left;
+}
+.admin_nav ul li a {
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 25px;
+  color: #222;
+  text-shadow: 0px 1px 0px #ccc;
+}
+.admin_nav ul li a:hover {
+  color: #a70d0e;
+}
+.admin_sidebar {
+  position: relative;
+  width: 300px;
+  min-height: 200px;
+  margin-top: 50px;
+  padding: 20px;
+  float: left;
+}
+.admin_form_wrap {
+  position: relative;
+  float: left;
+  width: 400px;
 }
 /*********************************************/
 /******************FLASH**********************/
@@ -584,7 +684,7 @@ ul.nav_ul li a {
 }
 .footer_nav li a:hover {
 	text-decoration: underline;
-	color: #ff0000;
+	color: #a70d0e;
 }
 .copyright {
 	position: absolute;

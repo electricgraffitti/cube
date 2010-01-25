@@ -16,8 +16,8 @@ class BlogsController < ApplicationController
   # GET /blogs/1
   # GET /blogs/1.xml
   def show
-    @blog = Blog.find(params[:id])
-
+    @blog = Blog.find(params[:id], :include => :assets) 
+    # raise @blog.to_yaml
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @blog }
@@ -30,7 +30,7 @@ class BlogsController < ApplicationController
     @blog = Blog.new
     @blog.assets.build
     respond_to do |format|
-      format.html # new.html.erb
+      format.html {render :layout => "admins"}
       format.xml  { render :xml => @blog }
     end
   end
@@ -41,6 +41,7 @@ class BlogsController < ApplicationController
     if @blog.assets.blank?
       @blog.assets.build
     end
+    render :layout => "admins"
   end
 
   # POST /blogs

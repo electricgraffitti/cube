@@ -31,7 +31,7 @@ class CodeBlogsController < ApplicationController
     @code_blog = CodeBlog.new
 
     respond_to do |format|
-      format.html # new.html.erb
+      format.html {render :layout => "admins"}
       format.xml  { render :xml => @code_blog }
     end
   end
@@ -39,6 +39,7 @@ class CodeBlogsController < ApplicationController
   # GET /code_blogs/1/edit
   def edit
     @code_blog = CodeBlog.find(params[:id])
+    render :layout => "admins"
   end
 
   # POST /code_blogs

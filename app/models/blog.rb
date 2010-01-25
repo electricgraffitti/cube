@@ -35,7 +35,7 @@ class Blog < ActiveRecord::Base
     end    
   end
   
-  def save_asets
+  def save_assets
     assets.each do |a|
       a.save(false)
     end

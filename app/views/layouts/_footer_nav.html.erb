@@ -5,5 +5,8 @@
     <li><%= link_to "services", services_path, :id => "services", :alt => "Cube2Media Services" %></li>
     <li><%= link_to "clients", clients_path, :id => "clients", :alt => "Cube2Media Clients" %></li>
     <li><%= link_to "contact", contact_mailer_path, :id => "contact", :alt => "Cube2Media Contact" %></li>
+    <% if current_admin %>
+      <li><%= link_to "admin_dashboard", admin_blog_path %></li>
+    <% end %>
   </ul>
 </div>
