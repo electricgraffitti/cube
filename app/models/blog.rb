@@ -24,6 +24,10 @@ class Blog < ActiveRecord::Base
   #redcloth
   acts_as_textiled :content
   
+  #named scopes
+  named_scope :small_list, lambda { |limit| {:include => [:assets], :limit => limit}}
+  named_scope :last_created, :order => "created_at DESC"
+  
   #pulls the assets from the form
   def attachments=(atts)
     atts.each do |attachment|

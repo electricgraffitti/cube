@@ -17,9 +17,11 @@
   </div>
 <% end %>
 <h3 class="c2_header cube_confessions">
-  Cube Confessions
+  Behind the Cube
 </h3>
-
+  <% @blogs.each do |blog| %>
+  <%= render :partial => 'blogs/blog_post', :locals => {:blog => blog}%>
+  <% end %> 
 <% content_for :sub_boxes do %>
   <div class="sub_box_left">
     <h4 class="c2_header code_confessions">

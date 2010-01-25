@@ -1,7 +1,8 @@
 class HomeController < ApplicationController
   
   def index
-    puts "Welcome to Cube2Media"
+    @blogs = Blog.small_list(1).last_created
+   
   end
 
 end

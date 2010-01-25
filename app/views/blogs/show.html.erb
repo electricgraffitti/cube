@@ -1,25 +1,4 @@
-<div class="cube_listing">
-  <% @blog.assets.each do |asset| %>
-  <%= image_tag(asset.attachment.url(:small), :alt => @blog.title) %>
-  <% end %>
-  
-<div class="listing_title">
-  <%=h @blog.title %>
-</div>
-
-<div class="listing_sub_title">
-  posted by: <%=h @blog.sub_title %>
-</div>
-
-<div class="listing_time">
-  <%= (@blog.created_at).to_s(:nice_date) %>
-</div>
-
-<div class="listing_content">
-  <%= @blog.content %>
-</div>
-
-</div>
+<%= render :partial => 'blogs/blog_post', :locals => {:blog => @blog}%> 
 
 
 <%= link_to 'Back', blogs_path, :class => 'btn side_20_wrap' %>
