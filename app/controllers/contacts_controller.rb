@@ -1,6 +1,6 @@
 class ContactsController < ApplicationController
   
-  layout "admins"
+  layout "short"
   
   def contact_us
   end

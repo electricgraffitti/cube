@@ -577,7 +577,7 @@ ul.nav_ul li a {
   float: left;
   font-size: 26px;
   font-family: impact, Arial;
-  color: #a5a5a5;
+  color: #ccc;
   width: 395px;
   text-shadow: 0px 1px 0px #000;
   padding: 0px 0px 5px;
@@ -589,7 +589,6 @@ ul.nav_ul li a {
   font-style: italic;
   font-family: "Helvetica Neue LT", Arial, Helvetica, Geneva, sans-serif;
   width: 395px;
-  color: #777;
   text-shadow: 0px 1px 0px #000;
   margin-bottom: 2px;
 }
@@ -769,6 +768,7 @@ ul.nav_ul li a {
 .footer_nav li a:hover {
 /*  text-decoration: underline;*/
 	color: #a70d0e;
+	text-shadow: none;
 }
 .copyright {
 	position: absolute;

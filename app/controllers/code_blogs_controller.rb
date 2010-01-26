@@ -20,7 +20,7 @@ class CodeBlogsController < ApplicationController
     @code_blog = CodeBlog.find(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
+      format.html { render :layout => "short"}
       format.xml  { render :xml => @code_blog }
     end
   end
