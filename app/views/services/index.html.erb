@@ -1,0 +1,37 @@
+<% content_for :banner do  %>
+  <%= image_tag "websites.png", :alt => "Cube2Media Designs" %>
+  <div class="banner_content">
+    <h2 class="banner_text header_white">
+    Our Solutions<br/>
+    Your Success
+    </h2>
+    <ul>
+      <li>Web Applications</li>
+      <li>eCommerce Solutions</li>
+      <li>SaaS Software Solutions</li>
+      <li>Design &#38; Corporate Branding</li>
+    </ul>
+   
+  </div>
+  <div id="contact_nav" class="highlight">
+    <%= link_to "contact the experts", "#", :id => "banner_contact" %>
+  </div>
+<% end %>
+
+<% @services.each do |svc| %>
+  <%= render :partial => 'services/service', :locals => {:svc => svc} %>
+<% end %>
+<% content_for :sub_boxes do  %>
+<div class="sub_box_left">
+  <h4 class="c2_header testimonial">
+    Testimonial
+  </h4>
+
+</div>
+<div class="sub_box_right">
+  <h4 class="c2_header client_list">
+    Client List
+  </h4>
+
+</div>
+<% end %>

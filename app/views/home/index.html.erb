@@ -1,8 +1,42 @@
-<div class="beg_home">
-  <%= image_tag('cc2c.png') %>
-  <h3>
-  When your just too busy with everyone else's stuff to build our own!
-  </h3>
-    <h4>You can always reach us here for now!</h4>
-    <%= link_to "support@cube2media.com", "mailto:support@cube2media.com" %>  
-</div>
+<% content_for :banner do  %>
+  <%= image_tag "websites.png", :alt => "Cube2Media Designs" %>
+  <div class="banner_content">
+    <h2 class="banner_text header_white">
+    We Do Web Development
+    </h2>
+    <ul>
+      <li>Web Applications</li>
+      <li>eCommerce Solutions</li>
+      <li>SaaS Software Solutions</li>
+      <li>Design &#38; Corporate Branding</li>
+    </ul>
+   
+  </div>
+  <div id="contact_nav" class="highlight">
+    <%= link_to "contact the experts", "#", :id => "banner_contact" %>
+  </div>
+<% end %>
+<h3 class="c2_header cube_confessions">
+  Behind the Cube
+</h3>
+  <% @blogs.each do |blog| %>
+  <%= render :partial => 'blogs/blog_post', :locals => {:blog => blog}%>
+  <% end %> 
+<% content_for :sub_boxes do %>
+  <div class="sub_box_left">
+    <h4 class="c2_header code_confessions">
+      Code Confessions
+    </h4>
+    <% @code_blogs.each do |code_blog| %>
+    <%= render :partial => 'code_blogs/sub_box_code_blog', :locals => {:code_blog => code_blog} %>
+    <% end %>
+  </div>
+  <div class="sub_box_right">
+    <h4 class="c2_header the_founders">
+      The Founders
+    </h4>
+    <% @employees.each do |employee| %>
+    <%= render :partial => 'employees/employee_sub_box_listing', :locals => {:employee => employee} %>
+    <% end %>
+  </div>
+<% end %>

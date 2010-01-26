@@ -1,5 +1,7 @@
 class AdminSessionsController < ApplicationController
   
+  layout "admins"
+  
   def new
     @admin_session = AdminSession.new
 
@@ -11,17 +13,15 @@ class AdminSessionsController < ApplicationController
   
   def create
     @admin_session = AdminSession.new(params[:admin_session])
-
-    respond_to do |format|
       if @admin_session.save
         flash[:notice] = 'Admin Login Successfull.'
-        format.html { redirect_to admins_path }
+         redirect_to admin_blog_path 
       else
         flash[:notice] = "Invalid login, please try gain"
         render :action => "new"
       end
     end
-  end
+  
   
   def destroy
     @admin_session = AdminSession.find(current_admin)

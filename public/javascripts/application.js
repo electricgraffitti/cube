@@ -12,8 +12,8 @@ $(document).ready(function() {
 
 // Sets up the fade on the Main nav buttons
 $(document).ready(function() {
-  $('ul#nav_ul li').removeClass('highlight');
-  $('ul#nav_ul a').append('<span class="hover" />').each(function(){
+  $('ul.nav_ul li').removeClass('highlight');
+  $('ul.nav_ul a').append('<span class="hover" />').each(function(){
         $(this).css({fontSize : 0});
         var $span2 = $('> span.hover', this).css({opacity : 0});
         $(this).hover(function() {
@@ -27,7 +27,7 @@ $(document).ready(function() {
       });
       $(this).click( function() {
         $span2.fadeTo(200, 0);
-        $('ul#nav_ul a').removeClass('active');
+        $('ul.nav_ul a').removeClass('active');
         $(this).addClass('active');
       });
   });
@@ -40,11 +40,35 @@ $(document).ready(function() {
   var current_link = $('#main_nav ul li a[href$="' + url + '"]');
   if (url == "/") {
      current_link.removeClass('active');
-     $('.home').addClass('active');
+     $('#home').addClass('active');
    } else {
    current_link.addClass('active');
    }
 });
+
+// Sets up the contact banner button
+$(document).ready(function() {
+  $('#contact_nav').removeClass('highlight');
+  $('#contact_nav').append('<span class="hover" />').each(function(){
+        $(this).css({fontSize : 0});
+        var $span2 = $('> span.hover', this).css({opacity : 0});
+        $(this).hover(function() {
+          if ($(this).hasClass('active')) {
+            $span2.stop().fadeTo(500, 0);
+          } else {
+           $span2.stop().fadeTo(500, 1); 
+          }
+        }, function() {
+          $span2.stop().fadeTo(500, 0);
+      });
+      $(this).click( function() {
+        $span2.fadeTo(200, 0);
+        $('#contact_nav a').removeClass('active');
+        $(this).addClass('active');
+      });
+  });
+});
+
 
 // Sets up the crossfade
 $(document).ready(function() {
@@ -72,16 +96,28 @@ $(document).ready(function() {
 // });
 
 // Data Tables
-// $(document).ready(function() {
-// 	categoriesTable = $('#categories_table').dataTable({
-// 		"bJQueryUI": true,
-// 		"sPaginationType": "full_numbers"
-// 	});
-// 	productsTable = $('#products_table').dataTable({
-// 		"bJQueryUI": true,
-// 		"sPaginationType": "full_numbers"
-// 	});
-// });
+$(document).ready(function() {
+  blogsTable = $('#blogs_table').dataTable({
+    "bJQueryUI": true,
+    "sPaginationType": "full_numbers"
+  });
+  clientsTable = $('#clients_table').dataTable({
+    "bJQueryUI": true,
+    "sPaginationType": "full_numbers"
+  });
+  codeBlogsTable = $('#code_blogs_table').dataTable({
+    "bJQueryUI": true,
+    "sPaginationType": "full_numbers"
+  });
+  servicesTable = $('#services_table').dataTable({
+    "bJQueryUI": true,
+    "sPaginationType": "full_numbers"
+  });
+  employeeTable = $('#employee_table').dataTable({
+    "bJQueryUI": true,
+    "sPaginationType": "full_numbers"
+  });
+});
 
 
 function notify(flash_message) {

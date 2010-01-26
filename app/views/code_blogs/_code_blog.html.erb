@@ -1,0 +1,22 @@
+<div class="cube_listing">
+  <% code_blog.assets.each do |asset| %>
+  <%= image_tag(asset.attachment.url(:small), :alt => code_blog.title) %>
+  <% end %>
+  
+<div class="listing_title">
+  <%=h code_blog.title %>
+</div>
+
+<div class="listing_sub_title">
+ Posted by: <%=h code_blog.sub_title %>
+</div>
+
+<div class="listing_time">
+  <%= (code_blog.created_at).to_s(:nice_date) %>
+</div>
+
+<div class="listing_content">
+  <%= code_blog.content %>
+</div>
+
+</div>

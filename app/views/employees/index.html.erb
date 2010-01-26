@@ -1,0 +1,8 @@
+<% @employees.each do |employee| %>
+  <%= render :partial => 'employees/employee', :locals => {:employee => employee} %>
+<% end %>
+
+<%= link_to 'New employee', new_employee_path %>
+
+
+

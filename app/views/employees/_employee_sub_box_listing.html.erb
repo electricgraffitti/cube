@@ -1,0 +1,19 @@
+<div class="cube_sub_listing">
+  <% employee.assets.each do |asset| %>
+  <%= image_tag(asset.attachment.url(:tiny), :alt => employee.name) %>
+  <% end %>
+  
+<div class="sub_box_listing_title">
+  <%=h employee.name %>
+</div>
+
+<div class="sub_box_listing_sub_title">
+  Title: <%=h employee.title %>
+</div>
+<div class="clear"></div>
+
+<div class="sub_box_listing_content right_listing">
+  <%= employee.content %>
+</div>
+
+</div>

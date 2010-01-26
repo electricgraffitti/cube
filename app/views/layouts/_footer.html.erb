@@ -1,3 +1,23 @@
-<div class="footer grid_12 alpha omega round2">
-
+<%= render :partial => 'layouts/footer_nav' %>
+<div class="footer_logo">
+  Cube2Media
 </div>
+<div class="footer_contact">
+  <ul>
+    <li>Salt Lake City Office</li>
+    <li>801.381.4974</li>
+    <li>slc@cube2media.com</li>
+  </ul>
+  <ul>
+    <li>Las Vegas Office</li>
+    <li>702.835.2823</li>
+    <li>lv@cube2media.com</li>
+  </ul>
+</div>
+<div class="login">
+  <% if current_admin %>
+  <%= link_to "2", admin_logout_path %>
+  <% else %>
+  <%= link_to "2", admin_login_path %>
+  <% end %>
+  </div>

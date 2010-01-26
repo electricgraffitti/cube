@@ -5,24 +5,41 @@
   <%= render :partial => "layouts/headmeta" %>
 </head>
 <body class="yui-skin-sam">
+  <%= render :partial => 'layouts/flash', :locals => {:flash => flash} %>
   <!-- Application Layout -->
-  <div id="wrapper" class="container_12">
-    <%= render :partial => 'layouts/flash', :locals => {:flash => flash} %>
-	  <div id="hd" class='grid_12 alpha omega'>
+  <!-- header sections -->
+  <div id="mast_header">
+    <div id="hd" class='container_12'>
+	    <%= link_to '<div id="logo"></div>', root_path, :alt => "Cube2Media" %>
       <%= render :partial => "layouts/header" %>
 	  </div>
-    <div id="bd" class="grid_12 alpha omega">
-      <div id="banner" class="grid_12 alpha omega">
-        <%= yield :banner %>
-      </div>
-      <div class="main_content grid_12 alpha omega">
-        <%= yield %>
-      </div>
+  </div>
+  <!-- banner section -->
+  <div id="mast_banner">
+    <div id="banner" class="container_12">
+      <%= yield :banner %>
     </div>
-    <div id="ft" class="grid_12 alpha omega">
-      <%= render :partial => "layouts/footer" %>
+  </div>
+  <!-- main content section -->
+  <div id="mast_main_content">
+    <div id="main_content" class="container_12">
+      <%= yield %>
+      <div class="clear"></div>
     </div>
-	</div>
+  </div>
+  <!-- sub box -->
+  <div id="mast_sub_box">
+     <div id="sub_boxes" class="container_12">
+      <%= yield :sub_boxes %>
+      <div class="clear"></div>
+     </div>
+  </div>
+  <!-- footer section -->
+  <div id="mast_footer">
+     <div id="ft" class="container_12">
+        <%= render :partial => "layouts/footer" %>
+      </div>
+  </div>
 	<%= render :partial => "layouts/scripts" %>
 </body>
 </html>

@@ -1,0 +1,27 @@
+<div class="admin_nav">
+  <%= render :partial => 'admins/admin_nav' %>
+</div>
+<div class="admin_sidebar">
+  <%= link_to "New Client", new_client_path %>
+</div>
+<div id="admin_datatable">
+  <table id="clients_table" class="display c2table">
+  <thead><tr>
+    <th>Name</th>
+    <th>Project Type</th>
+    <th>View</th>
+     <th>Edit</th>
+      <th>Delete</th>
+  </tr></thead>
+<tbody>
+<% @clients.each do |client| %>
+  <tr>
+    <td><%=h client.title %></td>
+    <td><%=h client.sub_title %></td>
+    <td><%= link_to 'Show', client %></td>
+    <td><%= link_to 'Edit', edit_client_path(client) %></td>
+    <td><%= link_to 'Destroy', client, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</tbody>
+</table></div>

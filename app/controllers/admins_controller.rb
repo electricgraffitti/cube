@@ -1,4 +1,8 @@
 class AdminsController < ApplicationController
+  
+  before_filter :super_admin, :only => [:new, :create]
+  before_filter :require_admin, :except => [:new, :create]
+  
   # GET /admins
   # GET /admins.xml
   def index
@@ -82,4 +86,29 @@ class AdminsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  def admin_blogs
+    @blogs = Blog.all
+  end
+  
+  def admin_services
+    @services = Service.all
+  end
+  
+  def admin_clients
+    @clients = Client.all
+  end
+  
+  def admin_codeblog
+    @code_blogs = CodeBlog.all
+  end
+  
+  def admin_employees
+    @employees = Employee.all
+  end
+  
+  def admin_quotes
+    @quotes = Quote.all
+  end
+  
 end

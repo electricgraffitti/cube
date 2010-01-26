@@ -22,6 +22,7 @@ Rails::Initializer.run do |config|
   config.gem "authlogic"
   config.gem "tmail"
   config.gem 'paperclip', :source => 'http://gemcutter.org'
+  config.gem "openrain-action_mailer_tls", :lib => "smtp_tls.rb", :source => "http://gems.github.com"
 
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named
@@ -36,14 +37,21 @@ Rails::Initializer.run do |config|
 
   # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
   # Run "rake -D time" for a list of tasks for finding time zone names.
-  config.time_zone = 'UTC'
+  config.time_zone = 'Pacific Time (US & Canada)'
 
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
   # config.i18n.default_locale = :de
 end
 
+# This is Gmail configs
+# make sure the openrain-action_mailer_tls is installed on the server
+# set the recipients in the action_mailer
+# set the gmail prefs in the smtp_gmail.yml and inits/smtp_gmail.yml
+# and you should be good to send via gmail
+
 # Custom Time View
+Time::DATE_FORMATS[:nice_date] = "%A, %B %d, %Y"
 Time::DATE_FORMATS[:event_time] = "%A %B %d, at %I:%M %p"
 Time::DATE_FORMATS[:table_date] = "%B %d %Y, at %I:%M %p"
 
