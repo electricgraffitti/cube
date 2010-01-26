@@ -19,7 +19,7 @@ class BlogsController < ApplicationController
     @blog = Blog.find(params[:id], :include => :assets) 
     # raise @blog.to_yaml
     respond_to do |format|
-      format.html # show.html.erb
+      format.html { render :layout => "short"}
       format.xml  { render :xml => @blog }
     end
   end

@@ -1,3 +1,6 @@
+<% content_for :banner do %>
+  <h2 class="short_header">Code Confessions</h2>
+<% end %>
 <%= render :partial => 'code_blogs/code_blog', :locals => {:code_blog => @code_blog} %>
 
 <%= link_to 'Back', root_path, :class => 'btn side_20_wrap' %>

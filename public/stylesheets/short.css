@@ -1,0 +1,9 @@
+#banner {
+  height: 105px;
+}
+.short_header {
+  position: relative;
+  float: right;
+  top: 25px;
+  right: 50px;
+}
