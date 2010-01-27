@@ -561,6 +561,9 @@ ul.nav_ul li a {
 .other_svc {
   background: url('../images/c2_headers.png') 0px -325px no-repeat;
 }
+.svc_list {
+  background: url('../images/c2_headers.png') 0px -390px no-repeat;
+}
 /********************SUB BOX LISTING*********/
 .cube_sub_listing {
   position: relative;
