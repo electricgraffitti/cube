@@ -567,7 +567,7 @@ ul.nav_ul li a {
 }
 .cube_sub_listing img {
   padding: 5px;
-  border: 1px solid #a70d0e;
+  border: 1px solid #640102; /* darker red like header ribbon */
   float: left;
   background: #000;
   margin-right: 10px;
