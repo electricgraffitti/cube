@@ -7,3 +7,6 @@
   top: 25px;
   right: 50px;
 }
+#sub_boxes {
+	min-height: 105px;
+}
