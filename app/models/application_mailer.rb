@@ -7,6 +7,11 @@ class ApplicationMailer < ActionMailer::Base
       body          :contact => params, :sent_on => sent_at
   end
   
-  
+  def project_mailer(params, sent_at = Time.now)
+        recipients    "bob@cube2media.com"
+        from          "Cube2 Project Mailer"
+        subject       "Cube2 PRoject Mailer"
+        body          :project => params, :sent_on => sent_at
+    end
 
 end
