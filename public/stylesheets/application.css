@@ -395,6 +395,11 @@ ul.nav_ul li a {
   list-style-type: disc;
   list-style: inside; 
 }
+.banner_content p {
+  margin-top: 25px;
+  margin-left: -15px;
+  font-size: 20px;
+}
 #banner img {
   position: absolute;
   top: -30px;
@@ -461,6 +466,10 @@ ul.nav_ul li a {
 }
 .contact_form {
 	margin-left: 280px;
+}
+.project_comment {
+  font-size: 12px;
+  font-weight: bold;
 }
 /**************************************************/
 /******************CUBE LISTINGS******************/

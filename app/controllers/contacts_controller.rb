@@ -19,5 +19,11 @@ class ContactsController < ApplicationController
                         :locals => {:form => @form}
   end
   
+  def project_contact
+    
+  end
+  
+  
+  
   
 end

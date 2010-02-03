@@ -1,0 +1,74 @@
+<% content_for :banner do %>
+  <h2 class="short_header">Project Form</h2>
+<% end %>
+
+<div class="contact_form full_20_wrap">
+  <h2>Tell Us About Your Project</h2>
+  <p class="project_comment">
+    Let the experts at Cube2Media take care of your web development needs, it's what we do best!
+  </p>
+  <p>Please fill in all fields so we can get a great understanding of your project.</p>
+  <!-- need to do line 11 through end of form -->
+  <% form_tag(contact_mailer_path, :id => "project_form") do %>
+  <div class="grid_5 alpha omega">    
+    <p>
+      <%= label :project, :full_name, "Full Name *" %><br />
+      <%= text_field :project, :full_name, :name => "project_full_name" %>
+    </p>
+    <p>
+      <%= label :project, :phone, "Phone Number *" %><br />
+      <%= text_field :project, :phone, :name => "project_phone_number" %>
+    </p>
+    <p>
+      <%= label :project, :email, "Email Address *" %><br />
+      <%= text_field :project, :email, :name => "project_email" %>
+    </p>
+    <p>
+      <%= label :project, :info, "Tell us about the project *" %><br />
+      <%= text_area :project, :info, :name => "project_information", :rows => 9, :cols => 49 %>
+    </p>
+    <p>
+      <%= label :project, :use, "Primary use of the website *" %><br />
+      <%= text_field :project, :use, :name => "project_use" %>
+    </p>
+    <p>
+      <%= label :project, :timeframe, "Project time frame (approx) *" %><br />
+      <%= text_field :project, :timeframe, :name => "project_timeframe" %>
+    </p>
+    <p>
+      <%= label :project, :status, "Project new or existing *" %><br />
+      <%= text_field :project, :status, :name => "project_status" %>
+    </p>
+    <p>
+      <%= label :project, :team, "Point of contact for the project *" %><br />
+      <%= text_field :project, :team, :name => "project_team" %>
+    </p>
+    <h3>Project Budget</h3>
+    <h4>Select one *</h4>
+    <p>
+      <%= radio_button :project, '5k', {:checked => true} %><b> $5k to $10k</b>
+    </p>
+    <p>
+      <%= radio_button :project, '11k', {:checked => true} %><b> $10k to $20k</b>
+    </p>
+    <p>
+      <%= radio_button :project, '21k', {:checked => true} %><b> $20k to $50k</b>
+    </p>
+    <p>
+      <%= radio_button :project, '51k', {:checked => true} %><b> $50k to $100k</b>
+    </p>
+    <p>
+      <%= radio_button :project, '101k', {:checked => true} %><b> $100k +</b>
+    </p>
+  </div>
+  <div class="grid_5 alpha omega">
+  	<p>
+      <%= label :project, :comments, "Additional comments" %><br />
+      <%= text_area :project, :comments, :name => "additional_comments", :rows => 9, :cols => 49 %>
+    </p>
+    <p>
+      <%= submit_tag 'Submit', :class => "btn" %>
+  	</p>
+  </div>
+  <% end %>
+</div>

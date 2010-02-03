@@ -6,5 +6,7 @@ class ApplicationMailer < ActionMailer::Base
       subject       "Cube2 Contact Submission"
       body          :contact => params, :sent_on => sent_at
   end
+  
+  
 
 end
