@@ -33,11 +33,7 @@ class ContactsController < ApplicationController
       flash[:notice] = "Your Project Form has been sent."
       render :partial => 'contacts/project_thank_you',
                           :layout => "admins",
-                          :locals => {:project_form => @project_fomr}
-    end
-  
-  
-  
-  
+                          :locals => {:project_form => @project_form}
+ end
   
 end

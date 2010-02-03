@@ -22,8 +22,8 @@ ActionController::Routing::Routes.draw do |map|
   
   map.contact_us "contact-cube2media", :controller => "contacts", :action => "contact_us"
   map.contact_mailer "thank-you-from-cube2media", :controller => 'contacts', :action => "contact_mailer"
-  map.project_contact "cube2media-project-form", :controller => 'contacts', :action => "project_contact"
-  # map.project_mailer "thank-you-from-cube2media", :controller 'contacts', :action => "projects_mailer"
+  map.project_contact "cube2media-project", :controller => 'contacts', :action => "project_contact"
+  map.project_mailer "cube2media-project-thank-you", :controller => 'contacts', :action => "project_mailer"
   
   
   # The priority is based upon order of creation: first created -> highest priority.

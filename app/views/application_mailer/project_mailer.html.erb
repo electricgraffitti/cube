@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style type="text/css" media="screen">
+      h3 { color: #a70d0e; }
+      ul { list-style-type: none; }
+      li { list-style-type: none; }
+    </style>
+</head>
+<body>
+  <h3>Cube2Media :: Project Submission</h3>
+  <h4>Contact Requestor:</h4>
+  <ul>
+    <li>From: <%= @project[:project_full_name] %></li>
+    <li>Phone: <%= @project[:project_phone] %></li>
+    <li>Email: <%= @project[:project_email] %></li>
+    <li>Info: <%= @project[:project_info] %></li>
+    <li>Use:  <%= @project[:project_use] %></li>
+    <li>Timeframe: <%= @project[:project_timeframe] %></li>
+    <li>Status: <%= @project[:project_status] %></li>
+    <li>Team: <%= @project[:project_team] %></li>
+    <!-- radio buttons go here but not sure how to do them -->
+    
+    
+    <li>Subject: Cube2Media Project Submission</li>
+  </ul>
+  <p>
+  <h4>Comment:</h4>
+  <%= @project[:project_comments] %>
+    <p>
+      <ul>
+        <li><code>Generated at <%= @sent_on.to_s %></code></li>
+      </ul>
+    </p>
+  </p>
+</body>
+</html>

@@ -8,9 +8,9 @@ class ApplicationMailer < ActionMailer::Base
   end
   
   def project_mailer(params, sent_at = Time.now)
-        recipients    "bob@cube2media.com"
+        recipients    "larry@cube2media.com"
         from          "Cube2 Project Mailer"
-        subject       "Cube2 PRoject Mailer"
+        subject       "Cube2 Project Mailer"
         body          :project => params, :sent_on => sent_at
     end
 
