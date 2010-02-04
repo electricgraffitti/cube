@@ -14,9 +14,9 @@
   <h4>Contact Requestor:</h4>
   <ul>
     <li>From: <%= @project[:project_full_name] %></li>
-    <li>Phone: <%= @project[:project_phone] %></li>
+    <li>Phone: <%= @project[:project_phone_number] %></li>
     <li>Email: <%= @project[:project_email] %></li>
-    <li>Info: <%= @project[:project_info] %></li>
+    <li>Info: <%= @project[:project_information] %></li>
     <li>Use:  <%= @project[:project_use] %></li>
     <li>Timeframe: <%= @project[:project_timeframe] %></li>
     <li>Status: <%= @project[:project_status] %></li>
@@ -28,7 +28,7 @@
   </ul>
   <p>
   <h4>Comment:</h4>
-  <%= @project[:project_comments] %>
+  <%= @project[:additional_comments] %>
     <p>
       <ul>
         <li><code>Generated at <%= @sent_on.to_s %></code></li>
