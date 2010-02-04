@@ -46,19 +46,19 @@
     <h3>Project Budget</h3>
     <h4>Select one *</h4>
     <p>
-      <%= radio_button :project, '5k', {:checked => true} %><b> $5k to $10k</b>
+      <%= radio_button_tag :project_budget, '5k-10k', true %><b> $5k to $10k</b>
     </p>
     <p>
-      <%= radio_button :project, '11k', {:checked => true} %><b> $10k to $20k</b>
+      <%= radio_button_tag :project_budget, '11k-20k', false %><b> $10k to $20k</b>
     </p>
     <p>
-      <%= radio_button :project, '21k', {:checked => true} %><b> $20k to $50k</b>
+      <%= radio_button_tag :project_budget, '21k-50k', false %><b> $20k to $50k</b>
     </p>
     <p>
-      <%= radio_button :project, '51k', {:checked => true} %><b> $50k to $100k</b>
+      <%= radio_button_tag :project_budget, '51k-100k', false %><b> $50k to $100k</b>
     </p>
     <p>
-      <%= radio_button :project, '101k', {:checked => true} %><b> $100k +</b>
+      <%= radio_button_tag :project_budget, '101k', false %><b> $100k +</b>
     </p>
   </div>
   <div class="grid_5 alpha omega">
