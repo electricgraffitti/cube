@@ -8,6 +8,7 @@
     <% if current_admin %>
       <li><%= link_to "admin dashboard", admin_blog_path %></li>
       <li><%= link_to "logout", admin_logout_path %></li>
-    <% end %>
+    <% end %> 
   </ul>
+  <%= render :partial => 'home/follow' %>
 </div>
