@@ -5,10 +5,11 @@
     We Do Web Development
     </h2>
     <ul>
-      <li>Web Applications</li>
+      <li>Website Design</li>
+      <li>Corporate Branding</li>
       <li>eCommerce Solutions</li>
       <li>SaaS Software Solutions</li>
-      <li>Design &#38; Corporate Branding</li>
+      
     </ul>
    
   </div>
@@ -16,11 +17,8 @@
     <%= link_to "contact the experts", "#", :id => "banner_contact" %>
   </div>
 <% end %>
-<h3 class="c2_header cube_confessions">
-  Behind the Cube
-</h3>
-  <% @blogs.each do |blog| %>
-  <%= render :partial => 'blogs/blog_post', :locals => {:blog => blog}%>
+  <% @services.each do |svc| %>
+  <%= render :partial => 'services/service', :locals => {:svc => svc}%>
   <% end %> 
 <% content_for :sub_boxes do %>
   <div class="sub_box_left">

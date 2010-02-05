@@ -488,7 +488,6 @@ ul.nav_ul li a {
 }
 .listing_title {
   position: relative;
-  float: left;
   font-size: 40px;
   font-family: impact, Arial;
   color: #222;
