@@ -2,6 +2,7 @@ class ServicesController < ApplicationController
   
   before_filter :require_admin, :except => [:index, :show]
   
+  layout "tall_top"
   
   # GET /services
   # GET /services.xml

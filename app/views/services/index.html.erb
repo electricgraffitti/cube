@@ -21,21 +21,4 @@
 <% @services.each do |svc| %>
   <%= render :partial => 'services/service', :locals => {:svc => svc} %>
 <% end %>
-<% content_for :sub_boxes do  %>
-<div class="sub_box_left">
-  <h4 class="c2_header other_svc">
-    Other Services
-  </h4>
-  <div class="sub_box_right">
-    <h4 class="c2_header svc_list">
-      Services List
-    </h4>
 
-  </div>
-</div>
-<div class="sub_box_right">
-  <h4 class="">
-  </h4>
-
-</div>
-<% end %>
