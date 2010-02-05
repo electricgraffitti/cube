@@ -4,6 +4,7 @@ class HomeController < ApplicationController
     @blogs = Blog.small_list(1).last_created
     @employees = Employee.all
     @code_blogs = CodeBlog.small_list(2).last_created
+    @services = Service.small_list(4).last_created
    
   end
 

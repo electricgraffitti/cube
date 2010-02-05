@@ -19,7 +19,7 @@
     <td><%=h s.title %></td>
     <td><%=h s.sub_title %></td>
     <td><%= link_to 'Show', s %></td>
-    <td><%= link_to 'Edit', edit_s_path(code_blog) %></td>
+    <td><%= link_to 'Edit', edit_service_path(s) %></td>
     <td><%= link_to 'Destroy', s, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
