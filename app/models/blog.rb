@@ -19,7 +19,7 @@ class Blog < ActiveRecord::Base
   has_many :assets, :as => :attachable
   
   #validations
-  validates_presence_of :title, :sub_title, :content
+  validates_presence_of :title, :sub_title
   
   #redcloth
   acts_as_textiled :content
