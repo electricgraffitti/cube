@@ -10,6 +10,10 @@
     <%= f.text_field :sub_title %>
   </p>
   <p>
+    <%= f.label :permalink, "nice-url-for-post" %><br />
+    <%= f.text_field :permalink %>
+  </p>
+  <p>
     <%= f.label :content %><br />
     <%= f.text_area :content, :cols => "50", :rows => "10" %>
   </p>

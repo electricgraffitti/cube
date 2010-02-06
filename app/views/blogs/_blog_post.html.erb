@@ -2,7 +2,11 @@
   <% blog.assets.each do |asset| %>
   <%= image_tag(asset.attachment.url(:small), :alt => blog.title) %>
   <% end %>
-  
+
+<div class="retweet_links">
+  <%= link_to "#{blog.title}", blog_path(blog), :class => "retweet vert" %>
+</div>
+
 <div class="listing_title">
   <%=h blog.title %>
 </div>
@@ -14,7 +18,6 @@
 <div class="listing_time">
   <%= (blog.created_at).to_s(:nice_date) %>
 </div>
-
 <div class="listing_content">
   <%= blog.content %>
 </div>
