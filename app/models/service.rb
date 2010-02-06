@@ -27,6 +27,7 @@ class Service < ActiveRecord::Base
    #named scopes
    named_scope :small_list, lambda { |limit| {:include => [:assets], :limit => limit}}
    named_scope :last_created, :order => "created_at DESC"
+   named_scope :indexed_order, :order => "service_order ASC"
 
    #pulls the assets from the form
    def attachments=(atts)
