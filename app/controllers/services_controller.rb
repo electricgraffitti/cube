@@ -40,9 +40,7 @@ class ServicesController < ApplicationController
   # GET /services/1/edit
   def edit
     @service = Service.find(params[:id])
-    if @service.assets.blank?
       @service.assets.build
-    end
     render :layout => "admins"
   end
 

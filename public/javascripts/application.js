@@ -49,7 +49,7 @@ $(document).ready(function() {
 // Sets up the contact banner button
 $(document).ready(function() {
   $('#contact_nav').removeClass('highlight');
-  $('#contact_nav').append('<span class="hover" />').each(function(){
+  $('#contact_nav a').append('<span class="hover" />').each(function(){
         $(this).css({fontSize : 0});
         var $span2 = $('> span.hover', this).css({opacity : 0});
         $(this).hover(function() {
