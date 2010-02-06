@@ -18,6 +18,10 @@
     <%= f.text_field :tag %>
   </p>
   <p>
+    <%= f.label :permalink %><br />
+    <%= f.text_field :permalink %>
+  </p>
+  <p>
     <% for asset in @code_blog.assets %>
     <% fields_for "code_blog[attachments][]", asset do |asset_form| %>
     <%= asset_form.label "Add Image"  %><br/>

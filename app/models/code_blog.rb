@@ -27,6 +27,13 @@ class CodeBlog < ActiveRecord::Base
    #named scopes
    named_scope :small_list, lambda { |limit| {:include => [:assets], :limit => limit}}
    named_scope :last_created, :order => "created_at DESC"
+   
+   #============================= Class Methods ==================================#
+
+   # Sets Permalink Routes
+   def to_param
+     "#{id}-#{permalink}"
+   end
 
    #pulls the assets from the form
    def attachments=(atts)
