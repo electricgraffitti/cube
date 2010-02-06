@@ -1,18 +1,4 @@
-<p>
-  <b>Title:</b>
-  <%=h @service.title %>
-</p>
-
-<p>
-  <b>Sub title:</b>
-  <%=h @service.sub_title %>
-</p>
-
-<p>
-  <b>Content:</b>
-  <%=h @service.content %>
-</p>
-
+<%= render :partial => "services/service", :locals => {:svc => @service} %>
 
 <%= link_to 'Edit', edit_service_path(@service) %> |
-<%= link_to 'Back', services_path %>
+<%= link_to 'Back', admin_service_path %>

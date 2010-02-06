@@ -13,7 +13,10 @@
     <%= f.label :content %><br />
     <%= f.text_area :content %>
   </p>
-  
+  <p>
+    <%= f.label :tag %><br />
+    <%= f.text_field :tag %>
+  </p>
   <p>
     <% for asset in @code_blog.assets %>
     <% fields_for "code_blog[attachments][]", asset do |asset_form| %>

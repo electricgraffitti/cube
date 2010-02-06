@@ -21,7 +21,7 @@ class ServicesController < ApplicationController
     @service = Service.find(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
+      format.html { render :layout => "short"}
       format.xml  { render :xml => @service }
     end
   end
@@ -40,7 +40,9 @@ class ServicesController < ApplicationController
   # GET /services/1/edit
   def edit
     @service = Service.find(params[:id])
+    if @service.assets.blank?
       @service.assets.build
+    end
     render :layout => "admins"
   end
 

@@ -8,11 +8,11 @@
 </div>
 
 <div class="listing_sub_title">
- Posted by: <%=h code_blog.sub_title %>
+ <%=h code_blog.sub_title %>
 </div>
 
 <div class="listing_time">
-  <%= (code_blog.created_at).to_s(:nice_date) %>
+  Tag: <%= code_blog.tag %> - posted on: <%= (code_blog.created_at).to_s(:nice_date) %>
 </div>
 
 <div class="listing_content">

@@ -1,7 +1,7 @@
 <div class="cube_listing index_image">
-  <% svc.assets.each do |asset| %>
-  <%= image_tag(asset.attachment.url(:small), :alt => svc.title) %>
-  <% end %>
+  <%# svc.assets.each do |asset| %>
+  <%= image_tag(svc.assets.last.attachment.url(:small), :alt => svc.title) %>
+  <%# end %>
   
 <div class="listing_title">
   <%=h svc.title %>
