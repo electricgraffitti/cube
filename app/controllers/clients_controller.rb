@@ -6,8 +6,10 @@ class ClientsController < ApplicationController
   # GET /clients
   # GET /clients.xml
   def index
-    @clients = Client.small_list(4).last_created
+    @clients = Client.small_list(4)
+    @main_clients = Client.all
     @quotes = Quote.small_list(2).last_created
+    
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @clients }
