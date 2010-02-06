@@ -13,7 +13,10 @@
     <%= f.label :content %><br />
     <%= f.text_area :content %>
   </p>
-  
+  <p>
+    <%= f.label :service_order, "Indexed Order" %><br />
+    <%= f.text_field :service_order, :size => 3 %>
+  </p>
   <p>
     <% for asset in @service.assets %>
     <% fields_for "service[attachments][]", asset do |asset_form| %>

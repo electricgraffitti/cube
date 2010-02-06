@@ -52,7 +52,7 @@ class ServicesController < ApplicationController
     respond_to do |format|
       if @service.save
         flash[:notice] = 'Service was successfully created.'
-        format.html { redirect_to(@service) }
+        format.html { redirect_to admin_service_path }
         format.xml  { render :xml => @service, :status => :created, :location => @service }
       else
         format.html { render :action => "new" }
@@ -69,7 +69,7 @@ class ServicesController < ApplicationController
     respond_to do |format|
       if @service.update_attributes(params[:service])
         flash[:notice] = 'Service was successfully updated.'
-        format.html { redirect_to(@service) }
+        format.html { redirect_to admin_service_path }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
