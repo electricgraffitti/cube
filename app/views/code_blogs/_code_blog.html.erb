@@ -2,8 +2,9 @@
   <% code_blog.assets.each do |asset| %>
   <%= image_tag(asset.attachment.url(:small), :alt => code_blog.title) %>
   <% end %>
+  
 <div class="retweet_links">
-  <%= link_to "#{code_blog.title}", code_blog_path(blog), :class => "retweet vert" %>
+  <%= link_to "#{code_blog.title}", code_blog_path(code_blog), :class => "retweet vert" %>
 </div>
 
 <div class="listing_title">
