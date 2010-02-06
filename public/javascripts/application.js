@@ -150,7 +150,18 @@ $(document).ready(function() {
 //     });
 // });
 
-
+// Sets up the return tweets in the footer
+$(document).ready(function() {
+	$("#twitter_feed").getTwitter({
+		userName: "devengine",
+		numTweets: 1,
+		loaderText: "Loading tweets...",
+		slideIn: true,
+		showHeading: true,
+		headingText: "Recent Tweet",
+		showProfileLink: true
+	});
+});
 
 
 

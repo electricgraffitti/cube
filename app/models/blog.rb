@@ -33,7 +33,7 @@ class Blog < ActiveRecord::Base
   
   # Sets Permalink Routes
   def to_param
-    "#{permalink}"
+    "#{id}-#{permalink}"
   end
   
   

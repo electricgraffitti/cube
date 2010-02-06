@@ -829,6 +829,40 @@ ul.nav_ul li a {
   color: #ffb800;
   text-decoration: underline;
 }
+.twitter_link {
+	position: relative;
+	left: 15px;
+	top: 70px;
+	width: 311px;
+	height: 100px;
+	background: url('../images/twitter_bird.png') no-repeat;
+}
+.twitter_link h4 {
+	position: relative;
+	float: right;
+	right: 50px;
+	top: -10px;
+	color: #dddddd;
+	text-shadow: 0px 1px 0px #000;
+	font-size: 155%;
+}
+.twitter_link h4:hover {
+	color: #a70d0e;
+	text-shadow: none;
+}
+#twitter_feed {
+	position: relative;
+	width: 235px;
+	left: 115px;
+	top: 25px;
+}
+#twitter_feed ul {
+	color: #dddddd;
+}
+.tweet_header {
+	margin-bottom: 5px;
+	color: #a70d0e;
+}
 /********************************************/
 /**************CROSSFADE STYLES**************/
 .cube_crossfade_wrap {
