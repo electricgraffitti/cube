@@ -8,6 +8,8 @@
 #  content    :text
 #  created_at :datetime
 #  updated_at :datetime
+#  tag        :string(255)
+#  permalink  :string(255)
 #
 
 class CodeBlog < ActiveRecord::Base

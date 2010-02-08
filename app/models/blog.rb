@@ -8,6 +8,7 @@
 #  content    :text
 #  created_at :datetime
 #  updated_at :datetime
+#  permalink  :string(255)
 #
 
 class Blog < ActiveRecord::Base
