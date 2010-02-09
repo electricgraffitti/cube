@@ -7,7 +7,7 @@ class ServicesController < ApplicationController
   # GET /services
   # GET /services.xml
   def index
-    @services = Service.last_created
+    @services = Service.all
 
     respond_to do |format|
       format.html # index.html.erb
