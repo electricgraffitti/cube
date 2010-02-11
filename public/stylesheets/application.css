@@ -415,7 +415,7 @@ ul.nav_ul li a {
   border-right: 1px solid #666;
   border-bottom: 1px solid #999;
   border-left: 1px solid #444;
-  background: url('../images/contact_sprite.png') 0px -60px no-repeat;
+  background: url('../images/contact_sprite.png') -1px -1px no-repeat;
 }
 #contact_nav a {
   display: block;
@@ -431,7 +431,7 @@ ul.nav_ul li a {
   height: 60px;
 }
 #contact_nav.highlight:hover, #contact_nav span:hover {
-   background: url('../images/contact_sprite.png') -1px -1px no-repeat;
+   background: url('../images/contact_sprite.png') -0px -60px no-repeat;
    border-top: 1px solid #222;
    border-right: 1px solid #999;
    border-bottom: 1px solid #ccc;
