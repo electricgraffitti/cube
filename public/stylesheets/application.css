@@ -689,7 +689,7 @@ ul.nav_ul li a {
 }
 .admin_sidebar {
   position: relative;
-  width: 225px;
+  width: 175px;
   min-height: 200px;
   margin-top: 50px;
   padding: 20px;
@@ -698,7 +698,7 @@ ul.nav_ul li a {
 .admin_form_wrap, #admin_datatable {
   position: relative;
   float: left;
-  width: 590px;
+  width: 710px;
 }
 #admin_datatable {
 	color: #ccc;
