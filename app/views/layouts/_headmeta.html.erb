@@ -7,14 +7,30 @@
 <link ref="shortcut icon" href="favicon.ico" type="image/ico" />
 
 <%#= ******** CSS ********** %>
-<%= stylesheet_link_tag 'reset-fonts-grids', 'jquiwidgets', '960', 'alerts/jquery.alerts', 'markitup', 'dmark', :cache => true %>
+<%= stylesheet_link_tag 'reset-fonts-grids', 'jquiwidgets', '960', 'alerts/jquery.alerts', :cache => true %>
 <%= stylesheet_link_tag 'application' %>
+
+<% if current_admin %>
+<!-- Skin CSS file -->
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.0r4/build/assets/skins/sam/skin.css">
+<% end %>
 <!--[if IE ]>
   <link rel="stylesheet" type="text/css" href="../stylesheets/IE6.css" />
 <![endif]-->
 
 <%#= ******** JAVASCRIPTS ********** %>
-<%= javascript_include_tag 'jquery', 'jqtools', 'jqui', 'jquery.easing', 'jQueryTimer', 'jqueryHover', 'jquery.alerts', 'jquery.validate', 'cube_crossfade', 'markitup', 'datatables', 'retweet', 'jquery.tweet', :cache => true %>
+<%= javascript_include_tag 'jquery', 'jqtools', 'jqui', 'jquery.easing', 'jQueryTimer', 'jqueryHover', 'jquery.alerts', 'jquery.validate', 'cube_crossfade', 'datatables', 'retweet', 'jquery.tweet', :cache => true %>
+<% if current_admin %>
+<!-- Utility Dependencies -->
+<script src="http://yui.yahooapis.com/2.8.0r4/build/yahoo-dom-event/yahoo-dom-event.js"></script> 
+<script src="http://yui.yahooapis.com/2.8.0r4/build/element/element-min.js"></script> 
+<!-- Needed for Menus, Buttons and Overlays used in the Toolbar -->
+<script src="http://yui.yahooapis.com/2.8.0r4/build/container/container_core-min.js"></script>
+<script src="http://yui.yahooapis.com/2.8.0r4/build/menu/menu-min.js"></script>
+<script src="http://yui.yahooapis.com/2.8.0r4/build/button/button-min.js"></script>
+<!-- Source file for Rich Text Editor-->
+<script src="http://yui.yahooapis.com/2.8.0r4/build/editor/editor-min.js"></script>
+<% end %>
 <%= javascript_include_tag 'cube_validations', 'application'%>
 
 

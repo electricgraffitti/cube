@@ -3,4 +3,8 @@
 <% end %>
 <%= render :partial => 'code_blogs/code_blog', :locals => {:code_blog => @code_blog} %>
 
-<%= link_to 'Back', root_path, :class => 'btn side_20_wrap' %>
+<% if current_admin %>
+  <%= link_to 'Back', admin_codeblog_path, :class => 'btn side_20_wrap' %>
+<% else %>
+  <%= link_to 'Back', root_path, :class => 'btn side_20_wrap' %>
+<% end %>
