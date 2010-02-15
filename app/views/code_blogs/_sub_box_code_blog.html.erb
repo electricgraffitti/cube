@@ -13,7 +13,11 @@
 <div class="clear"></div>
 
 <div class="sub_box_listing_content left_listing">
-  <%= truncate(code_blog.content, 300, "... #{link_to "read more", code_blog_path(code_blog)}") %>
+  <%= truncate(code_blog.content, 500) %>
+</div>
+<div class="clear"></div>
+<div class="sub_box_listing_sub_link">
+  <%= link_to "Continue", code_blog_path(code_blog) %>
 </div>
 
 </div>

@@ -618,6 +618,12 @@ ul.nav_ul li a {
   text-shadow: 0px 1px 0px #000;
   margin-bottom: 2px;
 }
+.sub_box_listing_sub_link {
+	margin-top: 10px;
+}
+.sub_box_listing_sub_link a:hover {
+	color: #FCFFCD;
+}
 .right_listing p {
   color: #dedede;
   width: 345px;
