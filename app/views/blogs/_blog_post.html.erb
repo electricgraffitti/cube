@@ -1,7 +1,7 @@
 <div class="cube_listing">
-  <% blog.assets.each do |asset| %>
-  <%= image_tag(asset.attachment.url(:small), :alt => blog.title) %>
-  <% end %>
+
+  <%= image_tag(blog.assets.last.attachment.url(:small), :alt => blog.title) %>
+
 
 <div class="retweet_links">
   <%= link_to "#{blog.title}", blog_path(blog), :class => "retweet vert" %>
