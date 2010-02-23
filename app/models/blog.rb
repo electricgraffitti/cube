@@ -18,6 +18,7 @@ class Blog < ActiveRecord::Base
   
   #associations
   has_many :assets, :as => :attachable
+  accepts_nested_attributes_for :assets, :allow_destroy => true
   
   #validations
   validates_presence_of :title, :sub_title, :permalink
