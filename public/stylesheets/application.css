@@ -293,7 +293,7 @@ label.error {
 }
 /*******Navigation********/
 #main_nav {
-  position: relative;
+  position: absolute;
   bottom: 60px;
   left: 440px;
   height: 40px;
