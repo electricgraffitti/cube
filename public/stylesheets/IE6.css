@@ -17,9 +17,9 @@ body {
   width: 180px;
   left: 120px;
 }
-ul.nav_ul {
+/*ul.nav_ul {
   margin-left: 520px;
-}
+}*/
 .logo {
   position: relative;
   z-index: 10;

@@ -300,6 +300,13 @@ label.error {
   width: 500px;
   border: 1px solid #640102;
 }
+ul.nav_ul {
+  position: relative;
+/*  float: left;*/
+  width: 500px;
+  height: 40px;
+/*  left: 440px;*/
+}
 ul.nav_ul li {
   width: 100px;
   height: 40px;
