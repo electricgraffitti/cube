@@ -12,7 +12,7 @@ $(document).ready(function() {
       messages: {
         "contact_first_name": "First name required", // again, the NAME attribute, and then the value of the message if it fails validation
         "contact_last_name": "Last name required",
-        "contact_last_name": {
+        "contact_email": {
           required: "Email required", 
           email: "not a valid email address"}
       }
