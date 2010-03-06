@@ -21,5 +21,20 @@ $(document).ready(function() {
     
     // The Project Form can go here
     
-    
+    $('#project_form').validate({
+      rules: {
+        "project_first_name": "required",
+        "project_last_name": "required",
+        "project_email": {required: true, email: true}
+
+      },
+      messages: {
+        "project_first_name": "First name required",
+        "project_last_name": "Last name required",
+        "project_email": {
+          required: "Email required",
+          email: "not a valid email address"}
+
+      }
+    });
 });

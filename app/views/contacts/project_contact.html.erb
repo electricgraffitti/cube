@@ -12,41 +12,33 @@
   <% form_tag(project_mailer_path, :id => "project_form") do %>
   <div class="grid_5 alpha omega">    
     <p>
-      <%= label :project, :full_name, "Full Name *" %><br />
-      <%= text_field :project, :full_name, :name => "project_full_name" %>
+      <%= label :project, :first_name, "First Name *" %><br />
+      <%= text_field :project, :first_name, :name => "project_first_name" %>
     </p>
     <p>
-      <%= label :project, :phone, "Phone Number *" %><br />
-      <%= text_field :project, :phone, :name => "project_phone_number" %>
+      <%= label :project, :last_name, "Last Name *" %><br />
+      <%= text_field :project, :last_name, :name => "project_last_name" %>
     </p>
     <p>
       <%= label :project, :email, "Email Address *" %><br />
       <%= text_field :project, :email, :name => "project_email" %>
     </p>
     <p>
-      <%= label :project, :info, "Tell us about the project *" %><br />
-      <%= text_area :project, :info, :name => "project_information", :rows => 9, :cols => 49 %>
+      <%= label :project, :phone, "Phone Number" %><br />
+      <%= text_field :project, :phone, :name => "project_phone" %>
+    </p>
+    <h3>Project State</h3>
+    <h4>Select One *</h4>
+    <p>
+      <%= radio_button_tag :project_state, 'new', true %><b> New</b>
     </p>
     <p>
-      <%= label :project, :use, "Primary use of the website *" %><br />
-      <%= text_field :project, :use, :name => "project_use" %>
-    </p>
-    <p>
-      <%= label :project, :timeframe, "Project time frame (approx) *" %><br />
-      <%= text_field :project, :timeframe, :name => "project_timeframe" %>
-    </p>
-    <p>
-      <%= label :project, :status, "Project new or existing *" %><br />
-      <%= text_field :project, :status, :name => "project_status" %>
-    </p>
-    <p>
-      <%= label :project, :team, "Point of contact for the project *" %><br />
-      <%= text_field :project, :team, :name => "project_team" %>
+      <%= radio_button_tag :project_state, 'existing', false %><b> Existing</b>
     </p>
     <h3>Project Budget</h3>
     <h4>Select one *</h4>
     <p>
-      <%= radio_button_tag :project_budget, '5k-10k', true %><b> $5k to $10k</b>
+      <%= radio_button_tag :project_budget, '5k-10k', true %><b> $3k to $10k</b>
     </p>
     <p>
       <%= radio_button_tag :project_budget, '11k-20k', false %><b> $10k to $20k</b>
@@ -63,8 +55,8 @@
   </div>
   <div class="grid_5 alpha omega">
   	<p>
-      <%= label :project, :comments, "Additional comments" %><br />
-      <%= text_area :project, :comments, :name => "additional_comments", :rows => 9, :cols => 49 %>
+      <%= label :project, :comments, "Project Comments" %><br />
+      <%= text_area :project, :comments, :name => "project_comments", :rows => 9, :cols => 49 %>
     </p>
     <p>
       <%= submit_tag 'Submit', :class => "btn" %>
