@@ -24,7 +24,7 @@ class ContactsController < ApplicationController
   
   def project_mailer
       #grab the params to pass to the redirect
-      # raise params.to_yaml
+      #raise params.to_yaml
       @project_form = params
 
       # raise @project_form.to_yaml
