@@ -6,7 +6,6 @@
 :domain: cube2media.com
 :domain_aliases:
   - www.cube2media.com
-  - articles.hciapps.com
 
 :repository: git@github.com:electricgraffitti/cube.git
 :branch: master
@@ -22,6 +21,8 @@
 # to the server: these are files that you don't have/want in scm.
 :local_config:
   - config/database.yml
+  - config/app_config.yml
+  - config/smtp_gmail.yml
 #
 # The entries in shared_children are created in #{application}/shared
 :shared_children:
@@ -51,4 +52,4 @@
   :max_pool_size: 2
   :use_global_queue: true
 :mysql:
-  :innodb_buffer_pool_size: 64M
+  :innodb_buffer_pool_size: 128M
