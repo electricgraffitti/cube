@@ -1,1 +1,1 @@
-server 'cube', :app, :web, :db, :primary => true
+server 'hcirack', :app, :web, :db, :primary => true
