@@ -14,13 +14,16 @@ rmagick:
 - libmagickwand-dev
 paperclip:
 - imagemagick
-- libmagick9-dev
+- libmagickcore-dev
+- libmagickwand-dev
 thoughtbot-paperclip:
 - imagemagick
-- libmagick9-dev
+- libmagickcore-dev
+- libmagickwand-dev
 mini_magick:
 - imagemagick
-- libmagick9-dev
+- libmagickcore-dev
+- libmagickwand-dev
 postgres:
 - postgresql-client
 - postgresql-contrib
