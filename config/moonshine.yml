@@ -6,6 +6,7 @@
 :domain: cube2media.com
 :domain_aliases:
   - www.cube2media.com
+  - articles.hciapps.com
 
 :repository: git@github.com:electricgraffitti/cube.git
 :branch: master
