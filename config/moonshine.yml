@@ -42,7 +42,8 @@
 :apt_gems:
   :paperclip:
     - imagemagick
-  #    - libawesome-dev
+    - libmagickcore-dev
+    - libmagickwand-dev
 #
 # See all the options for Passenger, Apache vhosts, and MySQL in the
 # respective templates: moonshine/lib/moonshine/manifest/rails/templates

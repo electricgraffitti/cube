@@ -10,7 +10,8 @@ nokogiri:
 - libxslt1-dev
 rmagick:
 - imagemagick
-- libmagick9-dev
+- libmagickcore-dev
+- libmagickwand-dev
 paperclip:
 - imagemagick
 - libmagick9-dev
