@@ -3,5 +3,7 @@
 - :name: tmail
 - :source: http://gemcutter.org
   :name: paperclip
+- :source: http://gems.github.com
+  :name: openrain-action_mailer_tls
 - :version: 2.3.5
   :name: rails

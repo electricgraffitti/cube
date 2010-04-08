@@ -21,6 +21,8 @@
 # to the server: these are files that you don't have/want in scm.
 :local_config:
   - config/database.yml
+  - config/app_config.yml
+  - config/smtp_gmail.yml
 #
 # The entries in shared_children are created in #{application}/shared
 :shared_children:
@@ -41,7 +43,8 @@
 :apt_gems:
   :paperclip:
     - imagemagick
-  #    - libawesome-dev
+    - libmagickcore-dev
+    - libmagickwand-dev
 #
 # See all the options for Passenger, Apache vhosts, and MySQL in the
 # respective templates: moonshine/lib/moonshine/manifest/rails/templates
@@ -49,4 +52,4 @@
   :max_pool_size: 2
   :use_global_queue: true
 :mysql:
-  :innodb_buffer_pool_size: 64M
+  :innodb_buffer_pool_size: 128M
