@@ -1,7 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :quotes
-
   
+  map.resources :quotes
   map.resources :admin_sessions
   map.resources :admins
   map.resources :employees
