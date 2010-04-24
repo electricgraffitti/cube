@@ -16,6 +16,7 @@
   - attachments
   - videos
   - assets
+  - outsource
 #
 # Use :local_config to copy directories straight from your local project directory
 # to the server: these are files that you don't have/want in scm.
