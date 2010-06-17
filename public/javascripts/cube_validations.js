@@ -4,12 +4,12 @@ $(document).ready(function() {
 		// Admin login validation
 		$('#admin_form').validate({
 			rules: {
-				"username": "required",
-				"password": "required"
+				"admin_session[username]": "required",
+				"admin_session[password]": "required"
 			},
 			messages: {
-				"username": "Valid Username is Required",
-				"password": "Valid Password is Required"
+				"admin_session[username]": "Valid Username is Required",
+				"admin_session[password]": "Valid Password is Required"
 			}
 		});
   
