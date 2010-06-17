@@ -1,6 +1,17 @@
 // JS validations go here
 
 $(document).ready(function() {
+		// Admin login validation
+		$('#admin_form').validate({
+			rules: {
+				"username": "required",
+				"password": "required"
+			},
+			messages: {
+				"username": "Valid Username is Required",
+				"password": "Valid Password is Required"
+			}
+		});
   
   // Validates a Subscription
     $('#contact_form').validate({ // The #name is the ID of the form element/tag

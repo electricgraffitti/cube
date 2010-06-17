@@ -1,4 +1,4 @@
-<% form_for(@admin_session) do |f| %>
+<% form_for @admin_session, :html => {:id => "admin_form"} do |f| %>
   <%= f.error_messages %>
   <p>
     <%= f.label :username %><br/>
