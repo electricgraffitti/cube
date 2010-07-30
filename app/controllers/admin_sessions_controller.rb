@@ -15,7 +15,7 @@ class AdminSessionsController < ApplicationController
     @admin_session = AdminSession.new(params[:admin_session])
       if @admin_session.save
         flash[:notice] = 'Admin Login Successfull.'
-         redirect_to admin_blog_path 
+        redirect_to admin_blog_path 
       else
         flash[:notice] = "Invalid login, please try gain"
         render :action => "new"

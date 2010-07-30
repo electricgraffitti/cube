@@ -1,9 +1,16 @@
+<% content_for :title do %>
+  Web design tutorials and tips
+<% end %>
 <% content_for :banner do  %>
   <%= image_tag "blog.png", :alt => "Cube2Media Designs" %>
   <div class="banner_content">
     <h2 class="banner_text header_white">
     Collections &amp; Confessions</h2>
-    <%= render :partial => 'layouts/banner_bullet' %>
+    <ul>
+      <li>Website Development Tips</li>
+      <li>Mobile Application Tutorials</li>
+      <li>Web Based Application Articles</li>
+    </ul>
   </div>
   <div id="contact_nav" class="highlight">
     <%= link_to "contact the experts", contact_us_path, :id => "banner_contact" %>
