@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100206100048) do
+ActiveRecord::Schema.define(:version => 20101126174903) do
 
   create_table "admin_sessions", :force => true do |t|
     t.datetime "created_at"
@@ -53,6 +53,8 @@ ActiveRecord::Schema.define(:version => 20100206100048) do
     t.text     "content"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "url"
+    t.boolean  "active"
   end
 
   create_table "code_blogs", :force => true do |t|

@@ -13,7 +13,10 @@
     <%= f.label :content, "Project Information" %><br />
     <%= f.text_area :content %>
   </p>
-  
+  <p>
+    <%= f.label :url, "Client url" %><br />
+    <%= f.text_field :url; %>
+  </p>
   <p>
     <% for asset in @client.assets %>
     <% fields_for "client[attachments][]", asset do |asset_form| %>
@@ -25,6 +28,10 @@
     <% end %>
   <% end %>
   </p>
+  <p>
+		<%= f.label :active, "Active Client" %><br />
+		<%= f.check_box :active %>
+	</p>
   <p>
     <%= f.submit 'Submit' %>
   </p>

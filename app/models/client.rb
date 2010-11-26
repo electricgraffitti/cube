@@ -8,6 +8,8 @@
 #  content    :text
 #  created_at :datetime
 #  updated_at :datetime
+#  url        :string(255)
+#  active     :boolean(1)
 #
 
 class Client < ActiveRecord::Base  
@@ -26,6 +28,7 @@ class Client < ActiveRecord::Base
    #named scopes
    named_scope :small_list, lambda { |limit| {:include => [:assets], :limit => limit}}
    named_scope :last_created, :order => "created_at DESC"
+   named_scope :featured, :conditions => ["active = ?", true]
 
    #pulls the assets from the form
    def attachments=(atts)

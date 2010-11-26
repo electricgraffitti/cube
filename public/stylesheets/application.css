@@ -21,6 +21,9 @@ html, body {
 a {
   color: #2070b5;
 }
+a:hover {
+  color: #000;
+}
 .hide_text {
   text-indent: -3000em;
 }
@@ -509,6 +512,20 @@ ul.nav_ul li a {
   width: 750px;
   text-shadow: 0px 1px 0px #fefefe;
   padding: 0px;
+}
+.listing_title a {
+  position: relative;
+  font-size: 40px;
+  font-family: impact, Arial;
+  color: #222;
+  width: 750px;
+  text-shadow: 0px 1px 0px #fefefe;
+  padding: 0px;
+  text-decoration: none;
+}
+.listing_title a:hover {
+  color: #2070b5;
+  text-decoration: underline;
 }
 .listing_sub_title {
   position: relative;
