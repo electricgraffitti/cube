@@ -10,6 +10,7 @@ html, body {
   position: relative;
   text-align: center;
   width: 100%;
+  z-index: 10;
 }
 #hd, #banner, #main_content, #sub_boxes, #ft {
   position: relative;
@@ -281,7 +282,7 @@ label.error {
   top: 34px;
   left: 22px;
   background: url('../images/logo.png') no-repeat;
-  z-index: 10;
+  z-index: 100;
 }
 #main_header {
   position: relative;
@@ -379,6 +380,7 @@ ul.nav_ul li a {
 #mast_banner {
   background: url('../images/mast_banner_bg.png') center no-repeat;
   color: #fff;
+  z-index: 5;
 }
 #banner {
   position: relative;
