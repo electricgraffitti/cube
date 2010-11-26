@@ -30,6 +30,9 @@ body {
   text-align:left;
   width: 630px;
 }
+.listing_title {
+  width: 600px;
+}
 /*.badge {
   position: relative;
   top: 5px;
