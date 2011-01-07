@@ -1,4 +1,5 @@
 # == Schema Information
+# Schema version: 20110107193251
 #
 # Table name: clients
 #
@@ -10,6 +11,7 @@
 #  updated_at :datetime
 #  url        :string(255)
 #  active     :boolean(1)
+#  list_order :integer(4)
 #
 
 class Client < ActiveRecord::Base  
@@ -29,6 +31,7 @@ class Client < ActiveRecord::Base
    named_scope :small_list, lambda { |limit| {:include => [:assets], :limit => limit}}
    named_scope :last_created, :order => "created_at DESC"
    named_scope :featured, :conditions => ["active = ?", true]
+   named_scope :client_order, :order  => "list_order", :limit => 8
 
    #pulls the assets from the form
    def attachments=(atts)

@@ -32,6 +32,10 @@
 		<%= f.label :active, "Active Client" %><br />
 		<%= f.check_box :active %>
 	</p>
+	<p>
+		<%= f.label :list_order, "Listing Order" %>
+		<%= f.text_field :list_order, :size => 3 %>
+	</p>
   <p>
     <%= f.submit 'Submit' %>
   </p>
