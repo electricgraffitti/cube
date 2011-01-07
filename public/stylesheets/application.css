@@ -460,6 +460,7 @@ ul.nav_ul li a {
   padding: 20px 0px;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
+	z-index: 8;
 }
 #main_content {
   position: relative;
