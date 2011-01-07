@@ -10,6 +10,7 @@ html, body {
   position: relative;
   text-align: center;
   width: 100%;
+  z-index: 10;
 }
 #hd, #banner, #main_content, #sub_boxes, #ft {
   position: relative;
@@ -20,6 +21,9 @@ html, body {
 
 a {
   color: #2070b5;
+}
+a:hover {
+  color: #000;
 }
 .hide_text {
   text-indent: -3000em;
@@ -278,7 +282,7 @@ label.error {
   top: 34px;
   left: 22px;
   background: url('../images/logo.png') no-repeat;
-  z-index: 10;
+  z-index: 100;
 }
 #main_header {
   position: relative;
@@ -376,6 +380,7 @@ ul.nav_ul li a {
 #mast_banner {
   background: url('../images/mast_banner_bg.png') center no-repeat;
   color: #fff;
+  z-index: 5;
 }
 #banner {
   position: relative;
@@ -509,6 +514,20 @@ ul.nav_ul li a {
   width: 750px;
   text-shadow: 0px 1px 0px #fefefe;
   padding: 0px;
+}
+.listing_title a {
+  position: relative;
+  font-size: 40px;
+  font-family: impact, Arial;
+  color: #222;
+  width: 750px;
+  text-shadow: 0px 1px 0px #fefefe;
+  padding: 0px;
+  text-decoration: none;
+}
+.listing_title a:hover {
+  color: #2070b5;
+  text-decoration: underline;
 }
 .listing_sub_title {
   position: relative;

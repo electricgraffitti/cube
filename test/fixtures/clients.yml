@@ -1,4 +1,5 @@
 # == Schema Information
+# Schema version: 20110107193251
 #
 # Table name: clients
 #
@@ -8,6 +9,9 @@
 #  content    :text
 #  created_at :datetime
 #  updated_at :datetime
+#  url        :string(255)
+#  active     :boolean(1)
+#  list_order :integer(4)
 #
 
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html

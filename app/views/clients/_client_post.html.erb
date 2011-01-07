@@ -1,10 +1,10 @@
 <div class="cube_listing">
   <% client.assets.each do |asset| %>
-  <%= image_tag(asset.attachment.url(:small), :alt => client.title) %>
+  <%= link_to (image_tag(asset.attachment.url(:small), :alt => client.title),  client.url) %>
   <% end %>
   
 <div class="listing_title">
-  <%=h client.title %>
+    <%=h link_to client.title, client.url %>
 </div>
 
 <div class="listing_sub_title">
@@ -13,6 +13,9 @@
 
 <div class="listing_content">
   <%= client.content %>
+</div>
+<div class="listing_content">
+  <%= link_to "View Client Site", client.url %>
 </div>
 
 </div>

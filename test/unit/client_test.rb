@@ -8,6 +8,8 @@
 #  content    :text
 #  created_at :datetime
 #  updated_at :datetime
+#  url        :string(255)
+#  active     :boolean(1)
 #
 
 require 'test_helper'
