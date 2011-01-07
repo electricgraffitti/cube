@@ -8,7 +8,7 @@ class ClientsController < ApplicationController
   def index
     @clients = Client.featured.client_order
     @main_clients = Client.all
-    @quotes = Quote.small_list(2).last_created
+    @quotes = Quote.small_list(4).last_created
     
     respond_to do |format|
       format.html # index.html.erb
