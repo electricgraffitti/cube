@@ -2,19 +2,11 @@
   Web design tutorials and tips
 <% end %>
 <% content_for :banner do  %>
-  <%= image_tag "blog.png", :alt => "Cube2Media Designs" %>
   <div class="banner_content">
     <h2 class="banner_text header_white">
-    Collections &amp; Confessions</h2>
-    <ul>
-      <li>Website Development Tips</li>
-      <li>Mobile Application Tutorials</li>
-      <li>Web Based Application Articles</li>
-    </ul>
+    Who Left the Lights On? - Cube Confessions
   </div>
-  <div id="contact_nav" class="highlight">
-    <%= link_to "contact the experts", contact_us_path, :id => "banner_contact" %>
-  </div>
+
 <% end %>
 <% @blogs.each do |blog| %>
  <%= render :partial => 'blogs/blog_post', :locals => {:blog => blog}%>

@@ -1,0 +1,32 @@
+<div class="quote_form">
+  <% form_tag(project_mailer_path, :id => "project_form") do %>
+  <div class="grid_5 alpha omega">    
+    <p>
+      <%= label :project, :first_name, "First Name *" %><br />
+      <%= text_field :project, :first_name, :name => "project_first_name" %>
+    </p>
+    <p>
+      <%= label :project, :last_name, "Last Name *" %><br />
+      <%= text_field :project, :last_name, :name => "project_last_name" %>
+    </p>
+    <p>
+      <%= label :project, :email, "Email Address *" %><br />
+      <%= text_field :project, :email, :name => "project_email" %>
+    </p>
+    <p>
+      <%= label :project, :phone, "Phone Number" %><br />
+      <%= text_field :project, :phone, :name => "project_phone" %>
+    </p>
+  	<p>
+      <%= label :project, :comments, "Project Comments" %><br />
+      <%= text_area :project, :comments, :name => "project_comments", :rows => 5, :cols => 28 %>
+    </p>
+
+  </div>
+  <div class="grid_5 alpha omega">
+    <p>
+      <%= submit_tag 'Submit', :class => "btn" %>
+  	</p>
+  </div>
+  <% end %>
+</div>

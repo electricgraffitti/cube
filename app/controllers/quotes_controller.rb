@@ -49,7 +49,7 @@ class QuotesController < ApplicationController
     respond_to do |format|
       if @quote.save
         flash[:notice] = 'Quote was successfully created.'
-        format.html { redirect_to(@quote) }
+        format.html { redirect_to(admin_quote_path }
         format.xml  { render :xml => @quote, :status => :created, :location => @quote }
       else
         format.html { render :action => "new" }
@@ -66,7 +66,7 @@ class QuotesController < ApplicationController
     respond_to do |format|
       if @quote.update_attributes(params[:quote])
         flash[:notice] = 'Quote was successfully updated.'
-        format.html { redirect_to(@quote) }
+        format.html { redirect_to(admin_quote_path) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -82,7 +82,7 @@ class QuotesController < ApplicationController
     @quote.destroy
 
     respond_to do |format|
-      format.html { redirect_to(quotes_url) }
+      format.html { redirect_to(admin_quote_path) }
       format.xml  { head :ok }
     end
   end

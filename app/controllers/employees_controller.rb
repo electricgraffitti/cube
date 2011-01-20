@@ -52,7 +52,7 @@ class EmployeesController < ApplicationController
     respond_to do |format|
       if @employee.save
         flash[:notice] = 'Employee was successfully created.'
-        format.html { redirect_to(@employee) }
+        format.html { redirect_to(admin_employee_path) }
         format.xml  { render :xml => @employee, :status => :created, :location => @employee }
       else
         format.html { render :action => "new" }
@@ -69,7 +69,7 @@ class EmployeesController < ApplicationController
     respond_to do |format|
       if @employee.update_attributes(params[:employee])
         flash[:notice] = 'Employee was successfully updated.'
-        format.html { redirect_to(@employee) }
+        format.html { redirect_to(admin_employee_path) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -85,7 +85,7 @@ class EmployeesController < ApplicationController
     @employee.destroy
 
     respond_to do |format|
-      format.html { redirect_to(employees_url) }
+      format.html { redirect_to(admin_employee_path) }
       format.xml  { head :ok }
     end
   end

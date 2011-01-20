@@ -1,33 +1,39 @@
 <% content_for :banner do  %>
-  <%= image_tag "websites.png", :alt => "Cube2Media Designs" %>
   <div class="banner_content">
     <h2 class="banner_text header_white">
-    We Do Web Development
+    Web Applications - Streamlined to Perfection.
     </h2>
     <%= render :partial => 'layouts/banner_bullet' %>
   </div>
-  <div id="contact_nav" class="highlight">
-    <%= link_to "contact the experts", contact_us_path, :id => "banner_contact" %>
-  </div>
 <% end %>
-  <% @services.each do |svc| %>
-  <%= render :partial => 'services/service', :locals => {:svc => svc}%>
-  <% end %> 
+
+	
+	<!-- <div id="testimonial_banner">
+		<img src="images/testimonial_graphic.png">
+		 <p class="testimonial_banner">" Thank you so much for taking this project on!! I am so excited to get it going! You're company has done an awesome job! "</p>
+		<p class="testimonial_banner_sig bold">Stonelook Design - Britta Van-Dyke</p>
+	</div> -->
+	  <%= render :partial => 'index_banner' %>
+	<div id="sites">
+		<% @clients.each do |client| %>
+		 <% client.assets.each do |asset| %>
+	  <%= (image_tag(asset.attachment.url(:medium), :alt => client.title)) %>
+	  <% end %>
+		<% end %>
+	</div>
+		<div id="contact_nav" class="highlight">
+		  <%= link_to "contact the experts", contact_us_path, :id => "banner_contact" %>
+		</div>
+
 <% content_for :sub_boxes do %>
   <div class="sub_box_left">
-    <h4 class="c2_header code_confessions">
-      bits and pieces
-    </h4>
-
-    <%= render :partial => 'code_blogs/sub_box_code_blog', :locals => {:code_blog => @blog} %>
-
+    <%= render :partial => 'about_us' %>
   </div>
+
   <div class="sub_box_right">
     <h4 class="c2_header the_founders">
       The Founders
     </h4>
-    <% @employees.each do |employee| %>
-    <%= render :partial => 'employees/employee_sub_box_listing', :locals => {:employee => employee} %>
-    <% end %>
+		<%= render :partial => 'quote_request' %>
   </div>
 <% end %>

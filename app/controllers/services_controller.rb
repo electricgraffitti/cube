@@ -87,7 +87,7 @@ class ServicesController < ApplicationController
     @service.destroy
 
     respond_to do |format|
-      format.html { redirect_to(services_url) }
+      format.html { redirect_to(admin_service_path) }
       format.xml  { head :ok }
     end
   end

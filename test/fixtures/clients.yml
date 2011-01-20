@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110107193251
+# Schema version: 20110120194515
 #
 # Table name: clients
 #
@@ -12,6 +12,7 @@
 #  url        :string(255)
 #  active     :boolean(1)
 #  list_order :integer(4)
+#  featured   :boolean(1)
 #
 
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html

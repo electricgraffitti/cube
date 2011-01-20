@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110107193251) do
+ActiveRecord::Schema.define(:version => 20110120194515) do
 
   create_table "admin_sessions", :force => true do |t|
     t.datetime "created_at"
@@ -56,6 +56,7 @@ ActiveRecord::Schema.define(:version => 20110107193251) do
     t.string   "url"
     t.boolean  "active"
     t.integer  "list_order"
+    t.boolean  "featured"
   end
 
   create_table "code_blogs", :force => true do |t|
@@ -102,5 +103,15 @@ ActiveRecord::Schema.define(:version => 20110107193251) do
 
   add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
   add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
+
+  create_table "states", :force => true do |t|
+    t.string   "abbreviation", :limit => 2
+    t.string   "full_name"
+    t.boolean  "display",                   :default => true
+    t.integer  "created_by"
+    t.integer  "updated_by"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

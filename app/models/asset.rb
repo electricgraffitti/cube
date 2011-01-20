@@ -19,7 +19,7 @@ class Asset < ActiveRecord::Base
   
   #paperclip
   has_attached_file :attachment, 
-                    :styles => { :medium => "350x350#", :small => "185x185#", :thumb => "90x90#", :tiny => "50x50#" },
+                    :styles => { :medium => "285x160", :small => "185x185", :thumb => "90x90", :tiny => "50x50" },
                     :url => "/assets/:id/:style_:basename.:extension",
                     :path => ":rails_root/public/assets/:id/:style_:basename.:extension"
   

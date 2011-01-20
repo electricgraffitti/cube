@@ -1,15 +1,9 @@
 <% content_for :banner do  %>
-  <%= image_tag "clients.png", :alt => "Cube2Media Designs" %>
   <div class="banner_content">
     <h2 class="banner_text header_white">
-    Building the Web<br/>
-    on Relationships
-    </h2>
-    <%= render :partial => 'layouts/banner_bullet' %>
+    Building the Web on Relationships
   </div>
-  <div id="contact_nav" class="highlight">
-    <%= link_to "contact the experts", contact_us_path, :id => "banner_contact" %>
-  </div>
+
 <% end %>
 
 <% @clients.each do |client| %>

@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110107193251
+# Schema version: 20110120194515
 #
 # Table name: clients
 #
@@ -12,6 +12,7 @@
 #  url        :string(255)
 #  active     :boolean(1)
 #  list_order :integer(4)
+#  featured   :boolean(1)
 #
 
 class Client < ActiveRecord::Base  
@@ -32,6 +33,8 @@ class Client < ActiveRecord::Base
    named_scope :last_created, :order => "created_at DESC"
    named_scope :featured, :conditions => ["active = ?", true]
    named_scope :client_order, :order  => "list_order", :limit => 10
+   named_scope :front_page, :conditions => ["featured = ?", true]
+   
 
    #pulls the assets from the form
    def attachments=(atts)
