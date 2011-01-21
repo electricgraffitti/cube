@@ -7,19 +7,14 @@
   </div>
 <% end %>
 
-	
-	<!-- <div id="testimonial_banner">
-		<img src="images/testimonial_graphic.png">
-		 <p class="testimonial_banner">" Thank you so much for taking this project on!! I am so excited to get it going! You're company has done an awesome job! "</p>
-		<p class="testimonial_banner_sig bold">Stonelook Design - Britta Van-Dyke</p>
-	</div> -->
 	  <%= render :partial => 'index_banner' %>
+	
 	<div id="sites">
 		<% @clients.each do |client| %>
 		 <% client.assets.each do |asset| %>
-	  <%= (image_tag(asset.attachment.url(:medium), :alt => client.title)) %>
-	  <% end %>
-		<% end %>
+	  	<%= (image_tag(asset.attachment.url(:medium), :alt => client.title)) %>
+	   <% end %>
+	 <% end %>
 	</div>
 		<div id="contact_nav" class="highlight">
 		  <%= link_to "contact the experts", contact_us_path, :id => "banner_contact" %>
