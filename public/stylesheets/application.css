@@ -455,6 +455,10 @@ ul.nav_ul li a {
   position: relative;
   width: 200px;
 	margin-right: 20px;
+	-webkit-border-radius: 2px; 
+ 	-moz-border-radius: 2px;
+ 	-opera-border-radius: 2px;
+ 	border-radius: 2px;
 }
 #contact_nav a {
   display: block;
@@ -522,7 +526,7 @@ ul.nav_ul li a {
   font-weight: bold;
 }
 .form_comment a:hover {
-	color: #a70d0e
+	color: #a70d0e;
 }
 .project_left {
 	width: 300px;
@@ -610,31 +614,81 @@ p.testimonial_banner_sig {
 /**************************************************/
 /******************CUBE LISTINGS******************/
 .cube_listing {
+	float: left;
+  padding: 20px;
+  position: relative;
+  width: 900px;
+}
+.cube_listing img {
+  background: none repeat scroll 0 0 #FEFEFE;
+  border: 2px solid #222222;
+  float: left;
+  margin-right: 20px;
+  padding: 10px;
+}
+.cube_listing_client {
   position: relative;
   float: left;
   width: 310px;
 	height: 200px;
 	text-align: center;
+	margin-bottom: 40px;
 }
-.cube_listing img {
+.cube_listing_client img {
+	background: url("../images/main_inner.png") repeat scroll 0 0 transparent;
+	margin-bottom: 20px;
+	border-color: #999999 #AAAAAA;
+  border-style: solid;
+  border-width: 2px 1px;
+	padding: 15px;
+	-moz-box-shadow: 4px 4px 5px #999999;
+	-webkit-shadow: 4px 4px 5px #999999; 
+ 	-opera-shadow: 4px 4px 5px #999999;
   height: 160px;
   width: 285px;
-	-moz-box-shadow: 4px 4px 5px #999999;
+	padding: 3px;
+
+}
+.cube_listing_client h3 {
+	margin-top: 10px;
+	font-size: 200%;
+
+
+}
+.cube_listing_client h3 a {
+	color: #000;
+	text-shadow: 0 1px 0 #FEFEFE;
+}
+.cube_listing_client h3 a:hover {
+	color: #a70d0e;
 }
 .cube_listing_large {
   position: relative;
   float: left;
   width: 100%;
-	height: 500px;
+	height: 590px;
 	text-align: center;
 }
 .cube_listing_large img {
+	background: url("../images/main_inner.png") repeat scroll 0 0 transparent;
   height: 323px;
   width: 650px;
 	margin-bottom: 20px;
+	border-color: #999999 #AAAAAA;
+  border-style: solid;
+  border-width: 2px 1px;
+	padding: 15px;
+	-moz-box-shadow: 4px 4px 5px #999999;
+	-webkit-shadow: 4px 4px 5px #999999; 
+ 	-opera-shadow: 4px 4px 5px #999999;
 }
 .cube_listing_large img a {
 	display: block;
+}
+.listing_content_large {
+	margin-left: 147px;
+  text-align: left;
+  width: 650px;
 }
 .index_image img {
 /*  float: left;
@@ -653,6 +707,17 @@ p.testimonial_banner_sig {
   text-shadow: 0px 1px 0px #fefefe;
   padding: 0px;
 }
+.clients_header {
+  position: relative;
+  font-size: 40px;
+  font-family: impact, Arial;
+  color: #222;
+  width: 100%;
+  text-shadow: 0px 1px 0px #fefefe;
+  padding: 0px;
+	text-align: center;
+	margin: 20px 0px;
+}
 .listing_title_large {
 	position: relative;
 	font-size: 40px;
@@ -661,6 +726,16 @@ p.testimonial_banner_sig {
 	width: 100%;
 	text-shadow: 0px 1px 0px #fefefe;
 	margin-bottom: 20px;
+}
+.listing_title_large a {
+	color: #000;
+	text-shadow: 0px 1px 0px #fefefe;
+	text-decoration: none;
+}
+.listing_title_large a:hover {
+	color: #a70d0e;
+	text-shadow: 0px 1px 0px #fefefe;
+	text-decoration: underline;
 }
 .listing_title a {
   position: relative;
@@ -687,11 +762,16 @@ p.testimonial_banner_sig {
   text-shadow: 0px -1px 0px #222;
   margin-bottom: 2px;
 }
+.listing_content_link {
+	margin-top: 15px;
+}
 .listing_content_link a {
-	color: #b80015;
+	font-size: 20px;
+	text-decoration: none;
 }
 .listing_content_link a:hover {
-	color: #000;
+	color: #a70d0e;
+	text-decoration: underline;
 }
 .cube_listing p {
   margin-bottom: 10px;
@@ -940,6 +1020,7 @@ p.about_us {
 	color: #fefefe;
   background: #a70d0e;
 }
+
 /*********************************************/
 /******************FOOTER********************/
 #mast_footer {

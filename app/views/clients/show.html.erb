@@ -1,4 +1,22 @@
+<% content_for :banner do  %>
+  <div class="banner_content">
+    <h2 class="banner_text header_white">
+    <%= @client.title %>
+    </h2>
+    <%= render :partial => 'layouts/banner_bullet' %>
+  </div>
+<% end %>
 <%= render :partial => 'clients/client_view', :locals => {:client => @client} %>
 
+<% content_for :sub_boxes do %>
+  <div class="sub_box_left">
+    <%= render :partial => 'home/about_us' %>
+  </div>
 
-<%= link_to 'Back', admin_client_path, :class => 'btn side_20_wrap' %>
+  <div class="sub_box_right">
+    <h4 class="c2_header the_founders">
+      Request a Quote
+    </h4>
+		<%= render :partial => 'home/quote_request' %>
+  </div>
+<% end %>

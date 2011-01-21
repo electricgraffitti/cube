@@ -5,7 +5,7 @@
   </div>
 
 <% end %>
-
+<h2 class="clients_header">Featured Clients</h2>
 <% @clients.each do |client| %>
   <%= render :partial => 'clients/client_post', :locals => {:client => client} %>
 <% end %>
