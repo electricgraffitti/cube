@@ -9,6 +9,8 @@
 <% @clients.each do |client| %>
   <%= render :partial => 'clients/client_post', :locals => {:client => client} %>
 <% end %>
+
+
 <% content_for :sub_boxes do  %>
 <div class="sub_box_left">
   <h4 class="c2_header testimonial">

@@ -32,7 +32,7 @@ class Client < ActiveRecord::Base
    named_scope :small_list, lambda { |limit| {:include => [:assets], :limit => limit}}
    named_scope :last_created, :order => "created_at DESC"
    named_scope :featured, :conditions => ["active = ?", true]
-   named_scope :client_order, :order  => "list_order", :limit => 10
+   named_scope :client_order, :order  => "list_order", :limit => 12
    named_scope :front_page, :conditions => ["featured = ?", true]
    
 

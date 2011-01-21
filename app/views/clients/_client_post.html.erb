@@ -1,21 +1,15 @@
 <div class="cube_listing">
   <% client.assets.each do |asset| %>
-  <%= link_to (image_tag(asset.attachment.url(:medium), :alt => client.title),  client.url, :target => "blank") %>
+  <%= link_to (image_tag(asset.attachment.url(:small), :alt => client.title),  client_path(client)) %>
   <% end %>
-  
-<div class="listing_title">
-    <%=h link_to client.title, client.url, :target => "blank" %>
-</div>
 
-<div class="listing_sub_title">
-  Project Type: <%=h client.sub_title %>
-</div>
+	<h3>
+    <%=h link_to client.title, client_path(client)%>
+	</h3>
 
-<div class="listing_content">
-  <%= client.content %>
-</div>
-<div class="listing_content_link">
-  <%= link_to "View Client Site", client.url, :target => "blank" %>
-</div>
+
+
+
+
 
 </div>
