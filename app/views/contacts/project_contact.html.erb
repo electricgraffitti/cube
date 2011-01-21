@@ -1,16 +1,20 @@
-<% content_for :banner do %>
-  <h2 class="short_header">Project Form</h2>
+<% content_for :banner do  %>
+  <div class="banner_content">
+    <h2 class="banner_text header_white">
+    Got a Project? Lets Talk Solutions.
+    </h2>
+  </div>
 <% end %>
 
 <div class="contact_form full_20_wrap">
-  <h2>Tell Us About Your Project</h2>
-  <p class="form_comment">
+  <h3 class="project_heading">Tell Us About You</h3>
+  <!-- <p class="form_comment">
     Let the experts at Cube2Media take care of your web development needs, it's what we do best!
   </p>
-  <p>Please fill in all fields so we can obtain a better understanding of your project.</p>
+  <p>Please fill in all fields so we can obtain a better understanding of your project.</p> -->
   
   <% form_tag(project_mailer_path, :id => "project_form") do %>
-  <div class="grid_5 alpha omega">    
+  <div class="project_left">    
     <p>
       <%= label :project, :first_name, "First Name *" %><br />
       <%= text_field :project, :first_name, :name => "project_first_name" %>
@@ -27,16 +31,10 @@
       <%= label :project, :phone, "Phone Number" %><br />
       <%= text_field :project, :phone, :name => "project_phone" %>
     </p>
-    <h3>Project State</h3>
-    <h4>Select One *</h4>
-    <p>
-      <%= radio_button_tag :project_state, 'new', true %><b> New</b>
-    </p>
-    <p>
-      <%= radio_button_tag :project_state, 'existing', false %><b> Existing</b>
-    </p>
-    <h3>Project Budget</h3>
-    <h4>Select one *</h4>
+  </div>
+  <div class="project_middle">
+	  <h3>Budget</h3>
+	    <h4 class="top">Select one *</h4>
     <p>
       <%= radio_button_tag :project_budget, '5k-10k', true %><b> $3k to $10k</b>
     </p>
@@ -52,10 +50,17 @@
     <p>
       <%= radio_button_tag :project_budget, '101k', false %><b> $100k +</b>
     </p>
-  </div>
-  <div class="grid_5 alpha omega">
+		</div>
+		<div class="project_right">
+			 <h3 class="project_heading">Tell Us About Your Project</h3>
+			<p class="project_radio_left">
+	      <%= radio_button_tag :project_state, 'new', true %><b> New Project</b>
+	    </p>
+	    <p class="project_radio_right">
+	      <%= radio_button_tag :project_state, 'existing', false %><b> Existing Project</b>
+	    </p>
   	<p>
-      <%= label :project, :comments, "Project Comments" %><br />
+      <%= label :project, :comments, "Comments" %><br />
       <%= text_area :project, :comments, :name => "project_comments", :rows => 9, :cols => 49 %>
     </p>
     <p>

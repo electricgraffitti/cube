@@ -510,11 +510,49 @@ ul.nav_ul li a {
   background: url('../images/c2_headers.png') 0px -130px no-repeat;
 }
 .contact_form {
-	margin-left: 280px;
+	margin-left: 70px;
+	float: left;
 }
 .form_comment {
   font-size: 12px;
   font-weight: bold;
+}
+.project_left {
+	width: 300px;
+	float: left;
+}
+h3.project_heading {
+	width: 300px;
+}
+.project_middle {
+	width: 200px;
+	float: left;
+	margin-top: -27px;
+}
+.project_middle h4.top {
+	margin: 0px;
+	padding: 0px;
+	background: none;
+	border: none;
+}
+.project_middle h4.bottom {
+	margin: 5px 0px;
+	padding: 0px;
+	background: none;
+	border: none;
+}
+.project_right {
+	width: 320px;
+	float: left;
+	margin-top: -27px;
+}
+.project_right p.project_radio_left {
+	float: left;
+	width: 110px;
+}
+.project_right p.project_radio_right {
+	float: left;
+	width: 200px;
 }
 #testimonial_banner {
 	width: 920px;
