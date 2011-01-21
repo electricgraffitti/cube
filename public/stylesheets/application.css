@@ -521,6 +521,9 @@ ul.nav_ul li a {
   font-size: 12px;
   font-weight: bold;
 }
+.form_comment a:hover {
+	color: #a70d0e
+}
 .project_left {
 	width: 300px;
 	float: left;

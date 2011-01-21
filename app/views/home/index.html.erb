@@ -12,7 +12,7 @@
 	<div id="sites">
 		<% @clients.each do |client| %>
 		 <% client.assets.each do |asset| %>
-	  	<%= (image_tag(asset.attachment.url(:medium), :alt => client.title)) %>
+	  	<%= (image_tag(asset.attachment.url(:small), :alt => client.title)) %>
 	   <% end %>
 	 <% end %>
 	</div>
