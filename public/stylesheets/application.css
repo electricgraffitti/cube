@@ -292,7 +292,7 @@ label.error {
   background: url("../images/c2header_text.png") no-repeat scroll 0 0 transparent;
   float: left;
   height: 41px;
-  left: 162px;
+  left: 145px;
   position: relative;
   text-indent: -3000em;
   top: 30px;
@@ -303,7 +303,7 @@ label.error {
 #main_nav {
   bottom: 50px;
   height: 40px;
-  left: 430px;
+  left: 380px;
   position: absolute;
   width: 560px;
 }
