@@ -1,0 +1,32 @@
+<% content_for :banner do  %>
+  <div class="banner_content">
+    <h2 class="banner_text header_white">
+    Web Applications - Streamlined to Perfection.
+    </h2>
+  </div>
+<% end %>
+
+	
+	<!-- <div id="testimonial_banner">
+		<img src="images/testimonial_graphic.png">
+		 <p class="testimonial_banner">" Thank you so much for taking this project on!! I am so excited to get it going! You're company has done an awesome job! "</p>
+		<p class="testimonial_banner_sig bold">Stonelook Design - Britta Van-Dyke</p>
+	</div> -->
+	  <%= render :partial => 'index_banner' %>
+
+		<div id="contact_nav" class="highlight">
+		  <%= link_to "contact the experts", contact_us_path, :id => "banner_contact" %>
+		</div>
+
+<% content_for :sub_boxes do %>
+  <div class="sub_box_left">
+    <%= render :partial => 'about_us' %>
+  </div>
+
+  <div class="sub_box_right">
+    <h4 class="c2_header the_founders">
+      The Founders
+    </h4>
+		<%= render :partial => 'quote_request' %>
+  </div>
+<% end %>

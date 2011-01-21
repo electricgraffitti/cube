@@ -7,6 +7,16 @@ class HomeController < ApplicationController
     @clients = Client.front_page.client_order
   end
   
+  def apps
+  end
+  
+  def ecommerce
+    
+  end
+  
+  def design
+    
+  end
   
    def project_mailer
        #grab the params to pass to the redirect

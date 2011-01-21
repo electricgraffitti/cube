@@ -18,6 +18,10 @@ ActionController::Routing::Routes.draw do |map|
   map.admin_employee "admin-employees", :controller => "admins", :action => "admin_employees"
   map.admin_quote "admin-quote", :controller => "admins", :action => "admin_quotes"
   
+  map.apps "application-development", :controller => "home", :action => "apps"
+  map.ecommerce "ecommerce-development", :controller =>  "home", :action => "ecommerce"
+  map.design "design-development", :controller => "home", :action => "design"
+  
   
   map.contact_us "contact-cube2media", :controller => "contacts", :action => "contact_us"
   map.contact_mailer "thank-you-from-cube2media", :controller => 'contacts', :action => "contact_mailer"
