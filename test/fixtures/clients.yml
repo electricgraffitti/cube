@@ -1,18 +1,31 @@
 # == Schema Information
-# Schema version: 20110120194515
+# Schema version: 20110122045713
 #
 # Table name: clients
 #
-#  id         :integer(4)      not null, primary key
-#  title      :string(255)
-#  sub_title  :string(255)
-#  content    :text
-#  created_at :datetime
-#  updated_at :datetime
-#  url        :string(255)
-#  active     :boolean(1)
-#  list_order :integer(4)
-#  featured   :boolean(1)
+#  id                 :integer(4)      not null, primary key
+#  title              :string(255)
+#  sub_title          :string(255)
+#  content            :text
+#  created_at         :datetime
+#  updated_at         :datetime
+#  url                :string(255)
+#  active             :boolean(1)
+#  list_order         :integer(4)
+#  featured           :boolean(1)
+#  content_management :boolean(1)
+#  ecommerce          :boolean(1)
+#  web_application    :boolean(1)
+#  web_design         :boolean(1)
+#  css                :boolean(1)
+#  php                :boolean(1)
+#  html               :boolean(1)
+#  ruby               :boolean(1)
+#  flash              :boolean(1)
+#  sql                :boolean(1)
+#  wordpress          :boolean(1)
+#  javascript         :boolean(1)
+#  rails_framework    :boolean(1)
 #
 
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html

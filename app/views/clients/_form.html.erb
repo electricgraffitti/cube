@@ -29,16 +29,68 @@
   <% end %>
   </p>
   <p>
-		<%= f.label :active, "Active Client" %><br />
 		<%= f.check_box :active %>
+		<%= f.label :active, "Active Client - (client list)" %><br />		
 	</p>
 	<p>
-		<%= f.label :featured, "Featured Client" %><br />
 		<%= f.check_box :featured %>
+		<%= f.label :featured, "Featured Client - (front page)" %><br />
 	</p>
 	<p>
+		<%= f.text_field :list_order, :size => 1 %>		
 		<%= f.label :list_order, "Listing Order" %><br />
-		<%= f.text_field :list_order, :size => 3 %>
+	</p>
+  <p>
+		<%= f.check_box :web_application %>
+		<%= f.label :web_application, "Web Application" %><br />		
+	</p>
+	<p>
+		<%= f.check_box :ecommerce %>
+		<%= f.label :ecommerce, "Ecommerce" %><br />		
+	</p>
+	<p>
+		<%= f.check_box :content_management %>
+		<%= f.label :content_management, "Content Management" %><br />		
+	</p>
+	<p>
+		<%= f.check_box :web_design %>
+		<%= f.label :web_design, "Web Design" %><br />		
+	</p>
+	<p>
+		<%= f.check_box :css %>
+		<%= f.label :css, "CSS" %><br />		
+	</p>
+	<p>
+		<%= f.check_box :php %>
+		<%= f.label :php, "PHP" %><br />		
+	</p>
+	<p>
+		<%= f.check_box :html %>
+		<%= f.label :html, "HTML" %><br />		
+	</p>
+	<p>
+		<%= f.check_box :flash %>
+		<%= f.label :flash, "Flash" %><br />		
+	</p>
+	<p>
+		<%= f.check_box :ruby %>
+		<%= f.label :ruby, "Ruby" %><br />		
+	</p>
+	<p>
+		<%= f.check_box :sql %>
+		<%= f.label :sql, "SQL" %><br />		
+	</p>
+	<p>
+		<%= f.check_box :wordpress %>
+		<%= f.label :wordpress, "Wordpress" %><br />		
+	</p>
+	<p>
+		<%= f.check_box :javascript %>
+		<%= f.label :javascript, "Javascript" %><br />		
+	</p>
+	<p>
+		<%= f.check_box :rails_framework %>
+		<%= f.label :rails_framework, "Rails Framework" %><br />		
 	</p>
   <p>
     <%= f.submit 'Submit' %>
