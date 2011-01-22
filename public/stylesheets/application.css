@@ -820,14 +820,23 @@ p.testimonial_banner_sig {
   margin-left: 50px;
 } 
 #sub_boxes ul li {
-  list-style-type: circle;
+  list-style-type:square;
   list-style-position: inside;
   margin-bottom: 5px;
+	margin-left: 15px;
   font-size: 125%;
 }
 .code_confessions {
   background: url('../images/who_header.png') 0px 0px no-repeat;
 	margin-left: 20px;
+}
+.footer_function_header {
+	background: url('../images/web_function_header.png') 0px 0px no-repeat;
+	margin-left: 20px;
+}
+.footer_tech_header {
+background: url('../images/web_tech_header.png') 0px 0px no-repeat;
+margin-left: 20px;
 }
 .the_founders {
   background: url('../images/get_cube_header.png') 0px 0px no-repeat;
@@ -844,6 +853,7 @@ p.testimonial_banner_sig {
 .svc_list {
   background: url('../images/c2_headers.png') 0px -390px no-repeat;
 }
+
 p.about_us {
   margin-bottom: 10px;
   margin-left: 65px;

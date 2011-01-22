@@ -10,8 +10,10 @@
 
 <% content_for :sub_boxes do %>
   <div class="sub_box_left">
-	<%= render :partial => 'web_functionality', :locals => {:client => @client} %>
-	<%= render :partial => 'technology', :locals => {:client => @client} %>
+		<h4 class="c2_header footer_function_header">Web Functionality</h4>
+		<%= render :partial => 'web_functionality', :locals => {:client => @client} %>
+		<h4 class="c2_header footer_tech_header">Web Technology</h4>
+		<%= render :partial => 'technology', :locals => {:client => @client} %>
   </div>
 
   <div class="sub_box_right">

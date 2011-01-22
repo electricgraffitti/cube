@@ -1,15 +1,22 @@
-<% if client.web_application %>
-	<p>Web Application</p>
-<% end %>
-
-<% if client.ecommerce %>
-	<p>Ecommerce</p>
-<% end %>
-
-<% if client.content_management %>
-	<p>Content Management</p>
-<% end %>
-
-<% if client.web_design %>
-	<p>Web Design</p>
-<% end %>
+<ul>
+	<% if client.web_application %>
+		<li>
+			Web Application
+		</li>
+	<% end %>
+	<% if client.ecommerce %>
+		<li>
+			Ecommerce	
+		</li>
+	<% end %>
+	<% if client.content_management %>
+		<li>
+			Content Management
+		</li>
+	<% end %>
+	<% if client.web_design %>
+		<li>
+			Web Design
+		</li>
+	<% end %>
+</ul>
