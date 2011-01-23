@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110122045713
+# Schema version: 20110123064030
 #
 # Table name: clients
 #
@@ -26,6 +26,9 @@
 #  wordpress          :boolean(1)
 #  javascript         :boolean(1)
 #  rails_framework    :boolean(1)
+#  app_page           :boolean(1)
+#  ecommerce_page     :boolean(1)
+#  design_page        :boolean(1)
 #
 
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html

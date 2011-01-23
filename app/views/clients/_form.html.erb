@@ -28,6 +28,7 @@
     <% end %>
   <% end %>
   </p>
+	<h4 class="admin_header">Sorting &#38; Placement</h4>
   <p>
 		<%= f.check_box :active %>
 		<%= f.label :active, "Active Client - (client list)" %><br />		
@@ -40,6 +41,19 @@
 		<%= f.text_field :list_order, :size => 1 %>		
 		<%= f.label :list_order, "Listing Order" %><br />
 	</p>
+	<p>
+		<%= f.check_box :app_page %>
+		<%= f.label :app_page, "Web Application Page Listing" %>
+	</p>
+	<p>
+		<%= f.check_box :ecommerce_page %>
+		<%= f.label :ecommerce_page, "Ecommerce Page Listing" %>
+	</p>
+	<p>
+		<%= f.check_box :design_page %>
+		<%= f.label :design_page, "Web Design Page Listing" %>
+	</p>
+	<h4 class="admin_header">Project Functionality</h4>
   <p>
 		<%= f.check_box :web_application %>
 		<%= f.label :web_application, "Web Application" %><br />		
@@ -56,6 +70,7 @@
 		<%= f.check_box :web_design %>
 		<%= f.label :web_design, "Web Design" %><br />		
 	</p>
+	<h4 class="admin_header">Applied Technologies</h4>
 	<p>
 		<%= f.check_box :css %>
 		<%= f.label :css, "CSS" %><br />		

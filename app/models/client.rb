@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110122045713
+# Schema version: 20110123064030
 #
 # Table name: clients
 #
@@ -26,6 +26,9 @@
 #  wordpress          :boolean(1)
 #  javascript         :boolean(1)
 #  rails_framework    :boolean(1)
+#  app_page           :boolean(1)
+#  ecommerce_page     :boolean(1)
+#  design_page        :boolean(1)
 #
 
 class Client < ActiveRecord::Base  
@@ -47,6 +50,9 @@ class Client < ActiveRecord::Base
    named_scope :featured, :conditions => ["active = ?", true]
    named_scope :client_order, :order  => "list_order", :limit => 12
    named_scope :front_page, :conditions => ["featured = ?", true]
+   named_scope :app_list, :conditions => ["app_page = ?", true]
+   named_scope :ecommerce_list, :conditions => ["ecommerce_page = ?", true]
+   named_scope :design_list, :conditions => ["design_page = ?", true]
    
 
    #pulls the assets from the form

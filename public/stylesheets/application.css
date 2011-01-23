@@ -75,7 +75,7 @@ a:hover {
 h1, h2, h3, h4, h5 {
   color: #000;
   margin-top: 5px;
-  font-family: impact, Arial;
+/*  font-family: impact, Arial;*/
   text-shadow: 0px 1px 0px #fff;
 }
 h1 {
@@ -591,6 +591,46 @@ p.testimonial_banner_sig {
 	float: left;
 	padding-left: 10px;
 }
+#app_page h3{
+  margin-left: 105px;
+  width: 760px;
+}
+#app_page h4 {
+	margin-left: 105px;
+	margin-bottom: 10px;
+	width: 760px;
+	margin-top: 20px;
+	color: #a70d0e;
+}
+#app_page ul li.app_list {
+	float: none;
+	margin-left: 100px;
+	padding: 5px;
+	font-weight: bold;
+}
+#app_page ul li.app_text {
+  margin-left: 143px;
+	margin-bottom: 10px;
+  padding: 2px;
+  width: 400px;
+}
+
+#app_page p.text {
+	margin-left: 105px;
+  width: 760px;
+	margin-top: 25px;
+}
+#app_images {
+  height: 480px;
+  position: absolute;
+  right: 30px;
+  top: 235px;
+  width: 290px;
+}
+#app_images img {
+	margin-bottom: 25px;
+	-moz-box-shadow: 4px 4px 5px #999999;
+}
 #front_page ul {
 	list-style-type: none;
   padding: 0;
@@ -644,7 +684,7 @@ p.testimonial_banner_sig {
 	-moz-box-shadow: 4px 4px 5px #999999;
 	-webkit-shadow: 4px 4px 5px #999999; 
  	-opera-shadow: 4px 4px 5px #999999;
-  height: 160px;
+  height: 142px;
   width: 285px;
 	padding: 3px;
 
@@ -992,6 +1032,11 @@ p.about_us {
 }
 #admin_datatable {
 	color: #ccc;
+}
+.admin_header {
+	color: #a70d0e;
+	margin-bottom: 10px;
+	margin-top: 20px;
 }
 /*********************************************/
 /******************FLASH**********************/

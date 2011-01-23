@@ -1,7 +1,7 @@
 <div class="cube_listing_large">
-  <% client.assets.each do |asset| %>
-  <%= (image_tag(asset.attachment.url(:medium), :alt => client.title)) %>
-  <% end %>
+
+  <%= image_tag(client.assets.last.attachment.url(:medium), :alt => client.title) %>
+
 
 	
 	<div class="listing_content_large">

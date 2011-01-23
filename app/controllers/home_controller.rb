@@ -8,14 +8,15 @@ class HomeController < ApplicationController
   end
   
   def apps
+    @clients = Client.app_list
   end
   
   def ecommerce
-    
+    @clients = Client.ecommerce_list
   end
   
   def design
-    
+    @clients = Client.design_list
   end
   
    def project_mailer
