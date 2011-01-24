@@ -1,8 +1,10 @@
 <div class="footer_nav">
   <ul>
     <li><%= link_to "home", root_path, :alt => "Cube2Media Home" %></li>
+    <li><%= link_to "apps", apps_path, :id => "apps", :alt => "Cloud Applications" %></li>
+    <li><%= link_to "ecommerce", ecommerce_path, :id => "ecommerce", :alt => "Ecommerce Solutions" %></li>
+    <li><%= link_to "design", design_path, :id => "design", :alt => "Web Design" %></li>
     <li><%= link_to "blog", blogs_path, :id => "blog", :alt => "Cube2Media Blog" %></li>
-    <li><%= link_to "services", services_path, :id => "services", :alt => "Cube2Media Services" %></li>
     <li><%= link_to "clients", clients_path, :id => "clients", :alt => "Cube2Media Clients" %></li>
     <li><%= link_to "contact", contact_us_path, :id => "contact", :alt => "Cube2Media Contact" %></li>
     <% if current_admin %>
