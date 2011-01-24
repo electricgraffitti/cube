@@ -591,43 +591,70 @@ p.testimonial_banner_sig {
 	float: left;
 	padding-left: 10px;
 }
-#app_page h3{
+
+/*********************************************/
+/*****************SUB PAGES******************/
+#sub_page h3{
   margin-left: 105px;
   width: 760px;
 }
-#app_page h4 {
+#sub_page h4 {
 	margin-left: 105px;
 	margin-bottom: 10px;
 	width: 760px;
 	margin-top: 20px;
 	color: #a70d0e;
 }
-#app_page ul li.app_list {
+#sub_page ul li.app_list {
 	float: none;
 	margin-left: 100px;
 	padding: 5px;
 	font-weight: bold;
 }
-#app_page ul li.app_text {
+#sub_page ul li.app_text {
+  margin-left: 143px;
+	margin-bottom: 10px;
+  padding: 2px;
+  width: 400px;
+}
+#sub_page ul li.ecommerce_list {
+	float: none;
+	margin-left: 120px;
+	padding: 5px;
+	font-weight: bold;
+	list-style: square;
+}
+#sub_page ul li.ecommerce_text {
   margin-left: 143px;
 	margin-bottom: 10px;
   padding: 2px;
   width: 400px;
 }
 
-#app_page p.text {
+#sub_page p.text {
 	margin-left: 105px;
   width: 760px;
 	margin-top: 25px;
 }
-#app_images {
+#sub_page_app_images{
   height: 480px;
   position: absolute;
   right: 30px;
   top: 235px;
   width: 290px;
 }
-#app_images img {
+#sub_page_app_images img {
+	margin-bottom: 25px;
+	-moz-box-shadow: 4px 4px 5px #999999;
+}
+#sub_page_ecommerce_images{
+  height: 325px;
+  position: absolute;
+  right: 95px;
+  top: 255px;
+  width: 290px;
+}
+#sub_page_ecommerce_images img {
 	margin-bottom: 25px;
 	-moz-box-shadow: 4px 4px 5px #999999;
 }
