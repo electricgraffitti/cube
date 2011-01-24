@@ -15,7 +15,7 @@
   </tr></thead>
 <tbody>
 <% @code_blogs.each do |code_blog| %>
-  <tr>
+  <tr class="admin_link_color">
     <td><%=h code_blog.title %></td>
     <td><%=h code_blog.sub_title %></td>
     <td><%= link_to 'Show', code_blog %></td>

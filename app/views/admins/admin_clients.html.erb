@@ -15,7 +15,7 @@
   </tr></thead>
 <tbody>
 <% @clients.each do |client| %>
-  <tr>
+  <tr class="admin_link_color">
     <td><%=h client.title %></td>
     <td><%=h client.sub_title %></td>
     <td><%= link_to 'Show', client %></td>

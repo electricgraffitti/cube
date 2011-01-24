@@ -5,7 +5,7 @@
   <%= link_to "New Quote", new_quote_path %>
 </div>
 <div id="admin_datatable">
-  <table id="quotes_table" class="display c2table">
+  <table id="blogs_table" class="display c2table">
   <thead><tr>
     <th>Name</th>
     <th>Company</th>
@@ -15,7 +15,7 @@
   </tr></thead>
 <tbody>
 <% @quotes.each do |quote| %>
-  <tr>
+  <tr class="admin_link_color">
     <td><%=h quote.name %></td>
     <td><%=h quote.company %></td>
     <td><%= link_to 'Show', quote %></td>
