@@ -396,6 +396,15 @@ ul.nav_ul li a {
   width: 100%;
   height: 100%;
 }
+#header_dashboard {
+	margin-top: 32px;
+}
+#header_dashboard a {
+	color: #fff;
+}
+#header_dashboard a:hover {
+	color: #FF0F2A;
+}
 /*********************************************/
 /*****************BANNER****************/
 #mast_banner {
