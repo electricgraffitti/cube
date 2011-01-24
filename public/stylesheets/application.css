@@ -610,8 +610,9 @@ p.testimonial_banner_sig {
 	margin-left: 100px;
 	padding: 5px;
 	font-weight: bold;
+	width: 690px;
 }
-#sub_page ul li.app_text {
+#sub_page ul li.sub_text {
   margin-left: 143px;
 	margin-bottom: 10px;
   padding: 2px;
@@ -655,6 +656,17 @@ p.testimonial_banner_sig {
   width: 290px;
 }
 #sub_page_ecommerce_images img {
+	margin-bottom: 25px;
+	-moz-box-shadow: 4px 4px 5px #999999;
+}
+#sub_page_design_images{
+  height: 325px;
+  position: absolute;
+  right: 30px;
+  top: 300px;
+  width: 290px;
+}
+#sub_page_design_images img {
 	margin-bottom: 25px;
 	-moz-box-shadow: 4px 4px 5px #999999;
 }
