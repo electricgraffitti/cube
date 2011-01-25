@@ -301,20 +301,23 @@ label.error {
 }
 /*******Navigation********/
 #main_nav {
-  bottom: 25px;
-  height: 40px;
-  left: 160px;
+  bottom: -15px;
+  height: 70px;
+  left: 150px;
   position: absolute;
-  width: 640px;
+  width: 660px;
 }
-ul.nav_ul {
+#main_nav ul {
   position: relative;
 /*  float: left;*/
-  width: 640px;
+  width: 660px;
   height: 40px;
 /*  left: 440px;*/
 }
-ul.nav_ul li {
+#main_nav ul li {
+	float: left;
+}
+/*ul.nav_ul li {
   width: 80px;
   height: 40px;
   float: left;
@@ -397,13 +400,94 @@ ul.nav_ul li span.hover {
 }
 #main_nav ul li a#get_quote.active {
   background: url('../images/new_main_nav.png') -560px -40px;
-}
-ul.nav_ul li a {
+}*/
+#main_nav ul li.nav1 a {
+	background: url('../images/new_main_nav.png') 0px 0px;
   text-decoration: none;
   display: block;
   text-indent: -3000em;
-  width: 100%;
-  height: 100%;
+  width: 75px;
+  height: 30px;
+}
+#main_nav ul li.nav1 a:hover {
+	background: url('../images/new_main_nav.png') 0px -70px;
+}
+#main_nav ul li.nav2 a {
+	background: url('../images/new_main_nav.png') -75px 0px;
+  text-decoration: none;
+  display: block;
+  text-indent: -3000em;
+  width: 57px;
+  height: 30px;
+}
+#main_nav ul li.nav2 a:hover {
+	background: url('../images/new_main_nav.png') -75px -70px;
+}
+#main_nav ul li.nav3 a {
+	background: url('../images/new_main_nav.png') -130px 0px;
+  text-decoration: none;
+  display: block;
+  text-indent: -3000em;
+  width: 122px;
+  height: 30px;
+}
+#main_nav ul li.nav3 a:hover {
+	background: url('../images/new_main_nav.png') -130px -70px;
+}
+#main_nav ul li.nav4 a {
+	background: url('../images/new_main_nav.png') -253px 0px;
+  text-decoration: none;
+  display: block;
+  text-indent: -3000em;
+  width: 70px;
+  height: 30px;
+}
+#main_nav ul li.nav4 a:hover {
+	background: url('../images/new_main_nav.png') -253px -70px;
+}
+#main_nav ul li.nav5 a {
+	background: url('../images/new_main_nav.png') -321px 0px;
+  text-decoration: none;
+  display: block;
+  text-indent: -3000em;
+  width: 78px;
+  height: 30px;
+}
+#main_nav ul li.nav5 a:hover {
+	background: url('../images/new_main_nav.png') -321px -70px;
+}
+#main_nav ul li.nav6 a {
+	background: url('../images/new_main_nav.png') -399px 0px;
+  text-decoration: none;
+  display: block;
+  text-indent: -3000em;
+  width: 50px;
+  height: 30px;
+}
+#main_nav ul li.nav6 a:hover {
+	background: url('../images/new_main_nav.png') -399px -70px;
+}
+#main_nav ul li.nav7 a {
+	background: url('../images/new_main_nav.png') -452px 0px;
+  text-decoration: none;
+  display: block;
+  text-indent: -3000em;
+  width: 78px;
+  height: 30px;
+}
+#main_nav ul li.nav7 a:hover {
+	background: url('../images/new_main_nav.png') -452px -70px;
+}
+#main_nav ul li.nav8 a {
+	background: url('../images/new_main_nav.png') -535px 0px;
+  text-decoration: none;
+  display: block;
+  text-indent: -3000em;
+  width: 120px;
+  height: 30px;
+}
+#main_nav ul li.nav8 a:hover {
+	background: url('../images/new_main_nav.png') -535px -70px;
 }
 #header_dashboard {
 	margin-top: 32px;
