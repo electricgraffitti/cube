@@ -280,37 +280,37 @@ label.error {
   height: 125px;
 }
 #logo {
-  background: url("../images/logo1.png") no-repeat scroll 0 0 transparent;
-  height: 146px;
+  background: url("../images/logo2.png") no-repeat scroll 0 0 transparent;
+  height: 88px;
   left: 12px;
   position: absolute;
   top: 1px;
-  width: 150px;
+  width: 90px;
   z-index: 100;
 }
 #main_header {
   background: url("../images/c2header_text.png") no-repeat scroll 0 0 transparent;
   float: left;
   height: 41px;
-  left: 145px;
+  left: 85px;
   position: relative;
   text-indent: -3000em;
-  top: 30px;
+  top: 5px;
   width: 216px;
   
 }
 /*******Navigation********/
 #main_nav {
-  bottom: 50px;
+  bottom: 25px;
   height: 40px;
-  left: 380px;
+  left: 160px;
   position: absolute;
-  width: 560px;
+  width: 640px;
 }
 ul.nav_ul {
   position: relative;
 /*  float: left;*/
-  width: 560px;
+  width: 640px;
   height: 40px;
 /*  left: 440px;*/
 }
@@ -388,6 +388,15 @@ ul.nav_ul li span.hover {
 }
 #main_nav ul li a#contact.active {
   background: url('../images/new_main_nav.png') -480px -40px;
+}
+.nav8 {
+  background: url('../images/new_main_nav.png') -560px -80px;
+}
+.nav8.highlight:hover, li.nav8 span.hover {
+  background: url('../images/new_main_nav.png') -560px 0px;
+}
+#main_nav ul li a#get_quote.active {
+  background: url('../images/new_main_nav.png') -560px -40px;
 }
 ul.nav_ul li a {
   text-decoration: none;
