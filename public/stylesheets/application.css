@@ -806,6 +806,7 @@ p.testimonial_banner_sig {
   text-align: center;
   width: 900px;
 	margin-top: 30px;
+	border-bottom: 2px solid #a70d0e;
 }
 .cube_listing img {
   background: url("../images/main_inner.png") repeat scroll 0 0 transparent;
@@ -985,6 +986,10 @@ p.testimonial_banner_sig {
 .retweet_links {
   position: relative;
   width: 100%;
+}
+#edit_link {
+	margin-top: 20px;
+	font-size: 18px;
 }
 /*********************************************/
 /******************SUB BOXES******************/
