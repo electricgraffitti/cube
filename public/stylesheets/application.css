@@ -1211,7 +1211,6 @@ p.about_us {
 }
 /*********************************************/
 /******************FLASH**********************/
- 
 .flash_html {
 	display:inline;
 }
@@ -1225,8 +1224,6 @@ p.about_us {
 	background-color:#000;
 	padding:4px;
 }
-
-
 /*********************************************/
 /******************BUTTONS********************/
 .btn {
@@ -1259,6 +1256,7 @@ p.about_us {
   position: relative;
   height: 190px;
   background: url('../images/footer_bg.png') no-repeat;
+	font-size: 85%;
 }
 .footer_logo {
   position: absolute;
