@@ -303,7 +303,7 @@ label.error {
 #main_nav {
   bottom: -15px;
   height: 70px;
-  left: 150px;
+  left: 155px;
   position: absolute;
   width: 660px;
 }
@@ -410,6 +410,9 @@ ul.nav_ul li span.hover {
   height: 30px;
 }
 #main_nav ul li.nav1 a:hover {
+	background: url('../images/new_main_nav.png') 0px -70px;
+}
+#main_nav ul li.nav1 a:active {
 	background: url('../images/new_main_nav.png') 0px -70px;
 }
 #main_nav ul li.nav2 a {
