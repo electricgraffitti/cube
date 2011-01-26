@@ -490,7 +490,7 @@ ul.nav_ul li span.hover {
 	background: url('../images/new_main_nav.png') -535px -70px;
 }
 #header_dashboard {
-	margin-top: 32px;
+    margin: 0;
 }
 #header_dashboard a {
 	color: #fff;
@@ -801,16 +801,18 @@ p.testimonial_banner_sig {
 /**************************************************/
 /******************CUBE LISTINGS******************/
 .cube_listing {
-	float: left;
   padding: 20px;
   position: relative;
+  text-align: center;
   width: 900px;
+	margin-top: 30px;
 }
 .cube_listing img {
-  background: none repeat scroll 0 0 #FEFEFE;
-  border: 2px solid #222222;
-  float: left;
-  margin-right: 20px;
+  background: url("../images/main_inner.png") repeat scroll 0 0 transparent;
+  -moz-box-shadow: 4px 4px 5px #999999;
+  border-color: #999999 #AAAAAA;
+  border-style: solid;
+  border-width: 2px 1px;
   padding: 10px;
 }
 .cube_listing_client {
@@ -890,9 +892,11 @@ p.testimonial_banner_sig {
   font-size: 40px;
   font-family: impact, Arial;
   color: #222;
-  width: 750px;
+  width: 100%;
   text-shadow: 0px 1px 0px #fefefe;
   padding: 0px;
+	margin-top: 20px;
+	text-shadow: 2px 2px 3px #999;
 }
 .clients_header {
   position: relative;
@@ -944,7 +948,7 @@ p.testimonial_banner_sig {
   font-size: 125%;
   font-style: italic;
   font-family: "Helvetica Neue LT", Arial, Helvetica, Geneva, sans-serif;
-  width: 670px;
+  width: 100%;
   color: #a70d0e;
   text-shadow: 0px -1px 0px #222;
   margin-bottom: 2px;
@@ -961,7 +965,11 @@ p.testimonial_banner_sig {
 	text-decoration: underline;
 }
 .cube_listing p {
-  margin-bottom: 10px;
+  margin-bottom: 50px;
+	margin-top: 60px;
+	width: 100%;
+	text-align: left;
+	font-size: 14px;
 }
 .listing_time {
   position: relative;
@@ -969,15 +977,14 @@ p.testimonial_banner_sig {
   font-size: 95%;
   font-style: italic;
   font-family: "Helvetica Neue LT", Arial, Helvetica, Geneva, sans-serif;
-  width: 670px;
+  width: 100%;
   color: #444;
   text-shadow: 0px 1px 0px #fff;
   margin-bottom: 10px;
 }
 .retweet_links {
-	position: relative;
-	float: right;
-	width: 100px;
+  position: relative;
+  width: 100%;
 }
 /*********************************************/
 /******************SUB BOXES******************/

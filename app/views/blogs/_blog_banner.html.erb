@@ -1,0 +1,25 @@
+<div class="cube_listing">
+  <%= image_tag(blog.assets.last.attachment.url(:medium), :alt => blog.title) %>
+
+
+
+<div class="listing_title">
+  <%=h blog.title %>
+</div>
+
+<div class="listing_sub_title">
+  <%=h blog.sub_title %>
+</div>
+
+<div class="listing_time">
+  <%= (blog.created_at).to_s(:nice_date) %>
+<div class="retweet_links">
+<%= link_to "#{blog.title}", blog_path(blog), :class => "retweet vert" %>
+</div>
+</div>
+<div class="listing_content">
+  <%= blog.content %>
+</div>
+<hr />
+
+</div>
