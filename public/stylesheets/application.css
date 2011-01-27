@@ -702,11 +702,14 @@ p.testimonial_banner_sig {
 #sub_top {
 	width: 100%;
 	height: 100%;
+	float: left;
+	margin-bottom: 20px;
 }
-#sub_page p {
+#sub_page p.text {
 	width: 760px;
 	text-align-left;
-	margin-left: 100px;
+	margin-left: 105px;
+	float: left;
 }
 p.bold_text {
 	font-weight: bold;
@@ -715,13 +718,14 @@ p.bold_text {
 	width: 570px;
 	height: 100%;
 	float: left;
+	margin-bottom: 30px;
 }
 #sub_page h3{
-  margin-left: 105px;
-	margin-top: 20px;
+  color: #A70D0E;
+  float: left;
+  margin: 0 0 25px 105px;
+  text-shadow: -1px 0 black, 0 1px black;
   width: 760px;
-	color: #a70d0e;
-	text-shadow: -1px 0 black, 0 1px black;
 }
 #sub_left ul li h4 {
 	float: none;
@@ -736,7 +740,7 @@ p.bold_text {
   padding: 2px;
   width: 400px;
 }
-#sub_left ul {
+#sub_left ul.ecommerce {
 	margin-top: 30px;
 	margin-left: 130px;
 }
@@ -750,7 +754,7 @@ p.bold_text {
 	width: 340px;
 	height: 100%;
 	float: left;
-	margin-top: 25px;
+	margin-top: 55px;
 	margin-bottom: 10px;
 }
 #sub_right img {
@@ -762,23 +766,27 @@ p.bold_text {
   border-style: solid;
   border-width: 2px 1px;
 	padding: 3px;
-	
+}
+#sub_right img.design {
+  -moz-box-shadow: 4px 4px 5px #999999;
+  background: url("../images/main_inner.png") repeat scroll 0 0 transparent;
+  border-color: #999999 #AAAAAA;
+  border-style: solid;
+  border-width: 2px 1px;
+  margin-bottom: 50px;
+  margin-left: 40px;
+  padding: 3px;
 }
 #sub_bottom {
 	width: 100%;
 	height: 100%;
+	float: left;
 }
 #sub_page ul li.ecommerce_text {
   margin-left: 143px;
 	margin-bottom: 10px;
   padding: 2px;
   width: 400px;
-}
-
-#sub_page p.text {
-	margin-left: 105px;
-  width: 760px;
-	margin-top: 25px;
 }
 #sub_page_app_images{
   height: 480px;
