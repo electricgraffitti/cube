@@ -1,6 +1,9 @@
 <div class="cube_listing_large">
 
   <%= image_tag(client.assets.last.attachment.url(:medium), :alt => client.title) %>
+<% if current_admin %>
+	<%= link_to "Edit Client", edit_client_path(client) %>
+<% end %>
 
 
 	

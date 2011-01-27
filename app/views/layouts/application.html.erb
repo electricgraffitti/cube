@@ -12,6 +12,9 @@
     <div id="hd" class='container_12'>
 	    <%= link_to '<div id="logo"></div>', root_path, :alt => "Cube2Media" %>
       <%= render :partial => "layouts/header" %>
+			<% if current_admin %>
+				<%= render :partial => 'layouts/admin_nav' %>
+			<% end %>
 	  </div>
   </div>
   <!-- banner section -->

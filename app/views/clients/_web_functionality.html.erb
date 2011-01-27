@@ -1,22 +1,5 @@
 <ul>
-	<% if client.web_application %>
-		<li>
-			Web Application
-		</li>
-	<% end %>
-	<% if client.ecommerce %>
-		<li>
-			Ecommerce	
-		</li>
-	<% end %>
-	<% if client.content_management %>
-		<li>
-			Content Management
-		</li>
-	<% end %>
-	<% if client.web_design %>
-		<li>
-			Web Design
-		</li>
+	<% @fshun.each do |fshun| %>
+		<li><%= fshun %></li>
 	<% end %>
 </ul>

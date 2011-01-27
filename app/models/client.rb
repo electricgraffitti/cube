@@ -71,6 +71,55 @@ class Client < ActiveRecord::Base
        a.save(false)
      end
    end
+   
+   def functionality
+      pf = []
+        if self.web_application
+          pf << "Web Application"
+        end
+        if self.content_management
+          pf << "Content Management"
+        end
+        if self.ecommerce
+          pf << "Ecommerce Application"
+        end
+        if self.web_design
+          pf << "Web Design"
+        end
+        return pf
+   end
+   
+   def technology
+     at = []
+      if self.css
+        at << "CSS"
+      end
+      if self.php
+        at << "PHP"
+      end
+     if self.html
+       at << "HTML"
+     end
+     if self.flash
+       at << "Flash"
+     end
+     if self.ruby
+       at << "Ruby"
+     end
+     if self.sql
+       at << "SQL"
+     end
+     if self.wordpress
+       at << "Wordpress"
+     end
+     if self.javascript
+       at << "Javascript"
+     end
+     if self.rails_framework
+       at << "Rails Framework"
+     end
+    return at
+   end
   
   
 end

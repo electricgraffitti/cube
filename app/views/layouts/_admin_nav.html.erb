@@ -1,0 +1,12 @@
+<% if current_admin %>
+	<div class="admin_nav align">
+		<ul>
+	  	<li><%= link_to "Blogs", admin_blog_path, :class => "admin_btn" %></li>
+	  	<li><%= link_to "Clients", admin_client_path, :class => "admin_btn" %></li>
+	  	<li><%= link_to "Quotes", admin_quote_path, :class => "admin_btn" %></li>
+	  	<li><%= link_to "Employees", admin_employee_path, :class => "admin_btn" %></li>
+	  	<li><%= link_to "Codeblog", admin_codeblog_path, :class => "admin_btn" %></li>
+	  	<li><%= link_to "Services", admin_service_path, :class => "admin_btn" %></li>
+		</ul>
+	</div>
+<% end %>

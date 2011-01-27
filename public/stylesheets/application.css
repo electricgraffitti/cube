@@ -491,15 +491,6 @@ ul.nav_ul li span.hover {
 #main_nav ul li.nav8 a:hover {
 	background: url('../images/new_main_nav.png') -535px -70px;
 }
-#header_dashboard {
-    margin: 0;
-}
-#header_dashboard a {
-	color: #fff;
-}
-#header_dashboard a:hover {
-	color: #FF0F2A;
-}
 .admin_link_color a {
 	color: #ff0f2a;
 }
@@ -1159,6 +1150,11 @@ p.about_us {
   height: 25px;
   padding: 15px;
   float: right;
+	margin-bottom: 15px;
+}
+.align {
+	right: 30px;
+  top: -45px;
 }
 .admin_nav ul {
   position: relative;
@@ -1179,7 +1175,8 @@ p.about_us {
   width: 75px;
   height: 25px;
   color: #FF0F2A;
-  text-shadow: 0px 1px 0px #ccc;
+  padding-top: 5px;
+	text-align: center;
 }
 .admin_nav ul li a:hover {
   color: #000;
@@ -1230,7 +1227,7 @@ p.about_us {
 /*********************************************/
 /******************BUTTONS********************/
 .btn {
-  background: #222 url('../images/gloss_button_blue.png') bottom left repeat-x;
+  background: #222;
   padding: 8px; 
   color: #fff;
   border: 1px solid #666; 
@@ -1245,6 +1242,16 @@ p.about_us {
 .btn:hover {
 	color: #fefefe;
   background: #a70d0e;
+}
+.admin_btn {
+	background: #222;
+	text-decoration: none; 
+  cursor: pointer;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+}
+.admin_btn:hover {
+	background: #a70d0e;
 }
 
 /*********************************************/
