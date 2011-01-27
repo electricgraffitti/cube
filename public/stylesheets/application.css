@@ -695,30 +695,70 @@ p.testimonial_banner_sig {
 
 /*********************************************/
 /*****************SUB PAGES******************/
+#sub_page {
+	width: 100%;
+	height: 100%;
+}
+#sub_top {
+	width: 100%;
+	height: 100%;
+}
+#sub_page p {
+	width: 760px;
+	text-align-left;
+	margin-left: 100px;
+}
+p.bold_text {
+	font-weight: bold;
+}
+#sub_left {
+	width: 570px;
+	height: 100%;
+	float: left;
+}
 #sub_page h3{
   margin-left: 105px;
-  width: 760px;
-}
-#sub_page h4 {
-	margin-left: 105px;
-	margin-bottom: 10px;
-	width: 760px;
 	margin-top: 20px;
+  width: 760px;
 	color: #a70d0e;
+	text-shadow: -1px 0 black, 0 1px black;
 }
-#sub_page ul li.sub_list {
+#sub_left ul li h4 {
 	float: none;
 	margin-left: 100px;
 	padding: 5px;
 	font-weight: bold;
 	width: 690px;
 }
-#sub_page ul li.sub_text {
+#sub_left ul li p {
   margin-left: 143px;
 	margin-bottom: 10px;
   padding: 2px;
   width: 400px;
 }
+#sub_right {
+	width: 340px;
+	height: 100%;
+	float: left;
+	margin-top: 25px;
+	margin-bottom: 10px;
+}
+#sub_right img {
+ -moz-box-shadow: 4px 4px 5px #999999;
+  margin-bottom: 35px;
+  margin-left: 40px;
+  background: url("../images/main_inner.png") repeat scroll 0 0 transparent;
+  border-color: #999999 #AAAAAA;
+  border-style: solid;
+  border-width: 2px 1px;
+	padding: 3px;
+	
+}
+#sub_bottom {
+	width: 100%;
+	height: 100%;
+}
+
 #sub_page ul li.ecommerce_list {
 	float: none;
 	margin-left: 120px;
@@ -855,8 +895,9 @@ p.testimonial_banner_sig {
   position: relative;
   float: left;
   width: 100%;
-	height: 510px;
+	height: 100%;
 	text-align: center;
+	    margin-top: 45px;
 }
 .cube_listing_large img {
 	background: url("../images/main_inner.png") repeat scroll 0 0 transparent;
@@ -875,9 +916,14 @@ p.testimonial_banner_sig {
 	display: block;
 }
 .listing_content_large {
-	margin-left: 147px;
+  margin-top: 20px;
   text-align: left;
-  width: 650px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.listing_content_large p {
+	margin-left: 170px;
+	width: 600px;
 }
 .listing_content {
 	text-align: left;
@@ -986,9 +1032,23 @@ p.testimonial_banner_sig {
   position: relative;
   width: 100%;
 }
-#edit_link {
+.lg_page_btn {
 	margin-top: 20px;
-	font-size: 18px;
+	font-size: 15px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.lg_page_btn a {
+	color: #a70d0e;
+	background: #000;
+	padding: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	text-decoration: none;
+}
+.lg_page_btn a:hover {
+	background: #a70d0e;
+	color: #000;
 }
 /*********************************************/
 /******************SUB BOXES******************/

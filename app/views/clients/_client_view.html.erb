@@ -1,17 +1,16 @@
 <div class="cube_listing_large">
-
+	<% if current_admin %>
+		<div class="lg_page_btn">
+			<%= link_to "Edit Client", edit_client_path(client) %>
+		</div>
+	<% end %>
   <%= image_tag(client.assets.last.attachment.url(:medium), :alt => client.title) %>
-<% if current_admin %>
-	<%= link_to "Edit Client", edit_client_path(client) %>
-<% end %>
 
-
-	
 	<div class="listing_content_large">
 		<%= client.content %>
 	</div>
 	
-	<div class="listing_content_link">
+	<div class="lg_page_btn">
 <%= link_to "View Client", client.url, :target => "_blank" %>
 	</div>
 

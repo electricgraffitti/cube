@@ -1,57 +1,73 @@
 <div id="sub_page">
-			<h3>Companies across the trust their projects and designs to Cube2Media. to develop and implement one-of-a-kind complex cloud based applications.  We deliver both robust custom web application and completely streamlined solutions to help business' achieve their goals.</h3>
-			<p class="text">Here at Cube2Media we build our dynamic projects in phases. We cover everything from small entry level data driven solutions to the most complex application structures. We can scale your application to fit the specifics as your company grows and gains momentum.</p>
-			<p class="text">Cube2Media has the database experience to help your applications run smoothly ranging from entry level designs to large scalable systems. We take your business model and develop the application around the uniqueness of your companies requirements. We will never oversell or overbuild your application, what we will do is recommend the necessary components required to provide you with the best application performance and client useablity.</p>
-			
-			<h4>Cube2Media's Six Step Process to Successful Web Application Development</h4>
+	<div id="sub_top">
+		<p class="bold_text">
+			Companies across the trust their projects and designs to Cube2Media. to develop and implement one-of-a-kind complex cloud based applications.  We deliver both robust custom web application and completely streamlined solutions to help business' achieve their goals.
+		</p>
+		<p class="text">
+			Here at Cube2Media we build our dynamic projects in phases. We cover everything from small entry level data driven solutions to the most complex application structures. We can scale your application to fit the specifics as your company grows and gains momentum.
+		</p>
+		<p class="text">
+			Cube2Media has the database experience to help your applications run smoothly ranging from entry level designs to large scalable systems. We take your business model and develop the application around the uniqueness of your companies requirements. We will never oversell or overbuild your application, what we will do is recommend the necessary components required to provide you with the best application performance and client useablity.
+		</p>
+	</div>
+	
+	
+	<div id="sub_left">		
+		<h3>Cube2Media's Six Step Development  Process </h3>
 			<ul>
 				<li class="sub_list">
-					Step 1.  Project Blueprint
-				</li>
-				<li class="sub_text">
-					The first step begins with our initial correspondence where we will provide you with a detailed quote and costs associated with your project. We will focus on your ideas, and make sure you have  a clear understanding of the project, and move forward with the best solutions to complete your initial objective for your web application.
-				</li>
-				<li class="sub_list">
-					Step 2.  Baseline Production
-				</li>
-				<li class="sub_text">
-					This step is where we take your initial conceptual ideas and build a comprehensive wireframe a prototype mockup of the design, which ends up with designing the final project codebase and associated project requirements. 
+					<h4>Step 1.  Project Blueprint</h4>
+					<p>
+						The first step begins with our initial correspondence where we will provide you with a detailed quote and costs associated with your project. We will focus on your ideas, and make sure you have  a clear understanding of the project, and move forward with the best solutions to complete your initial objective for your web application.
+					</p>
 				</li>
 				<li class="sub_list">
-					Step 3.  Refining the Project
-				</li>
-				<li class="sub_text">
-					Step three is where we implement your company content and make sure the design aspects meet your required criteria. We will then launch a Beta version of your application for you to work with and make sure all of your intended processes have been met.
-				</li>
-				<li class="sub_list">
-					Step 4.  Quality Assurance
-				</li>
-				<li class="sub_text">
-					We run tests to do our best to make sure the codebase is free of errors or other mistakes. End results is the best SEO compliant codebase to meet search engines compatibility requirements. 
+					<h4>Step 2.  Baseline Production</h4>
+					<p>
+						This step is where we take your initial conceptual ideas and build a comprehensive wireframe a prototype mockup of the design, which ends up with designing the final project codebase and associated project requirements.
+					</p> 
 				</li>
 				<li class="sub_list">
-					Step 5.  Project Deployment
-				</li>
-				<li class="sub_text">
-					When your project has been signed off on and is ready for launch,  we will deploy your application to your hosting server or if you choose you can host your project with Cube2Media. We will thoroughly go through the project one final time in order to verify proper functionality.
+					<h4>Step 3.  Refining the Project</h4>
+					<p>
+						Step three is where we implement your company content and make sure the design aspects meet your required criteria. We will then launch a Beta version of your application for you to work with and make sure all of your intended processes have been met.
+					</p>
 				</li>
 				<li class="sub_list">
-					Step 6.  Training and Adjustments
+					<h4>Step 4.  Quality Assurance</h4>
+					<p>
+						We run tests to do our best to make sure the codebase is free of errors or other mistakes. End results is the best SEO compliant codebase to meet search engines compatibility requirements.
+					</p> 
 				</li>
-				<li class="sub_text">
-					The final phase is the client training portion of the project.  We make sure that you have a full understanding of the inner workings of your content management system. Final adjustments will be made to ensure your application is functioning the way you intended. 
+				<li class="sub_list">
+					<h4>Step 5.  Project Deployment</h4>
+					<p>
+						When your project has been signed off on and is ready for launch,  we will deploy your application to your hosting server or if you choose you can host your project with Cube2Media. We will thoroughly go through the project one final time in order to verify proper functionality.
+					</p>
+				</li>
+				<li class="sub_list">
+					<h4>Step 6.  Training and Adjustments</h4>
+					<p>
+						The final phase is the client training portion of the project.  We make sure that you have a full understanding of the inner workings of your content management system. Final adjustments will be made to ensure your application is functioning the way you intended.
+					</p> 
 				</li>
 			</ul>
-			<h4>Cube2Media Customizable Web Applications</h4>
-			<p class="text">
-				Our application development team uses a variety of current web based application technologies to bring the most up to date applications to life.  When you work with the Cube2Media team, you are ensured to get one of the most streamlined applications available in todays web marketplace.
-			</p>
-			<p class="text">
-				Our intricate web development style gives you the knowledge of our staff and the use of the most current open source software implementation for your business. When choosing Cube2media, just let us know your project specifics and you will soon understand why we are considered one of the top firms in our field. <%= link_to "Go Here to Get a Customized Quote", project_contact_path %>
-			</p>
-			<div id="sub_page_app_images">
-				<% @clients.each do |client| %>
-			  	<%= image_tag(client.assets.last.attachment.url(:small), :alt => client.title) %>
-				<% end %>
-			</div>
+	</div>
+	
+	
+	<div id="sub_right">
+			<% @clients.each do |client| %>
+			  <%= image_tag(client.assets.last.attachment.url(:small), :alt => client.title) %>
+			<% end %>
+	</div>
+		
+	<div id="sub_bottom">
+		<h3>Cube2Media Customizable Web Applications</h3>
+		<p class="text bold_text">
+			Our application development team uses a variety of current web based application technologies to bring the most up to date applications to life.  When you work with the Cube2Media team, you are ensured to get one of the most streamlined applications available in todays web marketplace.
+		</p>
+		<p class="text bold_text">
+			Our intricate web development style gives you the knowledge of our staff and the use of the most current open source software implementation for your business. When choosing Cube2media, just let us know your project specifics and you will soon understand why we are considered one of the top firms in our field. <%= link_to "Go Here to Get a Customized Quote", project_contact_path %>
+		</p>
+	</div>
 </div>

@@ -1,10 +1,10 @@
 <div class="cube_listing">
-  <%= image_tag(blog.assets.last.attachment.url(:medium), :alt => blog.title) %><br />
 	<% if current_admin %>
-		<div id="edit_link">
+		<div class="lg_page_btn">
 			<%= link_to "Edit Blog", edit_blog_path(blog) %>
 		</div>
 	<% end %>
+  <%= image_tag(blog.assets.last.attachment.url(:medium), :alt => blog.title) %><br />
 	<div class="listing_title">
   	<%=h blog.title %>
 	</div>
