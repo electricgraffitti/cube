@@ -1,8 +1,14 @@
 <div id="sub_page">
-			<h3>Building an online product store provides increased brand recognition and the ability to generate revenue around the clock.</h3>
-			<p class="text">Would you like to sell your goods and services on your website? Cube2Media's ecommerce solutions are are just what you are looking for.  Some online stores can be very simple and others can have quite a lot of complexities. We can build them all. Cube2Media has the ability to build a streamline shopping application custom suited to fit the needs of your business large or small. We make online store management easier than ever when it comes to management and maintenance. Once built you will have a fully functional selling application that will integrate right in your day to day business </p>
-			<p class="text">Cube2Media ecommerce solutions offers you an additional outlet to generate additional revenue that you are missing out on if you are not selling on the internet.  Getting your company up and running with a shopping cart can be achieved relatively quickly so you can be well on your way to achieving your online success..</p>
-			<h4>Cube2Media's Ecommerce Solutions Options:</h4>
+	<div id="sub_top">
+		<h3>Building an online product store provides increased brand recognition and the ability to generate revenue around the clock.</h3>
+		<p class="text">Would you like to sell your goods and services on your website? Cube2Media's ecommerce solutions are are just what you are looking for.  Some online stores can be very simple and others can have quite a lot of complexities. We can build them all. Cube2Media has the ability to build a streamline shopping application custom suited to fit the needs of your business large or small. We make online store management easier than ever when it comes to management and maintenance. Once built you will have a fully functional selling application that will integrate right in your day to day business.
+		</p>
+		<p class="text">Cube2Media ecommerce solutions offers you an additional outlet to generate additional revenue that you are missing out on if you are not selling on the internet.  Getting your company up and running with a shopping cart can be achieved relatively quickly so you can be well on your way to achieving your online success.
+		</p>
+	</div>
+	
+	<div id="sub_left">
+			<h3>Cube2Media's Ecommerce Solutions Options:</h3>
 			<ul>
 				<li class="ecommerce_list">
 					Dynamic Shopping Cart
@@ -38,12 +44,21 @@
 					Currency Rate Exchange
 				</li>
 			</ul>
-			<h4>Cube2Media Customized Ecommerce Solutions</h4>
-			<p class="text">
-				Cube2Media can deploy your new online shopping ecommerce system very quickly to your server location or ours so you can be selling on the internet in no time. Bottom line if your company offers goods and services for sale and you are not selling on the internet, you are missing out on the opportunity of global sales. <%= link_to "Go Here to Get a Customized Quote", project_contact_path %></p>
-			<div id="sub_page_ecommerce_images">
-				<% @clients.each do |client| %>
-			  	<%= image_tag(client.assets.last.attachment.url(:small), :alt => client.title) %>
-				<% end %>
-			</div>
+	</div>
+	
+	<div id="sub_right">
+		<% @clients.each do |client| %>
+	  	<%= image_tag(client.assets.last.attachment.url(:small), :alt => client.title) %>
+		<% end %>
+	</div>
+	
+	<div id="sub_bottom">
+		<h3>Cube2Media Customized Ecommerce Solutions</h3>
+		<p class="text">
+				Cube2Media can deploy your new online shopping ecommerce system very quickly to your server location or ours so you can be selling on the internet in no time. Bottom line if your company offers goods and services for sale and you are not selling on the internet, you are missing out on the opportunity of global sales. <%= link_to "Go Here to Get a Customized Quote", project_contact_path %>
+		</p>
+	</div>
+			<!-- <div id="sub_page_ecommerce_images">
+
+			</div> -->
 </div>

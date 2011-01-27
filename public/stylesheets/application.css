@@ -736,6 +736,16 @@ p.bold_text {
   padding: 2px;
   width: 400px;
 }
+#sub_left ul {
+	margin-top: 30px;
+	margin-left: 130px;
+}
+#sub_left ul li.ecommerce_list {
+	float: none;
+	padding: 5px;
+	font-weight: bold;
+	list-style: square;
+}
 #sub_right {
 	width: 340px;
 	height: 100%;
@@ -757,14 +767,6 @@ p.bold_text {
 #sub_bottom {
 	width: 100%;
 	height: 100%;
-}
-
-#sub_page ul li.ecommerce_list {
-	float: none;
-	margin-left: 120px;
-	padding: 5px;
-	font-weight: bold;
-	list-style: square;
 }
 #sub_page ul li.ecommerce_text {
   margin-left: 143px;
