@@ -11,54 +11,54 @@
 		</p>
 	</div>
 	
+	<div id="sub_middle">
+		<div id="sub_left">		
+			<h3>Cube2Media's Six Step Development  Process </h3>
+				<ul>
+					<li class="sub_list">
+						<h4>Step 1.  Project Blueprint</h4>
+						<p>
+							The first step begins with our initial correspondence where we will provide you with a detailed quote and costs associated with your project. We will focus on your ideas, and make sure you have  a clear understanding of the project, and move forward with the best solutions to complete your initial objective for your web application.
+						</p>
+					</li>
+					<li class="sub_list">
+						<h4>Step 2.  Baseline Production</h4>
+						<p>
+							This step is where we take your initial conceptual ideas and build a comprehensive wireframe a prototype mockup of the design, which ends up with designing the final project codebase and associated project requirements.
+						</p> 
+					</li>
+					<li class="sub_list">
+						<h4>Step 3.  Refining the Project</h4>
+						<p>
+							Step three is where we implement your company content and make sure the design aspects meet your required criteria. We will then launch a Beta version of your application for you to work with and make sure all of your intended processes have been met.
+						</p>
+					</li>
+					<li class="sub_list">
+						<h4>Step 4.  Quality Assurance</h4>
+						<p>
+							We run tests to do our best to make sure the codebase is free of errors or other mistakes. End results is the best SEO compliant codebase to meet search engines compatibility requirements.
+						</p> 
+					</li>
+					<li class="sub_list">
+						<h4>Step 5.  Project Deployment</h4>
+						<p>
+							When your project has been signed off on and is ready for launch,  we will deploy your application to your hosting server or if you choose you can host your project with Cube2Media. We will thoroughly go through the project one final time in order to verify proper functionality.
+						</p>
+					</li>
+					<li class="sub_list">
+						<h4>Step 6.  Training and Adjustments</h4>
+						<p>
+							The final phase is the client training portion of the project.  We make sure that you have a full understanding of the inner workings of your content management system. Final adjustments will be made to ensure your application is functioning the way you intended.
+						</p> 
+					</li>
+				</ul>
+		</div>
 	
-	<div id="sub_left">		
-		<h3>Cube2Media's Six Step Development  Process </h3>
-			<ul>
-				<li class="sub_list">
-					<h4>Step 1.  Project Blueprint</h4>
-					<p>
-						The first step begins with our initial correspondence where we will provide you with a detailed quote and costs associated with your project. We will focus on your ideas, and make sure you have  a clear understanding of the project, and move forward with the best solutions to complete your initial objective for your web application.
-					</p>
-				</li>
-				<li class="sub_list">
-					<h4>Step 2.  Baseline Production</h4>
-					<p>
-						This step is where we take your initial conceptual ideas and build a comprehensive wireframe a prototype mockup of the design, which ends up with designing the final project codebase and associated project requirements.
-					</p> 
-				</li>
-				<li class="sub_list">
-					<h4>Step 3.  Refining the Project</h4>
-					<p>
-						Step three is where we implement your company content and make sure the design aspects meet your required criteria. We will then launch a Beta version of your application for you to work with and make sure all of your intended processes have been met.
-					</p>
-				</li>
-				<li class="sub_list">
-					<h4>Step 4.  Quality Assurance</h4>
-					<p>
-						We run tests to do our best to make sure the codebase is free of errors or other mistakes. End results is the best SEO compliant codebase to meet search engines compatibility requirements.
-					</p> 
-				</li>
-				<li class="sub_list">
-					<h4>Step 5.  Project Deployment</h4>
-					<p>
-						When your project has been signed off on and is ready for launch,  we will deploy your application to your hosting server or if you choose you can host your project with Cube2Media. We will thoroughly go through the project one final time in order to verify proper functionality.
-					</p>
-				</li>
-				<li class="sub_list">
-					<h4>Step 6.  Training and Adjustments</h4>
-					<p>
-						The final phase is the client training portion of the project.  We make sure that you have a full understanding of the inner workings of your content management system. Final adjustments will be made to ensure your application is functioning the way you intended.
-					</p> 
-				</li>
-			</ul>
-	</div>
-	
-	
-	<div id="sub_right">
-			<% @clients.each do |client| %>
-			  <%= image_tag(client.assets.last.attachment.url(:small), :alt => client.title) %>
-			<% end %>
+		<div id="sub_right">
+				<% @clients.each do |client| %>
+				  <%= image_tag(client.assets.last.attachment.url(:small), :alt => client.title) %>
+				<% end %>
+		</div>
 	</div>
 		
 	<div id="sub_bottom">

@@ -599,6 +599,7 @@ p.testimonial_banner_sig {
 #sub_page {
 	width: 100%;
 	height: 100%;
+	float: left;
 }
 #sub_top {
 	width: 100%;
@@ -614,6 +615,11 @@ p.testimonial_banner_sig {
 }
 p.bold_text {
 	font-weight: bold;
+}
+#sub_middle {
+	width: 100%;
+	height: 100%;
+	float: left;
 }
 #sub_left {
 	width: 570px;

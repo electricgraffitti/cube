@@ -12,70 +12,72 @@
 		</p>
 	</div>
 	
-	<div id="sub_left">
-		<h3>Our Approach to Successful Web Development</h3>
-		<ul>
-			<li class="sub_list">
-				<h4>Your Company Analysis</h4>
-				<p>
-					Our marketing expertise will research key points of your business and develop an online strategy to help make your company a leading contender and develop a successful strategic business plan.
-				</p>
-			</li>
-			<li class="sub_list">
-				<h4>Intricate Design</h4>
-				<p>
-					Our design team will define the core of your business characteristics and develop a site designed around your company that will fit your needs perfectly.
-				</p>
-			</li>
-			<li class="sub_list">
-				<h4>Dynamic Content Management</h4>
-				<p>
-					We will develop a dynamically driven backend interface which will make managing and updating your sites content easier than ever before.  This will help you in keeping your online content fresh and up to date.
-				</p>
-			</li>
-			<li class="sub_list">
-				<h4>Quality and Testing</h4>
-				<p>
-					We test to ensure all codes are free of error, broken links or other mistakes. Furthermore, the site is tested to ensure compatibility with major search engines. Your satisfaction is our key goal before your site is taken online.
-				</p> 
-			</li>
-			<li class="sub_list">
-				<h4>Your Company Promotion</h4>
-				<p>
-					We offer search engine submission to get you off the ground running out of the gate.  We can also offer email marketing options and social networking implementation to help boost your website traffic.
-				</p>
-			</li>
-			<li class="sub_list">
-				<h4>SEO Compliant Code</h4>
-				<p>
-					We provide SEO compliant code for the top search engines.  Our proven design strategies will help your companies natural search engine success. 
-				</p>
-			</li>
-			<li class="sub_list">
-				<h4>Logo and Branding Design</h4>
-				<p>
-					Cube2Media uses the most current design software and our years of company branding expertise to design a logo and online brand that is as individualistic as you are. 
-				</p>
-			</li>
-			<li class="sub_list">
-				<h4>Website Maintenance</h4>
-				<p>
-					We offer our customer website maintenance services if you find you don't have the time to manage your online content.  We do our research and implement our expertise along with your requests for changes. 
-				</p>
-			</li>
-			<li class="sub_list">
-				<h4>Website Hosting</h4>
-				<p>
-					If you need hosting, Cube2Media offers a few different plans dependent on your needs.  From shared hosting, virtual cloud hosting and dynamic scalable hosting plans, we will find the most economical and streamlined solutions for your web site, online store or web application. 
-				</p>
-			</li>
-		</ul>
-	</div>
+	<div id="sub_middle">
+		<div id="sub_left">
+			<h3>Our Approach to Successful Web Development</h3>
+			<ul>
+				<li class="sub_list">
+					<h4>Your Company Analysis</h4>
+					<p>
+						Our marketing expertise will research key points of your business and develop an online strategy to help make your company a leading contender and develop a successful strategic business plan.
+					</p>
+				</li>
+				<li class="sub_list">
+					<h4>Intricate Design</h4>
+					<p>
+						Our design team will define the core of your business characteristics and develop a site designed around your company that will fit your needs perfectly.
+					</p>
+				</li>
+				<li class="sub_list">
+					<h4>Dynamic Content Management</h4>
+					<p>
+						We will develop a dynamically driven backend interface which will make managing and updating your sites content easier than ever before.  This will help you in keeping your online content fresh and up to date.
+					</p>
+				</li>
+				<li class="sub_list">
+					<h4>Quality and Testing</h4>
+					<p>
+						We test to ensure all codes are free of error, broken links or other mistakes. Furthermore, the site is tested to ensure compatibility with major search engines. Your satisfaction is our key goal before your site is taken online.
+					</p> 
+				</li>
+				<li class="sub_list">
+					<h4>Your Company Promotion</h4>
+					<p>
+						We offer search engine submission to get you off the ground running out of the gate.  We can also offer email marketing options and social networking implementation to help boost your website traffic.
+					</p>
+				</li>
+				<li class="sub_list">
+					<h4>SEO Compliant Code</h4>
+					<p>
+						We provide SEO compliant code for the top search engines.  Our proven design strategies will help your companies natural search engine success. 
+					</p>
+				</li>
+				<li class="sub_list">
+					<h4>Logo and Branding Design</h4>
+					<p>
+						Cube2Media uses the most current design software and our years of company branding expertise to design a logo and online brand that is as individualistic as you are. 
+					</p>
+				</li>
+				<li class="sub_list">
+					<h4>Website Maintenance</h4>
+					<p>
+						We offer our customer website maintenance services if you find you don't have the time to manage your online content.  We do our research and implement our expertise along with your requests for changes. 
+					</p>
+				</li>
+				<li class="sub_list">
+					<h4>Website Hosting</h4>
+					<p>
+						If you need hosting, Cube2Media offers a few different plans dependent on your needs.  From shared hosting, virtual cloud hosting and dynamic scalable hosting plans, we will find the most economical and streamlined solutions for your web site, online store or web application. 
+					</p>
+				</li>
+			</ul>
+		</div>
 	
-	<div id ="sub_right">
-		<% @clients.each do |client| %>
-	  	<%= image_tag(client.assets.last.attachment.url(:small), :alt => client.title, :class => "design") %>
-		<% end %>
+		<div id ="sub_right">
+			<% @clients.each do |client| %>
+		  	<%= image_tag(client.assets.last.attachment.url(:small), :alt => client.title, :class => "design") %>
+			<% end %>
+		</div>
 	</div>
 	
 	<div id="sub_bottom">

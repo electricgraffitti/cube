@@ -7,49 +7,51 @@
 		</p>
 	</div>
 	
-	<div id="sub_left">
-			<h3>Cube2Media's Ecommerce Solutions Options:</h3>
-			<ul class="ecommerce">
-				<li class="ecommerce_list">
-					Dynamic Shopping Cart
-				</li>
-				<li class="ecommerce_list">
-					Web Based Inventory Control
-				</li>
-				<li class="ecommerce_list">
-					Online pricing management
-				</li>
-				<li class="ecommerce_list">
-					Real time credit card processing integration interface.
-				</li>
-				<li class="ecommerce_list">
-					Invoicing
-				</li>
-				<li class="ecommerce_list">
-					Order Tracking
-				</li>
-				<li class="ecommerce_list">
-					User Registration Management
-				</li>
-				<li class="ecommerce_list">
-					Standalone page support
-				</li>
-				<li class="ecommerce_list">
-					Newsletter Management Capabilities
-				</li>
-				<li class="ecommerce_list">
-					Email Order Confirmations
-				</li>
-				<li class="ecommerce_list">
-					Currency Rate Exchange
-				</li>
-			</ul>
-	</div>
+	<div id="sub_middle">
+		<div id="sub_left">
+				<h3>Cube2Media's Ecommerce Solutions Options:</h3>
+				<ul class="ecommerce">
+					<li class="ecommerce_list">
+						Dynamic Shopping Cart
+					</li>
+					<li class="ecommerce_list">
+						Web Based Inventory Control
+					</li>
+					<li class="ecommerce_list">
+						Online pricing management
+					</li>
+					<li class="ecommerce_list">
+						Real time credit card processing integration interface.
+					</li>
+					<li class="ecommerce_list">
+						Invoicing
+					</li>
+					<li class="ecommerce_list">
+						Order Tracking
+					</li>
+					<li class="ecommerce_list">
+						User Registration Management
+					</li>
+					<li class="ecommerce_list">
+						Standalone page support
+					</li>
+					<li class="ecommerce_list">
+						Newsletter Management Capabilities
+					</li>
+					<li class="ecommerce_list">
+						Email Order Confirmations
+					</li>
+					<li class="ecommerce_list">
+						Currency Rate Exchange
+					</li>
+				</ul>
+		</div>
 	
-	<div id="sub_right">
-		<% @clients.each do |client| %>
-	  	<%= image_tag(client.assets.last.attachment.url(:small), :alt => client.title) %>
-		<% end %>
+		<div id="sub_right">
+			<% @clients.each do |client| %>
+		  	<%= image_tag(client.assets.last.attachment.url(:small), :alt => client.title) %>
+			<% end %>
+		</div>
 	</div>
 	
 	<div id="sub_bottom">
