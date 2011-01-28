@@ -6,8 +6,12 @@
     <h2 class="banner_text header_white">
     Knowledge - Think Ahead - Stay Ahead
   </div>
-
 <% end %>
+
 <% @blogs.each do |blog| %>
  <%= render :partial => 'blogs/blog_banner', :locals => {:blog => blog}%>
- <% end %>
+<% end %>
+
+
+
+

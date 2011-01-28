@@ -717,9 +717,9 @@ p.bold_text {
   padding: 20px;
   position: relative;
   text-align: center;
-  width: 900px;
+  width: 940px;
 	margin-top: 30px;
-	border-bottom: 2px solid #a70d0e;
+	border-bottom: 2px solid #BF8F95;
 }
 .cube_listing img {
   background: url("../images/main_inner.png") repeat scroll 0 0 transparent;
@@ -767,12 +767,9 @@ p.bold_text {
 	color: #a70d0e;
 }
 .cube_listing p {
-  margin-bottom: 50px;
-	margin-top: 60px;
-	width: 100%;
-	text-align: left;
-	font-size: 14px;
-	line-height: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
 }
 .cube_listing_large {
   position: relative;
@@ -806,10 +803,14 @@ p.bold_text {
 }
 .listing_content_large p {
 	margin-left: 170px;
-	width: 600px;
+	width: 940px;
 }
 .listing_content {
 	text-align: left;
+	width: 665px;;
+	margin-bottom: 50px;
+  margin-left: 145px;
+  margin-top: 60px;
 }
 .listing_content h3 {
 	font-weight: bold;
@@ -905,8 +906,10 @@ p.bold_text {
   margin-bottom: 10px;
 }
 .retweet_links {
+  float: left;
   position: relative;
-  width: 100%;
+  width: 660px;
+	margin-bottom: 20px;
 }
 .lg_page_btn {
 	margin-top: 20px;
