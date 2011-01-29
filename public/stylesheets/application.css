@@ -623,7 +623,7 @@ position: absolute;
 }
 /*********************************************/
 /*****************HEADER**********************/
-header {
+header, #hd {
 	height: 75px;
 }
 #logo {
@@ -1427,7 +1427,7 @@ position: relative;
 background: #222;
 height: 190px;
 }
-footer {
+footer, #ft {
 width: 960px;
 position: relative;
 height: 190px;

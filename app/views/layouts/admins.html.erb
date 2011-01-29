@@ -9,12 +9,12 @@
   <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.0r4/build/assets/skins/sam/skin.css">
   <%= yield :head %>
 </head>
-<body class="yui-skin-sam">
+<body>
   <%= render :partial => 'layouts/flash', :locals => {:flash => flash} %>
   <!-- Application Layout -->
   <!-- header sections -->
   <div id="mast_header">
-    <header>
+    <header id="hd">
 	    <%= link_to '<div id="logo"></div>', root_path, :alt => "Cube2Media" %>
       <%= render :partial => "layouts/header" %>
 	  </header>
@@ -28,7 +28,7 @@
   </div>
   <!-- footer section -->
   <div id="mast_footer">
-   <footer>
+   <footer id="ft">
       <%= render :partial => "layouts/footer" %>
     </footer>
   </div>
