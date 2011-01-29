@@ -441,6 +441,11 @@ margin: 10px 0px;
 .bottom_hr {
 	border-bottom: 1px solid #ccc;
 }
+.bulleted_list li {
+	font-weight: 700;
+	list-style: disc inside;
+	padding: 5px 0px 5px 10px;
+}
 .title_block {
 	text-align: center;
 	color: #970707;
