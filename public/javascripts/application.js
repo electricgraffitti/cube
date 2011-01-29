@@ -51,7 +51,7 @@ var app = {
 		});
 	},
 	
-	activeLink: function() {
+	navHoverSlider: function() {
 		var url = location.pathname;
 	  var current_link = $('#main_nav ul li a[href$="' + url + '"]');
 	  if (url == "/") {
@@ -60,6 +60,12 @@ var app = {
 	   } else {
 	   current_link.addClass('active');
 	   }
+	},
+	
+	elasticNav: function() {
+		$("#nav").elasticNav({
+			reset : 1000
+		});
 	},
 	
 	mainNav: function() {
@@ -242,8 +248,10 @@ $(document).ready(function() {
 	flash.setFlash();
 	app.twitterFeed();
 	app.mainNav();
+	app.navHoverSlider();
 	app.getQuoteButton();
 	app.subNav();
+	app.elasticNav();
 });
 
 

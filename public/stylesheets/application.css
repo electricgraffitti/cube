@@ -661,12 +661,9 @@ header {
 	font-size: 12px;
 	font-weight: 300;
 }
-#main_nav ul li a:hover, #main_nav ul li a:active {
+#main_nav ul li.active a {
 	background: rgba(0,0,0,.2);
 	color: #fff;
-}
-#main_nav ul li a:active {
-
 }
 #main_nav ul li.last #quote {
 	text-indent: -9999em;
@@ -704,6 +701,12 @@ header {
 #main_nav ul li ul.sub_nav li a:hover {
 	background: #fff;
 	color: #444;
+}
+#main_nav ul li#hoverCursor {
+	position: absolute;
+	top: 0;
+	z-index : 1;
+	margin-top: 14px;
 }
 .admin_link_color a {
 color: #ff0f2a;
