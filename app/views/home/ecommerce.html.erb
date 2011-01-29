@@ -6,17 +6,8 @@
   </div>
 <% end %>
 
-	  <%= render :partial => 'ecommerce_banner' %>
+	 <%= render :partial => 'ecommerce_banner' %>
 
-<% content_for :sub_boxes do %>
-  <div class="sub_box_left">
-    <%= render :partial => 'about_us' %>
-  </div>
-
-  <div class="sub_box_right">
-    <h4 class="c2_header the_founders">
-      The Founders
-    </h4>
-		<%= render :partial => 'layouts/quote_request' %>
-  </div>
+<% content_for :sub_boxes do  %>
+	<%= render :partial => 'layouts/sub_boxes' %>
 <% end %>

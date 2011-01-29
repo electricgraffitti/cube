@@ -1154,8 +1154,7 @@ color: #000;
 #sub_boxes {
 /*background: url('../images/inner_sub_boxes.png') repeat-y;*/
 	background: #2b2b2b;
-	padding-bottom: 20px;
-	height: 160px;
+	height: 134px;
 	width: 960px;
 }
 #sub_boxes ul {
@@ -1279,6 +1278,7 @@ width: 940px;
 height: 200px;
 left: 10px;
 top: 0px;
+padding-top: 30px;
 background: url('../images/c2_sub_box_light.jpg') no-repeat;
 }
 /*********************************************/

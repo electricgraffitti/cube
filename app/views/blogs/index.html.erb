@@ -12,6 +12,10 @@
  <%= render :partial => 'blogs/blog_banner', :locals => {:blog => blog}%>
 <% end %>
 
+<% content_for :sub_boxes do  %>
+	<%= render :partial => 'layouts/sub_boxes' %>
+<% end %>
+
 
 
 

@@ -8,6 +8,6 @@
 
 <%= render :partial => 'clients/client_view', :locals => {:client => @client} %>
 
-<% content_for :sub_boxes do %>
-
+<% content_for :sub_boxes do  %>
+	<%= render :partial => 'layouts/sub_boxes' %>
 <% end %>
