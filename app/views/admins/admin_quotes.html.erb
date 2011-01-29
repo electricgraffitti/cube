@@ -1,27 +1,32 @@
-<div class="admin_nav">
+<div class="full_row bottom_hr admin_nav">
   <%= render :partial => 'admins/admin_nav' %>
 </div>
-<div class="admin_sidebar">
+<div class="full_row top_hr bottom_hr">
+<div class="column_4">
   <%= link_to "New Quote", new_quote_path, :class => "btn" %>
 </div>
-<div id="admin_datatable">
-  <table id="blogs_table" class="display c2table">
-  <thead><tr>
-    <th>Name</th>
-    <th>Company</th>
-    <th>View</th>
-     <th>Edit</th>
-      <th>Delete</th>
-  </tr></thead>
-<tbody>
-<% @quotes.each do |quote| %>
-  <tr class="admin_link_color">
-    <td><%=h quote.name %></td>
-    <td><%=h quote.company %></td>
-    <td><%= link_to 'Show', quote %></td>
-    <td><%= link_to 'Edit', edit_quote_path(quote) %></td>
-    <td><%= link_to 'Destroy', quote, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</tbody>
-</table></div>
+<div class="column_23">
+  <div id="admin_datatable">
+    <table id="blogs_table" class="display c2table">
+    <thead><tr>
+      <th>Name</th>
+      <th>Company</th>
+      <th>View</th>
+       <th>Edit</th>
+        <th>Delete</th>
+    </tr></thead>
+  <tbody>
+  <% @quotes.each do |quote| %>
+    <tr class="admin_link_color">
+      <td><%=h quote.name %></td>
+      <td><%=h quote.company %></td>
+      <td><%= link_to 'Show', quote %></td>
+      <td><%= link_to 'Edit', edit_quote_path(quote) %></td>
+      <td><%= link_to 'Destroy', quote, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+  </tbody>
+  </table>
+  </div>
+</div>
+</div>

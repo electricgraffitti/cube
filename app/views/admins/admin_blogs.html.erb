@@ -1,27 +1,32 @@
-<div class="admin_nav">
+<div class="full_row bottom_hr admin_nav">
   <%= render :partial => 'admins/admin_nav' %>
 </div>
-<div class="admin_sidebar">
-  <%= link_to "New Blog", new_blog_path, :class => "btn"%>
-</div>
-<div id="admin_datatable">
-  <table id="blogs_table" class="display c2table">
-  <thead><tr>
-    <th>Title</th>
-    <th>Sub title</th>
-    <th>View</th>
-     <th>Edit</th>
-      <th>Delete</th>
-  </tr></thead>
-<tbody>
-<% @blogs.each do |blog| %>
-  <tr class="admin_link_color">
-    <td><%=h blog.title %></td>
-    <td><%=h blog.sub_title %></td>
-    <td><%= link_to 'Show', blog %></td>
-    <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-    <td><%= link_to 'Destroy', blog, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</tbody>
-</table></div>
+<div class="full_row top_hr">
+  <div class="column_4">
+    <%= link_to "New Blog", new_blog_path, :class => "btn"%>
+  </div>
+  <div class="column_23">
+  <div id="admin_datatable">
+    <table id="blogs_table" class="display c2table">
+    <thead><tr>
+      <th>Title</th>
+      <th>Sub title</th>
+      <th>View</th>
+       <th>Edit</th>
+        <th>Delete</th>
+    </tr></thead>
+  <tbody>
+  <% @blogs.each do |blog| %>
+    <tr class="admin_link_color">
+      <td><%=h blog.title %></td>
+      <td><%=h blog.sub_title %></td>
+      <td><%= link_to 'Show', blog %></td>
+      <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
+      <td><%= link_to 'Destroy', blog, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+  </tbody>
+  </table>
+  </div>
+  </div>
+  </div>

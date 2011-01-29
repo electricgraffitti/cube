@@ -23,26 +23,17 @@
   <div id="mast_main_content">
     <div id="main_content" class="container_12">
       <%= yield %>
-      <div class="clear"></div>
+      <div class="clearfix"></div>
     </div>
   </div>
   <!-- footer section -->
   <div id="mast_footer">
-     <footer>
-        <%= render :partial => "layouts/footer" %>
-      </footer>
+   <footer>
+      <%= render :partial => "layouts/footer" %>
+    </footer>
   </div>
 	<%= render :partial => "layouts/scripts" %>
-	
-  <script src="http://yui.yahooapis.com/2.8.0r4/build/yahoo-dom-event/yahoo-dom-event.js"></script> 
-  <script src="http://yui.yahooapis.com/2.8.0r4/build/element/element-min.js"></script> 
-
-  <script src="http://yui.yahooapis.com/2.8.0r4/build/container/container_core-min.js"></script>
-  <script src="http://yui.yahooapis.com/2.8.0r4/build/menu/menu-min.js"></script>
-  <script src="http://yui.yahooapis.com/2.8.0r4/build/button/button-min.js"></script>
-
-  <script src="http://yui.yahooapis.com/2.8.0r4/build/editor/editor-min.js"></script>
-  <script>
+	<script>
     $(document).ready(function() {
     	// injects flash div into dom
     	flash.injectFlashBox();
@@ -52,5 +43,15 @@
     	admin.adminDatatables();
     });
   </script>
+  <script src="http://yui.yahooapis.com/2.8.0r4/build/yahoo-dom-event/yahoo-dom-event.js"></script> 
+  <script src="http://yui.yahooapis.com/2.8.0r4/build/element/element-min.js"></script> 
+
+  <script src="http://yui.yahooapis.com/2.8.0r4/build/container/container_core-min.js"></script>
+  <script src="http://yui.yahooapis.com/2.8.0r4/build/menu/menu-min.js"></script>
+  <script src="http://yui.yahooapis.com/2.8.0r4/build/button/button-min.js"></script>
+
+  <script src="http://yui.yahooapis.com/2.8.0r4/build/editor/editor-min.js"></script>
+  </div>
+
 </body>
 </html>

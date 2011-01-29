@@ -12,9 +12,6 @@
     <header>
 	    <%= link_to '<div id="logo"></div>', root_path, :alt => "Cube2Media" %>
       <%= render :partial => "layouts/header" %>
-			<% if current_admin %>
-				<%= render :partial => 'layouts/admin_nav' %>
-			<% end %>
 	  </header>
   </div>
   <!-- banner section -->
@@ -26,6 +23,11 @@
   <!-- main content section -->
   <div id="mast_main_content">
     <div id="main_content" class="container_12">
+      <% if current_admin %>
+      <div class="full_row bottom_hr admin_nav">
+				<%= render :partial => 'layouts/admin_nav' %>
+			</div>
+			<% end %>
       <%= yield %>
       <div class="clear"></div>
     </div>

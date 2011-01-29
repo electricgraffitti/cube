@@ -125,6 +125,9 @@ html {
 overflow-y: scroll;
 }
 /* Accessible focus treatment:people.opera.com/patrickl/experiments/keyboard/test */
+a {
+	text-decoration: none;
+}
 a:hover,a:active {
 outline: none;
 }
@@ -656,7 +659,7 @@ header {
 	height: 40px;
 	margin-top: 12px;
 	border-right: 1px solid #BF2F32;
-/*	border-left: 1px solid #7F1F25;*/
+	z-index: 5;
 }
 #main_nav ul li.nav.last {
 	border: none;
@@ -1308,22 +1311,13 @@ margin-top: 90px;
 margin-left: 20px;
 }
 .admin_nav {
-position: relative;
-width: 700px;
-height: 25px;
-padding: 15px;
-float: right;
-margin-bottom: 15px;
-}
-.align {
-right: 30px;
-top: -45px;
+	text-align: center;
 }
 .admin_nav ul {
 position: relative;
 width: 600px;
 height: 25px;
-float: right;
+float: left;
 }
 .admin_nav ul li {
 position: relative;
@@ -1406,6 +1400,12 @@ form div {
 	background: url(../images/form_button.png) 0px -34px no-repeat;
 	color: #fff;
 	text-shadow: 0px 1px 1px #444;
+}
+a.btn {
+	width: 116px;
+	height: 20px;
+	padding: 7px;
+	text-align: center;
 }
 .btn:hover {
 	background: url(../images/form_button.png) 0px -0px no-repeat;

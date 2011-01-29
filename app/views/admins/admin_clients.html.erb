@@ -1,9 +1,11 @@
-<div class="admin_nav">
+<div class="full_row bottom_hr admin_nav">
   <%= render :partial => 'admins/admin_nav' %>
 </div>
-<div class="admin_sidebar">
+<div class="full_row bottom_hr top_hr">
+<div class="column_4">
   <%= link_to "New Client", new_client_path, :class => "btn" %>
 </div>
+<div class="column_23">
 <div id="admin_datatable">
   <table id="clients_table" class="display c2table">
   <thead><tr>
@@ -25,3 +27,5 @@
 <% end %>
 </tbody>
 </table></div>
+</div>
+</div>

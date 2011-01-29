@@ -3,7 +3,7 @@
 	$.fn.elasticNav = function(options) {
 		
 		options = $.extend({
-			overlap : 0,
+			overlap : 2,
 			speed : 500,
 			reset : 2500,
 			color : "#000000",
@@ -15,7 +15,7 @@
 		
 		return this.each(function() {
 			var nav = $(this),
-					currentNav = $('.active', nav),
+					currentNav = $('#selected', nav),
 					hoverCursor,
 					reset;
 			
