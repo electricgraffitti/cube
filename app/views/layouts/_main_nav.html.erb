@@ -3,8 +3,19 @@
     <li class="nav">
       <%= link_to "Home <span>Welcome</span>", root_path, :id => "home", :alt => "Cube2Media Home" %>
     </li>
-		<li class="nav">
-      <%= link_to "Services <span>What you need</span>", apps_path, :id => "apps", :alt => "Cloud Applications" %>
+		<li class="nav secondary_nav">
+      <%= link_to "Services <span>What you need</span>", "", :id => "services_link", :alt => "Cloud Applications" %>
+      <ul id="services_nav" class="sub_nav">
+        <li>
+          <%= link_to "Web Based Applications", apps_path, :id => "apps", :alt => "Cube2Media Web Based Applications" %>
+        </li>
+        <li>
+          <%= link_to "eCommerce Applications ", ecommerce_path, :id => "ecommerce", :alt => "Cube2Media Applications" %>
+        </li>                  
+        <li>                   
+          <%= link_to "Logo, Branding and Design", design_path, :id => "design", :alt => "Cube2Media Logo, Branding and Design" %>
+        </li>
+      </ul>
     </li>
     <li class="nav">
       <%= link_to "Clients <span>View Work</span>", clients_path, :id => "clients", :alt => "Cube2Media Clients" %>
@@ -15,7 +26,7 @@
     <li class="nav">
       <%= link_to "Contact <span>Get in touch</span>", contact_us_path, :id => "contact", :alt => "Cube2Media Contact" %>
     </li>
-    <li class="nav last">
+    <li class="nav last highlight">
       <%= link_to "Quote", project_contact_path, :id => "quote", :alt => "Project Quotation " %>
     </li>
   </ul>

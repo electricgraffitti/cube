@@ -631,6 +631,7 @@ header {
 	margin-left: 24px;
 }
 #main_nav ul, #main_nav ul li {
+	position: relative;
 	float:left;
 }
 #main_nav ul li.nav {
@@ -676,10 +677,34 @@ header {
   margin-top: 4px;
 	background: url(../images/new_header/get_a_quote.png) 0px -34px no-repeat;
 }
-#main_nav ul li.last #quote:hover {
+#main_nav ul li.last #quote.highlight, #main_nav ul li.last #quote span {
 	background: url(../images/new_header/get_a_quote.png) 0px 0px no-repeat;
 }
-
+#main_nav ul li.last #quote span.hover {
+	position: absolute;
+	top: 4px;
+	left: 10px;
+	width: 130px;
+	height: 34px;
+}
+#services_nav {
+	position: absolute;
+	bottom: -14px;
+	background: #444;
+	display: none;
+}
+#main_nav ul li ul.sub_nav li a {
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 300;
+  padding: 10px 12px 7px;
+  position: relative;
+  width: 190px;
+}
+#main_nav ul li ul.sub_nav li a:hover {
+	background: #fff;
+	color: #444;
+}
 .admin_link_color a {
 color: #ff0f2a;
 }

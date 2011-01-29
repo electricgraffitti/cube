@@ -86,11 +86,16 @@ var app = {
 	  });
 	},
 	
-	contactNav: function() {
+	getQuoteButton: function() {
 		var links = $('#get_quote_btn_big a'),
 				wrap = links.parent("#get_quote_btn_big");
+				topLink = $("#quote"),
+				topWrap = topLink.parent("li");
+				
+				
+				
 	  wrap.removeClass('highlight');
-	  links.append('<span class="hover" />').each(function(){
+	  links.append('<span class="hover" />').each(function() {
 	        $(this).css({fontSize : 0});
 	        var $span2 = $('> span.hover', this).css({opacity : 0});
 	        $(this).hover(function() {
@@ -108,6 +113,59 @@ var app = {
 	        $(this).addClass('active');
 	      });
 	  });
+	
+		topLink.append('<span class="hover" />').each(function() {
+	        $(this).css({fontSize : 0});
+	        var $span3 = $('> span.hover', this).css({opacity : 0});
+	        $(this).hover(function() {
+	          if ($(this).hasClass('active')) {
+	            $span3.stop().fadeTo(500, 0);
+	          } else {
+	           $span3.stop().fadeTo(500, 1); 
+	          }
+	        }, function() {
+	          $span3.stop().fadeTo(500, 0);
+	      });
+	      $(this).click( function() {
+	        $span3.fadeTo(200, 0);
+	        topWrap.removeClass('active');
+	        $(this).addClass('active');
+	      });
+	  });
+	},
+	
+	subNav: function() {
+		var timeout = null,
+				subNav = $("#services_nav"),
+				subNavlis = subNav.find("li");
+				link = $("#services_link");
+				mainNavs = $("#main_nav ul li.nav").not('.secondary_nav');
+				
+		link.click(function(e) {
+			e.preventDefault();
+		});
+		
+		mainNavs.mouseover(function() {
+			app.closeMenu(timeout);
+		});
+		
+		
+		link.mouseover(function() {
+			if (timeout) clearTimeout(timeout);
+			subNav.slideDown('fast').show();
+    });
+
+    // sub menu mouseovers keep dropdown open
+    subNavlis.mouseover(function() {
+    	if (timeout) clearTimeout(timeout);
+    }).mouseout(function() {
+    	timeout = setTimeout(app.closeMenu, 500);
+    });
+	},
+	
+	closeMenu: function(timeout) {
+		$("#services_nav").hide();
+    if (timeout) clearTimeout(timeout); 
 	}
 	
 }
@@ -184,7 +242,8 @@ $(document).ready(function() {
 	flash.setFlash();
 	app.twitterFeed();
 	app.mainNav();
-	app.contactNav();
+	app.getQuoteButton();
+	app.subNav();
 });
 
 
