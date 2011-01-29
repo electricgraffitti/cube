@@ -3,3 +3,7 @@
   <h2 class="">Thank You</h2>
   <p><%= @form[:contact_first_name] %> <%= @form[:contact_last_name] %> Thank you for your submission. Someone from Cube2Media will respond to your submission shortly</p>
 </div>
+
+<% content_for :sub_boxes do  %>
+	<%= render :partial => 'layouts/sub_boxes' %>
+<% end %>
