@@ -1,29 +1,22 @@
 <div id="main_nav">
   <ul>
-    <li class="nav1">
-      <%= link_to "home", root_path, :id => "home", :alt => "Cube2Media Home" %>
+    <li class="nav">
+      <%= link_to "Home <span>Welcome</span>", root_path, :id => "home", :alt => "Cube2Media Home" %>
     </li>
-		<li class="nav2">
-      <%= link_to "apps", apps_path, :id => "apps", :alt => "Cloud Applications" %>
+		<li class="nav">
+      <%= link_to "Services <span>What you need</span>", apps_path, :id => "apps", :alt => "Cloud Applications" %>
     </li>
-    <li class="nav3">
-      <%= link_to "ecommerce", ecommerce_path, :id => "ecommerce", :alt => "Ecommerce Solutions" %>
+    <li class="nav">
+      <%= link_to "Clients <span>View Work</span>", clients_path, :id => "clients", :alt => "Cube2Media Clients" %>
     </li>
-    <li class="nav4">
-      <%= link_to "design", design_path, :id => "design", :alt => "Web Design" %>
+    <li class="nav">
+      <%= link_to "Blogs <span>Geek Speak</span>", blogs_path, :id => "blogs", :alt => "Cube2Media Blog" %>
     </li>
-    <li class="nav5">
-      <%= link_to "clients", clients_path, :id => "clients", :alt => "Cube2Media Clients" %>
+    <li class="nav">
+      <%= link_to "Contact <span>Get in touch</span>", contact_us_path, :id => "contact", :alt => "Cube2Media Contact" %>
     </li>
-    <li class="nav6">
-      <%= link_to "blogs", blogs_path, :id => "blogs", :alt => "Cube2Media Blog" %>
-    </li>
-    <li class="nav7">
-      <%= link_to "contact", contact_us_path, :id => "contact", :alt => "Cube2Media Contact" %>
-    </li>
-    <li class="nav8">
-      <%= link_to "quote", project_contact_path, :id => "quote", :alt => "Project Quotation " %>
+    <li class="nav last">
+      <%= link_to "Quote", project_contact_path, :id => "quote", :alt => "Project Quotation " %>
     </li>
   </ul>
-
 </div>

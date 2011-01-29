@@ -1,19 +1,23 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
   <%= render :partial => "layouts/headmeta" %>
-  
+  <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.8.0r4/build/assets/skins/sam/skin.css">
+  <%= yield :head %>
 </head>
 <body class="yui-skin-sam">
   <%= render :partial => 'layouts/flash', :locals => {:flash => flash} %>
   <!-- Application Layout -->
   <!-- header sections -->
   <div id="mast_header">
-    <div id="hd" class='container_12'>
+    <header>
 	    <%= link_to '<div id="logo"></div>', root_path, :alt => "Cube2Media" %>
       <%= render :partial => "layouts/header" %>
-	  </div>
+	  </header>
   </div>
   <!-- main content section -->
   <div id="mast_main_content">
@@ -24,10 +28,29 @@
   </div>
   <!-- footer section -->
   <div id="mast_footer">
-     <div id="ft" class="container_12">
+     <footer>
         <%= render :partial => "layouts/footer" %>
-      </div>
+      </footer>
   </div>
 	<%= render :partial => "layouts/scripts" %>
+	
+  <script src="http://yui.yahooapis.com/2.8.0r4/build/yahoo-dom-event/yahoo-dom-event.js"></script> 
+  <script src="http://yui.yahooapis.com/2.8.0r4/build/element/element-min.js"></script> 
+
+  <script src="http://yui.yahooapis.com/2.8.0r4/build/container/container_core-min.js"></script>
+  <script src="http://yui.yahooapis.com/2.8.0r4/build/menu/menu-min.js"></script>
+  <script src="http://yui.yahooapis.com/2.8.0r4/build/button/button-min.js"></script>
+
+  <script src="http://yui.yahooapis.com/2.8.0r4/build/editor/editor-min.js"></script>
+  <script>
+    $(document).ready(function() {
+    	// injects flash div into dom
+    	flash.injectFlashBox();
+    	flash.setFlash();
+    	
+    	admin.yuiTextEditor();
+    	admin.adminDatatables();
+    });
+  </script>
 </body>
 </html>

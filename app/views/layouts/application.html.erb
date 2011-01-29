@@ -9,13 +9,13 @@
   <!-- Application Layout -->
   <!-- header sections -->
   <div id="mast_header">
-    <div id="hd" class='container_12'>
+    <header>
 	    <%= link_to '<div id="logo"></div>', root_path, :alt => "Cube2Media" %>
       <%= render :partial => "layouts/header" %>
 			<% if current_admin %>
 				<%= render :partial => 'layouts/admin_nav' %>
 			<% end %>
-	  </div>
+	  </header>
   </div>
   <!-- banner section -->
   <div id="mast_banner">
@@ -40,9 +40,9 @@
   </div>
   <!-- footer section -->
   <div id="mast_footer">
-     <div id="ft" class="container_12">
+     <footer>
         <%= render :partial => "layouts/footer" %>
-      </div>
+      </footer>
   </div>
 	<%= render :partial => "layouts/scripts" %>
 </body>

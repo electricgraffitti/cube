@@ -7,18 +7,20 @@
   </div>
 <% end %>
 
-	  <%= render :partial => 'index_banner' %>
+	  <%= render :partial => 'home/index_banner' %>
 	
-	<div id="sites">
+	<div id="sites" class="top_hr bottom_hr">
 		<% @clients.each do |client| %>
 		 <% client.assets.each do |asset| %>
 	  	<%= (image_tag(asset.attachment.url(:small), :alt => client.title)) %>
 	   <% end %>
 	 <% end %>
 	</div>
-		<div id="contact_nav" class="highlight">
+	<div class="full_row top_hr">
+		<div id="get_quote_btn_big" class="highlight">
 		  <%= link_to "contact the experts", contact_us_path, :id => "banner_contact" %>
 		</div>
+	</div>
 
 <% content_for :sub_boxes do %>
   <div class="sub_box_left">
