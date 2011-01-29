@@ -939,7 +939,7 @@ width: 400px;
 #front_page ul li a {
 	padding: 10px 0px;
 	color: #0088cc;
-	float: right;
+	float: left;
 }
 #front_page ul li a:hover {
 	color: #a70d0e;
@@ -1069,7 +1069,6 @@ text-shadow: 2px 2px 3px #999;
 .clients_header {
 position: relative;
 font-size: 40px;
-font-family: Arial;
 width: 100%;
 text-shadow: 0px 1px 0px #fefefe;
 padding: 0px;
