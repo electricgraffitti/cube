@@ -373,6 +373,14 @@ margin-top: 10px;
 }
 h5 {
 }
+.bullet_header {
+	position: relative;
+	float: left;
+	background: url(../images/li-small-25.png) 0px 0px no-repeat;
+	padding-left: 35px;
+	width: 100%;
+	margin-bottom: 10px;
+}
 .bold {
 font-weight: bold;
 }
@@ -404,10 +412,27 @@ line-height: 20px;
 .content_wrap {
 margin: 10px 0px;
 }
-.full_row {
-	width: 940px;
-	padding: 10px;
+.full_row, .column_3, .column_2, .column_4, .column_23, .column_13 {
+	position: relative;
 	float: left;
+	padding: 10px;
+}
+.full_row {
+	width: 960px;
+	padding: 10px 0px;
+	float: left;
+}
+.column_3, .column_13 {
+	width: 300px;
+}
+.column_2 {
+	width: 460px;
+}
+.column_4 {
+	width: 230px;
+}
+.column_23 {
+	width: 600px;
 }
 .top_hr {
 	border-top: 1px solid #fff;
@@ -750,9 +775,7 @@ right: 0px;
 #main_content h1,#main_content h2,#main_content h3,#main_content h4,#main_content h5,#main_content h6 {
 	padding: 10px 0px;
 }
-.cube_confessions {
-background: url('../images/c2_headers.png') 0px -130px no-repeat;
-}
+
 .project_form {
 margin-left: 70px;
 float: left;
@@ -829,8 +852,12 @@ margin-left: 60px;
 /*********************************************/
 /*****************SUB PAGES******************/
 #sub_page {
-width: 100%;
-height: 100%;
+	width: 100%;
+	height: 100%;
+}
+#sub_boxes h1, #sub_boxes h2, #sub_boxes h3, #sub_boxes h4 {
+	color: #fff;
+	text-shadow: 0px 1px 2px #000;
 }
 #sub_top {
 width: 100%;
@@ -922,20 +949,6 @@ width: 400px;
 }
 /**************************************************/
 /******************FRONT PAGE*********************/
-#front_page {
-	float: left;
-}
-#front_page ul {
-	padding: 0;
-	width: 960px;
-	float: left;
-}
-#front_page ul li {
-	list-style-type: none;
-	float: left;
-	padding: 10px;
-	width: 300px;
-}
 #front_page ul li a {
 	padding: 10px 0px;
 	color: #0088cc;
@@ -943,12 +956,6 @@ width: 400px;
 }
 #front_page ul li a:hover {
 	color: #a70d0e;
-}
-#front_page h1 {
-margin-bottom: 10px;
-}
-#front_page p {
-margin: 0px;
 }
 /**************************************************/
 /******************CUBE LISTINGS******************/
@@ -1170,26 +1177,15 @@ color: #000;
 /*********************************************/
 /******************SUB BOXES******************/
 #mast_sub_box {
-background: url('../images/sub_box_bg.jpg') center top no-repeat;
-color: #fff;
+	background: url('../images/sub_box_bg.jpg') center top no-repeat;
+	color: #fff;
 }
 #sub_boxes {
-background: url('../images/inner_sub_boxes.png') repeat-y;
-padding-bottom: 20px;
-min-height: 260px;
-width: 960px;
-}
-.sub_box_left {
-position: relative;
-width: 480px;
-float: left;
-margin: 0px 12px;
-}
-.sub_box_right {
-position: relative;
-width: 400px;
-float: left;
-margin: 0px 20px;
+/*background: url('../images/inner_sub_boxes.png') repeat-y;*/
+	background: #2b2b2b;
+	padding-bottom: 20px;
+	min-height: 260px;
+	width: 960px;
 }
 #sub_boxes ul {
 margin-left: 50px;
@@ -1228,10 +1224,10 @@ background: url('../images/c2_headers.png') 0px -325px no-repeat;
 .svc_list {
 background: url('../images/c2_headers.png') 0px -390px no-repeat;
 }
-p.about_us {
-margin-bottom: 10px;
-margin-left: 65px;
-width: 295px;
+#sub_boxes p {
+  margin-bottom: 10px;
+  margin-left: 35px;
+  width: 350px;
 }
 .quote_form {
 margin-left: 45px;
@@ -1437,7 +1433,7 @@ background: #222;
 height: 190px;
 }
 footer {
-width: 940px;
+width: 960px;
 position: relative;
 height: 190px;
 background: url('../images/footer_bg.png') no-repeat;
