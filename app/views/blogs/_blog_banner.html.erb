@@ -1,22 +1,16 @@
-<div class="cube_listing">
-	<% if current_admin %>
-		<div class="lg_page_btn">
-			<%= link_to "Edit Blog", edit_blog_path(blog) %>
-		</div>
-	<% end %>
-  <%= image_tag(blog.assets.last.attachment.url(:medium), :alt => blog.title) %><br />
-	<div class="listing_title">
+<div class="full_row center top_hr">
+  <%= image_tag(blog.assets.last.attachment.url(:medium), :alt => blog.title, :class => "full_image") %><br />
+</div>
+<div class="full_row center bottom_hr">
+	<h3 class="listing_title black">
   	<%=h blog.title %>
-	</div>
-
+	</h3>
 	<div class="listing_sub_title">
   	<%=h blog.sub_title %>
 	</div>
-
 	<div class="listing_time">
   	<%= (blog.created_at).to_s(:nice_date) %>
 	</div>
-	
 	<div class="listing_content">
 		<div class="retweet_links">
 			<%= link_to "#{blog.title}", blog_path(blog), :class => "retweet vert" %>
@@ -24,3 +18,8 @@
   	<%= blog.content %>
 	</div>
 </div>
+<% if current_admin %>
+	<div class="lg_page_btn">
+		<%= link_to "Edit Blog", edit_blog_path(blog) %>
+	</div>
+<% end %>

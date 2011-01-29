@@ -38,8 +38,6 @@ class Blog < ActiveRecord::Base
     "#{id}-#{permalink}"
   end
   
-  
-  
   #pulls the assets from the form
    def attachments=(atts)
      atts.each do |attachment|

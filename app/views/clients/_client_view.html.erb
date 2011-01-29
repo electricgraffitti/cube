@@ -1,18 +1,25 @@
-<div class="cube_listing_large">
-	<% if current_admin %>
-		<div class="lg_page_btn">
-			<%= link_to "Edit Client", edit_client_path(client) %>
-		</div>
-	<% end %>
-  <%= image_tag(client.assets.last.attachment.url(:medium), :alt => client.title) %>
-
-	<div class="listing_content_large">
-		<%= client.content %>
-	</div>
-	
-	<div class="lg_page_btn">
-<%= link_to "View Client", client.url, :target => "_blank" %>
-	</div>
-
-
+<div class="full_row center">
+  <%= image_tag(client.assets.last.attachment.url(:medium), :alt => client.title, :class => "full_image") %>
 </div>
+<div class="full_row center bottom_hr">
+	<div class="align_left">
+	  <%= client.content %>
+	</div>
+	<div class="title_block black">
+	  <% client.functionality.each do |t| %>
+	    <%= t %> |
+	  <% end %>
+	</div>
+  
+  <div class="title_block">
+	  <% client.technology.each do |t| %>
+	    <%= t %> |
+	  <% end %>
+  	<%= link_to "View Client", client.url, :target => "_blank" %>
+  	<% if current_admin %>
+    		| <%= link_to "Edit Client", edit_client_path(client) %>
+    <% end %>
+	</div>
+</div>
+<%= render :partial => 'home/big_quote_button' %>
+
