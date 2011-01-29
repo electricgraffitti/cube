@@ -1,8 +1,6 @@
 class BlogsController < ApplicationController
   
   before_filter :require_admin, :except => [:index,:show]
-  
-  layout "tall_top"
     
   # GET /blogs
   # GET /blogs.xml
@@ -21,7 +19,7 @@ class BlogsController < ApplicationController
     @blog = Blog.find(params[:id], :include => :assets) 
     # raise @blog.to_yaml
     respond_to do |format|
-      format.html { render :layout => "short"}
+      format.html 
       format.xml  { render :xml => @blog }
     end
   end

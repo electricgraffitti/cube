@@ -74,16 +74,16 @@ class Client < ActiveRecord::Base
    
    def functionality
       pf = []
-        if self.web_application
+        unless self.web_application.blank?
           pf << "Web Application"
         end
-        if self.content_management
+        unless self.content_management.blank?
           pf << "Content Management"
         end
-        if self.ecommerce
+        unless self.ecommerce.blank?
           pf << "Ecommerce Application"
         end
-        if self.web_design
+        unless self.web_design.blank?
           pf << "Web Design"
         end
         return pf

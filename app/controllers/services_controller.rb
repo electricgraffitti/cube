@@ -2,8 +2,6 @@ class ServicesController < ApplicationController
   
   before_filter :require_admin, :except => [:index, :show]
   
-  layout "tall_top"
-  
   # GET /services
   # GET /services.xml
   def index
@@ -21,7 +19,7 @@ class ServicesController < ApplicationController
     @service = Service.find(params[:id])
 
     respond_to do |format|
-      format.html { render :layout => "short"}
+      format.html
       format.xml  { render :xml => @service }
     end
   end

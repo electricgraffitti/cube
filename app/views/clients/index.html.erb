@@ -1,41 +1,19 @@
 <% content_for :banner do  %>
   <div class="banner_content">
     <h2 class="banner_text header_white">
-    Building Relationships with Proven Results
+      Building Relationships with Proven Results
+    </h2>
   </div>
 
 <% end %>
-<h2 class="clients_header">Featured Clients</h2>
-<% @clients.each do |client| %>
-  <%= render :partial => 'clients/client_post', :locals => {:client => client} %>
-<% end %>
+
+<div class="center">  <h2>Featured Clients</h2>
+
+  <% @clients.each do |client| %>
+    <%= render :partial => 'clients/client_post', :locals => {:client => client} %>
+  <% end %></div>
 
 
 <% content_for :sub_boxes do  %>
-<div class="sub_box_left">
-  <h4 class="c2_header testimonial">
-    Testimonial
-  </h4>
-  <% @quotes.each do |quote| %>
-  <div class="cube_sub_listing">
-    <div class="sub_box_listing_content left_listing sub_box_quote">
-      &quot; <%= quote.comment %> &quot;
-    </div>
 
-    <div class="sub_box_listing_sub_title">
-    <%= quote.company %> - <%= quote.name %>
-    </div>
-  <div class="clear"></div>
-
-
-
-  </div>
-  <% end %>
-</div>
-<div class="sub_box_right">
-  <h4 class="c2_header the_founders">
-    Request a Quote
-  </h4>
-	<%= render :partial => 'layouts/quote_request' %>
-</div>
 <% end %>
