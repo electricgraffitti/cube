@@ -1440,19 +1440,21 @@ background: url('../images/footer_bg.png') no-repeat;
 font-size: 85%;
 }
 .footer_logo {
-position: absolute;
-top: 26px;
-right: 65px;
-width: 220px;
-height: 95px;
-background: url('../images/c2_footer_logo.png') no-repeat;
-text-indent: -3000em;
+  background: url("../images/c2_footer_logo.png") no-repeat scroll 0 0 transparent;
+  color: #FFFFFF;
+  height: 50px;
+  padding-left: 60px;
+  position: absolute;
+  right: 0;
+  text-shadow: 0 2px 2px #111111;
+  top: 50px;
+  width: 220px;
 }
 .footer_contact {
-position: absolute;
-bottom: 16px;
-right: 53px;
-color: #999;
+  bottom: 19px;
+  color: #999999;
+  position: absolute;
+  right: 82px;
 }
 .footer_contact ul {
 margin-bottom: 5px;
