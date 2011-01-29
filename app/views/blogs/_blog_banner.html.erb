@@ -12,9 +12,9 @@
   	<%= (blog.created_at).to_s(:nice_date) %>
 	</div>
 	<div class="listing_content">
-		<div class="retweet_links">
-			<%= link_to "#{blog.title}", blog_path(blog), :class => "retweet vert" %>
-		</div>
+    <div class="retweet_links">
+      <%= link_to "#{blog.title}", blog_path(blog), :class => "retweet vert" %>
+    </div>
   	<%= blog.content %>
 	</div>
 </div>

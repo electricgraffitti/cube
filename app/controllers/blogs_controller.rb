@@ -6,7 +6,6 @@ class BlogsController < ApplicationController
   # GET /blogs.xml
   def index
     @blogs = Blog.last_created
-
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @blogs }
@@ -17,7 +16,6 @@ class BlogsController < ApplicationController
   # GET /blogs/1.xml
   def show
     @blog = Blog.find(params[:id], :include => :assets) 
-    # raise @blog.to_yaml
     respond_to do |format|
       format.html 
       format.xml  { render :xml => @blog }
