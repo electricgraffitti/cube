@@ -446,6 +446,18 @@ margin: 10px 0px;
 	list-style: disc inside;
 	padding: 5px 0px 5px 10px;
 }
+.block_list li {
+	padding-left: 10px;
+	padding-bottom: 20px;
+}
+#main_content .block_list li h4 {
+	padding: 0px;
+	padding-bottom: 5px;
+	margin: 0px;
+}
+#main_content .block_list li p {
+	margin: 0px;
+}
 .title_block {
 	text-align: center;
 	color: #970707;
