@@ -645,7 +645,7 @@ header {
 #main_nav {
 	position: relative;
 	float: left;
-	margin-left: 24px;
+	margin-left: 20px;
 }
 #main_nav ul, #main_nav ul li {
 	position: relative;
