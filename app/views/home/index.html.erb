@@ -16,11 +16,7 @@
 	   <% end %>
 	 <% end %>
 	</div>
-	<div class="full_row top_hr">
-		<div id="get_quote_btn_big" class="highlight">
-		  <%= link_to "contact the experts", contact_us_path, :id => "banner_contact" %>
-		</div>
-	</div>
+	<%= render :partial => 'home/big_quote_button' %>
 
 <% content_for :sub_boxes do %>
   f

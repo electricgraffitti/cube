@@ -2,7 +2,6 @@ class ClientsController < ApplicationController
   
   before_filter :require_admin, :except => [:index, :show]
   
-  
   # GET /clients
   # GET /clients.xml
   def index

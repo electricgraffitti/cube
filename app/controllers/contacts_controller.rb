@@ -1,7 +1,5 @@
 class ContactsController < ApplicationController
   
-  layout "short"
-  
   def contact_us
   end
   
