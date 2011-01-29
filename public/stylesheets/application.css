@@ -714,7 +714,7 @@ color: #fff;
 /*********************************************/
 /*****************BANNER****************/
 #mast_banner {
-	background: url(../images/banner_bg1.png) repeat-x;
+	background: url(../images/banner_bg1.png) 0px -10px repeat-x;
 	color: #fff;
 	z-index: 5;
 	text-align: center;
