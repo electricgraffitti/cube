@@ -128,6 +128,9 @@ overflow-y: scroll;
 a:hover,a:active {
 outline: none;
 }
+a {
+	text-decoration: none;
+}
 a,a:active,a:visited {
 color: #607890;
 }
@@ -449,6 +452,23 @@ margin: 10px 0px;
 	font-size: 18px;
 	padding: 10px 0px;
 }
+.bulleted_list li {
+	font-weight: 700;
+	list-style: disc inside;
+	padding: 5px 0px 5px 10px;
+}
+.block_list li {
+	padding-left: 10px;
+	padding-bottom: 20px;
+}
+#main_content .block_list li h4 {
+	padding: 0px;
+	padding-bottom: 5px;
+	margin: 0px;
+}
+#main_content .block_list li p {
+	margin: 0px;
+}
 .title_block.black {
 		color: #444;
 }
@@ -628,7 +648,7 @@ header {
 #main_nav {
 	position: relative;
 	float: left;
-	margin-left: 24px;
+	margin-left: 20px;
 }
 #main_nav ul, #main_nav ul li {
 	position: relative;
@@ -639,7 +659,7 @@ header {
 	height: 40px;
 	margin-top: 12px;
 	border-right: 1px solid #BF2F32;
-/*	border-left: 1px solid #7F1F25;*/
+	z-index: 5;
 }
 #main_nav ul li.nav.last {
 	border: none;
@@ -661,7 +681,7 @@ header {
 	font-size: 12px;
 	font-weight: 300;
 }
-#main_nav ul li a:hover, #main_nav ul li a:active {
+#main_nav ul li a.active {
 	background: rgba(0,0,0,.2);
 	color: #fff;
 }
@@ -704,6 +724,12 @@ header {
 #main_nav ul li ul.sub_nav li a:hover {
 	background: #fff;
 	color: #444;
+}
+#main_nav ul li#hoverCursor {
+	position: absolute;
+	top: 0;
+	z-index : 1;
+	margin-top: 14px;
 }
 .admin_link_color a {
 color: #ff0f2a;
@@ -1289,21 +1315,14 @@ margin-left: 20px;
 }
 .admin_nav {
 position: relative;
-width: 700px;
-height: 25px;
 padding: 15px;
-float: right;
-margin-bottom: 15px;
-}
-.align {
-right: 30px;
-top: -45px;
+float: left;
 }
 .admin_nav ul {
 position: relative;
 width: 600px;
 height: 25px;
-float: right;
+float: left;
 }
 .admin_nav ul li {
 position: relative;
@@ -1386,6 +1405,12 @@ form div {
 	background: url(../images/form_button.png) 0px -34px no-repeat;
 	color: #fff;
 	text-shadow: 0px 1px 1px #444;
+}
+a.btn {
+	width: 116px;
+	height: 20px;
+	padding: 7px;
+	text-align: center;
 }
 .btn:hover {
 	background: url(../images/form_button.png) 0px -0px no-repeat;
