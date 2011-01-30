@@ -5,23 +5,25 @@ class ServicesController < ApplicationController
   # GET /services
   # GET /services.xml
   def index
-    @services = Service.indexed_order
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @services }
-    end
+    # @services = Service.indexed_order
+    # 
+    # respond_to do |format|
+    #   format.html # index.html.erb
+    #   format.xml  { render :xml => @services }
+    # end
+    format.html { redirect_to(root_path) }
   end
 
   # GET /services/1
   # GET /services/1.xml
   def show
-    @service = Service.find(params[:id])
-
-    respond_to do |format|
-      format.html
-      format.xml  { render :xml => @service }
-    end
+    # @service = Service.find(params[:id])
+    # 
+    # respond_to do |format|
+    #   format.html
+    #   format.xml  { render :xml => @service }
+    # end
+    format.html { redirect_to(root_path) }
   end
 
   # GET /services/new
