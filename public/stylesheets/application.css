@@ -125,9 +125,6 @@ html {
 overflow-y: scroll;
 }
 /* Accessible focus treatment:people.opera.com/patrickl/experiments/keyboard/test */
-a {
-	text-decoration: none;
-}
 a:hover,a:active {
 outline: none;
 }
@@ -436,30 +433,13 @@ margin: 10px 0px;
 	width: 230px;
 }
 .column_23 {
-	width: 600px;
+	width: 620px;
 }
 .top_hr {
 	border-top: 1px solid #fff;
 }
 .bottom_hr {
 	border-bottom: 1px solid #ccc;
-}
-.bulleted_list li {
-	font-weight: 700;
-	list-style: disc inside;
-	padding: 5px 0px 5px 10px;
-}
-.block_list li {
-	padding-left: 10px;
-	padding-bottom: 20px;
-}
-#main_content .block_list li h4 {
-	padding: 0px;
-	padding-bottom: 5px;
-	margin: 0px;
-}
-#main_content .block_list li p {
-	margin: 0px;
 }
 .title_block {
 	text-align: center;
@@ -648,7 +628,7 @@ header {
 #main_nav {
 	position: relative;
 	float: left;
-	margin-left: 20px;
+	margin-left: 24px;
 }
 #main_nav ul, #main_nav ul li {
 	position: relative;
@@ -659,7 +639,7 @@ header {
 	height: 40px;
 	margin-top: 12px;
 	border-right: 1px solid #BF2F32;
-	z-index: 5;
+/*	border-left: 1px solid #7F1F25;*/
 }
 #main_nav ul li.nav.last {
 	border: none;
@@ -681,9 +661,12 @@ header {
 	font-size: 12px;
 	font-weight: 300;
 }
-#main_nav ul li.active a {
+#main_nav ul li a:hover, #main_nav ul li a:active {
 	background: rgba(0,0,0,.2);
 	color: #fff;
+}
+#main_nav ul li a:active {
+
 }
 #main_nav ul li.last #quote {
 	text-indent: -9999em;
@@ -721,12 +704,6 @@ header {
 #main_nav ul li ul.sub_nav li a:hover {
 	background: #fff;
 	color: #444;
-}
-#main_nav ul li#hoverCursor {
-	position: absolute;
-	top: 0;
-	z-index : 1;
-	margin-top: 14px;
 }
 .admin_link_color a {
 color: #ff0f2a;
@@ -1147,7 +1124,7 @@ margin-bottom: 10px;
 .retweet_links {
 float: left;
 position: relative;
-width: 660px;
+width: 100%;
 margin-bottom: 20px;
 }
 .lg_page_btn {
@@ -1311,13 +1288,22 @@ margin-top: 90px;
 margin-left: 20px;
 }
 .admin_nav {
-	text-align: center;
+position: relative;
+width: 700px;
+height: 25px;
+padding: 15px;
+float: right;
+margin-bottom: 15px;
+}
+.align {
+right: 30px;
+top: -45px;
 }
 .admin_nav ul {
 position: relative;
 width: 600px;
 height: 25px;
-float: left;
+float: right;
 }
 .admin_nav ul li {
 position: relative;
@@ -1400,12 +1386,6 @@ form div {
 	background: url(../images/form_button.png) 0px -34px no-repeat;
 	color: #fff;
 	text-shadow: 0px 1px 1px #444;
-}
-a.btn {
-	width: 116px;
-	height: 20px;
-	padding: 7px;
-	text-align: center;
 }
 .btn:hover {
 	background: url(../images/form_button.png) 0px -0px no-repeat;
