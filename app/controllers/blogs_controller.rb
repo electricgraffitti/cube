@@ -15,11 +15,12 @@ class BlogsController < ApplicationController
   # GET /blogs/1
   # GET /blogs/1.xml
   def show
-    @blog = Blog.find(params[:id], :include => :assets) 
-    respond_to do |format|
-      format.html 
-      format.xml  { render :xml => @blog }
-    end
+    # @blog = Blog.find(params[:id], :include => :assets) 
+    # respond_to do |format|
+    #   format.html 
+    #   format.xml  { render :xml => @blog }
+    # end
+    format.html { redirect_to(blogs_path) }
   end
 
   # GET /blogs/new

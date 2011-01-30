@@ -6,23 +6,25 @@ class EmployeesController < ApplicationController
   # GET /employees
   # GET /employees.xml
   def index
-    @employees = Employee.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @employees }
-    end
+    # @employees = Employee.all
+    # 
+    # respond_to do |format|
+    #   format.html # index.html.erb
+    #   format.xml  { render :xml => @employees }
+    # end
+    format.html { redirect_to(root_path) }
   end
 
   # GET /employees/1
   # GET /employees/1.xml
   def show
-    @employee = Employee.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @employee }
-    end
+    # @employee = Employee.find(params[:id])
+    # 
+    # respond_to do |format|
+    #   format.html # show.html.erb
+    #   format.xml  { render :xml => @employee }
+    # end
+    format.html { redirect_to(root_path) }
   end
 
   # GET /employees/new

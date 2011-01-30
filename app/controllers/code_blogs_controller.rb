@@ -6,23 +6,25 @@ class CodeBlogsController < ApplicationController
   # GET /code_blogs
   # GET /code_blogs.xml
   def index
-    @code_blogs = CodeBlog.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @code_blogs }
-    end
+    # @code_blogs = CodeBlog.all
+    # 
+    #    respond_to do |format|
+    #      format.html # index.html.erb
+    #      format.xml  { render :xml => @code_blogs }
+    #    end
+    format.html { redirect_to(blogs_path) }
   end
 
   # GET /code_blogs/1
   # GET /code_blogs/1.xml
   def show
-    @code_blog = CodeBlog.find(params[:id])
-
-    respond_to do |format|
-      format.html { render :layout => "short"}
-      format.xml  { render :xml => @code_blog }
-    end
+    # @code_blog = CodeBlog.find(params[:id])
+    # 
+    # respond_to do |format|
+    #   format.html { render :layout => "short"}
+    #   format.xml  { render :xml => @code_blog }
+    # end
+    format.html { redirect_to(blogs_path) }
   end
 
   # GET /code_blogs/new
