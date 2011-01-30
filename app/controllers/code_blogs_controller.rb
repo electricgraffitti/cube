@@ -12,7 +12,7 @@ class CodeBlogsController < ApplicationController
     #      format.html # index.html.erb
     #      format.xml  { render :xml => @code_blogs }
     #    end
-    format.html { redirect_to(blogs_path) }
+    redirect_to blogs_path
   end
 
   # GET /code_blogs/1
@@ -24,7 +24,7 @@ class CodeBlogsController < ApplicationController
     #   format.html { render :layout => "short"}
     #   format.xml  { render :xml => @code_blog }
     # end
-    format.html { redirect_to(blogs_path) }
+    redirect_to blogs_path
   end
 
   # GET /code_blogs/new

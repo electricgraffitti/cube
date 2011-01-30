@@ -12,7 +12,7 @@ class EmployeesController < ApplicationController
     #   format.html # index.html.erb
     #   format.xml  { render :xml => @employees }
     # end
-    format.html { redirect_to(root_path) }
+    redirect_to root_path
   end
 
   # GET /employees/1
@@ -24,7 +24,7 @@ class EmployeesController < ApplicationController
     #   format.html # show.html.erb
     #   format.xml  { render :xml => @employee }
     # end
-    format.html { redirect_to(root_path) }
+    redirect_to root_path
   end
 
   # GET /employees/new

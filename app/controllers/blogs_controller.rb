@@ -20,7 +20,7 @@ class BlogsController < ApplicationController
     #   format.html 
     #   format.xml  { render :xml => @blog }
     # end
-    format.html { redirect_to(blogs_path) }
+    redirect_to blogs_path 
   end
 
   # GET /blogs/new

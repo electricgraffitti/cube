@@ -11,7 +11,7 @@ class ServicesController < ApplicationController
     #   format.html # index.html.erb
     #   format.xml  { render :xml => @services }
     # end
-    format.html { redirect_to(root_path) }
+    redirect_to root_path
   end
 
   # GET /services/1
@@ -23,7 +23,7 @@ class ServicesController < ApplicationController
     #   format.html
     #   format.xml  { render :xml => @service }
     # end
-    format.html { redirect_to(root_path) }
+    redirect_to root_path
   end
 
   # GET /services/new
