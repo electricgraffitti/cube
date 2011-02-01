@@ -472,6 +472,18 @@ margin: 10px 0px;
 .title_block.black {
 		color: #444;
 }
+.title_block a {
+	color: #0088cc;
+}
+.title_block a:hover {
+	color: #a70d0e;
+}
+.title_block.black a {
+	color: #0088cc;
+}
+.title_block.black a:hover {
+	color: #a70d0e;
+}
 .full_wrap {
 margin: 10px 10px;
 }
@@ -1513,6 +1525,9 @@ padding: 5px 10px;
 text-decoration: none;
 color: #dddddd;
 text-shadow: 0px 1px 0px #000;
+}
+.footer_nav li a.orange {
+	color: #F28B1F;
 }
 .footer_nav li a:hover {
 color: #a70d0e;

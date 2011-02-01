@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110123064030
+# Schema version: 20110201172930
 #
 # Table name: clients
 #
@@ -29,6 +29,7 @@
 #  app_page           :boolean(1)
 #  ecommerce_page     :boolean(1)
 #  design_page        :boolean(1)
+#  logo_branding      :boolean(1)
 #
 
 class Client < ActiveRecord::Base  
@@ -75,16 +76,19 @@ class Client < ActiveRecord::Base
    def functionality
       pf = []
         unless self.web_application.blank?
-          pf << "Web Application"
+          pf << "<a href= /application-development>Web Application</a>"
         end
         unless self.content_management.blank?
-          pf << "Content Management"
+          pf << "<a href= /application-development>Content Management</a>"
         end
         unless self.ecommerce.blank?
-          pf << "Ecommerce Application"
+          pf << "<a href= /ecommerce-development>E-commerce Application</a>"
         end
         unless self.web_design.blank?
-          pf << "Web Design"
+          pf << "<a href= /design-development>Web Design</a>"
+        end
+        unless self.logo_branding.blank?
+          pf << "<a href= /design-development>Logo & Branding</a>"
         end
         return pf
    end
@@ -92,31 +96,31 @@ class Client < ActiveRecord::Base
    def technology
      at = []
       if self.css
-        at << "CSS"
+        at << "<a href= /application-development>CSS</a>"
       end
       if self.php
-        at << "PHP"
+        at << "<a href= /design-development>PHP</a>"
       end
      if self.html
-       at << "HTML"
+       at << "<a href= /application-development>HTML</a>"
      end
      if self.flash
-       at << "Flash"
+       at << "<a href= /application-development>Flash</a>"
      end
      if self.ruby
-       at << "Ruby"
+       at << "<a href= /application-development>Ruby</a>"
      end
      if self.sql
-       at << "SQL"
+       at << "<a href= /application-development>SQL</a>"
      end
      if self.wordpress
-       at << "Wordpress"
+       at << "<a href= /application-development>Wordpress</a>"
      end
      if self.javascript
-       at << "Javascript"
+       at << "<a href= /application-development>Javascript</a>"
      end
      if self.rails_framework
-       at << "Rails Framework"
+       at << "<a href= /application-development>Rails Framework</a>"
      end
     return at
    end

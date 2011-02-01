@@ -1,5 +1,5 @@
 # == Schema Information
-# Schema version: 20110123064030
+# Schema version: 20110201172930
 #
 # Table name: clients
 #
@@ -29,6 +29,7 @@
 #  app_page           :boolean(1)
 #  ecommerce_page     :boolean(1)
 #  design_page        :boolean(1)
+#  logo_branding      :boolean(1)
 #
 
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html

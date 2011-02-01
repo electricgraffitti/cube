@@ -1,13 +1,14 @@
 <div class="footer_nav">
   <ul>
     <li><%= link_to "home", root_path, :alt => "Cube2Media Home" %></li>
-    <li><%= link_to "apps", apps_path, :id => "apps", :alt => "Cloud Applications" %></li>
-    <li><%= link_to "ecommerce", ecommerce_path, :id => "ecommerce", :alt => "Ecommerce Solutions" %></li>
-    <li><%= link_to "design", design_path, :id => "design", :alt => "Web Design" %></li>
+    <li><%= link_to "apps", apps_path, :id => "apps", :alt => "Cloud Based Application Development" %></li>
+    <li><%= link_to "ecommerce", ecommerce_path, :id => "ecommerce", :alt => "Online E-commerce Shopping solutions" %></li>
+    <li><%= link_to "design", design_path, :id => "design", :alt => "Web Site Design and Branding" %></li>
     <li><%= link_to "blog", blogs_path, :id => "blog", :alt => "Cube2Media Blog" %></li>
-    <li><%= link_to "clients", clients_path, :id => "clients", :alt => "Cube2Media Clients" %></li>
-		<li><%= link_to "about cube2", about_path, :id => "about", :alt => "About Cube2Media" %></li>
+    <li><%= link_to "clients", clients_path, :id => "clients", :alt => "Cube2Media Clients and Portfolio" %></li>
+		<li><%= link_to "about cube2", about_path, :id => "about", :alt => "About the Cube2Media Team" %></li>
     <li><%= link_to "contact", contact_us_path, :id => "contact", :alt => "Cube2Media Contact" %></li>
+		<li><%= link_to "get a quote", project_contact_path, :id => "quote", :class => "orange", :alt => "Cube2Media Web Project Quotation" %></li>
     <% if current_admin %>
       <li><%= link_to "admin dashboard", admin_blog_path %></li>
       <li><%= link_to "logout", admin_logout_path %></li>

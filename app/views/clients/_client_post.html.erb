@@ -1,8 +1,8 @@
 <div class="column_3">
 
-  <%= link_to (image_tag(client.assets.last.attachment.url(:small), :alt => client.title, :class => "thumb"),  client_path(client)) %>
+  <%= link_to (image_tag(client.assets.last.attachment.url(:small), :alt => client.title, :class => "thumb", :alt => "Cube2Media Clients and Portfolio"),  client_path(client)) %>
 
 	<h3 class="black">
-    <%=h link_to client.title, client_path(client)%>
+    <%=h link_to client.title, client_path(client), :alt => "Cube2Media Clients and Portfolio"%>
 	</h3>
 </div>
