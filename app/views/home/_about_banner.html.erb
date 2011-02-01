@@ -1,0 +1,86 @@
+<div class="full_row bottom_hr">
+	<h3>
+  	Doing What We Do Best
+	</h3>
+	<p class="about_us">
+		Creating an professional online presence for your company is one of the most important decisions you can make.  Choosing the right firm to develop your presence is just as important.  Many web development companies know how to build web sites, but we have the expertise to research and implement the most cost effective solutions and utilize the most current software technologies to keep your project on the cutting edge of the ever-changing global internet.
+	</p>
+	<p class="about_us">
+		We have developed web site for just about every type of business.  
+	</p>
+	<p class="about_us">
+		While working with Cube2Media, you can rest assured that your project is being treated with the utmost discretion, professionalism and care.  We will never cut corners and jeopardize the quality of service we deliver.  We have a proven track record to back up our services and processes. <%= link_to "Go look around at some of our clients projects in our portfolio.", clients_path, :class => "about_us",:alt => "Cube2Media Web Development Client Listing" %>
+	</p>
+</div>
+<div class="full_row bottom_hr">
+			<% @employees.each do |employee| %>
+	<div class="column_13 center">
+
+  	<%= image_tag(employee.assets.last.attachment.url(:small), :class => "thumb left", :alt => employee.name) %>
+	
+	</div>
+
+		<div class="column_23">
+			<div id="person_info">
+				<h4 class="emp">
+			  	<%=h employee.name %>
+				</h4>
+				<h5 class="emp">
+					<%=h employee.title %>
+				</h5>
+			
+			<p>
+				<%= employee.content %>
+			</p>
+			</div>
+		</div>
+	<% end %>
+</div>
+<div class="full_row bottom_hr">
+<div class="column_13">
+	<h3>
+		Services We Offer
+	</h3>
+		<ul>
+			<li>
+				Domain Management
+			</li>
+			<li>
+				Virtual Hosting
+			</li>
+			<li>
+				Logo Design &#38; Branding
+			</li>
+			<li>
+				Mockup Designs
+			</li>
+			<li>
+				Full Web Design Services
+			</li>
+			<li>
+				Content Management Services
+			</li>
+			<li>
+				Online Ecommerce
+			</li>
+			<li>
+				Cloud Based Web Applications
+			</li>
+			<li>
+				Mobile Applications
+			</li>
+		</ul>
+</div>
+<div class="column_23">
+	<p class="about_us">
+		Our main objective at Cube2Media is to provide our clients with the most current up-to-date development processes when building their projects. 
+	</p>
+	<p class="about_us">
+		At Cube2Media we stand alone in our approach to web development in all aspects.  We are based in Las Vegas Nevada with an office in Salt Lake City Utah and we serve clients worldwide.  Our projects all remain in the Cube where we have a talented core team that provides project consultation, one-on-one project management, concept creation, mock-ups, and extensive programming in a multitude of languages.
+	</p>
+	<p class="about_us">
+		While working with Cube2Media, you can rest assured that your project is being treated with the utmost discretion, professionalism and care.  We will never cut corners and jeopardize the quality of service we deliver.  We have a proven track record to back up our services and processes. <%= link_to "Go look around at some of our clients projects in our portfolio.", clients_path, :class => "about_us",:alt => "Cube2Media Web Development Client Listing" %>
+	</p>
+	</div>
+
+</div>

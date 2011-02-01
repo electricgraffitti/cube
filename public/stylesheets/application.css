@@ -949,7 +949,31 @@ p.testimonial_banner_sig {
 width: 705px;
 margin-left: 60px;
 }
-
+#person_info {
+	padding-bottom: 50px;
+}
+#person_info h4.emp {
+	font-size: 1.8em;
+	margin-left: 20px;
+	padding: 0px;
+}
+#person_info h5.emp{
+	font-size: 1.1em;
+	margin: 0px 0px 0px 20px;
+	padding: 0px;
+}
+#person_info p {
+	margin-left: 20px;
+}
+a.about_us  {
+	color: #0088CC;
+}
+a:hover.about_us {
+	color: #a70d0e;
+}
+p.about_us {
+	margin-bottom: 20px;
+}
 /**************************************************/
 /******************FRONT PAGE*********************/
 #front_page ul li a {

@@ -21,6 +21,7 @@ ActionController::Routing::Routes.draw do |map|
   map.apps "application-development", :controller => "home", :action => "apps"
   map.ecommerce "ecommerce-development", :controller =>  "home", :action => "ecommerce"
   map.design "design-development", :controller => "home", :action => "design"
+  map.about "about-cube2media", :controller => "home", :action => "about"
   
   
   map.contact_us "contact-cube2media", :controller => "contacts", :action => "contact_us"
