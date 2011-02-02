@@ -111,16 +111,16 @@ class Client < ActiveRecord::Base
        at << "<a href= /ruby-language-development>Ruby</a>"
      end
      if self.sql
-       at << "<a href= /sequel-database-development>SQL</a>"
+       at << "<a href= /mysql-database-development>MySQL</a>"
      end
      if self.wordpress
        at << "<a href= /application-development>Wordpress</a>"
      end
      if self.javascript
-       at << "<a href= /javascript-in-development>Javascript</a>"
+       at << "<a href= /javascript-in-development>Javascript/Jquery</a>"
      end
      if self.rails_framework
-       at << "<a href= /rails-application-development>Rails Framework</a>"
+       at << "<a href= /rails-application-development>Ruby on Rails Framework</a>"
      end
     return at
    end

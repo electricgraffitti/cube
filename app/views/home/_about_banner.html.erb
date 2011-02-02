@@ -10,34 +10,33 @@
 	</p>
 </div>
 <div class="full_row bottom_hr">
-			<% @employees.each do |employee| %>
+	<% @employees.each do |employee| %>
 	<div class="column_13 center">
-
-  	<%= image_tag(employee.assets.last.attachment.url(:small), :class => "thumb left", :alt => employee.name) %>
-	
+  <%= image_tag(employee.assets.last.attachment.url(:small), :class => "thumb left", :alt => employee.name) %>
 	</div>
 
-		<div class="column_23">
-			<div id="person_info">
-				<h4 class="emp">
-			  	<%=h employee.name %>
-				</h4>
-				<h5 class="emp">
-					<%=h employee.title %>
-				</h5>
+	<div class="column_23">
+		<div id="person_info">
+			<h4 class="emp">
+			  <%=h employee.name %>
+			</h4>
+			<h5 class="emp">
+				<%=h employee.title %>
+			</h5>
 			
 			<p>
 				<%= employee.content %>
 			</p>
-			</div>
 		</div>
+	</div>
 	<% end %>
 </div>
+
 <div class="full_row bottom_hr">
-<div class="column_13">
-	<h3>
-		Services We Offer
-	</h3>
+	<div class="column_13">
+		<h3>
+			Services We Offer
+		</h3>
 		<ul class="bulleted_list">
 			<li>
 				<%= link_to "Domain Management", domains_path, :class => "about_us", :alt => "Domain Name Management" %>
@@ -61,17 +60,18 @@
 				<%= link_to "Cloud Based Web Applications", apps_path, :class => "about_us", :alt => "Cloud Based Web Applications" %>
 			</li>
 		</ul>
-</div>
-<div class="column_23">
-	<p class="about_us">
-		Our main objective at Cube2Media is to provide our clients with the most current up-to-date development processes when building their projects. 
-	</p>
-	<p class="about_us">
-		At Cube2Media we stand alone in our approach to web development in all aspects.  We are based in Las Vegas Nevada with an office in Salt Lake City Utah and we serve clients worldwide.  Our projects all remain in the Cube where we have a talented core team that provides project consultation, one-on-one project management, concept creation, mock-ups, and extensive programming in a multitude of languages.
-	</p>
-	<p class="about_us">
-		While working with Cube2Media, you can rest assured that your project is being treated with the utmost discretion, professionalism and care.  We will never cut corners and jeopardize the quality of service we deliver.  We have a proven track record to back up our services and processes. <%= link_to "Go browse at some of our clients projects in our portfolio.", clients_path, :class => "about_us",:alt => "Cube2Media Web Development Client Listing" %>
-	</p>
 	</div>
-
+	<div class="column_23">
+		<div id="person_info">
+			<p>
+				Our main objective at Cube2Media is to provide our clients with the most current up-to-date development processes when building their projects. 
+			</p>
+			<p>
+				At Cube2Media we stand alone in our approach to web development in all aspects.  We are based in Las Vegas Nevada with an office in Salt Lake City Utah and we serve clients worldwide.  Our projects all remain in the Cube where we have a talented core team that provides project consultation, one-on-one project management, concept creation, mock-ups, and extensive programming in a multitude of languages.
+			</p>
+			<p>
+				While working with Cube2Media, you can rest assured that your project is being treated with the utmost discretion, professionalism and care.  We will never cut corners and jeopardize the quality of service we deliver.  We have a proven track record to back up our services and processes. <%= link_to "Go browse at some of our clients projects in our portfolio.", clients_path, :class => "about_us",:alt => "Cube2Media Web Development Client Listing" %>
+			</p>
+		</div>
+	</div>
 </div>
