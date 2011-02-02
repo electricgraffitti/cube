@@ -22,6 +22,53 @@ class HomeController < ApplicationController
   def about
     @employees = Employee.all
   end
+  def domains
+    
+  end
+  
+  def hosting
+    
+  end
+  
+  def css
+    
+  end
+  
+  def flash_animation
+    
+  end
+  
+  def hypertext
+    
+  end
+  
+  def javascript
+    
+  end
+  
+  def php
+    
+  end
+  
+  def rails
+    
+  end
+  
+  def ruby
+    
+  end
+  
+  def sequel
+    
+  end
+  
+  def rails
+    
+  end
+  
+  def wordpress
+    
+  end
   
   #  def project_mailer
   #      #grab the params to pass to the redirect

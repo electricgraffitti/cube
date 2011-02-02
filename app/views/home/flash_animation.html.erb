@@ -1,0 +1,18 @@
+<% content_for :banner do  %>
+  <div class="banner_content">
+    <h2 class="banner_text header_white">
+    Flash Design &#38; Development
+    </h2>
+  </div>
+<% end %>
+
+<div class="full_row top_hr bottom_hr">
+	<h4>When Too Much Is Too Much</h4>
+	<p>
+		<%= link_to "Adobe Flash", "http://www.adobe.com", :target => "_blank", :class => "about_us", :alt => "Adobe Software Solutions" %> exploded on the scene in the web design world with the ability to manipulate vector and raster graphics to provide web animation.  While Flash surely has its place in the developer world, too much flash design can actually damper your web page usability.  Some users have the perception that these types of designs enrich their overall browsing experience, but the extensive use of flash design in a web site can easily become intrusive and distracting and can easily take away from a sites "call to action".  Small amounts of animation when used tastefully can be a good thing as long as a developer doesn't get carried away.  Keep your code SEO friendly for best results.  <%= link_to "Go check out some of our applications", clients_path, :class => "about_us", :alt => "Cube2Media Flash Design" %> to see how intricately it can be done.
+	</p>
+</div>
+
+<% content_for :sub_boxes do  %>
+	<%= render :partial => 'layouts/sub_boxes' %>
+<% end %>

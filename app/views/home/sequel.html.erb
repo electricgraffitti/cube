@@ -1,0 +1,18 @@
+<% content_for :banner do  %>
+  <div class="banner_content">
+    <h2 class="banner_text header_white">
+    Database Management
+    </h2>
+  </div>
+<% end %>
+
+<div class="full_row top_hr bottom_hr">
+	<h4>Data Control At Its Finest</h4>
+	<p>
+		Structured Query Language or SQL is a database computer language mainly designed to manage data in web application development environments. The most common task in SQL is the query, which is when a call is made to parse information from a database field and serve it up to the application. Proper database setup and management is vital to a streamlined web applications behavior. There are other solutions for data storage and transfer, but we like the behavior that SQL has when running a <%= link_to "Ruby on Rails", "http://www.rubyonrails.org", :target => "_blank", :class => "about_us", :alt => "Ruby On Rails Web Application Development" %> web application. <%= link_to "Let us know about your next project", project_contact_path, :class => "about_us", :alt => "Cube2Media Project Contact" %> by filling our our project form and let us implement our solutions.
+	</p>
+</div>
+
+<% content_for :sub_boxes do  %>
+	<%= render :partial => 'layouts/sub_boxes' %>
+<% end %>

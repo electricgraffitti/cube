@@ -1,0 +1,18 @@
+<% content_for :banner do  %>
+  <div class="banner_content">
+    <h2 class="banner_text header_white">
+    Javascript In Development
+    </h2>
+  </div>
+<% end %>
+
+<div class="full_row top_hr bottom_hr">
+	<h4>The Cool Tool</h4>
+	<p>
+		Javascript is a prototype-based object-oriented scripting language that is dynamic and has first-class functions.  Javascript like <%= link_to "Flash", flash_animation_path, :class => "about_us", :alt => "Cube2Media Javascript in Development" %>, provides enhanced user interface for viewing content for web pages, but is less taxing and intrusive than <%= link_to "Flash", flash_animation_path, :class => "about_us", :alt => "Cube2Media Javascript in Development" %>. Javascript uses syntax closely related to "C", and resembles many naming conventions of "Java", but that is the only similarity between them and javascript has very different characteristics. Javascript is becoming more popular amongst developers and programmers because it has the ability to to run locally in a users browser so the reactive response is much more robust. Its primary use in web applications is to produce functions that are included from <%= link_to "HTML", hypertext_path, :class => "about_us", :alt => "Cube2Media HTML in Development" %> pages that can interact with the Document Object Model and can provide site features such as validations on forms and animations throughout the site. <%= link_to "Go see some of our javascript implementations", clients_path, :class => "about_us", :alt => "Cube2Media Javascript In Design" %> we have used in some of our featured clients.
+	</p>
+</div>
+
+<% content_for :sub_boxes do  %>
+	<%= render :partial => 'layouts/sub_boxes' %>
+<% end %>

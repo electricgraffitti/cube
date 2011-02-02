@@ -18,11 +18,23 @@ ActionController::Routing::Routes.draw do |map|
   map.admin_employee "admin-employees", :controller => "admins", :action => "admin_employees"
   map.admin_quote "admin-quote", :controller => "admins", :action => "admin_quotes"
   
+  #Sub Pages
   map.apps "application-development", :controller => "home", :action => "apps"
   map.ecommerce "ecommerce-development", :controller =>  "home", :action => "ecommerce"
   map.design "design-development", :controller => "home", :action => "design"
   map.about "about-cube2media", :controller => "home", :action => "about"
   
+  #Link Pages
+  map.domains "domain-management", :controller => "home", :action => "domains" 
+  map.css "cascading-style-sheets", :controller => "home", :action => "css"
+  map.flash_animation "flash-animation", :controller => "home", :action => "flash_animation"
+  map.hosting "website-hosting", :controller => "home", :action => "hosting"
+  map.javascript "javascript-in-development", :controller => "home", :action => "javascript"
+  map.hypertext "hypertext-markup-language", :controller => "home", :action => "hypertext"
+  map.php "php-web-development", :controller => "home", :action => "php"
+  map.rails "rails-application-development", :controller => "home", :action => "rails"
+  map.ruby "ruby-language-development", :controller => "home", :action => "ruby"
+  map.sequel "sequel-database-development", :controller => "home", :action => "sequel"
   
   map.contact_us "contact-cube2media", :controller => "contacts", :action => "contact_us"
   map.contact_mailer "thank-you-from-cube2media", :controller => 'contacts', :action => "contact_mailer"

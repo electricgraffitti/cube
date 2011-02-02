@@ -1,0 +1,18 @@
+<% content_for :banner do  %>
+  <div class="banner_content">
+    <h2 class="banner_text header_white">
+    Hosting Solutions
+    </h2>
+  </div>
+<% end %>
+
+<div class="full_row top_hr bottom_hr">
+	<h4>Leave The Hosting To Us</h4>
+	<p>
+		So many great deals on hosting?  Not. A truly good deal on hosting space is one that is reliable and dependable.  The last thing your business needs is downtime due to unreliable hosting of your site.  When you choose Cube2Media for your hosting solution, we specialize in providing you with high performance and affordable Virtual Private Server Hosting.  Our hosting comes with nightly database backups. We offer a variety of VPS hosting plans to fit any budget or application.  We also have hosting plans available for static sites as well when you don't need to host dynamic framework applications. <%= link_to "Contact us today", project_contact_path, :class => "about_us", :alt => "Cube2Media Hosting Solutions" %> to discuss your web site or web application project.
+	</p>
+</div>
+
+<% content_for :sub_boxes do  %>
+	<%= render :partial => 'layouts/sub_boxes' %>
+<% end %>

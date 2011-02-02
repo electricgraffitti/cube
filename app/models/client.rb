@@ -96,31 +96,31 @@ class Client < ActiveRecord::Base
    def technology
      at = []
       if self.css
-        at << "<a href= /application-development>CSS</a>"
+        at << "<a href= /cascading-style-sheets>CSS</a>"
       end
       if self.php
-        at << "<a href= /design-development>PHP</a>"
+        at << "<a href= /php-web-development>PHP</a>"
       end
      if self.html
-       at << "<a href= /application-development>HTML</a>"
+       at << "<a href= /hypertext-markup-language>HTML</a>"
      end
      if self.flash
-       at << "<a href= /application-development>Flash</a>"
+       at << "<a href= /flash-animation>Flash</a>"
      end
      if self.ruby
-       at << "<a href= /application-development>Ruby</a>"
+       at << "<a href= /ruby-language-development>Ruby</a>"
      end
      if self.sql
-       at << "<a href= /application-development>SQL</a>"
+       at << "<a href= /sequel-database-development>SQL</a>"
      end
      if self.wordpress
        at << "<a href= /application-development>Wordpress</a>"
      end
      if self.javascript
-       at << "<a href= /application-development>Javascript</a>"
+       at << "<a href= /javascript-in-development>Javascript</a>"
      end
      if self.rails_framework
-       at << "<a href= /application-development>Rails Framework</a>"
+       at << "<a href= /rails-application-development>Rails Framework</a>"
      end
     return at
    end
