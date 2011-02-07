@@ -1,3 +1,7 @@
+<% content_for :head do %>
+  <%= include_tiny_mce_if_needed %>
+<% end %>
+
 <div class="admin_nav">
   <%= render :partial => 'admins/admin_nav' %>
 </div>
@@ -6,8 +10,9 @@
 </div>
 <div class="admin_form_wrap">
 	<h3 class="admin_header">New Blog</h3>
-
-<%= render :partial => 'form' %>
+  <%= render :partial => 'form' %>
 </div>
+
+
 
 

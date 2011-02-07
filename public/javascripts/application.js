@@ -178,41 +178,41 @@ var app = {
 
 var admin = {
 	
-	yuiTextEditor: function() {
-		var codeBlog = new YAHOO.widget.Editor('code_blog_content', {
-		    height: '300px',
-		    width: '715px',
-		    dompath: true, //Turns on the bar at the bottom
-		    animate: true //Animates the opening, closing and moving of Editor windows
-		});
-		codeBlog.render();
-		
-		//Inside an event handler after the Editor is rendered
-		YAHOO.util.Event.on('code_blog_submit', 'click', function() {
-		    //Put the HTML back into the text area
-		    codeBlog.saveHTML();
-		 
-		    //The var html will now have the contents of the textarea
-		    var html = codeBlog.get('code_blog_content').value;
-		});
-		
-		var cubeBlog = new YAHOO.widget.Editor('blog_content', {
-		    height: '300px',
-		    width: '715px',
-		    dompath: true, //Turns on the bar at the bottom
-		    animate: true //Animates the opening, closing and moving of Editor windows
-		});
-		cubeBlog.render();
-		
-		//Inside an event handler after the Editor is rendered
-		YAHOO.util.Event.on('blog_submit', 'click', function() {
-		    //Put the HTML back into the text area
-		    cubeBlog.saveHTML();
-		 
-		    //The var html will now have the contents of the textarea
-		    var html = cubeBlog.get('blog_content').value;
-		});
-	},
+	// yuiTextEditor: function() {
+	// 	var codeBlog = new YAHOO.widget.Editor('code_blog_content', {
+	// 	    height: '300px',
+	// 	    width: '715px',
+	// 	    dompath: true, //Turns on the bar at the bottom
+	// 	    animate: true //Animates the opening, closing and moving of Editor windows
+	// 	});
+	// 	codeBlog.render();
+	// 	
+	// 	//Inside an event handler after the Editor is rendered
+	// 	YAHOO.util.Event.on('code_blog_submit', 'click', function() {
+	// 	    //Put the HTML back into the text area
+	// 	    codeBlog.saveHTML();
+	// 	 
+	// 	    //The var html will now have the contents of the textarea
+	// 	    var html = codeBlog.get('code_blog_content').value;
+	// 	});
+	// 	
+	// 	var cubeBlog = new YAHOO.widget.Editor('blog_content', {
+	// 	    height: '300px',
+	// 	    width: '715px',
+	// 	    dompath: true, //Turns on the bar at the bottom
+	// 	    animate: true //Animates the opening, closing and moving of Editor windows
+	// 	});
+	// 	cubeBlog.render();
+	// 	
+	// 	//Inside an event handler after the Editor is rendered
+	// 	YAHOO.util.Event.on('blog_submit', 'click', function() {
+	// 	    //Put the HTML back into the text area
+	// 	    cubeBlog.saveHTML();
+	// 	 
+	// 	    //The var html will now have the contents of the textarea
+	// 	    var html = cubeBlog.get('blog_content').value;
+	// 	});
+	// },
 	
 	adminDatatables: function() {
 		blogsTable = $('#blogs_table').dataTable({

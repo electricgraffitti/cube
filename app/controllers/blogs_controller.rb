@@ -1,5 +1,7 @@
 class BlogsController < ApplicationController
   
+  uses_tiny_mce :only => [:new, :create, :edit, :update]
+  
   before_filter :require_admin, :except => [:index,:show]
     
   # GET /blogs
