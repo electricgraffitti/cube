@@ -10,5 +10,6 @@ theme_advanced_resize_horizontal: true
 plugins:
 - table
 - fullscreen
-- xhtmlxtras
+# - xhtmlxtras
 - style
+- paste

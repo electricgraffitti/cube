@@ -14,16 +14,14 @@
   </p>
   <p>
     <%= f.label :content %><br />
-    <%= f.text_area :content, :cols => "50", :rows => "10", :class => "mceEditor" %>
+    <%= f.text_area :content, :cols => "70", :rows => "10", :class => "mceEditor" %>
   </p>
   
   <p>
-    <% for asset in @blog.assets %>
-    <% fields_for "blog[attachments][]", asset do |asset_form| %>
-    <%= asset_form.label "Add Image"  %><br/>
-    <%= asset_form.file_field :attachment, :size => 16, :index => nil %>
+    <% f.fields_for :assets do |asset_form| %>
+      <%= asset_form.label "Add Image"  %><br/>
+      <%= asset_form.file_field :attachment, :size => 16, :index => nil %>
     <% end %>
-  <% end %>
   </p>
   <p>
     <%= f.submit 'Submit' %>

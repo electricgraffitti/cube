@@ -18,15 +18,10 @@
     <%= f.text_field :url; %>
   </p>
   <p>
-    <% for asset in @client.assets %>
-    <% fields_for "client[attachments][]", asset do |asset_form| %>
-    <%= asset_form.label "Add Image"  %><br/>
-    <%= asset_form.file_field :attachment, :size => 16, :index => nil %>
-      <% unless asset.new_record? %>
-        <%= asset_form.hidden_field :id, :index => nil %>
-      <% end %>
+    <% f.fields_for :assets do |asset_form| %>
+      <%= asset_form.label "Add Image"  %><br/>
+      <%= asset_form.file_field :attachment, :size => 16, :index => nil %>
     <% end %>
-  <% end %>
   </p>
 	<h4 class="admin_header">Sorting &#38; Placement</h4>
   <p>

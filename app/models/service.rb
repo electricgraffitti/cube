@@ -31,20 +31,4 @@ class Service < ActiveRecord::Base
    named_scope :last_created, :order => "created_at DESC"
    named_scope :indexed_order, :order => "service_order ASC"
 
-   #pulls the assets from the form
-   def attachments=(atts)
-     atts.each do |attachment|
-       if attachment[:id].blank?
-         assets.build(attachment)
-       else
-         asset = assets.detect { |a| a.id == attachment[:id].to_i }
-       end
-     end    
-   end
-
-   def save_assets
-     assets.each do |a|
-       a.save(false)
-     end
-   end
 end
