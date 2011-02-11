@@ -18,9 +18,14 @@
   </p>
   
   <p>
-    <% f.fields_for :assets do |asset_form| %>
-      <%= asset_form.label "Add Image"  %><br/>
-      <%= asset_form.file_field :attachment, :size => 16, :index => nil %>
+    <% for asset in @blog.assets %>
+      <% fields_for "blog[attachments][]", asset do |asset_form| %>
+        <%= asset_form.label "Add Image"  %><br/>
+        <%= asset_form.file_field :attachment, :size => 16, :index => nil %>
+        <% unless asset.new_record? %>
+          <%= asset_form.hidden_field :id, :index => nil %>
+        <% end %>
+      <% end %>
     <% end %>
   </p>
   <p>

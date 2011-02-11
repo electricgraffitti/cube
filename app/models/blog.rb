@@ -38,4 +38,20 @@ class Blog < ActiveRecord::Base
     "#{id}-#{permalink}"
   end
   
+  def attachments=(atts)
+    atts.each do |attachment|
+      if attachment[:id].blank?
+        assets.build(attachment)
+      else
+        asset = assets.detect { |a| a.id == attachment[:id].to_i }
+      end
+    end    
+  end
+
+  def save_assets
+    assets.each do |a|
+      a.save(false)
+    end
+  end
+  
 end
