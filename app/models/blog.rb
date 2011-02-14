@@ -13,6 +13,10 @@
 
 class Blog < ActiveRecord::Base
   
+  cattr_reader :per_page
+  @@per_page = 5
+  
+  
   #callbacks
   after_update :save_assets
   
