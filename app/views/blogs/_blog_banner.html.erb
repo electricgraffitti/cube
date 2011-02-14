@@ -15,7 +15,7 @@
     <div class="retweet_links">
       <%= link_to "#{blog.title}", blog_path(blog), :class => "retweet vert" %>
     </div>
-  	<%=h blog.content %>
+  	<%= blog.content %>
 	</div>
 </div>
 <% if current_admin %>
