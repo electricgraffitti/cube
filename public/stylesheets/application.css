@@ -986,6 +986,16 @@ a:hover.about_us {
 p.about_us {
 	margin-bottom: 20px;
 }
+.pagination {
+	font-size: 24px;
+	text-align:center;
+	margin-top: 20px;
+}
+#main_content p.search {
+	text-align:right;
+	margin-right: 80px;
+	margin-bottom: 20px;
+}
 /**************************************************/
 /******************FRONT PAGE*********************/
 #front_page ul li a {

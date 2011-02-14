@@ -7,7 +7,7 @@ class BlogsController < ApplicationController
   # GET /blogs
   # GET /blogs.xml
   def index
-    @blogs = Blog.paginate :page => params[:page], :order => 'created_at DESC'
+    @blogs = Blog.search(params[:search], params[:page])
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @blogs }

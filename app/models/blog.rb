@@ -42,6 +42,12 @@ class Blog < ActiveRecord::Base
     "#{id}-#{permalink}"
   end
   
+  def self.search(search, page)
+   paginate :page => page, 
+            :conditions => ['title like ?', "%#{search}"],
+            :order => 'created_at DESC'
+  end
+  
   def attachments=(atts)
     atts.each do |attachment|
       if attachment[:id].blank?

@@ -8,6 +8,13 @@
     </h2>
   </div>
 <% end %>
+<%= will_paginate @blogs %>
+<% form_tag blogs_path, :method => 'get' do %>
+	<p class="search">
+		<%= text_field_tag :search, params[:search] %>
+		<%= submit_tag "Search", :name => nil %>
+	</p>
+<% end %>
 
 <% @blogs.each do |blog| %>
  <%= render :partial => 'blogs/blog_banner', :locals => {:blog => blog}%>
@@ -17,6 +24,6 @@
 	<%= render :partial => 'layouts/sub_boxes' %>
 <% end %>
 
-
-
 <%= will_paginate @blogs %>
+
+
