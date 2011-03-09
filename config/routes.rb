@@ -34,7 +34,7 @@ ActionController::Routing::Routes.draw do |map|
   map.php "php-web-development", :controller => "home", :action => "php"
   map.rails "rails-application-development", :controller => "home", :action => "rails"
   map.ruby "ruby-language-development", :controller => "home", :action => "ruby"
-  map.sequel "sequel-database-development", :controller => "home", :action => "sequel"
+  map.sequel "mysql-database-development", :controller => "home", :action => "sequel"
   
   map.contact_us "contact-cube2media", :controller => "contacts", :action => "contact_us"
   map.contact_mailer "thank-you-from-cube2media", :controller => 'contacts', :action => "contact_mailer"

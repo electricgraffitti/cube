@@ -174,7 +174,7 @@ var app = {
     if (timeout) clearTimeout(timeout); 
 	}
 	
-}
+};
 
 var admin = {
 	
