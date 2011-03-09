@@ -6,5 +6,9 @@
 - :source: http://gems.github.com
   :name: openrain-action_mailer_tls
 - :name: tiny_mce
+- :name: RedCloth
+- :version: ~> 2.3.15
+  :source: http://gemcutter.org
+  :name: will_paginate
 - :version: 2.3.8
   :name: rails
