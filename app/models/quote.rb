@@ -13,7 +13,7 @@
 class Quote < ActiveRecord::Base
   
   #redcloth
-  acts_as_textiled :content
+  #acts_as_textiled :content
 
   #named scopes
   named_scope :small_list, lambda { |limit| {:limit => limit}}

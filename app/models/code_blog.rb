@@ -25,7 +25,7 @@ class CodeBlog < ActiveRecord::Base
    validates_presence_of :title, :sub_title, :content
 
    #redcloth
-   acts_as_textiled :content
+   #acts_as_textiled :content
 
    #named scopes
    named_scope :small_list, lambda { |limit| {:include => [:assets], :limit => limit}}
