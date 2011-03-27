@@ -7,12 +7,12 @@
 
 <% end %>
 
-<div class="center">  <h2>Featured Clients</h2>
-
+<div class="center">  
+  <h2>Featured Clients</h2>
   <% @clients.each do |client| %>
     <%= render :partial => 'clients/client_post', :locals => {:client => client} %>
-  <% end %></div>
-
+  <% end %>
+</div>
 
 <% content_for :sub_boxes do  %>
 	<%= render :partial => 'layouts/sub_boxes' %>

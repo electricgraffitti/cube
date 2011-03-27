@@ -8,8 +8,8 @@ theme: advanced
 theme_advanced_toolbar_location: top
 theme_advanced_resize_horizontal: true
 plugins:
-- table
-- fullscreen
-# - xhtmlxtras
-- style
-- paste
+  - table
+  - fullscreen
+  # - xhtmlxtras
+  - style
+  - paste
