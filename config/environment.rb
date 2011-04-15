@@ -20,9 +20,9 @@ Rails::Initializer.run do |config|
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
   config.gem "authlogic"
-  config.gem "tmail"
+  # config.gem "tmail"
   config.gem 'paperclip', :source => 'http://gemcutter.org'
-  config.gem "openrain-action_mailer_tls", :lib => "smtp_tls.rb", :source => "http://gems.github.com"
+  # config.gem "openrain-action_mailer_tls", :lib => "smtp_tls.rb", :source => "http://gems.github.com"
   config.gem "tiny_mce"
   config.gem 'RedCloth'
   config.gem 'will_paginate', :version  => '~> 2.3.15', :source => 'http://gemcutter.org'
