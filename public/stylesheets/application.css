@@ -987,9 +987,24 @@ p.about_us {
 	margin-bottom: 20px;
 }
 .pagination {
-	font-size: 24px;
+	font-size: 20px;
 	text-align:center;
 	margin-top: 20px;
+	color: #970707;
+	margin: 15px 0px;
+	text-shadow: 0 1px 1px #FFFFFF;
+}
+.pagination a {
+  color: #970707;
+  text-shadow: 0 1px 1px #FFFFFF;
+}
+.pagination a:hover {
+  color: #F08112;
+  text-shadow: 0 1px 1px #FFFFFF;
+}
+.pagination a:visited {
+  color: #970707;
+  text-shadow: 0 1px 1px #FFFFFF;
 }
 #main_content p.search {
 	text-align:right;
@@ -1274,6 +1289,12 @@ background: url('../images/c2_headers.png') 0px -390px no-repeat;
 .quote_form {
 margin-left: 45px;
 float: left;
+}
+.social {
+left: 5px;
+position: absolute;
+top: 70px;
+width: 140px;
 }
 /**************************************************/
 /******************SUB BOX LISTINGS****************/
@@ -1568,7 +1589,7 @@ text-decoration: underline;
 }
 .twitter_link {
 	position: absolute;
-	left: 15px;
+	left: 39px;
 	bottom: 0px;
 	width: 311px;
 	height: 125px;

@@ -9,11 +9,13 @@
   </div>
 <% end %>
 
-
+  <%= will_paginate %>
 
 <% @blogs.each do |blog| %>
+
  <%= render :partial => 'blogs/blog_banner', :locals => {:blog => blog}%>
 <% end %>
+  <%= will_paginate %>
 
 <% content_for :sub_boxes do  %>
 	<%= render :partial => 'layouts/sub_boxes' %>
