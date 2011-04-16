@@ -26,6 +26,7 @@ Rails::Initializer.run do |config|
   config.gem "tiny_mce"
   config.gem 'RedCloth'
   config.gem 'will_paginate', :version  => '~> 2.3.15', :source => 'http://gemcutter.org'
+  config.gem "i18n"
   # config.gem 'will_paginate'
 
   # Only load the plugins named here, in the order given (default is alphabetical).
