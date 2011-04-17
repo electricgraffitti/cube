@@ -10,20 +10,16 @@ nokogiri:
 - libxslt1-dev
 rmagick:
 - imagemagick
-- libmagickcore-dev
-- libmagickwand-dev
+- libmagick9-dev
 paperclip:
 - imagemagick
-- libmagickcore-dev
-- libmagickwand-dev
+- libmagick9-dev
 thoughtbot-paperclip:
 - imagemagick
-- libmagickcore-dev
-- libmagickwand-dev
+- libmagick9-dev
 mini_magick:
 - imagemagick
-- libmagickcore-dev
-- libmagickwand-dev
+- libmagick9-dev
 postgres:
 - postgresql-client
 - postgresql-contrib
