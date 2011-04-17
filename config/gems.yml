@@ -7,6 +7,5 @@
 - :version: ~> 2.3.15
   :source: http://gemcutter.org
   :name: will_paginate
-- :name: i18n
 - :version: 2.3.11
   :name: rails
