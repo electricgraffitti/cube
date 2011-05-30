@@ -2,22 +2,22 @@
   <%= image_tag(client.assets.last.attachment.url(:medium), :alt => client.title, :class => "full_image") %>
 </div>
 <div class="full_row center bottom_hr">
+  <%= link_to "View Client", client.url, :target => "_blank", :alt => "Cube2Media Client Project", :class => "client_view" %>
 	<div class="align_left">
 	  <%= client.content %>
 	</div>
 	<div class="title_block black">
 		<h4>Project Functionality</h4>
-	  <% client.functionality.each do |t| %>
-	    <%= t %> |
+	  |<% client.functionality.each do |t| %>
+	     <%= t %> |
 	  <% end %>
 	</div>
   
   <div class="title_block black">
 	<h4>Project Technologies</h4>
 	  <% client.technology.each do |t| %>
-	    <%= t %> |
+	     <%= t %> |
 	  <% end %>
-  	<%= link_to "View Client", client.url, :target => "_blank", :alt => "Cube2Media Client Project" %>
   	<% if current_admin %>
     		| <%= link_to "Edit Client", edit_client_path(client) %>
     <% end %>

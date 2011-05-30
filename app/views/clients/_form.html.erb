@@ -18,9 +18,14 @@
     <%= f.text_field :url; %>
   </p>
   <p>
-    <% f.fields_for :assets do |asset_form| %>
-      <%= asset_form.label "Add Image"  %><br/>
-      <%= asset_form.file_field :attachment, :size => 16, :index => nil %>
+    <% for asset in @client.assets %>
+      <% fields_for "client[attachments][]", asset do |asset_form| %>
+        <%= asset_form.label "Add Image"  %><br/>
+        <%= asset_form.file_field :attachment, :size => 16, :index => nil %>
+        <% unless asset.new_record? %>
+          <%= asset_form.hidden_field :id, :index => nil %>
+        <% end %>
+      <% end %>
     <% end %>
   </p>
 	<h4 class="admin_header">Sorting &#38; Placement</h4>
@@ -37,6 +42,10 @@
 		<%= f.label :list_order, "Listing Order" %><br />
 	</p>
 	<p>
+		<%= f.check_box :marketing_page %>
+		<%= f.label :marketing_page, "Corporate Marketing Page Listing" %>
+	</p>
+	<p>
 		<%= f.check_box :app_page %>
 		<%= f.label :app_page, "Web Application Page Listing" %>
 	</p>
@@ -49,6 +58,11 @@
 		<%= f.label :design_page, "Web Design Page Listing" %>
 	</p>
 	<h4 class="admin_header">Project Functionality</h4>
+	</p>
+		<p>
+		<%= f.check_box :marketing %>
+		<%= f.label :marketing, "Corporate Marketing" %><br />		
+	</p>
   <p>
 		<%= f.check_box :web_application %>
 		<%= f.label :web_application, "Web Application" %><br />		
@@ -68,7 +82,7 @@
 	<p>
 		<%= f.check_box :logo_branding %>
 		<%= f.label :logo_branding, "Logo & Branding" %><br />		
-	</p>
+		
 	<h4 class="admin_header">Applied Technologies</h4>
 	<p>
 		<%= f.check_box :css %>

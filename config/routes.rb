@@ -23,6 +23,7 @@ ActionController::Routing::Routes.draw do |map|
   map.ecommerce "ecommerce-development", :controller =>  "home", :action => "ecommerce"
   map.design "design-development", :controller => "home", :action => "design"
   map.about "about-cube2media", :controller => "home", :action => "about"
+  map.marketing "corporate-marketing", :controller => "home", :action => "marketing"
   
   #Link Pages
   map.domains "domain-management", :controller => "home", :action => "domains" 

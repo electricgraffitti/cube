@@ -54,7 +54,9 @@ class Client < ActiveRecord::Base
    named_scope :app_list, :conditions => ["app_page = ?", true]
    named_scope :ecommerce_list, :conditions => ["ecommerce_page = ?", true]
    named_scope :design_list, :conditions => ["design_page = ?", true]
+   named_scope :marketing_list, :conditions => ["marketing_page = ?", true]
    
+  accepts_nested_attributes_for :assets, :allow_destroy => true
 
    #pulls the assets from the form
    def attachments=(atts)
@@ -89,6 +91,9 @@ class Client < ActiveRecord::Base
         end
         unless self.logo_branding.blank?
           pf << "<a href= /design-development>Logo & Branding</a>"
+        end
+        unless self.marketing.blank?
+          pf << "<a href= /corporate-marketing>Corporate Marketing<a/>"
         end
         return pf
    end

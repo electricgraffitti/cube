@@ -1,0 +1,55 @@
+<div class="full_row bottom_hr">
+  <h3>Corporate Marketing. How to acheive a positive and identifiable corporate image.</h3>
+	<p>Hiring a firm like Cube2Media to map out your marketing strategy is one of the best ways to begin a strong foundation for a overall well-written and personalized company marketing plan. Companies have moved far beyond the typical "mission statement" phase in order to stand out as a contender in today's business world. Corporate marketing is the forefront to achieving a positive and recognizable company image in the public's eye.
+		</p>
+		<p>Our marketing approach encompasses a six step focal process covering every aspect of your company's image. Many firms concentrate on only one or two items, but we know it takes all of the keys to achieve a well-thought-out marketing campaign to help your business achieve instant brand recognition and a visual identity. 
+		</p>
+</div>
+
+<div class="full_row top_hr bottom_hr">
+	<div class="column_2">
+		<h3>Keys to Successful Corporate Marketing:</h3>
+		<ul class="block_list">
+			<li>
+				<h4>Focus #1: Corporate Image</h4>
+				<p>This is the mental picture your company portrays to the public at the mention of your firm's name. Its psychological impression needs to continually change as your corporation evolves and flows in the business marketplace. Corporate image is the public's perception of your firm rather than a reflection of the current state of your business. 
+				</p>
+			</li>
+			<li>
+				<h4>Focus #2: Corporate Identity</h4>
+				<p>Combining all aspects from color schemes to printed words that your company employs to give a visual statement about your company and it's business philosophy. This is the strongest and most enduring symbol portrayed to public perception, and can build your corporation's instant visual recognition.</p>
+			</li>
+			<li>
+				<h4>Focus #3: Corporate Branding</h4>
+				<p>Attaching all of your firms's products and services to your well established corporate name. Best practices is you carry your brand throughout your company's complete marketing strategies.
+				</p>
+			</li>
+			<li>
+				<h4>Focus #4: Corporate Communications</h4>
+				<p>All communications to employees, stockholders, clients and media should carry a common corporate message in order to transmit a coherent, credible and ethical image. A firm's branding and identity should embody all communications to ensure the level of strong corporate trust and relevancy that encompass all stakeholders. </p>
+			</li>
+			<li>
+				<h4>Focus #5: Corporate Reputation</h4>
+				<p>Often referred to as a firm's "soft" concept. Portraying an overall reputation in which your organization is perceived by internal and external parties. It is largely based on past, current and the probability of future company actions. This is one marketing aspect that usually gets "back burnered", but should be in the forefront of your overall marketing strategic planning to ensure a positive corporate perspective.</p>
+			</li>
+			<li>
+				<h4>Focus #6: Organizational Identity</h4>
+				<p>Defining a company's identity requires a strong reference to a corporation's central, distinctive and enduring character which is usually anchored to a firm's mission and business strategies.</p>
+			</li>
+		</ul>
+	</div>
+
+	<div class="column_2 center">
+		<% @clients.each do |client| %>
+	  	<%= link_to image_tag(client.assets.last.attachment.url(:small), :alt => client.url, :class => "thumb") %>
+		<% end %>
+	</div>
+</div>
+	
+<div class="full_row top_hr bottom_hr">
+	<h3>How it all comes together.</h3>
+	<p>
+			We not only focus on the company brand, we also ensure that your company identity is carried out in every aspect of your marketing campaigns.  From web site development, professional emails, newsletters, advertisements, media news releases and day to day business operations, Cube2Media can help you achieve the results your company has been looking for. <%= link_to "Go Here to Contact Us and Discuss Your Business Specifics", contact_us_path %>
+	</p>
+</div>
+<%= render :partial => 'home/big_quote_button' %>

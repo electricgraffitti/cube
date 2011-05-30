@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110201172930) do
+ActiveRecord::Schema.define(:version => 20110530143423) do
 
   create_table "admin_sessions", :force => true do |t|
     t.datetime "created_at"
@@ -74,6 +74,8 @@ ActiveRecord::Schema.define(:version => 20110201172930) do
     t.boolean  "ecommerce_page"
     t.boolean  "design_page"
     t.boolean  "logo_branding"
+    t.boolean  "marketing"
+    t.boolean  "marketing_page"
   end
 
   create_table "code_blogs", :force => true do |t|

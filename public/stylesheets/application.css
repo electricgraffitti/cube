@@ -1232,6 +1232,13 @@ text-decoration: none;
 background: #a70d0e;
 color: #000;
 }
+a.client_view  {
+  color: #0088CC;
+  font-size: 24px;
+}
+a:hover.client_view {
+  color: #970707;
+}
 /*********************************************/
 /******************SUB BOXES******************/
 #mast_sub_box {

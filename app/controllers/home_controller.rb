@@ -15,6 +15,10 @@ class HomeController < ApplicationController
     @clients = Client.ecommerce_list
   end
   
+  def marketing
+    @clients = Client.marketing_list.reverse
+  end
+  
   def design
     @clients = Client.design_list
   end
