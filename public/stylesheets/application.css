@@ -1468,6 +1468,12 @@ form div {
   padding: 0 10px 10px 0;
   width: 100%;
 }
+.contact_form_style {
+	margin-left: 170px;
+}
+.project_form_style {
+	margin-left: 40px;
+}
 /*********************************************/
 /******************BUTTONS********************/
 .btn {
