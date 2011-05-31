@@ -1628,6 +1628,22 @@ color: #dddddd;
 margin-bottom: 5px;
 color: #a70d0e;
 }
+.tech_icon {
+	width: 100%;
+}
+.tech_icon img {
+	float: left;
+	width: 180px;
+	height: 180px;
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
+.tech_icon p {
+	width: 940px;
+}
+.tech_icon h4 {
+	font-size: 20px;
+}
 /********************************************/
 /**************CROSSFADE STYLES**************/
 .cube_crossfade_wrap {

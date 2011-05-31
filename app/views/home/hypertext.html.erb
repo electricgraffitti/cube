@@ -7,10 +7,13 @@
 <% end %>
 
 <div class="full_row top_hr bottom_hr">
-	<h4>The Base Of All Great Designs</h4>
-	<p>
-		HTML or HyperText Markup Language is the predominant markup language for web pages.  A markup language is a set of tags to describe the actual website.  HTML is written with the use of enclosing tags in brackets such as <html>.  Web browsers in turn interpret the language into visual and audible web pages that you view on the internet.  HTML also provides a way to structure document segments into Headings, Lists, Paragraphs and so forth.  The newest form of HTML is HTML5 which utilizes a rock-solid foundation using <%= link_to "HTML", hypertext_path, :class => "about_us", :alt => "Cube2Media HTML Foundation" %>, <%= link_to "CSS", css_path, :class => "about_us", :alt => "Cube2Media Seamless CSS Design" %> and <%= link_to "Javascript", javascript_path, :class => "about_us", :alt => "Cube2Media Javascript Development Processes" %> in conjunction to create a fast, robust, reliable and future proof web design format. <%= link_to "Take a look at some of our clients designs", clients_path, :class => "about_us", :alt => "Cube2Media Client Portfolio" %>.
-	</p>
+	<div class="tech_icon">
+		<%= image_tag("../images/tech_icons/html.png") %>
+		<h4>The Base Of All Great Designs</h4>
+		<p>
+			HTML or HyperText Markup Language is the predominant markup language for web pages.  A markup language is a set of tags to describe the actual website.  HTML is written with the use of enclosing tags in brackets such as <html>.  Web browsers in turn interpret the language into visual and audible web pages that you view on the internet.  HTML also provides a way to structure document segments into Headings, Lists, Paragraphs and so forth.  The newest form of HTML is HTML5 which utilizes a rock-solid foundation using <%= link_to "HTML", hypertext_path, :class => "about_us", :alt => "Cube2Media HTML Foundation" %>, <%= link_to "CSS", css_path, :class => "about_us", :alt => "Cube2Media Seamless CSS Design" %> and <%= link_to "Javascript", javascript_path, :class => "about_us", :alt => "Cube2Media Javascript Development Processes" %> in conjunction to create a fast, robust, reliable and future proof web design format. <%= link_to "Take a look at some of our clients designs", clients_path, :class => "about_us", :alt => "Cube2Media Client Portfolio" %>.
+		</p>
+	</html>
 </div>
 
 <% content_for :sub_boxes do  %>

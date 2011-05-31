@@ -7,10 +7,13 @@
 <% end %>
 
 <div class="full_row top_hr bottom_hr">
-	<h4>We Are A Ruby On Rails Shop</h4>
-	<p>
-		<%= link_to "Ruby on Rails", "http://www.rubyonrails.org", :target => "_blank", :class => "about_us", :alt => "Ruby on Rails Web Development" %>, better know as Rails, was originally created and developed by <%= link_to "David Heinemeier Hansson", "http://www.loudthinking.com", :target => "_blank", :class => "about_us", :alt => "David Heinemeier Hansson." %> who is a partner in <%= link_to "37Signals", "http://www.37signals.com", :target => "_blank", :class => "about_us", :alt => "37Signals Collaboration Software Team" %>.  <%= link_to "Rails", "http://www.rubyonrails.org", :target => "_blank", :class => "about_us", :alt => "Ruby on Rails Web Development" %> is our framework software of choice because of it makes turning your ideas into a functioning streamlined web application that is secure and robust.  Rails is based on the Model-View-Controller pattern that separates your application into three sections. By using this conventional setup, <%= link_to "Rails", "http://www.rubyonrails.org", :target => "_blank", :class => "about_us", :alt => "Ruby on Rails Web Development" %> focuses on one way of "doing business", and makes all of its aspects work in conjunction to give you a top-of-the-line web application that functions like no other.  <%= link_to "Get in touch with us", project_contact_path, :class => "about_us", :alt => "Ruby on Rails Web Development" %> and let us show you what a real web application should behave like.
-	</p>
+	<div class="tech_icon">
+		<%= image_tag("../images/tech_icons/rails.png") %>
+		<h4>We Are A Ruby On Rails Shop</h4>
+		<p>
+			<%= link_to "Ruby on Rails", "http://www.rubyonrails.org", :target => "_blank", :class => "about_us", :alt => "Ruby on Rails Web Development" %>, better know as Rails, was originally created and developed by <%= link_to "David Heinemeier Hansson", "http://www.loudthinking.com", :target => "_blank", :class => "about_us", :alt => "David Heinemeier Hansson." %> who is a partner in <%= link_to "37Signals", "http://www.37signals.com", :target => "_blank", :class => "about_us", :alt => "37Signals Collaboration Software Team" %>.  <%= link_to "Rails", "http://www.rubyonrails.org", :target => "_blank", :class => "about_us", :alt => "Ruby on Rails Web Development" %> is our framework software of choice because of it makes turning your ideas into a functioning streamlined web application that is secure and robust.  Rails is based on the Model-View-Controller pattern that separates your application into three sections. By using this conventional setup, <%= link_to "Rails", "http://www.rubyonrails.org", :target => "_blank", :class => "about_us", :alt => "Ruby on Rails Web Development" %> focuses on one way of "doing business", and makes all of its aspects work in conjunction to give you a top-of-the-line web application that functions like no other.  <%= link_to "Get in touch with us", project_contact_path, :class => "about_us", :alt => "Ruby on Rails Web Development" %> and let us show you what a real web application should behave like.
+		</p>
+	</div>
 </div>
 
 <% content_for :sub_boxes do  %>

@@ -1,16 +1,17 @@
 <% content_for :banner do  %>
   <div class="banner_content">
-    <h2 class="banner_text header_white">
-    Cascading Style Sheets
-    </h2>
+    <h2 class="banner_text header_white">Cascading Style Sheets</h2>
   </div>
 <% end %>
 
 <div class="full_row top_hr bottom_hr">
-	<h4>Seamless Tableless Design Flow</h4>
-	<p>
-		Cascading Style Sheets or CSS is a styling language that gives the developer full control over a hypertext document and its design.  CSS gives a developer the freedom to design and elegantly style the web site project without the use of tables or restricted aspects that were previously used in in the design process.  We build all of our projects using this technique because it provides more flexibility and control in the <%= link_to "specification of presentation", "http://www.w3.org", :target => "_blank", :class => "about_us", :alt => "CSS Web Design" %> characteristics which enables the web application to be quite a bit lighter overall by reducing the repetition in the design structural content.  <%= link_to "Browse around some of our clients", clients_path, :class => "about_us", :alt => "Cube2Media CSS Web Design" %> to see some of our css workflow that creates the seamless designs we are known for.
-	</p>
+	<div class="tech_icon">
+		<%= image_tag("../images/tech_icons/css.png") %>
+		<h4>Seamless Tableless Design Flow</h4>
+		<p>
+			Cascading Style Sheets or CSS is a styling language that gives the developer full control over a hypertext document and its design.  CSS gives a developer the freedom to design and elegantly style the web site project without the use of tables or restricted aspects that were previously used in in the design process.  We build all of our projects using this technique because it provides more flexibility and control in the <%= link_to "specification of presentation", "http://www.w3.org", :target => "_blank", :class => "about_us", :alt => "CSS Web Design" %> characteristics which enables the web application to be quite a bit lighter overall by reducing the repetition in the design structural content.  <%= link_to "Browse around some of our clients", clients_path, :class => "about_us", :alt => "Cube2Media CSS Web Design" %> to see some of our css workflow that creates the seamless designs we are known for.
+		</p>
+	</div>
 </div>
 
 <% content_for :sub_boxes do  %>
