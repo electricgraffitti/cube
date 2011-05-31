@@ -1472,7 +1472,11 @@ form div {
 	margin-left: 170px;
 }
 .project_form_style {
-	margin-left: 40px;
+	margin-left: 95px;
+}
+.budget_column {
+	width: 147px;
+	margin-top: 10px;
 }
 /*********************************************/
 /******************BUTTONS********************/
