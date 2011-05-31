@@ -895,6 +895,8 @@ float: left;
 .contact_form {
 margin-left: 120px;
 float: left;
+min-height: 850px;
+margin-top: 80px;
 }
 .form_comment {
 font-size: 12px;
