@@ -7,10 +7,13 @@
 <% end %>
 
 <div class="full_row top_hr bottom_hr">
-	<h4>The Gem That Really Shines</h4>
-	<p>
-		<%= link_to "Ruby", "http://www.ruby-lang.org/en", :target => "_blank", :class => "about_us", :alt => "Ruby Development Language" %> is an object-oriented programming language that combines syntax inspired by another language Perl.  Ruby originated in Japan in the mid 90's and is the basis for which <%= link_to "Ruby on Rails Framework", "http://www.rubyonrails.org", :target => "_blank", :class => "about_us", :alt => "Ruby on Rails Application Development" %> is built on. Like any open-source software language, it has gone through many changes and upgrades. The current version is Ruby 1.9.2 and when released, it introduced a numerous amounts of significant changes that were long overdue. The Ruby official distribution also includes "irb", which is an interactive command-line interpreter which can be used to test code quickly. <%= link_to "Go look at some of our clients in our portfolio", clients_path, :class => "about_us", :alt => "Ruby Development Language" %>.
-	</p>
+	<div class="tech_icon">
+		<%= image_tag("../images/tech_icons/ruby.png") %>
+		<h4>The Gem That Really Shines</h4>
+		<p>
+			<%= link_to "Ruby", "http://www.ruby-lang.org/en", :target => "_blank", :class => "about_us", :alt => "Ruby Development Language" %> is an object-oriented programming language that combines syntax inspired by another language Perl.  Ruby originated in Japan in the mid 90's and is the basis for which <%= link_to "Ruby on Rails Framework", "http://www.rubyonrails.org", :target => "_blank", :class => "about_us", :alt => "Ruby on Rails Application Development" %> is built on. Like any open-source software language, it has gone through many changes and upgrades. The current version is Ruby 1.9.2 and when released, it introduced a numerous amounts of significant changes that were long overdue. The Ruby official distribution also includes "irb", which is an interactive command-line interpreter which can be used to test code quickly. <%= link_to "Go look at some of our clients in our portfolio", clients_path, :class => "about_us", :alt => "Ruby Development Language" %>.
+		</p>
+	</div>
 </div>
 
 <% content_for :sub_boxes do  %>

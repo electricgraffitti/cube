@@ -7,10 +7,13 @@
 <% end %>
 
 <div class="full_row top_hr bottom_hr">
-	<h4>Data Control At Its Finest</h4>
-	<p>
-		<%= link_to "Structured Query Language or MySQL", "http://www.mysql.com", :target => "_blank", :class => "about_us", :alt => "Mysql Database Management" %> is a database computer language mainly designed to manage data in web application development environments. The most common task in <%= link_to "MySQL", "http://www.mysql.com", :target => "_blank", :class => "about_us", :alt => "Mysql Database Management" %> is the query, which is when a call is made to parse information from a database field and serve it up to the application. Proper database setup and management is vital to a streamlined web applications behavior. There are other solutions for data storage and transfer, but we like the behavior that SQL has when running a <%= link_to "Ruby on Rails", "http://www.rubyonrails.org", :target => "_blank", :class => "about_us", :alt => "Ruby On Rails Web Application Development" %> web application. <%= link_to "Let us know about your next project", project_contact_path, :class => "about_us", :alt => "Cube2Media Project Contact" %> by filling our our project form and let us implement our solutions.
-	</p>
+	<div class="tech_icon">
+		<%= image_tag("../images/tech_icons/mysql.png") %>
+		<h4>Data Control At Its Finest</h4>
+		<p>
+			<%= link_to "Structured Query Language or MySQL", "http://www.mysql.com", :target => "_blank", :class => "about_us", :alt => "Mysql Database Management" %> is a database computer language mainly designed to manage data in web application development environments. The most common task in <%= link_to "MySQL", "http://www.mysql.com", :target => "_blank", :class => "about_us", :alt => "Mysql Database Management" %> is the query, which is when a call is made to parse information from a database field and serve it up to the application. Proper database setup and management is vital to a streamlined web applications behavior. There are other solutions for data storage and transfer, but we like the behavior that SQL has when running a <%= link_to "Ruby on Rails", "http://www.rubyonrails.org", :target => "_blank", :class => "about_us", :alt => "Ruby On Rails Web Application Development" %> web application. <%= link_to "Let us know about your next project", project_contact_path, :class => "about_us", :alt => "Cube2Media Project Contact" %> by filling our our project form and let us implement our solutions.
+		</p>
+	</div>
 </div>
 
 <% content_for :sub_boxes do  %>

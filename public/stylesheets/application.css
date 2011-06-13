@@ -895,6 +895,8 @@ float: left;
 .contact_form {
 margin-left: 120px;
 float: left;
+min-height: 850px;
+margin-top: 80px;
 }
 .form_comment {
 font-size: 12px;
@@ -1468,6 +1470,16 @@ form div {
   padding: 0 10px 10px 0;
   width: 100%;
 }
+.contact_form_style {
+	margin-left: 170px;
+}
+.project_form_style {
+	margin-left: 95px;
+}
+.budget_column {
+	width: 147px;
+	margin-top: 10px;
+}
 /*********************************************/
 /******************BUTTONS********************/
 .btn {
@@ -1606,7 +1618,7 @@ text-decoration: underline;
 }
 .twitter_link {
 	position: absolute;
-	left: 39px;
+	left: 60px;
 	bottom: 0px;
 	width: 311px;
 	height: 125px;
@@ -1637,6 +1649,22 @@ color: #dddddd;
 .tweet_header {
 margin-bottom: 5px;
 color: #a70d0e;
+}
+.tech_icon {
+	width: 100%;
+}
+.tech_icon img {
+	float: left;
+	width: 180px;
+	height: 180px;
+	margin-right: 30px;
+	margin-bottom: 120px;
+}
+.tech_icon p {
+	width: 920px;
+}
+.tech_icon h4 {
+	font-size: 20px;
 }
 /********************************************/
 /**************CROSSFADE STYLES**************/
