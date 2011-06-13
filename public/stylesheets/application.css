@@ -289,7 +289,7 @@ zoom: 1;
 html,body {
 	position: relative;
 	background: #fff url('../images/main_bg.png') 0px -44px repeat-x;
-	font-family: "museo-sans-1","museo-sans-2",Helvetica,Arial,sans-serif;
+	font-family: "Helvetica Neue", Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
 	color: #444;
 	height: 100%;
 }
@@ -359,7 +359,7 @@ text-shadow: 0px 2px 0px #000;
 }
 h1,h2,h3,h4,h5 {
 	color: #444;
-	font-family: "ddt-1","ddt-2";
+	font-family: "Helvetica Neue", Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
 	text-shadow: 0px 1px 0px #fff;
 }
 h1 {
@@ -1333,7 +1333,7 @@ position: relative;
 float: left;
 font-size: 108%;
 font-style: italic;
-font-family: "Helvetica Neue LT",Arial,Helvetica,Geneva,sans-serif;
+font-family: "Helvetica Neue", Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
 width: 395px;
 text-shadow: 0px 1px 0px #000;
 margin-bottom: 2px;
@@ -1361,7 +1361,7 @@ position: relative;
 float: left;
 font-size: 85%;
 font-style: italic;
-font-family: "Helvetica Neue LT",Arial,Helvetica,Geneva,sans-serif;
+font-family: "Helvetica Neue", Arial, Helvetica, "Bitstream Vera Sans", sans-serif;
 width: 300px;
 color: #444;
 text-shadow: 0px 1px 0px #fff;
@@ -1525,11 +1525,21 @@ font-size: 85%;
   top: 50px;
   width: 220px;
 }
+.footer_logo_email {
+    color: #999999;
+    height: 23px;
+    padding-left: 60px;
+    position: absolute;
+    right: 0;
+    text-shadow: 0 2px 2px #111111;
+    top: 63px;
+    width: 220px;
+}
 .footer_contact {
-  bottom: 19px;
-  color: #999999;
-  position: absolute;
-  right: 82px;
+    bottom: 62px;
+    color: #999999;
+    position: absolute;
+    right: 75px;
 }
 .footer_contact ul {
 margin-bottom: 5px;
