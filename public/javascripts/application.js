@@ -165,7 +165,7 @@ var app = {
     subNavlis.mouseover(function() {
     	if (timeout) clearTimeout(timeout);
     }).mouseout(function() {
-    	timeout = setTimeout(app.closeMenu, 500);
+    	timeout = setTimeout(app.closeMenu, 100);
     });
 	},
 	
