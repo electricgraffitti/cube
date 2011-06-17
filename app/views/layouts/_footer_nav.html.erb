@@ -1,17 +1,18 @@
 <div class="footer_nav">
   <ul>
-    <li><%= link_to "home", root_path, :alt => "Cube2Media Home" %></li>
-    <li><%= link_to "apps", apps_path, :id => "apps", :alt => "Cloud Based Application Development" %></li>
-    <li><%= link_to "ecommerce", ecommerce_path, :id => "ecommerce", :alt => "Online E-commerce Shopping solutions" %></li>
-    <li><%= link_to "design", design_path, :id => "design", :alt => "Web Site Design and Branding" %></li>
-    <li><%= link_to "blog", blogs_path, :id => "blog", :alt => "Cube2Media Blog" %></li>
-    <li><%= link_to "clients", clients_path, :id => "clients", :alt => "Cube2Media Clients and Portfolio" %></li>
-		<li><%= link_to "about cube2", about_path, :id => "about", :alt => "About the Cube2Media Team" %></li>
-    <li><%= link_to "contact", contact_us_path, :id => "contact", :alt => "Cube2Media Contact" %></li>
-		<li><%= link_to "get a quote", project_contact_path, :id => "quote", :class => "orange", :alt => "Cube2Media Web Project Quotation" %></li>
+    <li><%= link_to "Home", root_path, :alt => "Cube2Media Home" %></li>
+		<li><%= link_to "Marketing", marketing_path, :id => "marketing", :alt => "Corporate Marketing Campaigns" %></li>
+    <li><%= link_to "Apps", apps_path, :id => "apps", :alt => "Cloud Based Application Development" %></li>
+    <li><%= link_to "Ecommerce", ecommerce_path, :id => "ecommerce", :alt => "Online E-commerce Shopping solutions" %></li>
+    <li><%= link_to "Design", design_path, :id => "design", :alt => "Web Site Design and Branding" %></li>
+    <li><%= link_to "Blog", blogs_path, :id => "blog", :alt => "Cube2Media Blog" %></li>
+    <li><%= link_to "Clients", clients_path, :id => "clients", :alt => "Cube2Media Clients and Portfolio" %></li>
+		<li><%= link_to "About", about_path, :id => "about", :alt => "About the Cube2Media Team" %></li>
+    <li><%= link_to "Contact", contact_us_path, :id => "contact", :alt => "Cube2Media Contact" %></li>
+		<li><%= link_to "Get a quote", project_contact_path, :id => "quote", :class => "orange", :alt => "Cube2Media Web Project Quotation" %></li>
     <% if current_admin %>
-      <li><%= link_to "admin dashboard", admin_blog_path %></li>
-      <li><%= link_to "logout", admin_logout_path %></li>
+      <li><%= link_to "Admin dashboard", admin_blog_path %></li>
+      <li><%= link_to "Logout", admin_logout_path %></li>
     <% end %> 
   </ul>
 </div>

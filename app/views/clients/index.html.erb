@@ -1,14 +1,14 @@
 <% content_for :banner do  %>
   <div class="banner_content">
     <h2 class="banner_text header_white">
-      Building Relationships with Proven Results
+      Building From Your Point Of View.
     </h2>
   </div>
 
 <% end %>
 
 <div class="center">  
-  <h2>Featured Clients</h2>
+  <h2>Some Featured Clients</h2>
   <% @clients.each do |client| %>
     <%= render :partial => 'clients/client_post', :locals => {:client => client} %>
   <% end %>
