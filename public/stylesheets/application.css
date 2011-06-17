@@ -650,7 +650,6 @@ header {
 #main_header {
 	float: left;
 	position: relative;
-	font-family: "ddt-1","ddt-2";
 	color: #fff;
 	text-shadow: 0px 1px 1px #444;
 	margin-top: 12px;
