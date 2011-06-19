@@ -1406,7 +1406,7 @@ position: relative;
 width: 75px;
 height: 25px;
 padding: 0px 5px;
-float: left;
+float: right;
 }
 .admin_nav ul li a {
 position: relative;
@@ -1498,6 +1498,7 @@ a.btn {
 	height: 20px;
 	padding: 7px;
 	text-align: center;
+	color: #ffffff;
 }
 .btn:hover {
 	background: url(../images/form_button.png) 0px -0px no-repeat;
