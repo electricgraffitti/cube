@@ -650,7 +650,6 @@ header {
 #main_header {
 	float: left;
 	position: relative;
-	font-family: "ddt-1","ddt-2";
 	color: #fff;
 	text-shadow: 0px 1px 1px #444;
 	margin-top: 12px;
@@ -978,6 +977,7 @@ margin-left: 60px;
 }
 #person_info p {
 	margin-left: 20px;
+	margin-top: 15px;
 }
 a.about_us  {
 	color: #0088CC;
@@ -1289,6 +1289,12 @@ background: url('../images/c2_headers.png') 0px -325px no-repeat;
 }
 .svc_list {
 background: url('../images/c2_headers.png') 0px -390px no-repeat;
+}
+.client_space {
+	margin-bottom: 20px;
+}
+.client_header {
+	margin-top: 10px;
 }
 #sub_boxes p {
   margin-bottom: 10px;
