@@ -17,15 +17,13 @@
     <li>Last Name: <%= @project[:project_last_name] %></li>
     <li>Email: <%= @project[:project_email] %></li>
     <li>Phone: <%= @project[:project_phone] %></li>
+    <li>Project Type: <%= @project[:project_specs] %></li>
     <li>Project State: <%= @project[:project_state] %></li>
-    <li>Project Budget: <%= @project[:project_budget] %></li>
-   
-   
-    <li>Subject: Cube2Media Project Submission</li>
+    <li>Project Budget: <%= @project[:project_budget] %></li> 
   </ul>
   <p>
   <h4>Comment:</h4>
-  <%= @project[:additional_comments] %>
+  <%= @project[:comments] %>
     <p>
       <ul>
         <li><code>Generated at <%= @sent_on.to_s %></code></li>

@@ -898,11 +898,17 @@ min-height: 850px;
 margin-top: 80px;
 }
 .form_comment {
-font-size: 12px;
+font-size: 17px;
 font-weight: bold;
+margin-bottom: 15px;
+margin-top: 40px;
+}
+.form_comment a {
+  color: #3875D7;
 }
 .form_comment a:hover {
 color: #a70d0e;
+text-decoration: underline;
 }
 .project_left {
 width: 300px;
@@ -1487,6 +1493,13 @@ form div {
 .budget_column {
 	width: 147px;
 	margin-top: 10px;
+}
+.full_row_contact {
+  width: 960px;
+  height: 50px;
+  text-align: center;
+  float: left;
+  margin-bottom: 120px;
 }
 /*********************************************/
 /******************BUTTONS********************/

@@ -9,9 +9,6 @@
 <div class="full_row">
 	<div class="contact_form_style">
   	<h3>Get in touch with the Cube2 Team</h3>
-  	<div class="form_comment">
-    	View our <%= link_to "project information form", project_contact_path %> here.
-  	</div>
   	<% form_tag(contact_mailer_path, :id => "contact_form") do %>
   	<div class="column_3">    
     	<div>
@@ -43,6 +40,12 @@
   	<% end %>
 	</div>
 </div>
+	<div class="full_row_contact">
+	    	<div class="form_comment">
+    	Leave us more detailed information on our project information form  <%= link_to "here.", project_contact_path %>
+  	</div>
+	  <h4 class="">Salt Lake City :: 801.381.4974 | Las Vegas :: 702.835.2823 | info@cube2media.com</h4>
+	</div>
 
 <% content_for :sub_boxes do  %>
 	<%= render :partial => 'layouts/sub_boxes' %>
