@@ -1,7 +1,11 @@
 <% page_title("Thank You ") %>
 <div class="contact_form full_20_wrap">
-  <h2 class="">Thank You</h2>
-  <p><%= @form[:contact_first_name] %> <%= @form[:contact_last_name] %> Thank you for your submission. Someone from Cube2Media will respond to your submission shortly</p>
+  <div class="project_responder">
+    <h2 class="">Thank You</h2>
+    <p>
+      Thank you <span class="bold"><%= @form[:contact_first_name] %> <%= @form[:contact_last_name] %></span> for your contacting Cube2Media.<br /> An associate will be in touch with your shortly.
+    </p>
+  </div>
 </div>
 
 <% content_for :sub_boxes do  %>

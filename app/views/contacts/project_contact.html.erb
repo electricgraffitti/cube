@@ -27,54 +27,63 @@
       	<%= label :project, :phone, "Phone Number" %><br />
       	<%= text_field :project, :phone, :name => "project_phone" %>
     	</div>
+    	<div>
+      	<%= label :project, :company, "Company Name" %><br />
+      	<%= text_field :project, :company, :name => "project_company" %>
+    	</div>
+    	<div>
+      	<%= label :project, :url, "Existing Web Site Address" %><br />
+      	<%= text_field :project, :url, :name => "project_url" %>
+    	</div>
   	</div>
   	<div class="budget_column">
-	  	<h3>Budget:</h3>
-	  	<h4>Select one *</h4>
+	  	<h3 class="contact">Budget:</h3>
+	  	<h4 class="contact">Select one *</h4>
     	<div>
-      	<%= radio_button_tag :project_budget, '2k', true %><b> < $5k</b>
+      	<%= radio_button_tag :project_budget, '5k', true %><b> < $5k</b>
     	</div>
     	<div>
-      	<%= radio_button_tag :project_budget, '11k-20k', false %><b> $5k to $10k</b>
+      	<%= radio_button_tag :project_budget, '6k-10k', false %><b> $6k to $10k</b>
     	</div>
     	<div>
-      	<%= radio_button_tag :project_budget, '21k-50k', false %><b> $10k to $20k</b>
+      	<%= radio_button_tag :project_budget, '11k-20k', false %><b> $11k to $20k</b>
     	</div>
     	<div>
-      	<%= radio_button_tag :project_budget, '51k-100k', false %><b> $20k to $30k</b>
+      	<%= radio_button_tag :project_budget, '20k-50k', false %><b> $20k to $50k</b>
     	</div>
     	<div>
-      	<%= radio_button_tag :project_budget, '101k', false %><b> $30k +</b>
+      	<%= radio_button_tag :project_budget, '50k+', false %><b> $50k +</b>
     	</div>
+    	<h3 class="contact project">Project State:</h3>
+    	<div>
+	    	<%= radio_button_tag :project_state, 'new', true %><b> New Project</b>
+	  	</div>
+	  	<div>
+	    	<%= radio_button_tag :project_state, 'existing', false %><b> Existing Project</b>
+	  	</div>
+	  	<div>
+	    	<%= radio_button_tag :project_state, 'recurring', false %><b> Recurring Project</b>
+	  	</div>
 		</div>
 		<div class="column_3">
 			<h3>Tell Us About Your Project:</h3>
-	  	<div class="left">
+	  	<div>
 	    	<%= radio_button_tag :project_specs, 'Corporate Marketing', true %><b> Corporate Marketing</b>
 	  	</div>
-	  	<div class="left">
+	  	<div>
 	    	<%= radio_button_tag :project_specs, 'Web Based Application', false %><b> Web Based Application</b>
 	  	</div>
-	  	<div class="left">
+	  	<div>
 	    	<%= radio_button_tag :project_specs, 'Ecommerce Application', false %><b> Ecommerce Application</b>
 	  	</div>
-	  	<div class="left">
+	  	<div>
 	    	<%= radio_button_tag :project_specs, 'Project Consulting', false %><b> Project Consulting</b>
 	  	</div>
-	  	<div class="left">
+	  	<div class="comment_space">
 	    	<%= radio_button_tag :project_specs, 'Design & Branding', false %><b> Design &#38; Branding</b>
 	  	</div>
-	  	<div class="left">
-	    	<%= radio_button_tag :project_specs, 'Other ', false %><b> Other</b>
-	  	</div>
-	  	<div class="left">
-	    	<%= radio_button_tag :project_state, 'new', true %><b> New Project</b>
-	  	</div>
-	  	<div class="left">
-	    	<%= radio_button_tag :project_state, 'existing', false %><b> Existing Project</b>
-	  	</div><br />
   		<div>
-      	<%= label :project, :comments, "Comments" %><br />
+      	<%= label :project, :comments, "Additional Project Comments" %><br />
       	<%= text_area :project, :comments, :name => "comments", :rows => 9, :cols => 42 %>
     	</div>
     	<div>
