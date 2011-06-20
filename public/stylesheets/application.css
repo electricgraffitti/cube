@@ -1396,16 +1396,17 @@ margin-top: 90px;
 margin-left: 20px;
 }
 .admin_nav {
-position: relative;
-padding: 15px;
-float: left;
-width: 100%;
+    float: left;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    position: relative;
+    width: 100%;
 }
 .admin_nav ul {
-position: relative;
-width: 600px;
-height: 25px;
-float: left;
+    height: 25px;
+    margin: 0 auto;
+    position: relative;
+    width: 425px;
 }
 .admin_nav ul li {
 position: relative;
@@ -1439,12 +1440,13 @@ font-size: 18px;
 color: #FF0F2a;
 }
 .admin_sidebar a:hover {
-color: #000;
+color: #fff;
 }
 .admin_form_wrap,#admin_datatable {
 position: relative;
 float: left;
 width: 710px;
+margin-bottom: 30px;
 }
 #admin_datatable {
 color: #ccc;
@@ -1489,7 +1491,7 @@ form div {
 /*********************************************/
 /******************BUTTONS********************/
 .btn {
-	float: right;
+	float: left;
 	width: 130px;
 	height: 34px;
 	padding: 0px;
@@ -1505,6 +1507,8 @@ a.btn {
 	padding: 7px;
 	text-align: center;
 	color: #ffffff;
+	margin-top: 0px;
+	margin-right: 25px;
 }
 .btn:hover {
 	background: url(../images/form_button.png) 0px -0px no-repeat;

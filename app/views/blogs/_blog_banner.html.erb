@@ -17,9 +17,9 @@
     </div>
   	<%= blog.content %>
 	</div>
-</div>
-<% if current_admin %>
+	<% if current_admin %>
 	<div class="lg_page_btn">
 		<%= link_to "Edit Blog", edit_blog_path(blog) %>
 	</div>
 <% end %>
+</div>
