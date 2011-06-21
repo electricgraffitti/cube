@@ -1,7 +1,10 @@
+<% content_for :title do %>
+  Contact Cube2Media
+<% end %>
 <% content_for :banner do  %>
   <div class="banner_content">
     <h2 class="banner_text header_white">
-    Web Development. It's What We Do.
+      <%= render :partial => "home/headers", :locals => {:objects => @headers} %>
     </h2>
   </div>
 <% end %>
@@ -40,12 +43,15 @@
   	<% end %>
 	</div>
 </div>
-	<div class="full_row_contact">
-	    	<div class="form_comment">
-    	Need more detailed information for your project? See our quote form  <%= link_to "here.", project_contact_path %>
-  	</div>
-	  <h4 class="">Salt Lake City :: 801.381.4974 | Las Vegas :: 702.835.2823 | info@cube2media.com</h4>
-	</div>
+
+<div class="full_row_contact">
+	<div class="form_comment">
+    Need more detailed information for your project? See our quote form  <%= link_to "here.", project_contact_path %>
+  </div>
+	<h4 class="">
+	  Salt Lake City :: 801.381.4974 | Las Vegas :: 702.835.2823 | info@cube2media.com
+	</h4>
+</div>
 
 <% content_for :sub_boxes do  %>
 	<%= render :partial => 'layouts/sub_boxes' %>

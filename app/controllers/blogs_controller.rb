@@ -8,6 +8,7 @@ class BlogsController < ApplicationController
   # GET /blogs.xml
   def index
     @blogs = Blog.paginate :page => params[:page], :order => 'created_at DESC'
+    @headers = Header.blogs_header
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @blogs }

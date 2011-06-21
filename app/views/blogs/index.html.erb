@@ -1,21 +1,19 @@
 <% content_for :title do %>
-  Web design tutorials and tips
+  Knowledge. News. Knowhow.
 <% end %>
 <% content_for :banner do  %>
   <div class="banner_content">
     <h2 class="banner_text header_white">
-    Knowledge. News. Happenings.
+      <%= render :partial => "home/headers", :locals => {:objects => @headers} %>
     </h2>
   </div>
 <% end %>
 
-  <%= will_paginate %>
-
+<%= will_paginate %>
 <% @blogs.each do |blog| %>
-
  <%= render :partial => 'blogs/blog_banner', :locals => {:blog => blog}%>
 <% end %>
-  <%= will_paginate %>
+<%= will_paginate %>
 
 <% content_for :sub_boxes do  %>
 	<%= render :partial => 'layouts/sub_boxes' %>

@@ -111,4 +111,9 @@ class AdminsController < ApplicationController
     @quotes = Quote.all
   end
   
+  def admin_headers
+    @headers = Header.all
+    
+  end
+  
 end

@@ -1,0 +1,30 @@
+<div class="full_row bottom_hr admin_nav">
+  <%= render :partial => 'admins/admin_nav' %>
+  <%= link_to "New Header", new_header_path, :class => "btn"%>
+</div>
+<div class="full_row top_hr">
+  <div class="column_23">
+  <div id="admin_datatable">
+    <table id="headers_table" class="display c2table">
+    <thead><tr>
+      <th>Page</th>
+      <th>Header</th>
+      <th>View</th>
+       <th>Edit</th>
+        <th>Delete</th>
+    </tr></thead>
+  <tbody>
+  <% @headers.each do |tagline| %>
+    <tr class="admin_link_color">
+      <td><%=h tagline.page %></td>
+      <td><%=h tagline.header %></td>
+      <td><%= link_to 'Show', tagline %></td>
+      <td><%= link_to 'Edit', edit_header_path(tagline) %></td>
+      <td><%= link_to 'Destroy', tagline, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+  </tbody>
+  </table>
+  </div>
+  </div>
+  </div>

@@ -1,6 +1,7 @@
 class ContactsController < ApplicationController
   
   def contact_us
+    @headers = Header.contact_header
   end
   
   def contact_mailer
@@ -18,6 +19,7 @@ class ContactsController < ApplicationController
   end
   
   def project_contact
+    @headers = Header.quote_header
   end
   
   def project_mailer

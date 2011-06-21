@@ -1,12 +1,15 @@
+<% content_for :title do %>
+  Design &#38; Branding
+<% end %>
 <% content_for :banner do  %>
   <div class="banner_content">
     <h2 class="banner_text header_white">
-    Innovative Designs - First Impressions Matter
+      <%= render :partial => "headers", :locals => {:objects => @headers} %>
     </h2>
   </div>
 <% end %>
 
-	 <%= render :partial => 'design_banner' %>
+<%= render :partial => 'design_banner' %>
 
 <% content_for :sub_boxes do  %>
 	<%= render :partial => 'layouts/sub_boxes' %>

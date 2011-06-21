@@ -1,0 +1,22 @@
+<h1>Listing headers</h1>
+
+<table>
+  <tr>
+    <th>Page</th>
+    <th>Header</th>
+  </tr>
+
+<% @headers.each do |header| %>
+  <tr>
+    <td><%=h header.page %></td>
+    <td><%=h header.header %></td>
+    <td><%= link_to 'Show', header %></td>
+    <td><%= link_to 'Edit', edit_header_path(header) %></td>
+    <td><%= link_to 'Destroy', header, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New header', new_header_path %>

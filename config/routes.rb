@@ -1,4 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :headers
+
   
   map.resources :quotes
   map.resources :admin_sessions
@@ -17,6 +19,7 @@ ActionController::Routing::Routes.draw do |map|
   map.admin_codeblog "admin-codeblog", :controller => "admins", :action => "admin_codeblog"
   map.admin_employee "admin-employees", :controller => "admins", :action => "admin_employees"
   map.admin_quote "admin-quote", :controller => "admins", :action => "admin_quotes"
+  map.admin_header "admin-header", :controller => "admins", :action => "admin_headers"
   
   #Sub Pages
   map.apps "application-development", :controller => "home", :action => "apps"

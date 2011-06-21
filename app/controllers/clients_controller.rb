@@ -6,6 +6,7 @@ class ClientsController < ApplicationController
   # GET /clients.xml
   def index
     @clients = Client.featured.client_order
+    @headers = Header.clients_header
     # @main_clients = Client.all
     # @quotes = Quote.small_list(4).last_created
     

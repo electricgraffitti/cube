@@ -1,12 +1,15 @@
+<% content_for :title do %>
+  Corporate Marketing
+<% end %>
 <% content_for :banner do  %>
   <div class="banner_content">
     <h2 class="banner_text header_white">
-    Corporate Marketing. Strategy. Control.
+      <%= render :partial => "home/headers", :locals => {:objects => @headers} %>
     </h2>
   </div>
 <% end %>
 
-	 <%= render :partial => 'marketing_banner' %>
+<%= render :partial => 'marketing_banner' %>
 
 <% content_for :sub_boxes do  %>
 	<%= render :partial => 'layouts/sub_boxes' %>

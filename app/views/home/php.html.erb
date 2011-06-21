@@ -1,7 +1,10 @@
+<% content_for :title do %>
+  PHP Explained
+<% end %>
 <% content_for :banner do  %>
   <div class="banner_content">
     <h2 class="banner_text header_white">
-			PHP - The Hypertext Preprocessor
+      <%= render :partial => "headers", :locals => {:objects => @headers} %>
     </h2>
   </div>
 <% end %>
@@ -10,10 +13,10 @@
 	<div class="tech_icon">
 		<%= image_tag("../images/tech_icons/php.png") %> 
 		<h4>Just Another Framework?</h4>
-	<p>
-		<%= link_to "PHP", "http://www.php.net", :target => "_blank", :class => "about_us", :alt => "PHP Web Development" %> is a widely-used scripting language for building framework based web sites and can be embedded right into your <%= link_to "HTML", hypertext_path, :class => "about_us", :alt => "PHP Development in Web Sites" %> to produce dynamic content.  The current version of <%= link_to "PHP", "http://www.php.net", :target => "_blank", :class => "about_us", :alt => "PHP Web Development" %> is Version 5, but a new major version of this language has been under development for several years and will be known as Version 6 once completed and will have many needed and sought after upgrades and changes. <%= link_to "PHP", "http://www.php.net", :target => "_blank", :class => "about_us", :alt => "PHP Web Development" %> has hundreds of base functions and thousands more of them with the use of extensions. <%= link_to "Wordpress", "http://www.wordpress.org", :target => "_blank", :class => "about_us", :alt => "Wordpress Web Development" %> has gained popularity over that past few years and uses <%= link_to "PHP", "http://www.php.net", :target => "_blank", :class => "about_us", :alt => "PHP Web Development" %> and its librarie as its base framework. Although <%= link_to "PHP", "http://www.php.net", :target => "_blank", :class => "about_us", :alt => "PHP Web Development" %> has been around a long time, it still shows signs of vulnerability when dealing with security issues, and when hosting an application careful attention must be taken to provide a secure project environment. 
-	</p>
-		</div>
+	  <p>
+		  <%= link_to "PHP", "http://www.php.net", :target => "_blank", :class => "about_us", :alt => "PHP Web Development" %> is a widely-used scripting language for building framework based web sites and can be embedded right into your <%= link_to "HTML", hypertext_path, :class => "about_us", :alt => "PHP Development in Web Sites" %> to produce dynamic content.  The current version of <%= link_to "PHP", "http://www.php.net", :target => "_blank", :class => "about_us", :alt => "PHP Web Development" %> is Version 5, but a new major version of this language has been under development for several years and will be known as Version 6 once completed and will have many needed and sought after upgrades and changes. <%= link_to "PHP", "http://www.php.net", :target => "_blank", :class => "about_us", :alt => "PHP Web Development" %> has hundreds of base functions and thousands more of them with the use of extensions. <%= link_to "Wordpress", "http://www.wordpress.org", :target => "_blank", :class => "about_us", :alt => "Wordpress Web Development" %> has gained popularity over that past few years and uses <%= link_to "PHP", "http://www.php.net", :target => "_blank", :class => "about_us", :alt => "PHP Web Development" %> and its librarie as its base framework. Although <%= link_to "PHP", "http://www.php.net", :target => "_blank", :class => "about_us", :alt => "PHP Web Development" %> has been around a long time, it still shows signs of vulnerability when dealing with security issues, and when hosting an application careful attention must be taken to provide a secure project environment. 
+	  </p>
+  </div>
 </div>
 
 <% content_for :sub_boxes do  %>

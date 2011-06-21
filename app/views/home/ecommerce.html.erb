@@ -1,12 +1,15 @@
+<% content_for :title do %>
+  Shopping Solutions
+<% end %>
 <% content_for :banner do  %>
   <div class="banner_content">
     <h2 class="banner_text header_white">
-    E-Commerce Solutions - Your Ideas, Your Store.
+      <%= render :partial => "headers", :locals => {:objects => @headers} %>
     </h2>
   </div>
 <% end %>
 
-	 <%= render :partial => 'ecommerce_banner' %>
+<%= render :partial => 'ecommerce_banner' %>
 
 <% content_for :sub_boxes do  %>
 	<%= render :partial => 'layouts/sub_boxes' %>

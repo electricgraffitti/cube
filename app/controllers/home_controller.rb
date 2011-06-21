@@ -5,73 +5,75 @@ class HomeController < ApplicationController
     @blog = Blog.last
     @services = Service.small_list(3).indexed_order
     @clients = Client.front_page.client_order
+    @headers = Header.index_header
   end
   
   def apps
     @clients = Client.app_list
+    @headers = Header.apps_header
   end
   
   def ecommerce
     @clients = Client.ecommerce_list
+    @headers = Header.ecommerce_header
   end
   
   def marketing
     @clients = Client.marketing_list.reverse
+    @headers = Header.marketing_header
   end
   
   def design
     @clients = Client.design_list
+    @headers = Header.design_header
   end
   
   def about
     @employees = Employee.all
+    @headers = Header.about_header
   end
   def domains
-    
+    @headers = Header.domain_header
   end
   
   def hosting
-    
+    @headers = Header.hosting_header
   end
   
   def css
-    
+    @headers = Header.css_header
   end
   
   def flash_animation
-    
+    @headers = Header.flash_header
   end
   
   def hypertext
-    
+    @headers = Header.html_header
   end
   
   def javascript
-    
+    @headers = Header.javascript_header
   end
   
   def php
-    
+    @headers = Header.php_header
   end
   
   def rails
-    
+    @headers = Header.rails_header
   end
   
   def ruby
-    
+    @headers = Header.ruby_header
   end
   
   def sequel
-    
-  end
-  
-  def rails
-    
+    @headers = Header.sql_header
   end
   
   def wordpress
-    
+    @headers = Header.hosting_header
   end
   
   #  def project_mailer

@@ -231,6 +231,10 @@ var admin = {
 	    "bJQueryUI": true,
 	    "sPaginationType": "full_numbers"
 	  });
+	  headersTable = $('#headers_table').dataTable({
+	    "bJQueryUI": true,
+	    "sPaginationType": "full_numbers"
+	  });
 	  employeeTable = $('#employee_table').dataTable({
 	    "bJQueryUI": true,
 	    "sPaginationType": "full_numbers"

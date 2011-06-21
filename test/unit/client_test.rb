@@ -28,6 +28,9 @@
 #  app_page           :boolean(1)
 #  ecommerce_page     :boolean(1)
 #  design_page        :boolean(1)
+#  logo_branding      :boolean(1)
+#  marketing          :boolean(1)
+#  marketing_page     :boolean(1)
 #
 
 require 'test_helper'

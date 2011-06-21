@@ -1,10 +1,12 @@
+<% content_for :title do %>
+  Clients
+<% end %>
 <% content_for :banner do  %>
   <div class="banner_content">
     <h2 class="banner_text header_white">
-      Building From Your Point Of View.
+      <%= render :partial => "home/headers", :locals => {:objects => @headers} %>
     </h2>
   </div>
-
 <% end %>
 
 <div class="center">  

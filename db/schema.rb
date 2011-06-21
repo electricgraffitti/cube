@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110530143423) do
+ActiveRecord::Schema.define(:version => 20110621033949) do
 
   create_table "admin_sessions", :force => true do |t|
     t.datetime "created_at"
@@ -92,6 +92,13 @@ ActiveRecord::Schema.define(:version => 20110530143423) do
     t.string   "name"
     t.string   "title"
     t.text     "content"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "headers", :force => true do |t|
+    t.string   "page"
+    t.string   "header"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
