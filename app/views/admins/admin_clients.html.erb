@@ -1,29 +1,30 @@
 <div class="full_row bottom_hr admin_nav">
   <%= render :partial => 'admins/admin_nav' %>
-  <%= link_to "New Client", new_client_path, :class => "btn" %>
 </div>
 <div class="full_row bottom_hr top_hr">
-<div class="column_23">
-<div id="admin_datatable">
-  <table id="clients_table" class="display c2table">
-  <thead><tr>
-    <th>Name</th>
-    <th>Project Type</th>
-    <th>View</th>
-     <th>Edit</th>
-      <th>Delete</th>
-  </tr></thead>
-<tbody>
-<% @clients.each do |client| %>
-  <tr class="admin_link_color">
-    <td><%=h client.title %></td>
-    <td><%=h client.sub_title %></td>
-    <td><%= link_to 'Show', client %></td>
-    <td><%= link_to 'Edit', edit_client_path(client) %></td>
-    <td><%= link_to 'Destroy', client, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</tbody>
-</table></div>
-</div>
+  <div id="admin_datatable">
+    <table id="clients_table" class="display c2table">
+      <%= link_to "New Client", new_client_path, :class => "btn" %>
+      <thead>
+        <tr>
+          <th>Client Name</th>
+          <th>Project Type</th>
+          <th>View</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+      <% @clients.each do |client| %>
+        <tr class="admin_link_color">
+          <td><%=h client.title %></td>
+          <td><%=h client.sub_title %></td>
+          <td><%= link_to 'Show', client %></td>
+          <td><%= link_to 'Edit', edit_client_path(client) %></td>
+          <td><%= link_to 'Destroy', client, :confirm => 'Are you sure?', :method => :delete %></td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
 </div>

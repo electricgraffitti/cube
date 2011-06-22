@@ -1,29 +1,32 @@
 <div class="full_row bottom_hr admin_nav">
   <%= render :partial => 'admins/admin_nav' %>
-  <%= link_to "New Service", new_service_path, :class => "btn" %>
 </div>
 <div class="full_row top_hr bottom_hr">
-<div class="column_23">
-<div id="admin_datatable">
-  <table id="services_table" class="display c2table">
-  <thead><tr>
-    <th>Title</th>
-    <th>Sub Title</th>
-    <th>Indexed Order</th>
-    <th>View</th>
-    <th>Edit</th>
-    <th>Delete</th>
-  </tr></thead>
-<tbody>
-<% @services.each do |s| %>
-  <tr class="admin_link_color">
-    <td><%=h s.title %></td>
-    <td><%=h s.sub_title %></td>
-    <td><%=h s.service_order %></td>
-    <td><%= link_to 'Show', s %></td>
-    <td><%= link_to 'Edit', edit_service_path(s) %></td>
-    <td><%= link_to 'Destroy', s, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</tbody>
-</table></div></div></div>
+  <div id="admin_datatable">
+    <table id="services_table" class="display c2table">
+      <%= link_to "New Service", new_service_path, :class => "btn" %>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Sub Title</th>
+          <th>Order</th>
+          <th>View</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @services.each do |s| %>
+        <tr class="admin_link_color">
+          <td><%=h s.title %></td>
+          <td><%=h s.sub_title %></td>
+          <td><%=h s.service_order %></td>
+          <td><%= link_to 'Show', s %></td>
+          <td><%= link_to 'Edit', edit_service_path(s) %></td>
+          <td><%= link_to 'Destroy', s, :confirm => 'Are you sure?', :method => :delete %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

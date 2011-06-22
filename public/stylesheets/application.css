@@ -1450,9 +1450,8 @@ color: #fff;
 }
 .admin_form_wrap,#admin_datatable {
 position: relative;
-float: left;
 width: 710px;
-margin-bottom: 30px;
+margin: 30px auto 250px;
 }
 #admin_datatable {
 color: #ccc;

@@ -1,28 +1,30 @@
 <div class="full_row bottom_hr admin_nav">
-  <%= render :partial => 'admins/admin_nav' %>
-  <%= link_to "New Employee", new_employee_path, :class => "btn" %>  
+  <%= render :partial => 'admins/admin_nav' %> 
 </div>
 <div class="full_row top_hr bottom_hr ">
-<div class="column_23">
-<div id="admin_datatable">
-  <table id="employee_table" class="display c2table">
-  <thead><tr>
-    <th>Name</th>
-    <th>Title</th>
-    <th>View</th>
-     <th>Edit</th>
-      <th>Delete</th>
-  </tr></thead>
-<tbody>
-<% @employees.each do |employee| %>
-  <tr class="admin_link_color">
-    <td><%=h employee.name %></td>
-    <td><%=h employee.title %></td>
-    <td><%= link_to 'Show', employee %></td>
-    <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
-    <td><%= link_to 'Destroy', employee, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</tbody>
-</table></div>
-</div></div>
+  <div id="admin_datatable">
+    <table id="employee_table" class="display c2table">
+      <%= link_to "New Employee", new_employee_path, :class => "btn" %>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Title</th>
+          <th>View</th>
+          <th>Edit</th>
+          <th>Delete</th>
+        </tr>
+      </thead>
+      <tbody>
+      <% @employees.each do |employee| %>
+        <tr class="admin_link_color">
+          <td><%=h employee.name %></td>
+          <td><%=h employee.title %></td>
+          <td><%= link_to 'Show', employee %></td>
+          <td><%= link_to 'Edit', edit_employee_path(employee) %></td>
+          <td><%= link_to 'Destroy', employee, :confirm => 'Are you sure?', :method => :delete %></td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
