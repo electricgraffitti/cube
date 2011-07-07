@@ -20,7 +20,7 @@ Rails::Initializer.run do |config|
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
   config.gem "authlogic", :version => '2.1.6'
-  config.gem 'paperclip', :source => 'http://gemcutter.org'
+  config.gem 'paperclip', :version => '2.3.11'
   config.gem "tiny_mce"
   config.gem 'RedCloth'
   config.gem 'will_paginate', :version  => '~> 2.3.15', :source => 'http://gemcutter.org'
