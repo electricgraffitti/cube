@@ -9,6 +9,7 @@
         <tr>
           <th>Client Name</th>
           <th>Project Type</th>
+          <th>List Order</th>
           <th>View</th>
           <th>Edit</th>
           <th>Delete</th>
@@ -19,6 +20,7 @@
         <tr class="admin_link_color">
           <td><%=h client.title %></td>
           <td><%=h client.sub_title %></td>
+          <td><%=h client.list_order %></td>
           <td><%= link_to 'Show', client %></td>
           <td><%= link_to 'Edit', edit_client_path(client) %></td>
           <td><%= link_to 'Destroy', client, :confirm => 'Are you sure?', :method => :delete %></td>

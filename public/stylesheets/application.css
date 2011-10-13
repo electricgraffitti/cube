@@ -1312,10 +1312,24 @@ margin-left: 45px;
 float: left;
 }
 .social {
-left: 5px;
+left: 35px;
 position: absolute;
-top: 70px;
-width: 140px;
+top: 55px;
+width: 170px;
+}
+.social img {
+  margin-top: 10px;
+}
+.social h4 {
+  color: #DDDDDD;
+  font-size: 155%;
+  position: relative;
+  text-shadow: 0 1px 0 #000000;
+  width:180px;
+}
+.social h4:hover {
+  color: #a70d0e;
+  text-shadow: none;
 }
 /******************************************************************************/
 /********************************************************SUB BOX LISTINGS****************/
@@ -1663,7 +1677,7 @@ text-decoration: underline;
 }
 .twitter_link {
 	position: absolute;
-	left: 60px;
+	left: 220px;
 	bottom: 0px;
 	width: 311px;
 	height: 125px;
