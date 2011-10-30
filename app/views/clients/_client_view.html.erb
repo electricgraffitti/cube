@@ -1,5 +1,5 @@
 <div class="full_row center">
-  <%= image_tag(client.assets.last.attachment.url(:medium), :alt => client.title, :class => "full_image") %>
+  <%= link_to (image_tag(client.assets.last.attachment.url(:medium), :class => "full_image"), client.url, :alt => client.title) %>
 </div>
 <div class="full_row center bottom_hr">
   <%= link_to "View Client", client.url, :target => "_blank", :alt => "Cube2Media Client Project", :class => "client_view" %>
