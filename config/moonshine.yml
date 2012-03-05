@@ -6,8 +6,6 @@
 :domain: cube2media.com
 :domain_aliases:
   - www.cube2media.com
-  - beta.cube2media.com
-  - www.beta.cube2media.com
 
 :repository: git@github.com:electricgraffitti/cube.git
 :branch: master
